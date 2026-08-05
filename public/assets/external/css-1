@@ -1,0 +1,48 @@
+﻿@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url(s/lato/v25/S6u8w4BMUTPHh30AXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(s/lato/v25/S6u9w4BMUTPHh7USSwiPHA-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/lato/v25/S6uyw4BMUTPHjx4wWw-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/lato/v25/S6u9w4BMUTPHh6UVSwiPHA-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(s/lato/v25/S6u9w4BMUTPHh50XSwiPHA-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/ptmono/v14/9oRONYoBnWILk-9AnC8zNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(s/ptserif/v19/EJRTQgYoZZY2vCFuvAFT_r21dw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/ptserif/v19/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
+}
