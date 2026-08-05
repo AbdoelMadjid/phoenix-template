@@ -14,29 +14,29 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="../../../assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="../../../assets/img/favicons/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
     <meta name="theme-color" content="#ffffff">
-    <script src="../../../vendors/simplebar/simplebar.min.js"></script>
-    <script src="../../../assets/js/config.js"></script>
+    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="../../../vendors/nouislider/nouislider.min.css" rel="stylesheet">
+    <link href="{{ asset('vendors/nouislider/nouislider.min.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="../../../assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="../../../vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/external/release/v4.0.8/css/line.css">
-    <link href="../../../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="../../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
-    <link href="../../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="../../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -60,38 +60,38 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <div class="sticky-top bg-body" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
-        <nav class="navbar navbar-top navbar-expand-lg container-medium border-0 bg-body px-3 py-2"><button class="navbar-toggler fs-8 ps-2 me-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="../../../index.html">
-            <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+        <nav class="navbar navbar-top navbar-expand-lg container-medium border-0 bg-body px-3 py-2"><button class="navbar-toggler fs-8 ps-2 me-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="{{ url('dashboard') }}">
+            <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
               <h5 class="logo-text ms-2">phoenix</h5>
             </div>
           </a>
           <div class="d-flex align-items-center gap-2 gap-sm-3 gap-md-4 my-2 order-lg-1">
-            <div class="theme-control-toggle feather-icon-wait"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggleSm"><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="map-pin" style="width: 18px; height: 18px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="bell" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="../../../pages/authentication/card/sign-in.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Agent Login"><span data-feather="log-in" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="user" style="width: 20px; height: 20px"></span></a>
+            <div class="theme-control-toggle feather-icon-wait"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggleSm"><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="map-pin" style="width: 18px; height: 18px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="bell" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="{{ url('pages/authentication/card/sign-in') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Agent Login"><span data-feather="log-in" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="user" style="width: 20px; height: 20px"></span></a>
           </div>
           <div class="collapse navbar-collapse navbar-top-collapse order-1 order-lg-0 justify-content-center pb-0" id="navbarTopCollapse">
             <ul class="navbar-nav travel-nav-top me-auto" data-dropdown-on-hover="data-dropdown-on-hover">
               <li class="nav-item dropdown"><a class="nav-link fs-8 fw-bold dropdown-toggle " href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Hotel</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="../hotel/customer/homepage.html">Homepage</a></li>
-                  <li><a class="dropdown-item" href="../hotel/customer/hotel-details.html">Hotel Details</a></li>
-                  <li><a class="dropdown-item" href="../hotel/customer/hotel-compare.html">Hotel Compare</a></li>
-                  <li><a class="dropdown-item" href="../hotel/customer/checkout.html">Check out</a></li>
-                  <li><a class="dropdown-item" href="../hotel/customer/payment.html">Payment</a></li>
-                  <li><a class="dropdown-item" href="../hotel/customer/gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/homepage') }}">Homepage</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/hotel-details') }}">Hotel Details</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/hotel-compare') }}">Hotel Compare</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/checkout') }}">Check out</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/payment') }}">Payment</a></li>
+                  <li><a class="dropdown-item" href="{{ url('hotel/customer/gallery') }}">Gallery</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link fs-8 fw-bold dropdown-toggle " href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Flight</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="../flight/homepage.html">Homepage</a></li>
-                  <li><a class="dropdown-item" href="../flight/booking.html">Booking</a></li>
-                  <li><a class="dropdown-item" href="../flight/payment.html">Payment</a></li>
+                  <li><a class="dropdown-item" href="{{ url('flight/homepage') }}">Homepage</a></li>
+                  <li><a class="dropdown-item" href="{{ url('flight/booking') }}">Booking</a></li>
+                  <li><a class="dropdown-item" href="{{ url('flight/payment') }}">Payment</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link fs-8 fw-bold dropdown-toggle text-primary" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Trip</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="homepage.html">Homepage</a></li>
-                  <li><a class="dropdown-item" href="trip-details.html">Trip Details</a></li>
-                  <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                  <li><a class="dropdown-item" href="{{ url('homepage') }}">Homepage</a></li>
+                  <li><a class="dropdown-item" href="{{ url('trip-details') }}">Trip Details</a></li>
+                  <li><a class="dropdown-item" href="{{ url('checkout') }}">Checkout</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link fs-8 fw-bold  " href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Event</a></li>
@@ -103,9 +103,9 @@
       <div class="navbar-responsive-navitems navbar-expand border-y bg-body-emphasis border-translucent py-2">
         <div class="container-medium d-flex flex-between-center" data-navbar="data-navbar">
           <ul class="navbar-nav justify-content-end align-items-center">
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3 ps-0 text-primary" href="homepage.html">Homepage</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  " href="trip-details.html">Trip Details</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  " href="checkout.html">Checkout</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3 ps-0 text-primary" href="{{ url('homepage') }}">Homepage</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  " href="{{ url('trip-details') }}">Trip Details</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  " href="{{ url('checkout') }}">Checkout</a></li>
             <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0 ps-3" href="javascript: void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-boundary="window" data-bs-reference="parent"> More<span class="fas fa-angle-down ms-2"></span></a>
               <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown" data-category-list="data-category-list"></div>
             </li>
@@ -119,9 +119,9 @@
         <div class="container-small">
           <nav class="navbar navbar-landing navbar-home navbar-expand py-4 px-0">
             <ul class="navbar-nav mx-auto mt-3 mt-lg-0 gap-2">
-              <li class="nav-item"><a class="nav-link fw-bold rounded-3" aria-current="page" href="../hotel/customer/homepage.html"> <span class="me-2 fa-solid fa-hotel"></span>Hotel</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold rounded-3" aria-current="page" href="../flight/homepage.html"> <span class="me-2 fa-solid fa-plane"></span>Flight</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold rounded-3 active" aria-current="page" href="homepage.html"> <span class="me-2 fa-solid fa-suitcase-rolling"></span>Trip</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold rounded-3" aria-current="page" href="{{ url('hotel/customer/homepage') }}"> <span class="me-2 fa-solid fa-hotel"></span>Hotel</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold rounded-3" aria-current="page" href="{{ url('flight/homepage') }}"> <span class="me-2 fa-solid fa-plane"></span>Flight</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold rounded-3 active" aria-current="page" href="{{ url('homepage') }}"> <span class="me-2 fa-solid fa-suitcase-rolling"></span>Trip</a></li>
             </ul>
           </nav>
         </div><!-- end of .container-->
@@ -129,7 +129,7 @@
       <!-- ============================================-->
 
       <section class="py-0">
-        <div class="bg-holder overlay bg-opacity-50" style="background-image:url(../../../assets/img/bg/46.png);background-position: center; background-size: cover;"></div>
+        <div class="bg-holder overlay bg-opacity-50" style="background-image:url({{ asset('assets/img/bg/46.png') }});background-position: center; background-size: cover;"></div>
         <!--/.bg-holder-->
         <div class="container-medium position-relative pt-11 pb-15">
           <h2 class="text-center text-white mb-4">Where do you want to go?</h2>
@@ -146,7 +146,7 @@
         <div class="container-medium">
           <div class="row g-3">
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/1.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/1.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Selfie with Snape</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>Hogwarts</h5>
@@ -161,7 +161,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/2.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/2.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Dine with Joker</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>Gotham</h5>
@@ -176,7 +176,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/3.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/3.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Ask Frodo to visit Mordor</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>The Shire</h5>
@@ -191,7 +191,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/4.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/4.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Sit on the iron throne</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>King’s Landing</h5>
@@ -206,7 +206,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/5.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/5.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Day out with Luke Skywalker</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>Tatooine</h5>
@@ -221,7 +221,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/6.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/6.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Feed the smelly cat</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>New York</h5>
@@ -236,7 +236,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/7.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/7.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Stormtrooper for a day</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>The Death Star</h5>
@@ -251,7 +251,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/8.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/8.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Walk where the king walked</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>Wakanda</h5>
@@ -266,7 +266,7 @@
                 </a></div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="hoverbox rounded"><a href="trip-details.html"><img class="img-fluid" src="../../../assets/img/trip/9.png" alt="">
+              <div class="hoverbox rounded"><a href="{{ url('trip-details') }}"><img class="img-fluid" src="{{ asset('assets/img/trip/9.png') }}" alt="">
                   <div class="backdrop-faded">
                     <h3 class="text-underline fs-7 fs-lg-6 text-white fw-bold mb-2">Petting the ghost</h3>
                     <h5 class="text-secondary-lighter fw-normal mb-3"><span class="fa-solid fa-map-marker-alt text-primary me-2"></span>Winterfell</h5>
@@ -438,7 +438,7 @@
       <!-- <section> begin ============================-->
       <section class="py-6">
         <div class="container-medium">
-          <div class="bg-holder overlay bg-opacity-75" style="background-image:url(../../../assets/img/bg/47.png);background-position: center; background-size: cover;"></div>
+          <div class="bg-holder overlay bg-opacity-75" style="background-image:url({{ asset('assets/img/bg/47.png') }});background-position: center; background-size: cover;"></div>
           <!--/.bg-holder-->
           <div class="row position-relative align-items-center gy-3">
             <div class="col-xxl-4 order-1 order-xxl-0">
@@ -470,8 +470,8 @@
 
       <div class="container-medium">
         <div class="row flex-center justify-content-md-between align-items-md-center gy-2 mt-4 mb-3">
-          <div class="col-auto"><a class="navbar-brand" href="../../../index.html">
-              <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+          <div class="col-auto"><a class="navbar-brand" href="{{ url('dashboard') }}">
+              <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                 <h5 class="logo-text ms-2">phoenix</h5>
               </div>
             </a></div>
@@ -517,7 +517,7 @@
                     <p class="mb-0 fw-semibold fs-9">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
                   </a></div>
                 <div class="text-center mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="../../../assets/img/team/30.webp" alt=""></div>
+                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="{{ asset('assets/img/team/30.webp') }}" alt=""></div>
                   <h5 class="mt-2 mb-3">Eric</h5>
                   <p class="text-center text-body-emphasis mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
                 </div>
@@ -546,9 +546,9 @@
         <div class="setting-panel-item mt-0">
           <h5 class="setting-panel-item-title">Color Scheme</h5>
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-light.png" alt=""></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/auto.png" alt=""></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/auto.png') }}" alt=""></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
@@ -568,34 +568,34 @@
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Navigation Type</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text">Vertical</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text"> Horizontal</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/nav-combo-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/nav-combo-dark.png" alt=""></span><span class="label-text"> Combo</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/dual-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/dual-dark.png" alt=""></span><span class="label-text"> Dual nav</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text">Vertical</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text"> Horizontal</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/nav-combo-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/nav-combo-dark.png') }}" alt=""></span><span class="label-text"> Combo</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/dual-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/dual-dark.png') }}" alt=""></span><span class="label-text"> Dual nav</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update navigation type in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Vertical Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/vertical-darker.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/vertical-lighter.png" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/vertical-darker.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/vertical-lighter.png') }}" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update vertical navbar appearance in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Shape</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-slim.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-slim-dark.png" alt=""></span><span class="label-text"> Slim</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-slim.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-slim-dark.png') }}" alt=""></span><span class="label-text"> Slim</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar shape in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-darker.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/navbar-top-style-light.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-lighter.png" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-darker.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/navbar-top-style-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-lighter.png') }}" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar appearance in this page</p>
         </div><a class="bun btn-primary d-grid mb-3 text-white mt-5 btn btn-primary" href="https://themewagon.com/themes/phoenix/" target="_blank">Purchase template</a>
@@ -611,17 +611,17 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="../../../vendors/popper/popper.min.js"></script>
-    <script src="../../../vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="../../../vendors/anchorjs/anchor.min.js"></script>
-    <script src="../../../vendors/is/is.min.js"></script>
-    <script src="../../../vendors/fontawesome/all.min.js"></script>
-    <script src="../../../vendors/lodash/lodash.min.js"></script>
-    <script src="../../../vendors/list.js/list.min.js"></script>
-    <script src="../../../vendors/feather-icons/feather.min.js"></script>
-    <script src="../../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../../assets/js/phoenix.js"></script>
-    <script src="../../../vendors/nouislider/nouislider.min.js"></script>
+    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
+    <script src="{{ asset('vendors/nouislider/nouislider.min.js') }}"></script>
   </body>
 
 </html>

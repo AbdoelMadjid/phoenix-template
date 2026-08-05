@@ -14,31 +14,31 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="../../../assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="../../../assets/img/favicons/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
     <meta name="theme-color" content="#ffffff">
-    <script src="../../../vendors/simplebar/simplebar.min.js"></script>
-    <script src="../../../assets/js/config.js"></script>
+    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="../../../vendors/dropzone/dropzone.css" rel="stylesheet">
-    <link href="../../../vendors/choices/choices.min.css" rel="stylesheet">
-    <link href="../../../vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
+    <link href="{{ asset('vendors/dropzone/dropzone.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/choices/choices.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="../../../assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="../../../vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/external/release/v4.0.8/css/line.css">
-    <link href="../../../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="../../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
-    <link href="../../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="../../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -76,27 +76,27 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-home">
                       <li class="collapsed-nav-item-title d-none">Home</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../index.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('dashboard') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">E commerce</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../dashboard/project-management.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('dashboard/project-management') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project management</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../dashboard/crm.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('dashboard/crm') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">CRM</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../dashboard/travel-agency.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('dashboard/travel-agency') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Travel agency</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../dashboard/stock.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('dashboard/stock') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Stock</span><span class="badge ms-2 badge badge-phoenix badge-phoenix-warning ">new</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../social/feed.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('social/feed') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Social feed</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -123,31 +123,31 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent show" data-bs-parent="#e-commerce" id="nv-admin">
-                            <li class="nav-item"><a class="nav-link active" href="add-product.html">
+                            <li class="nav-item"><a class="nav-link active" href="{{ url('add-product') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Add product</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="products.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('products') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Products</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="customers.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('customers') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Customers</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="customer-details.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('customer-details') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Customer details</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="orders.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('orders') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Orders</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="order-details.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('order-details') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Order details</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="refund.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('refund') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Refund</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -161,47 +161,47 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent show" data-bs-parent="#e-commerce" id="nv-customer">
-                            <li class="nav-item"><a class="nav-link" href="../landing/homepage.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/homepage') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Homepage</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/product-details.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/product-details') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Product details</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/products-filter.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/products-filter') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Products filter</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/cart.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/cart') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Cart</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/checkout.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/checkout') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Checkout</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/shipping-info.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/shipping-info') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Shipping info</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/profile.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/profile') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Profile</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/favourite-stores.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/favourite-stores') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Favourite stores</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/wishlist.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/wishlist') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Wishlist</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/order-tracking.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/order-tracking') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Order tracking</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../landing/invoice.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('landing/invoice') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Invoice</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -219,35 +219,35 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-CRM">
                       <li class="collapsed-nav-item-title d-none">CRM</li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/analytics.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/analytics') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Analytics</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/deals.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/deals') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Deals</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/deal-details.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/deal-details') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Deal details</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/leads.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/leads') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Leads</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/lead-details.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/lead-details') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Lead details</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/reports.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/reports') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Reports</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/report-details.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/report-details') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Report details</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../crm/add-contact.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('crm/add-contact') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Add contact</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -262,27 +262,27 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-project-management">
                       <li class="collapsed-nav-item-title d-none">Project management</li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/create-new.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/create-new') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Create new</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/project-list-view.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/project-list-view') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project list view</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/project-card-view.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/project-card-view') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project card view</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/project-board-view.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/project-board-view') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project board view</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/todo-list.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/todo-list') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../project-management/project-details.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('project-management/project-details') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -297,7 +297,7 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-travel-agency">
                       <li class="collapsed-nav-item-title d-none">Travel agency</li>
-                      <li class="nav-item"><a class="nav-link" href="../../travel-agency/landing.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/landing') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Landing</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -315,19 +315,19 @@
                               </a><!-- more inner pages-->
                               <div class="parent-wrapper">
                                 <ul class="nav collapse parent" data-bs-parent="#hotel" id="nv-hotel-admin">
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/admin/add-property.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Add property</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/admin/add-room.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Add room</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/admin/room-listing.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Room listing</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/admin/room-search.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Search room</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
@@ -341,27 +341,27 @@
                               </a><!-- more inner pages-->
                               <div class="parent-wrapper">
                                 <ul class="nav collapse parent" data-bs-parent="#hotel" id="nv-hotel-customer">
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/homepage.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Homepage</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/hotel-details.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Hotel details</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Hotel compare</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/checkout.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Checkout</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/payment.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Payment</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../travel-agency/hotel/customer/gallery.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Gallery</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
@@ -378,15 +378,15 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#travel-agency" id="nv-flight">
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/flight/homepage.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/flight/homepage') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Homepage</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/flight/booking.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/flight/booking') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Booking</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/flight/payment.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/flight/payment') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Payment</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -400,15 +400,15 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#travel-agency" id="nv-trip">
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/trip/homepage.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/trip/homepage') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Homepage</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/trip/trip-details.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/trip/trip-details') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Trip details</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../travel-agency/trip/checkout.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('travel-agency/trip/checkout') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Checkout</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -426,22 +426,22 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-stock">
                       <li class="collapsed-nav-item-title d-none">Stock</li>
-                      <li class="nav-item"><a class="nav-link" href="../../stock/stock-details.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('stock/stock-details') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Stock details</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../stock/portfolio.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('stock/portfolio') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Portfolio</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../stock/watchlist.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('stock/watchlist') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Watchlist</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../chat.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('chat') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="message-square"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Chat</span></span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-email">
@@ -452,15 +452,15 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-email">
                       <li class="collapsed-nav-item-title d-none">Email</li>
-                      <li class="nav-item"><a class="nav-link" href="../../email/inbox.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('email/inbox') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Inbox</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../email/email-detail.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('email/email-detail') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Email detail</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../email/compose.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('email/compose') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Compose</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -475,11 +475,11 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-events">
                       <li class="collapsed-nav-item-title d-none">Events</li>
-                      <li class="nav-item"><a class="nav-link" href="../../events/create-an-event.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('events/create-an-event') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Create an event</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../events/event-detail.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('events/event-detail') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Event detail</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -494,22 +494,22 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-kanban">
                       <li class="collapsed-nav-item-title d-none">Kanban</li>
-                      <li class="nav-item"><a class="nav-link" href="../../kanban/kanban.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('kanban/kanban') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Kanban</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../kanban/boards.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('kanban/boards') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Boards</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../kanban/create-kanban-board.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('kanban/create-kanban-board') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Create board</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../gantt-chart.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('gantt-chart') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fa-solid fa-chart-gantt "></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Gantt chart</span></span><span class="badge ms-2 badge badge-phoenix badge-phoenix-warning nav-link-badge">new</span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-social" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-social">
@@ -520,11 +520,11 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-social">
                       <li class="collapsed-nav-item-title d-none">Social</li>
-                      <li class="nav-item"><a class="nav-link" href="../../social/profile.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('social/profile') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Profile</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../social/settings.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('social/settings') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Settings</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -539,27 +539,27 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-gallery">
                       <li class="collapsed-nav-item-title d-none">Gallery</li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/album.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/album') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Album</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/gallery-column.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/gallery-column') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Gallery column</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/gallery-grid.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/gallery-grid') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Gallery grid</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/grid-with-title.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/grid-with-title') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Grid with title</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/gallery-masonry.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/gallery-masonry') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Gallery masonry</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../gallery/gallery-slider.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('gallery/gallery-slider') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Gallery slider</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -574,18 +574,18 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-file-manager">
                       <li class="collapsed-nav-item-title d-none">File manager</li>
-                      <li class="nav-item"><a class="nav-link" href="../../file-manager/grid-view.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('file-manager/grid-view') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Grid view</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../file-manager/list-view.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('file-manager/list-view') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">List view</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../calendar.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('calendar') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="calendar"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Calendar</span></span></div>
                   </a></div>
               </li>
@@ -593,7 +593,7 @@
                 <!-- label-->
                 <p class="navbar-vertical-label">Pages</p>
                 <hr class="navbar-vertical-line"><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../pages/starter.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('pages/starter') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="compass"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Starter</span></span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-faq" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-faq">
@@ -604,11 +604,11 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-faq">
                       <li class="collapsed-nav-item-title d-none">Faq</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/faq/faq-accordion.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/faq/faq-accordion') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Faq accordion</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/faq/faq-tab.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/faq/faq-tab') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Faq tab</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -623,11 +623,11 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-landing">
                       <li class="collapsed-nav-item-title d-none">Landing</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/landing/default.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/landing/default') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Default</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/landing/alternate.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/landing/alternate') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Alternate</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -642,24 +642,24 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-pricing">
                       <li class="collapsed-nav-item-title d-none">Pricing</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/pricing/pricing-column.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/pricing/pricing-column') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Pricing column</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/pricing/pricing-grid.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/pricing/pricing-grid') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Pricing grid</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../pages/notifications.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('pages/notifications') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="bell"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Notifications</span></span></div>
                   </a></div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../pages/members.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('pages/members') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="users"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Members</span></span></div>
                   </a></div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../pages/timeline.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('pages/timeline') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="clock"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Timeline</span></span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-errors" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-errors">
@@ -670,15 +670,15 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-errors">
                       <li class="collapsed-nav-item-title d-none">Errors</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/errors/404.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/errors/404') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">404</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/errors/403.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/errors/403') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">403</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../pages/errors/500.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('pages/errors/500') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">500</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -700,31 +700,31 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#authentication" id="nv-simple">
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/sign-in.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/sign-in') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign in</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/sign-up.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/sign-up') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign up</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/sign-out.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/sign-out') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign out</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/forgot-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/forgot-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Forgot password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/reset-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/reset-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Reset password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/lock-screen.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/lock-screen') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Lock screen</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/simple/2FA.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/simple/2FA') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">2FA</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -738,31 +738,31 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#authentication" id="nv-split">
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/sign-in.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/sign-in') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign in</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/sign-up.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/sign-up') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign up</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/sign-out.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/sign-out') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign out</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/forgot-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/forgot-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Forgot password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/reset-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/reset-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Reset password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/lock-screen.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/lock-screen') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Lock screen</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/split/2FA.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/split/2FA') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">2FA</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -776,31 +776,31 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#authentication" id="nv-Card">
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/sign-in.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/sign-in') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign in</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/sign-up.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/sign-up') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign up</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/sign-out.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/sign-out') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Sign out</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/forgot-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/forgot-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Forgot password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/reset-password.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/reset-password') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Reset password</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/lock-screen.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/lock-screen') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Lock screen</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../pages/authentication/card/2FA.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('pages/authentication/card/2FA') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">2FA</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -818,43 +818,43 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-layouts">
                       <li class="collapsed-nav-item-title d-none">Layouts</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/vertical-sidenav.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/vertical-sidenav') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Vertical sidenav</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/dark-mode.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/dark-mode') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dark mode</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/sidenav-collapse.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/sidenav-collapse') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Sidenav collapse</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/darknav.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/darknav') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Darknav</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/topnav-slim.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/topnav-slim') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Topnav slim</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/navbar-horizontal.html" target="_blank">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/navbar-horizontal') }}" target="_blank">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Navbar horizontal</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/horizontal-slim.html" target="_blank">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/horizontal-slim') }}" target="_blank">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Horizontal slim</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/combo-nav.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/combo-nav') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Combo nav</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/combo-nav-slim.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/combo-nav-slim') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Combo nav slim</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../demo/dual-nav.html" target="_blank">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('demo/dual-nav') }}" target="_blank">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dual nav</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -881,31 +881,31 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#forms" id="nv-basic">
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/form-control.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/form-control') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Form control</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/input-group.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/input-group') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Input group</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/select.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/select') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Select</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/checks.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/checks') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Checks</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/range.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/range') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Range</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/floating-labels.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/floating-labels') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Floating labels</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/basic/layout.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/basic/layout') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Layout</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -919,42 +919,42 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#forms" id="nv-advance">
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/advance-select.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/advance-select') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Advance select</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/date-picker.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/date-picker') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Date picker</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/editor.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/editor') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Editor</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/file-uploader.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/file-uploader') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">File uploader</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/range.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/range') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Range</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/rating.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/rating') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Rating</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/forms/advance/emoji-button.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/advance/emoji-button') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Emoji button</span></div>
                               </a><!-- more inner pages-->
                             </li>
                           </ul>
                         </div>
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/forms/validation.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/validation') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Validation</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/forms/wizard.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/forms/wizard') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Wizard</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -969,15 +969,15 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-icons">
                       <li class="collapsed-nav-item-title d-none">Icons</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/icons/feather.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/icons/feather') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Feather</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/icons/font-awesome.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/icons/font-awesome') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Font awesome</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/icons/unicons.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/icons/unicons') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Unicons</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -992,15 +992,15 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-tables">
                       <li class="collapsed-nav-item-title d-none">Tables</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/tables/basic-tables.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/tables/basic-tables') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Basic tables</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/tables/advance-tables.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/tables/advance-tables') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Advance tables</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/tables/bulk-select.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/tables/bulk-select') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Bulk Select</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1015,43 +1015,43 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-ECharts">
                       <li class="collapsed-nav-item-title d-none">ECharts</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/line-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/line-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Line charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/bar-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/bar-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Bar charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/candlestick-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/candlestick-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Candlestick charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/geo-map.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/geo-map') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Geo map</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/scatter-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/scatter-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Scatter charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/pie-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/pie-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Pie charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/gauge-chart.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/gauge-chart') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Gauge chart</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/radar-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/radar-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Radar charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/heatmap-charts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/heatmap-charts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Heatmap charts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/echarts/how-to-use.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/echarts/how-to-use') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">How to use</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1066,35 +1066,35 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-components">
                       <li class="collapsed-nav-item-title d-none">Components</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/accordion.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/accordion') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Accordion</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/avatar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/avatar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Avatar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/alerts.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/alerts') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Alerts</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/badge.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/badge') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Badge</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/breadcrumb.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/breadcrumb') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Breadcrumb</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/button.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/button') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Buttons</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/calendar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/calendar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Calendar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/card.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/card') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Card</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1105,34 +1105,34 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#components" id="nv-carousel">
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/components/carousel/bootstrap.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/carousel/bootstrap') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Bootstrap</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/components/carousel/swiper.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/carousel/swiper') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Swiper</span></div>
                               </a><!-- more inner pages-->
                             </li>
                           </ul>
                         </div>
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/collapse.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/collapse') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Collapse</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/dropdown.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/dropdown') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dropdown</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/dhtmlx-gantt.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/dhtmlx-gantt') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dhtmlx gantt</span><span class="badge ms-2 badge badge-phoenix badge-phoenix-warning ">new</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/list-group.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/list-group') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">List group</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/modal.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/modal') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Modals</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1143,66 +1143,66 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#components" id="nv-navs-_and_-Tabs">
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/components/navs-and-tabs/navs.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Navs</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/components/navs-and-tabs/navbar.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Navbar</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../modules/components/navs-and-tabs/tabs.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Tabs</span></div>
                               </a><!-- more inner pages-->
                             </li>
                           </ul>
                         </div>
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/offcanvas.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/offcanvas') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Offcanvas</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/progress-bar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/progress-bar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Progress bar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/placeholder.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/placeholder') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Placeholder</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/pagination.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/pagination') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Pagination</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/popovers.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/popovers') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Popovers</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/scrollspy.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/scrollspy') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Scrollspy</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/sortable.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/sortable') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Sortable</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/spinners.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/spinners') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Spinners</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/toast.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/toast') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Toast</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/tooltips.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/tooltips') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Tooltips</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/typed-text.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/typed-text') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Typed text</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/components/chat-widget.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/components/chat-widget') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Chat widget</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1217,82 +1217,82 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-utilities">
                       <li class="collapsed-nav-item-title d-none">Utilities</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/background.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/background') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Background</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/borders.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/borders') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Borders</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/colors.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/colors') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Colors</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/display.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/display') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Display</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/flex.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/flex') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Flex</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/stacks.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/stacks') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Stacks</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/float.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/float') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Float</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/grid.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/grid') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Grid</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/interactions.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/interactions') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Interactions</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/opacity.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/opacity') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Opacity</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/overflow.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/overflow') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Overflow</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/position.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/position') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Position</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/shadows.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/shadows') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Shadows</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/sizing.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/sizing') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Sizing</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/spacing.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/spacing') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Spacing</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/typography.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/typography') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Typography</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/vertical-align.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/vertical-align') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Vertical align</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../modules/utilities/visibility.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('modules/utilities/visibility') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Visibility</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../widgets.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('widgets') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="server"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Widgets</span></span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-multi-level" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-multi-level">
@@ -1310,11 +1310,11 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#multi-level" id="nv-level-two">
-                            <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Item 1</span></div>
                               </a><!-- more inner pages-->
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Item 2</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -1328,7 +1328,7 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#multi-level" id="nv-level-three">
-                            <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Item 3</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -1339,11 +1339,11 @@
                               </a><!-- more inner pages-->
                               <div class="parent-wrapper">
                                 <ul class="nav collapse parent" data-bs-parent="#level-three" id="nv-item-4">
-                                  <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Item 5</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
-                                  <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Item 6</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
@@ -1360,7 +1360,7 @@
                         </a><!-- more inner pages-->
                         <div class="parent-wrapper">
                           <ul class="nav collapse parent" data-bs-parent="#multi-level" id="nv-level-four">
-                            <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                 <div class="d-flex align-items-center"><span class="nav-link-text">Item 6</span></div>
                               </a><!-- more inner pages-->
                             </li>
@@ -1371,7 +1371,7 @@
                               </a><!-- more inner pages-->
                               <div class="parent-wrapper">
                                 <ul class="nav collapse parent" data-bs-parent="#level-four" id="nv-item-7">
-                                  <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                                  <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                       <div class="d-flex align-items-center"><span class="nav-link-text">Item 8</span></div>
                                     </a><!-- more inner pages-->
                                   </li>
@@ -1382,11 +1382,11 @@
                                     </a><!-- more inner pages-->
                                     <div class="parent-wrapper">
                                       <ul class="nav collapse parent" data-bs-parent="#item-7" id="nv-item-9">
-                                        <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                                        <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                             <div class="d-flex align-items-center"><span class="nav-link-text">Item 10</span></div>
                                           </a><!-- more inner pages-->
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="../../../index.htm#!.html">
+                                        <li class="nav-item"><a class="nav-link" href="{{ url('index.htm#!') }}">
                                             <div class="d-flex align-items-center"><span class="nav-link-text">Item 11</span></div>
                                           </a><!-- more inner pages-->
                                         </li>
@@ -1407,7 +1407,7 @@
                 <!-- label-->
                 <p class="navbar-vertical-label">Documentation</p>
                 <hr class="navbar-vertical-line"><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../documentation/getting-started.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('documentation/getting-started') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="life-buoy"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Getting started</span></span></div>
                   </a></div><!-- parent pages-->
                 <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-customization" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-customization">
@@ -1418,23 +1418,23 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-customization">
                       <li class="collapsed-nav-item-title d-none">Customization</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/customization/configuration.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/customization/configuration') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Configuration</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/customization/styling.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/customization/styling') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Styling</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/customization/color.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/customization/color') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Color</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/customization/dark-mode.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/customization/dark-mode') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dark mode</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/customization/plugin.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/customization/plugin') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Plugin</span></div>
                         </a><!-- more inner pages-->
                       </li>
@@ -1449,35 +1449,35 @@
                   <div class="parent-wrapper label-1">
                     <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-layouts-doc">
                       <li class="collapsed-nav-item-title d-none">Layouts doc</li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/layouts/vertical-navbar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/layouts/vertical-navbar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Vertical navbar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/layouts/horizontal-navbar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Horizontal navbar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/layouts/combo-navbar.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/layouts/combo-navbar') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Combo navbar</span></div>
                         </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../../documentation/layouts/dual-nav.html">
+                      <li class="nav-item"><a class="nav-link" href="{{ url('documentation/layouts/dual-nav') }}">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Dual nav</span></div>
                         </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../documentation/gulp.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('documentation/gulp') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fa-brands fa-gulp ms-1 me-1 fa-lg"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Gulp</span></span></div>
                   </a></div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../documentation/design-file.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('documentation/design-file') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="figma"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Design file</span></span></div>
                   </a></div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../changelog.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('changelog') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="git-merge"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Changelog</span></span></div>
                   </a></div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../../../showcase.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="{{ url('showcase') }}" role="button" data-bs-toggle="" aria-expanded="false">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="monitor"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Showcase</span></span></div>
                   </a></div>
               </li>
@@ -1490,9 +1490,9 @@
         <div class="collapse navbar-collapse justify-content-between">
           <div class="navbar-logo">
             <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-            <a class="navbar-brand me-1 me-sm-3" href="../../../index.html">
+            <a class="navbar-brand me-1 me-sm-3" href="{{ url('dashboard') }}">
               <div class="d-flex align-items-center">
-                <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+                <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                   <h5 class="logo-text ms-2 d-none d-sm-block">phoenix</h5>
                 </div>
               </div>
@@ -1509,12 +1509,12 @@
                   <h6 class="dropdown-header text-body-highlight fs-10 py-2">24 <span class="text-body-quaternary">results</span></h6>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Recently Searched </h6>
-                  <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                  <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> Store Macbook</div>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="../landing/product-details.html">
+                    <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> MacBook Air - 13″</div>
                       </div>
@@ -1522,15 +1522,15 @@
                   </div>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Products</h6>
-                  <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                      <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                  <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                      <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                       <div class="flex-1">
                         <h6 class="mb-0 text-body-highlight title">MacBook Air - 13″</h6>
                         <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">8GB Memory - 1.6GHz - 128GB Storage</span></p>
                       </div>
                     </a>
-                    <a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                      <div class="file-thumbnail me-2"><img class="img-fluid" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                    <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                      <div class="file-thumbnail me-2"><img class="img-fluid" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                       <div class="flex-1">
                         <h6 class="mb-0 text-body-highlight title">MacBook Pro - 13″</h6>
                         <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">30 Sep at 12:30 PM</span></p>
@@ -1539,12 +1539,12 @@
                   </div>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Quick Links</h6>
-                  <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                  <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Support MacBook House</div>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="../landing/product-details.html">
+                    <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                       </div>
@@ -1552,17 +1552,17 @@
                   </div>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Files</h6>
-                  <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                  <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-file-zipper text-body" data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="../landing/product-details.html">
+                    <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-file-lines text-body" data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="../landing/product-details.html">
+                    <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-image text-body" data-fa-transform="shrink-2"></span> MacBook Pro_13.jpg</div>
                       </div>
@@ -1570,18 +1570,18 @@
                   </div>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Members</h6>
-                  <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                  <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                       <div class="avatar avatar-l status-online  me-2 text-body">
-                        <img class="rounded-circle " src="../../../assets/img/team/40x40/10.webp" alt="">
+                        <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/10.webp') }}" alt="">
                       </div>
                       <div class="flex-1">
                         <h6 class="mb-0 text-body-highlight title">Carry Anna</h6>
                         <p class="fs-10 mb-0 d-flex text-body-tertiary">anna@technext.it</p>
                       </div>
                     </a>
-                    <a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                    <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                       <div class="avatar avatar-l  me-2 text-body">
-                        <img class="rounded-circle " src="../../../assets/img/team/40x40/12.webp" alt="">
+                        <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/12.webp') }}" alt="">
                       </div>
                       <div class="flex-1">
                         <h6 class="mb-0 text-body-highlight title">John Smith</h6>
@@ -1591,12 +1591,12 @@
                   </div>
                   <hr class="my-0">
                   <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Related Searches</h6>
-                  <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                  <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"><span class="fa-brands fa-firefox-browser text-body" data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
                       </div>
                     </a>
-                    <a class="dropdown-item" href="../landing/product-details.html">
+                    <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                       <div class="d-flex align-items-center">
                         <div class="fw-normal text-body-highlight title"> <span class="fa-brands fa-chrome text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                       </div>
@@ -1628,7 +1628,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -1660,7 +1660,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -1675,7 +1675,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1690,7 +1690,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1705,7 +1705,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1720,7 +1720,7 @@
                     </div>
                   </div>
                   <div class="card-footer p-0 border-top border-translucent border-0">
-                    <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                    <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                   </div>
                 </div>
               </div>
@@ -1741,46 +1741,46 @@
                 <div class="card bg-body-emphasis position-relative border-0">
                   <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                     <div class="row text-center align-items-center gx-0 gy-0">
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                         </a></div>
                     </div>
@@ -1790,7 +1790,7 @@
             </li>
             <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-l ">
-                  <img class="rounded-circle " src="../../../assets/img/team/40x40/57.webp" alt="">
+                  <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/57.webp') }}" alt="">
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border" aria-labelledby="navbarDropdownUser">
@@ -1798,7 +1798,7 @@
                   <div class="card-body p-0">
                     <div class="text-center pt-4 pb-3">
                       <div class="avatar avatar-xl ">
-                        <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                        <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                       </div>
                       <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                     </div>
@@ -1832,7 +1832,7 @@
         <div class="collapse navbar-collapse justify-content-between">
           <div class="navbar-logo">
             <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-            <a class="navbar-brand navbar-brand" href="../../../index.html">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
+            <a class="navbar-brand navbar-brand" href="{{ url('dashboard') }}">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
           </div>
           <ul class="navbar-nav navbar-nav-icons flex-row">
             <li class="nav-item">
@@ -1853,7 +1853,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -1885,7 +1885,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -1900,7 +1900,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1915,7 +1915,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1930,7 +1930,7 @@
                       <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                         <div class="d-flex align-items-center justify-content-between position-relative">
                           <div class="d-flex">
-                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                             <div class="flex-1 me-sm-3">
                               <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                               <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -1945,7 +1945,7 @@
                     </div>
                   </div>
                   <div class="card-footer p-0 border-top border-translucent border-0">
-                    <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                    <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                   </div>
                 </div>
               </div>
@@ -1966,46 +1966,46 @@
                 <div class="card bg-body-emphasis position-relative border-0">
                   <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                     <div class="row text-center align-items-center gx-0 gy-0">
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                         </a></div>
-                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                      <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                           <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                         </a></div>
                     </div>
@@ -2019,7 +2019,7 @@
                   <div class="card-body p-0">
                     <div class="text-center pt-4 pb-3">
                       <div class="avatar avatar-xl ">
-                        <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                        <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                       </div>
                       <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                     </div>
@@ -2052,9 +2052,9 @@
       <nav class="navbar navbar-top fixed-top navbar-expand-lg" id="navbarTop" style="display:none;">
         <div class="navbar-logo">
           <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-          <a class="navbar-brand me-1 me-sm-3" href="../../../index.html">
+          <a class="navbar-brand me-1 me-sm-3" href="{{ url('dashboard') }}">
             <div class="d-flex align-items-center">
-              <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+              <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                 <h5 class="logo-text ms-2 d-none d-sm-block">phoenix</h5>
               </div>
             </div>
@@ -2064,22 +2064,22 @@
           <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover">
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-chart-pie"></span>Home</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../index.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/project-management.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/project-management') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Project management</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/crm.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/crm') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="phone"></span>CRM</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/travel-agency.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/travel-agency') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/stock.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/stock') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../social/feed.html">
+                <li><a class="dropdown-item" href="{{ url('social/feed') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="share-2"></span>Social feed</div>
                   </a></li>
               </ul>
@@ -2094,25 +2094,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="add-product.html">
+                        <li><a class="dropdown-item active" href="{{ url('add-product') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="products.html">
+                        <li><a class="dropdown-item" href="{{ url('products') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customers.html">
+                        <li><a class="dropdown-item" href="{{ url('customers') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customer-details.html">
+                        <li><a class="dropdown-item" href="{{ url('customer-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="orders.html">
+                        <li><a class="dropdown-item" href="{{ url('orders') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="order-details.html">
+                        <li><a class="dropdown-item" href="{{ url('order-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="refund.html">
+                        <li><a class="dropdown-item" href="{{ url('refund') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
                           </a></li>
                       </ul>
@@ -2121,37 +2121,37 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../landing/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/product-details.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Product details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/products-filter.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/products-filter') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products filter</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/cart.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/cart') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Cart</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/shipping-info.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/shipping-info') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Shipping info</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/profile.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/profile') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/favourite-stores.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/favourite-stores') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Favourite stores</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/wishlist.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/wishlist') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Wishlist</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/order-tracking.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/order-tracking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order tracking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/invoice.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/invoice') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Invoice</div>
                           </a></li>
                       </ul>
@@ -2162,28 +2162,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="phone"></span>CRM</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../crm/analytics.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/analytics') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Analytics</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deals.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deals') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deals</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deal-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deal-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deal details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/leads.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/leads') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Leads</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/lead-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/lead-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lead details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/reports.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/reports') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reports</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/report-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/report-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Report details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/add-contact.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/add-contact') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add contact</div>
                       </a></li>
                   </ul>
@@ -2192,22 +2192,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="clipboard"></span>Project management</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../project-management/create-new.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/create-new') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create new</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project list view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-card-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-card-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project card view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-board-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-board-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project board view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/todo-list.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/todo-list') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Todo list</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-details.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project details</div>
                       </a></li>
                   </ul>
@@ -2216,7 +2216,7 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../travel-agency/landing.html">
+                    <li><a class="dropdown-item" href="{{ url('travel-agency/landing') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Landing</div>
                       </a></li>
                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="hotel" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -2227,16 +2227,16 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-property.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add property</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-room.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add room</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-listing.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Room listing</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-search.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Search room</div>
                               </a></li>
                           </ul>
@@ -2245,22 +2245,22 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/homepage.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-details.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel details</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel compare</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/checkout.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/payment.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/gallery.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery</div>
                               </a></li>
                           </ul>
@@ -2271,13 +2271,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Flight</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/booking.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/booking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Booking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/payment.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/payment') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                           </a></li>
                       </ul>
@@ -2286,13 +2286,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Trip</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/trip-details.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/trip-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Trip details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
                       </ul>
@@ -2303,31 +2303,31 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../stock/stock-details.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/stock-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Stock details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/portfolio.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/portfolio') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Portfolio</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/watchlist.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/watchlist') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Watchlist</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../chat.html">
+                <li><a class="dropdown-item" href="{{ url('chat') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="message-square"></span>Chat</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="email" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="mail"></span>Email</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../email/inbox.html">
+                    <li><a class="dropdown-item" href="{{ url('email/inbox') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Inbox</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/email-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('email/email-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Email detail</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/compose.html">
+                    <li><a class="dropdown-item" href="{{ url('email/compose') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Compose</div>
                       </a></li>
                   </ul>
@@ -2336,10 +2336,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="bookmark"></span>Events</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../events/create-an-event.html">
+                    <li><a class="dropdown-item" href="{{ url('events/create-an-event') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create an event</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../events/event-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('events/event-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Event detail</div>
                       </a></li>
                   </ul>
@@ -2348,28 +2348,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="trello"></span>Kanban</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../kanban/kanban.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/kanban') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Kanban</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/boards.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/boards') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Boards</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/create-kanban-board.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/create-kanban-board') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create board</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../gantt-chart.html">
+                <li><a class="dropdown-item" href="{{ url('gantt-chart') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-solid fa-chart-gantt "></span>Gantt chart</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="social" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="share-2"></span>Social</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../social/profile.html">
+                    <li><a class="dropdown-item" href="{{ url('social/profile') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../social/settings.html">
+                    <li><a class="dropdown-item" href="{{ url('social/settings') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Settings</div>
                       </a></li>
                   </ul>
@@ -2378,22 +2378,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="image"></span>Gallery</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../gallery/album.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/album') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Album</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-column.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery grid</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/grid-with-title.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/grid-with-title') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid with title</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-masonry.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-masonry') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery masonry</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-slider.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-slider') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery slider</div>
                       </a></li>
                   </ul>
@@ -2402,32 +2402,32 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="folder"></span>File manager</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../file-manager/grid-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/grid-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../file-manager/list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>List view</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../calendar.html">
+                <li><a class="dropdown-item" href="{{ url('calendar') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="calendar"></span>Calendar</div>
                   </a></li>
               </ul>
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-files-landscapes-alt"></span>Pages</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../pages/starter.html">
+                <li><a class="dropdown-item" href="{{ url('pages/starter') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="compass"></span>Starter</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="faq" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="help-circle"></span>Faq</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-accordion.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-accordion') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq accordion</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-tab.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-tab') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq tab</div>
                       </a></li>
                   </ul>
@@ -2436,10 +2436,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="globe"></span>Landing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/landing/default.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/default') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Default</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/landing/alternate.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/alternate') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Alternate</div>
                       </a></li>
                   </ul>
@@ -2448,34 +2448,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="tag"></span>Pricing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-column.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing grid</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../pages/notifications.html">
+                <li><a class="dropdown-item" href="{{ url('pages/notifications') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bell"></span>Notifications</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/members.html">
+                <li><a class="dropdown-item" href="{{ url('pages/members') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="users"></span>Members</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/timeline.html">
+                <li><a class="dropdown-item" href="{{ url('pages/timeline') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clock"></span>Timeline</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="errors" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="alert-triangle"></span>Errors</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/errors/404.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/404') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>404</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/403.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/403') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>403</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/500.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/500') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>500</div>
                       </a></li>
                   </ul>
@@ -2488,25 +2488,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Simple</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -2515,25 +2515,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Split</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -2542,25 +2542,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Card</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -2571,34 +2571,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="layout"></span>Layouts</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../demo/vertical-sidenav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/vertical-sidenav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical sidenav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/sidenav-collapse.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/sidenav-collapse') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sidenav collapse</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/darknav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/darknav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Darknav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/topnav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/topnav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Topnav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/navbar-horizontal.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/navbar-horizontal') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Navbar horizontal</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/horizontal-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/horizontal-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
@@ -2613,26 +2613,26 @@
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="file-text" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Forms</h6>
-                        </div><a class="dropdown-link" href="../../../modules/forms/basic/form-control.html">Form control</a><a class="dropdown-link" href="../../../modules/forms/basic/input-group.html">Input group</a><a class="dropdown-link" href="../../../modules/forms/basic/select.html">Select</a><a class="dropdown-link" href="../../../modules/forms/basic/checks.html">Checks</a><a class="dropdown-link" href="../../../modules/forms/basic/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/basic/floating-labels.html">Floating labels</a><a class="dropdown-link" href="../../../modules/forms/basic/layout.html">Layout</a><a class="dropdown-link" href="../../../modules/forms/advance/advance-select.html">Advance select</a><a class="dropdown-link" href="../../../modules/forms/advance/date-picker.html">Date picker</a><a class="dropdown-link" href="../../../modules/forms/advance/editor.html">Editor</a><a class="dropdown-link" href="../../../modules/forms/advance/file-uploader.html">File uploader</a><a class="dropdown-link" href="../../../modules/forms/advance/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/advance/rating.html">Rating</a><a class="dropdown-link" href="../../../modules/forms/advance/emoji-button.html">Emoji button</a><a class="dropdown-link" href="../../../modules/forms/validation.html">Validation</a><a class="dropdown-link" href="../../../modules/forms/wizard.html">Wizard</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/forms/basic/form-control') }}">Form control</a><a class="dropdown-link" href="{{ url('modules/forms/basic/input-group') }}">Input group</a><a class="dropdown-link" href="{{ url('modules/forms/basic/select') }}">Select</a><a class="dropdown-link" href="{{ url('modules/forms/basic/checks') }}">Checks</a><a class="dropdown-link" href="{{ url('modules/forms/basic/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/basic/floating-labels') }}">Floating labels</a><a class="dropdown-link" href="{{ url('modules/forms/basic/layout') }}">Layout</a><a class="dropdown-link" href="{{ url('modules/forms/advance/advance-select') }}">Advance select</a><a class="dropdown-link" href="{{ url('modules/forms/advance/date-picker') }}">Date picker</a><a class="dropdown-link" href="{{ url('modules/forms/advance/editor') }}">Editor</a><a class="dropdown-link" href="{{ url('modules/forms/advance/file-uploader') }}">File uploader</a><a class="dropdown-link" href="{{ url('modules/forms/advance/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/advance/rating') }}">Rating</a><a class="dropdown-link" href="{{ url('modules/forms/advance/emoji-button') }}">Emoji button</a><a class="dropdown-link" href="{{ url('modules/forms/validation') }}">Validation</a><a class="dropdown-link" href="{{ url('modules/forms/wizard') }}">Wizard</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="grid" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Icons</h6>
-                        </div><a class="dropdown-link" href="../../../modules/icons/feather.html">Feather</a><a class="dropdown-link" href="../../../modules/icons/font-awesome.html">Font awesome</a><a class="dropdown-link" href="../../../modules/icons/unicons.html">Unicons</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/icons/feather') }}">Feather</a><a class="dropdown-link" href="{{ url('modules/icons/font-awesome') }}">Font awesome</a><a class="dropdown-link" href="{{ url('modules/icons/unicons') }}">Unicons</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="bar-chart-2" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">ECharts</h6>
-                        </div><a class="dropdown-link" href="../../../modules/echarts/line-charts.html">Line charts</a><a class="dropdown-link" href="../../../modules/echarts/bar-charts.html">Bar charts</a><a class="dropdown-link" href="../../../modules/echarts/candlestick-charts.html">Candlestick charts</a><a class="dropdown-link" href="../../../modules/echarts/geo-map.html">Geo map</a><a class="dropdown-link" href="../../../modules/echarts/scatter-charts.html">Scatter charts</a><a class="dropdown-link" href="../../../modules/echarts/pie-charts.html">Pie charts</a><a class="dropdown-link" href="../../../modules/echarts/gauge-chart.html">Gauge chart</a><a class="dropdown-link" href="../../../modules/echarts/radar-charts.html">Radar charts</a><a class="dropdown-link" href="../../../modules/echarts/heatmap-charts.html">Heatmap charts</a><a class="dropdown-link" href="../../../modules/echarts/how-to-use.html">How to use</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/echarts/line-charts') }}">Line charts</a><a class="dropdown-link" href="{{ url('modules/echarts/bar-charts') }}">Bar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/candlestick-charts') }}">Candlestick charts</a><a class="dropdown-link" href="{{ url('modules/echarts/geo-map') }}">Geo map</a><a class="dropdown-link" href="{{ url('modules/echarts/scatter-charts') }}">Scatter charts</a><a class="dropdown-link" href="{{ url('modules/echarts/pie-charts') }}">Pie charts</a><a class="dropdown-link" href="{{ url('modules/echarts/gauge-chart') }}">Gauge chart</a><a class="dropdown-link" href="{{ url('modules/echarts/radar-charts') }}">Radar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/heatmap-charts') }}">Heatmap charts</a><a class="dropdown-link" href="{{ url('modules/echarts/how-to-use') }}">How to use</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="package" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Components</h6>
-                        </div><a class="dropdown-link" href="../../../modules/components/accordion.html">Accordion</a><a class="dropdown-link" href="../../../modules/components/avatar.html">Avatar</a><a class="dropdown-link" href="../../../modules/components/alerts.html">Alerts</a><a class="dropdown-link" href="../../../modules/components/badge.html">Badge</a><a class="dropdown-link" href="../../../modules/components/breadcrumb.html">Breadcrumb</a><a class="dropdown-link" href="../../../modules/components/button.html">Buttons</a><a class="dropdown-link" href="../../../modules/components/calendar.html">Calendar</a><a class="dropdown-link" href="../../../modules/components/card.html">Card</a><a class="dropdown-link" href="../../../modules/components/carousel/bootstrap.html">Bootstrap</a><a class="dropdown-link" href="../../../modules/components/carousel/swiper.html">Swiper</a><a class="dropdown-link" href="../../../modules/components/collapse.html">Collapse</a><a class="dropdown-link" href="../../../modules/components/dropdown.html">Dropdown</a><a class="dropdown-link" href="../../../modules/components/dhtmlx-gantt.html">Dhtmlx gantt</a><a class="dropdown-link" href="../../../modules/components/list-group.html">List group</a><a class="dropdown-link" href="../../../modules/components/modal.html">Modals</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navs.html">Navs</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navbar.html">Navbar</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/tabs.html">Tabs</a><a class="dropdown-link" href="../../../modules/components/offcanvas.html">Offcanvas</a><a class="dropdown-link" href="../../../modules/components/progress-bar.html">Progress bar</a><a class="dropdown-link" href="../../../modules/components/placeholder.html">Placeholder</a><a class="dropdown-link" href="../../../modules/components/pagination.html">Pagination</a><a class="dropdown-link" href="../../../modules/components/popovers.html">Popovers</a><a class="dropdown-link" href="../../../modules/components/scrollspy.html">Scrollspy</a><a class="dropdown-link" href="../../../modules/components/sortable.html">Sortable</a><a class="dropdown-link" href="../../../modules/components/spinners.html">Spinners</a><a class="dropdown-link" href="../../../modules/components/toast.html">Toast</a><a class="dropdown-link" href="../../../modules/components/tooltips.html">Tooltips</a><a class="dropdown-link" href="../../../modules/components/typed-text.html">Typed text</a><a class="dropdown-link" href="../../../modules/components/chat-widget.html">Chat widget</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/components/accordion') }}">Accordion</a><a class="dropdown-link" href="{{ url('modules/components/avatar') }}">Avatar</a><a class="dropdown-link" href="{{ url('modules/components/alerts') }}">Alerts</a><a class="dropdown-link" href="{{ url('modules/components/badge') }}">Badge</a><a class="dropdown-link" href="{{ url('modules/components/breadcrumb') }}">Breadcrumb</a><a class="dropdown-link" href="{{ url('modules/components/button') }}">Buttons</a><a class="dropdown-link" href="{{ url('modules/components/calendar') }}">Calendar</a><a class="dropdown-link" href="{{ url('modules/components/card') }}">Card</a><a class="dropdown-link" href="{{ url('modules/components/carousel/bootstrap') }}">Bootstrap</a><a class="dropdown-link" href="{{ url('modules/components/carousel/swiper') }}">Swiper</a><a class="dropdown-link" href="{{ url('modules/components/collapse') }}">Collapse</a><a class="dropdown-link" href="{{ url('modules/components/dropdown') }}">Dropdown</a><a class="dropdown-link" href="{{ url('modules/components/dhtmlx-gantt') }}">Dhtmlx gantt</a><a class="dropdown-link" href="{{ url('modules/components/list-group') }}">List group</a><a class="dropdown-link" href="{{ url('modules/components/modal') }}">Modals</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">Navs</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">Navbar</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">Tabs</a><a class="dropdown-link" href="{{ url('modules/components/offcanvas') }}">Offcanvas</a><a class="dropdown-link" href="{{ url('modules/components/progress-bar') }}">Progress bar</a><a class="dropdown-link" href="{{ url('modules/components/placeholder') }}">Placeholder</a><a class="dropdown-link" href="{{ url('modules/components/pagination') }}">Pagination</a><a class="dropdown-link" href="{{ url('modules/components/popovers') }}">Popovers</a><a class="dropdown-link" href="{{ url('modules/components/scrollspy') }}">Scrollspy</a><a class="dropdown-link" href="{{ url('modules/components/sortable') }}">Sortable</a><a class="dropdown-link" href="{{ url('modules/components/spinners') }}">Spinners</a><a class="dropdown-link" href="{{ url('modules/components/toast') }}">Toast</a><a class="dropdown-link" href="{{ url('modules/components/tooltips') }}">Tooltips</a><a class="dropdown-link" href="{{ url('modules/components/typed-text') }}">Typed text</a><a class="dropdown-link" href="{{ url('modules/components/chat-widget') }}">Chat widget</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="columns" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Tables</h6>
-                        </div><a class="dropdown-link" href="../../../modules/tables/basic-tables.html">Basic tables</a><a class="dropdown-link" href="../../../modules/tables/advance-tables.html">Advance tables</a><a class="dropdown-link" href="../../../modules/tables/bulk-select.html">Bulk Select</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/tables/basic-tables') }}">Basic tables</a><a class="dropdown-link" href="{{ url('modules/tables/advance-tables') }}">Advance tables</a><a class="dropdown-link" href="{{ url('modules/tables/bulk-select') }}">Bulk Select</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="tool" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Utilities</h6>
-                        </div><a class="dropdown-link" href="../../../modules/utilities/background.html">Background</a><a class="dropdown-link" href="../../../modules/utilities/borders.html">Borders</a><a class="dropdown-link" href="../../../modules/utilities/colors.html">Colors</a><a class="dropdown-link" href="../../../modules/utilities/display.html">Display</a><a class="dropdown-link" href="../../../modules/utilities/flex.html">Flex</a><a class="dropdown-link" href="../../../modules/utilities/stacks.html">Stacks</a><a class="dropdown-link" href="../../../modules/utilities/float.html">Float</a><a class="dropdown-link" href="../../../modules/utilities/grid.html">Grid</a><a class="dropdown-link" href="../../../modules/utilities/interactions.html">Interactions</a><a class="dropdown-link" href="../../../modules/utilities/opacity.html">Opacity</a><a class="dropdown-link" href="../../../modules/utilities/overflow.html">Overflow</a><a class="dropdown-link" href="../../../modules/utilities/position.html">Position</a><a class="dropdown-link" href="../../../modules/utilities/shadows.html">Shadows</a><a class="dropdown-link" href="../../../modules/utilities/sizing.html">Sizing</a><a class="dropdown-link" href="../../../modules/utilities/spacing.html">Spacing</a><a class="dropdown-link" href="../../../modules/utilities/typography.html">Typography</a><a class="dropdown-link" href="../../../modules/utilities/vertical-align.html">Vertical align</a><a class="dropdown-link" href="../../../modules/utilities/visibility.html">Visibility</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/utilities/background') }}">Background</a><a class="dropdown-link" href="{{ url('modules/utilities/borders') }}">Borders</a><a class="dropdown-link" href="{{ url('modules/utilities/colors') }}">Colors</a><a class="dropdown-link" href="{{ url('modules/utilities/display') }}">Display</a><a class="dropdown-link" href="{{ url('modules/utilities/flex') }}">Flex</a><a class="dropdown-link" href="{{ url('modules/utilities/stacks') }}">Stacks</a><a class="dropdown-link" href="{{ url('modules/utilities/float') }}">Float</a><a class="dropdown-link" href="{{ url('modules/utilities/grid') }}">Grid</a><a class="dropdown-link" href="{{ url('modules/utilities/interactions') }}">Interactions</a><a class="dropdown-link" href="{{ url('modules/utilities/opacity') }}">Opacity</a><a class="dropdown-link" href="{{ url('modules/utilities/overflow') }}">Overflow</a><a class="dropdown-link" href="{{ url('modules/utilities/position') }}">Position</a><a class="dropdown-link" href="{{ url('modules/utilities/shadows') }}">Shadows</a><a class="dropdown-link" href="{{ url('modules/utilities/sizing') }}">Sizing</a><a class="dropdown-link" href="{{ url('modules/utilities/spacing') }}">Spacing</a><a class="dropdown-link" href="{{ url('modules/utilities/typography') }}">Typography</a><a class="dropdown-link" href="{{ url('modules/utilities/vertical-align') }}">Vertical align</a><a class="dropdown-link" href="{{ url('modules/utilities/visibility') }}">Visibility</a>
                       </div>
                     </div>
                   </div>
@@ -2641,26 +2641,26 @@
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-document-layout-right"></span>Documentation</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../documentation/getting-started.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/getting-started') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="life-buoy"></span>Getting started</div>
                   </a></li>
                 <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle" id="customization" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="settings"></span>Customization</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/customization/configuration.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/configuration') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Configuration</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/styling.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/styling') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/color.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/color') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Color</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/plugin.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/plugin') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin</div>
                       </a></li>
                   </ul>
@@ -2669,30 +2669,30 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="table"></span>Layouts doc</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/vertical-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/vertical-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/horizontal-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/combo-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/combo-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../documentation/gulp.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/gulp') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../documentation/design-file.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/design-file') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="figma"></span>Design file</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../changelog.html">
+                <li><a class="dropdown-item" href="{{ url('changelog') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="git-merge"></span>Changelog</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../showcase.html">
+                <li><a class="dropdown-item" href="{{ url('showcase') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="monitor"></span>Showcase</div>
                   </a></li>
               </ul>
@@ -2718,7 +2718,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -2750,7 +2750,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -2765,7 +2765,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -2780,7 +2780,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -2795,7 +2795,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -2810,7 +2810,7 @@
                   </div>
                 </div>
                 <div class="card-footer p-0 border-top border-translucent border-0">
-                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                 </div>
               </div>
             </div>
@@ -2831,46 +2831,46 @@
               <div class="card bg-body-emphasis position-relative border-0">
                 <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                   <div class="row text-center align-items-center gx-0 gy-0">
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                       </a></div>
                   </div>
@@ -2880,7 +2880,7 @@
           </li>
           <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
               <div class="avatar avatar-l ">
-                <img class="rounded-circle " src="../../../assets/img/team/40x40/57.webp" alt="">
+                <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/57.webp') }}" alt="">
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border" aria-labelledby="navbarDropdownUser">
@@ -2888,7 +2888,7 @@
                 <div class="card-body p-0">
                   <div class="text-center pt-4 pb-3">
                     <div class="avatar avatar-xl ">
-                      <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                      <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                     </div>
                     <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                   </div>
@@ -2920,28 +2920,28 @@
       <nav class="navbar navbar-top navbar-slim justify-content-between fixed-top navbar-expand-lg" id="navbarTopSlim" style="display:none;">
         <div class="navbar-logo">
           <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-          <a class="navbar-brand navbar-brand" href="../../../index.html">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
+          <a class="navbar-brand navbar-brand" href="{{ url('dashboard') }}">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-top-collapse order-1 order-lg-0 justify-content-center" id="navbarTopCollapse">
           <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover">
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-chart-pie"></span>Home</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../index.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/project-management.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/project-management') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Project management</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/crm.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/crm') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="phone"></span>CRM</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/travel-agency.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/travel-agency') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/stock.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/stock') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../social/feed.html">
+                <li><a class="dropdown-item" href="{{ url('social/feed') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="share-2"></span>Social feed</div>
                   </a></li>
               </ul>
@@ -2956,25 +2956,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="add-product.html">
+                        <li><a class="dropdown-item active" href="{{ url('add-product') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="products.html">
+                        <li><a class="dropdown-item" href="{{ url('products') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customers.html">
+                        <li><a class="dropdown-item" href="{{ url('customers') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customer-details.html">
+                        <li><a class="dropdown-item" href="{{ url('customer-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="orders.html">
+                        <li><a class="dropdown-item" href="{{ url('orders') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="order-details.html">
+                        <li><a class="dropdown-item" href="{{ url('order-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="refund.html">
+                        <li><a class="dropdown-item" href="{{ url('refund') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
                           </a></li>
                       </ul>
@@ -2983,37 +2983,37 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../landing/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/product-details.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Product details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/products-filter.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/products-filter') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products filter</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/cart.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/cart') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Cart</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/shipping-info.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/shipping-info') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Shipping info</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/profile.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/profile') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/favourite-stores.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/favourite-stores') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Favourite stores</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/wishlist.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/wishlist') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Wishlist</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/order-tracking.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/order-tracking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order tracking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/invoice.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/invoice') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Invoice</div>
                           </a></li>
                       </ul>
@@ -3024,28 +3024,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="phone"></span>CRM</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../crm/analytics.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/analytics') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Analytics</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deals.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deals') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deals</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deal-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deal-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deal details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/leads.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/leads') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Leads</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/lead-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/lead-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lead details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/reports.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/reports') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reports</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/report-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/report-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Report details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/add-contact.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/add-contact') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add contact</div>
                       </a></li>
                   </ul>
@@ -3054,22 +3054,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="clipboard"></span>Project management</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../project-management/create-new.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/create-new') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create new</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project list view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-card-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-card-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project card view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-board-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-board-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project board view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/todo-list.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/todo-list') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Todo list</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-details.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project details</div>
                       </a></li>
                   </ul>
@@ -3078,7 +3078,7 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../travel-agency/landing.html">
+                    <li><a class="dropdown-item" href="{{ url('travel-agency/landing') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Landing</div>
                       </a></li>
                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="hotel" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -3089,16 +3089,16 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-property.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add property</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-room.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add room</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-listing.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Room listing</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-search.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Search room</div>
                               </a></li>
                           </ul>
@@ -3107,22 +3107,22 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/homepage.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-details.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel details</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel compare</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/checkout.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/payment.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/gallery.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery</div>
                               </a></li>
                           </ul>
@@ -3133,13 +3133,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Flight</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/booking.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/booking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Booking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/payment.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/payment') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                           </a></li>
                       </ul>
@@ -3148,13 +3148,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Trip</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/trip-details.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/trip-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Trip details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
                       </ul>
@@ -3165,31 +3165,31 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../stock/stock-details.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/stock-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Stock details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/portfolio.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/portfolio') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Portfolio</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/watchlist.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/watchlist') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Watchlist</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../chat.html">
+                <li><a class="dropdown-item" href="{{ url('chat') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="message-square"></span>Chat</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="email" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="mail"></span>Email</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../email/inbox.html">
+                    <li><a class="dropdown-item" href="{{ url('email/inbox') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Inbox</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/email-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('email/email-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Email detail</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/compose.html">
+                    <li><a class="dropdown-item" href="{{ url('email/compose') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Compose</div>
                       </a></li>
                   </ul>
@@ -3198,10 +3198,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="bookmark"></span>Events</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../events/create-an-event.html">
+                    <li><a class="dropdown-item" href="{{ url('events/create-an-event') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create an event</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../events/event-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('events/event-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Event detail</div>
                       </a></li>
                   </ul>
@@ -3210,28 +3210,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="trello"></span>Kanban</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../kanban/kanban.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/kanban') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Kanban</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/boards.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/boards') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Boards</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/create-kanban-board.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/create-kanban-board') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create board</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../gantt-chart.html">
+                <li><a class="dropdown-item" href="{{ url('gantt-chart') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-solid fa-chart-gantt "></span>Gantt chart</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="social" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="share-2"></span>Social</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../social/profile.html">
+                    <li><a class="dropdown-item" href="{{ url('social/profile') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../social/settings.html">
+                    <li><a class="dropdown-item" href="{{ url('social/settings') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Settings</div>
                       </a></li>
                   </ul>
@@ -3240,22 +3240,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="image"></span>Gallery</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../gallery/album.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/album') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Album</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-column.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery grid</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/grid-with-title.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/grid-with-title') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid with title</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-masonry.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-masonry') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery masonry</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-slider.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-slider') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery slider</div>
                       </a></li>
                   </ul>
@@ -3264,32 +3264,32 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="folder"></span>File manager</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../file-manager/grid-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/grid-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../file-manager/list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>List view</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../calendar.html">
+                <li><a class="dropdown-item" href="{{ url('calendar') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="calendar"></span>Calendar</div>
                   </a></li>
               </ul>
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-files-landscapes-alt"></span>Pages</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../pages/starter.html">
+                <li><a class="dropdown-item" href="{{ url('pages/starter') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="compass"></span>Starter</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="faq" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="help-circle"></span>Faq</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-accordion.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-accordion') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq accordion</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-tab.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-tab') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq tab</div>
                       </a></li>
                   </ul>
@@ -3298,10 +3298,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="globe"></span>Landing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/landing/default.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/default') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Default</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/landing/alternate.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/alternate') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Alternate</div>
                       </a></li>
                   </ul>
@@ -3310,34 +3310,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="tag"></span>Pricing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-column.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing grid</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../pages/notifications.html">
+                <li><a class="dropdown-item" href="{{ url('pages/notifications') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bell"></span>Notifications</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/members.html">
+                <li><a class="dropdown-item" href="{{ url('pages/members') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="users"></span>Members</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/timeline.html">
+                <li><a class="dropdown-item" href="{{ url('pages/timeline') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clock"></span>Timeline</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="errors" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="alert-triangle"></span>Errors</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/errors/404.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/404') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>404</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/403.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/403') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>403</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/500.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/500') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>500</div>
                       </a></li>
                   </ul>
@@ -3350,25 +3350,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Simple</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -3377,25 +3377,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Split</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -3404,25 +3404,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Card</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -3433,34 +3433,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="layout"></span>Layouts</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../demo/vertical-sidenav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/vertical-sidenav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical sidenav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/sidenav-collapse.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/sidenav-collapse') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sidenav collapse</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/darknav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/darknav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Darknav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/topnav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/topnav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Topnav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/navbar-horizontal.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/navbar-horizontal') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Navbar horizontal</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/horizontal-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/horizontal-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
@@ -3475,26 +3475,26 @@
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="file-text" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Forms</h6>
-                        </div><a class="dropdown-link" href="../../../modules/forms/basic/form-control.html">Form control</a><a class="dropdown-link" href="../../../modules/forms/basic/input-group.html">Input group</a><a class="dropdown-link" href="../../../modules/forms/basic/select.html">Select</a><a class="dropdown-link" href="../../../modules/forms/basic/checks.html">Checks</a><a class="dropdown-link" href="../../../modules/forms/basic/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/basic/floating-labels.html">Floating labels</a><a class="dropdown-link" href="../../../modules/forms/basic/layout.html">Layout</a><a class="dropdown-link" href="../../../modules/forms/advance/advance-select.html">Advance select</a><a class="dropdown-link" href="../../../modules/forms/advance/date-picker.html">Date picker</a><a class="dropdown-link" href="../../../modules/forms/advance/editor.html">Editor</a><a class="dropdown-link" href="../../../modules/forms/advance/file-uploader.html">File uploader</a><a class="dropdown-link" href="../../../modules/forms/advance/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/advance/rating.html">Rating</a><a class="dropdown-link" href="../../../modules/forms/advance/emoji-button.html">Emoji button</a><a class="dropdown-link" href="../../../modules/forms/validation.html">Validation</a><a class="dropdown-link" href="../../../modules/forms/wizard.html">Wizard</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/forms/basic/form-control') }}">Form control</a><a class="dropdown-link" href="{{ url('modules/forms/basic/input-group') }}">Input group</a><a class="dropdown-link" href="{{ url('modules/forms/basic/select') }}">Select</a><a class="dropdown-link" href="{{ url('modules/forms/basic/checks') }}">Checks</a><a class="dropdown-link" href="{{ url('modules/forms/basic/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/basic/floating-labels') }}">Floating labels</a><a class="dropdown-link" href="{{ url('modules/forms/basic/layout') }}">Layout</a><a class="dropdown-link" href="{{ url('modules/forms/advance/advance-select') }}">Advance select</a><a class="dropdown-link" href="{{ url('modules/forms/advance/date-picker') }}">Date picker</a><a class="dropdown-link" href="{{ url('modules/forms/advance/editor') }}">Editor</a><a class="dropdown-link" href="{{ url('modules/forms/advance/file-uploader') }}">File uploader</a><a class="dropdown-link" href="{{ url('modules/forms/advance/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/advance/rating') }}">Rating</a><a class="dropdown-link" href="{{ url('modules/forms/advance/emoji-button') }}">Emoji button</a><a class="dropdown-link" href="{{ url('modules/forms/validation') }}">Validation</a><a class="dropdown-link" href="{{ url('modules/forms/wizard') }}">Wizard</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="grid" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Icons</h6>
-                        </div><a class="dropdown-link" href="../../../modules/icons/feather.html">Feather</a><a class="dropdown-link" href="../../../modules/icons/font-awesome.html">Font awesome</a><a class="dropdown-link" href="../../../modules/icons/unicons.html">Unicons</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/icons/feather') }}">Feather</a><a class="dropdown-link" href="{{ url('modules/icons/font-awesome') }}">Font awesome</a><a class="dropdown-link" href="{{ url('modules/icons/unicons') }}">Unicons</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="bar-chart-2" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">ECharts</h6>
-                        </div><a class="dropdown-link" href="../../../modules/echarts/line-charts.html">Line charts</a><a class="dropdown-link" href="../../../modules/echarts/bar-charts.html">Bar charts</a><a class="dropdown-link" href="../../../modules/echarts/candlestick-charts.html">Candlestick charts</a><a class="dropdown-link" href="../../../modules/echarts/geo-map.html">Geo map</a><a class="dropdown-link" href="../../../modules/echarts/scatter-charts.html">Scatter charts</a><a class="dropdown-link" href="../../../modules/echarts/pie-charts.html">Pie charts</a><a class="dropdown-link" href="../../../modules/echarts/gauge-chart.html">Gauge chart</a><a class="dropdown-link" href="../../../modules/echarts/radar-charts.html">Radar charts</a><a class="dropdown-link" href="../../../modules/echarts/heatmap-charts.html">Heatmap charts</a><a class="dropdown-link" href="../../../modules/echarts/how-to-use.html">How to use</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/echarts/line-charts') }}">Line charts</a><a class="dropdown-link" href="{{ url('modules/echarts/bar-charts') }}">Bar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/candlestick-charts') }}">Candlestick charts</a><a class="dropdown-link" href="{{ url('modules/echarts/geo-map') }}">Geo map</a><a class="dropdown-link" href="{{ url('modules/echarts/scatter-charts') }}">Scatter charts</a><a class="dropdown-link" href="{{ url('modules/echarts/pie-charts') }}">Pie charts</a><a class="dropdown-link" href="{{ url('modules/echarts/gauge-chart') }}">Gauge chart</a><a class="dropdown-link" href="{{ url('modules/echarts/radar-charts') }}">Radar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/heatmap-charts') }}">Heatmap charts</a><a class="dropdown-link" href="{{ url('modules/echarts/how-to-use') }}">How to use</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="package" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Components</h6>
-                        </div><a class="dropdown-link" href="../../../modules/components/accordion.html">Accordion</a><a class="dropdown-link" href="../../../modules/components/avatar.html">Avatar</a><a class="dropdown-link" href="../../../modules/components/alerts.html">Alerts</a><a class="dropdown-link" href="../../../modules/components/badge.html">Badge</a><a class="dropdown-link" href="../../../modules/components/breadcrumb.html">Breadcrumb</a><a class="dropdown-link" href="../../../modules/components/button.html">Buttons</a><a class="dropdown-link" href="../../../modules/components/calendar.html">Calendar</a><a class="dropdown-link" href="../../../modules/components/card.html">Card</a><a class="dropdown-link" href="../../../modules/components/carousel/bootstrap.html">Bootstrap</a><a class="dropdown-link" href="../../../modules/components/carousel/swiper.html">Swiper</a><a class="dropdown-link" href="../../../modules/components/collapse.html">Collapse</a><a class="dropdown-link" href="../../../modules/components/dropdown.html">Dropdown</a><a class="dropdown-link" href="../../../modules/components/dhtmlx-gantt.html">Dhtmlx gantt</a><a class="dropdown-link" href="../../../modules/components/list-group.html">List group</a><a class="dropdown-link" href="../../../modules/components/modal.html">Modals</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navs.html">Navs</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navbar.html">Navbar</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/tabs.html">Tabs</a><a class="dropdown-link" href="../../../modules/components/offcanvas.html">Offcanvas</a><a class="dropdown-link" href="../../../modules/components/progress-bar.html">Progress bar</a><a class="dropdown-link" href="../../../modules/components/placeholder.html">Placeholder</a><a class="dropdown-link" href="../../../modules/components/pagination.html">Pagination</a><a class="dropdown-link" href="../../../modules/components/popovers.html">Popovers</a><a class="dropdown-link" href="../../../modules/components/scrollspy.html">Scrollspy</a><a class="dropdown-link" href="../../../modules/components/sortable.html">Sortable</a><a class="dropdown-link" href="../../../modules/components/spinners.html">Spinners</a><a class="dropdown-link" href="../../../modules/components/toast.html">Toast</a><a class="dropdown-link" href="../../../modules/components/tooltips.html">Tooltips</a><a class="dropdown-link" href="../../../modules/components/typed-text.html">Typed text</a><a class="dropdown-link" href="../../../modules/components/chat-widget.html">Chat widget</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/components/accordion') }}">Accordion</a><a class="dropdown-link" href="{{ url('modules/components/avatar') }}">Avatar</a><a class="dropdown-link" href="{{ url('modules/components/alerts') }}">Alerts</a><a class="dropdown-link" href="{{ url('modules/components/badge') }}">Badge</a><a class="dropdown-link" href="{{ url('modules/components/breadcrumb') }}">Breadcrumb</a><a class="dropdown-link" href="{{ url('modules/components/button') }}">Buttons</a><a class="dropdown-link" href="{{ url('modules/components/calendar') }}">Calendar</a><a class="dropdown-link" href="{{ url('modules/components/card') }}">Card</a><a class="dropdown-link" href="{{ url('modules/components/carousel/bootstrap') }}">Bootstrap</a><a class="dropdown-link" href="{{ url('modules/components/carousel/swiper') }}">Swiper</a><a class="dropdown-link" href="{{ url('modules/components/collapse') }}">Collapse</a><a class="dropdown-link" href="{{ url('modules/components/dropdown') }}">Dropdown</a><a class="dropdown-link" href="{{ url('modules/components/dhtmlx-gantt') }}">Dhtmlx gantt</a><a class="dropdown-link" href="{{ url('modules/components/list-group') }}">List group</a><a class="dropdown-link" href="{{ url('modules/components/modal') }}">Modals</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">Navs</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">Navbar</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">Tabs</a><a class="dropdown-link" href="{{ url('modules/components/offcanvas') }}">Offcanvas</a><a class="dropdown-link" href="{{ url('modules/components/progress-bar') }}">Progress bar</a><a class="dropdown-link" href="{{ url('modules/components/placeholder') }}">Placeholder</a><a class="dropdown-link" href="{{ url('modules/components/pagination') }}">Pagination</a><a class="dropdown-link" href="{{ url('modules/components/popovers') }}">Popovers</a><a class="dropdown-link" href="{{ url('modules/components/scrollspy') }}">Scrollspy</a><a class="dropdown-link" href="{{ url('modules/components/sortable') }}">Sortable</a><a class="dropdown-link" href="{{ url('modules/components/spinners') }}">Spinners</a><a class="dropdown-link" href="{{ url('modules/components/toast') }}">Toast</a><a class="dropdown-link" href="{{ url('modules/components/tooltips') }}">Tooltips</a><a class="dropdown-link" href="{{ url('modules/components/typed-text') }}">Typed text</a><a class="dropdown-link" href="{{ url('modules/components/chat-widget') }}">Chat widget</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="columns" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Tables</h6>
-                        </div><a class="dropdown-link" href="../../../modules/tables/basic-tables.html">Basic tables</a><a class="dropdown-link" href="../../../modules/tables/advance-tables.html">Advance tables</a><a class="dropdown-link" href="../../../modules/tables/bulk-select.html">Bulk Select</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/tables/basic-tables') }}">Basic tables</a><a class="dropdown-link" href="{{ url('modules/tables/advance-tables') }}">Advance tables</a><a class="dropdown-link" href="{{ url('modules/tables/bulk-select') }}">Bulk Select</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="tool" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Utilities</h6>
-                        </div><a class="dropdown-link" href="../../../modules/utilities/background.html">Background</a><a class="dropdown-link" href="../../../modules/utilities/borders.html">Borders</a><a class="dropdown-link" href="../../../modules/utilities/colors.html">Colors</a><a class="dropdown-link" href="../../../modules/utilities/display.html">Display</a><a class="dropdown-link" href="../../../modules/utilities/flex.html">Flex</a><a class="dropdown-link" href="../../../modules/utilities/stacks.html">Stacks</a><a class="dropdown-link" href="../../../modules/utilities/float.html">Float</a><a class="dropdown-link" href="../../../modules/utilities/grid.html">Grid</a><a class="dropdown-link" href="../../../modules/utilities/interactions.html">Interactions</a><a class="dropdown-link" href="../../../modules/utilities/opacity.html">Opacity</a><a class="dropdown-link" href="../../../modules/utilities/overflow.html">Overflow</a><a class="dropdown-link" href="../../../modules/utilities/position.html">Position</a><a class="dropdown-link" href="../../../modules/utilities/shadows.html">Shadows</a><a class="dropdown-link" href="../../../modules/utilities/sizing.html">Sizing</a><a class="dropdown-link" href="../../../modules/utilities/spacing.html">Spacing</a><a class="dropdown-link" href="../../../modules/utilities/typography.html">Typography</a><a class="dropdown-link" href="../../../modules/utilities/vertical-align.html">Vertical align</a><a class="dropdown-link" href="../../../modules/utilities/visibility.html">Visibility</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/utilities/background') }}">Background</a><a class="dropdown-link" href="{{ url('modules/utilities/borders') }}">Borders</a><a class="dropdown-link" href="{{ url('modules/utilities/colors') }}">Colors</a><a class="dropdown-link" href="{{ url('modules/utilities/display') }}">Display</a><a class="dropdown-link" href="{{ url('modules/utilities/flex') }}">Flex</a><a class="dropdown-link" href="{{ url('modules/utilities/stacks') }}">Stacks</a><a class="dropdown-link" href="{{ url('modules/utilities/float') }}">Float</a><a class="dropdown-link" href="{{ url('modules/utilities/grid') }}">Grid</a><a class="dropdown-link" href="{{ url('modules/utilities/interactions') }}">Interactions</a><a class="dropdown-link" href="{{ url('modules/utilities/opacity') }}">Opacity</a><a class="dropdown-link" href="{{ url('modules/utilities/overflow') }}">Overflow</a><a class="dropdown-link" href="{{ url('modules/utilities/position') }}">Position</a><a class="dropdown-link" href="{{ url('modules/utilities/shadows') }}">Shadows</a><a class="dropdown-link" href="{{ url('modules/utilities/sizing') }}">Sizing</a><a class="dropdown-link" href="{{ url('modules/utilities/spacing') }}">Spacing</a><a class="dropdown-link" href="{{ url('modules/utilities/typography') }}">Typography</a><a class="dropdown-link" href="{{ url('modules/utilities/vertical-align') }}">Vertical align</a><a class="dropdown-link" href="{{ url('modules/utilities/visibility') }}">Visibility</a>
                       </div>
                     </div>
                   </div>
@@ -3503,26 +3503,26 @@
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-document-layout-right"></span>Documentation</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../documentation/getting-started.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/getting-started') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="life-buoy"></span>Getting started</div>
                   </a></li>
                 <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle" id="customization" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="settings"></span>Customization</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/customization/configuration.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/configuration') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Configuration</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/styling.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/styling') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/color.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/color') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Color</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/plugin.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/plugin') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin</div>
                       </a></li>
                   </ul>
@@ -3531,30 +3531,30 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="table"></span>Layouts doc</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/vertical-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/vertical-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/horizontal-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/combo-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/combo-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../documentation/gulp.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/gulp') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../documentation/design-file.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/design-file') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="figma"></span>Design file</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../changelog.html">
+                <li><a class="dropdown-item" href="{{ url('changelog') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="git-merge"></span>Changelog</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../showcase.html">
+                <li><a class="dropdown-item" href="{{ url('showcase') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="monitor"></span>Showcase</div>
                   </a></li>
               </ul>
@@ -3580,7 +3580,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -3612,7 +3612,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -3627,7 +3627,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -3642,7 +3642,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -3657,7 +3657,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -3672,7 +3672,7 @@
                   </div>
                 </div>
                 <div class="card-footer p-0 border-top border-translucent border-0">
-                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                 </div>
               </div>
             </div>
@@ -3693,46 +3693,46 @@
               <div class="card bg-body-emphasis position-relative border-0">
                 <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                   <div class="row text-center align-items-center gx-0 gy-0">
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                       </a></div>
                   </div>
@@ -3746,7 +3746,7 @@
                 <div class="card-body p-0">
                   <div class="text-center pt-4 pb-3">
                     <div class="avatar avatar-xl ">
-                      <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                      <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                     </div>
                     <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                   </div>
@@ -3778,9 +3778,9 @@
       <nav class="navbar navbar-top fixed-top navbar-expand-lg" id="navbarCombo" data-navbar-top="combo" data-move-target="#navbarVerticalNav" style="display:none;">
         <div class="navbar-logo">
           <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-          <a class="navbar-brand me-1 me-sm-3" href="../../../index.html">
+          <a class="navbar-brand me-1 me-sm-3" href="{{ url('dashboard') }}">
             <div class="d-flex align-items-center">
-              <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+              <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                 <h5 class="logo-text ms-2 d-none d-sm-block">phoenix</h5>
               </div>
             </div>
@@ -3790,22 +3790,22 @@
           <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover">
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-chart-pie"></span>Home</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../index.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/project-management.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/project-management') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Project management</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/crm.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/crm') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="phone"></span>CRM</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/travel-agency.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/travel-agency') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/stock.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/stock') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../social/feed.html">
+                <li><a class="dropdown-item" href="{{ url('social/feed') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="share-2"></span>Social feed</div>
                   </a></li>
               </ul>
@@ -3820,25 +3820,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="add-product.html">
+                        <li><a class="dropdown-item active" href="{{ url('add-product') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="products.html">
+                        <li><a class="dropdown-item" href="{{ url('products') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customers.html">
+                        <li><a class="dropdown-item" href="{{ url('customers') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customer-details.html">
+                        <li><a class="dropdown-item" href="{{ url('customer-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="orders.html">
+                        <li><a class="dropdown-item" href="{{ url('orders') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="order-details.html">
+                        <li><a class="dropdown-item" href="{{ url('order-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="refund.html">
+                        <li><a class="dropdown-item" href="{{ url('refund') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
                           </a></li>
                       </ul>
@@ -3847,37 +3847,37 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../landing/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/product-details.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Product details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/products-filter.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/products-filter') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products filter</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/cart.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/cart') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Cart</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/shipping-info.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/shipping-info') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Shipping info</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/profile.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/profile') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/favourite-stores.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/favourite-stores') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Favourite stores</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/wishlist.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/wishlist') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Wishlist</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/order-tracking.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/order-tracking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order tracking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/invoice.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/invoice') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Invoice</div>
                           </a></li>
                       </ul>
@@ -3888,28 +3888,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="phone"></span>CRM</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../crm/analytics.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/analytics') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Analytics</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deals.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deals') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deals</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deal-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deal-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deal details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/leads.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/leads') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Leads</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/lead-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/lead-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lead details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/reports.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/reports') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reports</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/report-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/report-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Report details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/add-contact.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/add-contact') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add contact</div>
                       </a></li>
                   </ul>
@@ -3918,22 +3918,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="clipboard"></span>Project management</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../project-management/create-new.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/create-new') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create new</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project list view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-card-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-card-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project card view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-board-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-board-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project board view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/todo-list.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/todo-list') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Todo list</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-details.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project details</div>
                       </a></li>
                   </ul>
@@ -3942,7 +3942,7 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../travel-agency/landing.html">
+                    <li><a class="dropdown-item" href="{{ url('travel-agency/landing') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Landing</div>
                       </a></li>
                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="hotel" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -3953,16 +3953,16 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-property.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add property</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-room.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add room</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-listing.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Room listing</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-search.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Search room</div>
                               </a></li>
                           </ul>
@@ -3971,22 +3971,22 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/homepage.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-details.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel details</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel compare</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/checkout.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/payment.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/gallery.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery</div>
                               </a></li>
                           </ul>
@@ -3997,13 +3997,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Flight</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/booking.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/booking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Booking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/payment.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/payment') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                           </a></li>
                       </ul>
@@ -4012,13 +4012,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Trip</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/trip-details.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/trip-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Trip details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
                       </ul>
@@ -4029,31 +4029,31 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../stock/stock-details.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/stock-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Stock details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/portfolio.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/portfolio') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Portfolio</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/watchlist.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/watchlist') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Watchlist</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../chat.html">
+                <li><a class="dropdown-item" href="{{ url('chat') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="message-square"></span>Chat</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="email" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="mail"></span>Email</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../email/inbox.html">
+                    <li><a class="dropdown-item" href="{{ url('email/inbox') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Inbox</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/email-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('email/email-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Email detail</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/compose.html">
+                    <li><a class="dropdown-item" href="{{ url('email/compose') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Compose</div>
                       </a></li>
                   </ul>
@@ -4062,10 +4062,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="bookmark"></span>Events</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../events/create-an-event.html">
+                    <li><a class="dropdown-item" href="{{ url('events/create-an-event') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create an event</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../events/event-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('events/event-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Event detail</div>
                       </a></li>
                   </ul>
@@ -4074,28 +4074,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="trello"></span>Kanban</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../kanban/kanban.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/kanban') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Kanban</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/boards.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/boards') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Boards</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/create-kanban-board.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/create-kanban-board') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create board</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../gantt-chart.html">
+                <li><a class="dropdown-item" href="{{ url('gantt-chart') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-solid fa-chart-gantt "></span>Gantt chart</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="social" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="share-2"></span>Social</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../social/profile.html">
+                    <li><a class="dropdown-item" href="{{ url('social/profile') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../social/settings.html">
+                    <li><a class="dropdown-item" href="{{ url('social/settings') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Settings</div>
                       </a></li>
                   </ul>
@@ -4104,22 +4104,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="image"></span>Gallery</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../gallery/album.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/album') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Album</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-column.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery grid</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/grid-with-title.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/grid-with-title') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid with title</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-masonry.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-masonry') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery masonry</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-slider.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-slider') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery slider</div>
                       </a></li>
                   </ul>
@@ -4128,32 +4128,32 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="folder"></span>File manager</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../file-manager/grid-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/grid-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../file-manager/list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>List view</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../calendar.html">
+                <li><a class="dropdown-item" href="{{ url('calendar') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="calendar"></span>Calendar</div>
                   </a></li>
               </ul>
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-files-landscapes-alt"></span>Pages</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../pages/starter.html">
+                <li><a class="dropdown-item" href="{{ url('pages/starter') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="compass"></span>Starter</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="faq" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="help-circle"></span>Faq</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-accordion.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-accordion') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq accordion</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-tab.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-tab') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq tab</div>
                       </a></li>
                   </ul>
@@ -4162,10 +4162,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="globe"></span>Landing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/landing/default.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/default') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Default</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/landing/alternate.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/alternate') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Alternate</div>
                       </a></li>
                   </ul>
@@ -4174,34 +4174,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="tag"></span>Pricing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-column.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing grid</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../pages/notifications.html">
+                <li><a class="dropdown-item" href="{{ url('pages/notifications') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bell"></span>Notifications</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/members.html">
+                <li><a class="dropdown-item" href="{{ url('pages/members') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="users"></span>Members</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/timeline.html">
+                <li><a class="dropdown-item" href="{{ url('pages/timeline') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clock"></span>Timeline</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="errors" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="alert-triangle"></span>Errors</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/errors/404.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/404') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>404</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/403.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/403') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>403</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/500.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/500') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>500</div>
                       </a></li>
                   </ul>
@@ -4214,25 +4214,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Simple</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -4241,25 +4241,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Split</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -4268,25 +4268,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Card</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -4297,34 +4297,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="layout"></span>Layouts</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../demo/vertical-sidenav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/vertical-sidenav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical sidenav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/sidenav-collapse.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/sidenav-collapse') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sidenav collapse</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/darknav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/darknav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Darknav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/topnav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/topnav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Topnav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/navbar-horizontal.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/navbar-horizontal') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Navbar horizontal</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/horizontal-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/horizontal-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
@@ -4339,26 +4339,26 @@
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="file-text" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Forms</h6>
-                        </div><a class="dropdown-link" href="../../../modules/forms/basic/form-control.html">Form control</a><a class="dropdown-link" href="../../../modules/forms/basic/input-group.html">Input group</a><a class="dropdown-link" href="../../../modules/forms/basic/select.html">Select</a><a class="dropdown-link" href="../../../modules/forms/basic/checks.html">Checks</a><a class="dropdown-link" href="../../../modules/forms/basic/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/basic/floating-labels.html">Floating labels</a><a class="dropdown-link" href="../../../modules/forms/basic/layout.html">Layout</a><a class="dropdown-link" href="../../../modules/forms/advance/advance-select.html">Advance select</a><a class="dropdown-link" href="../../../modules/forms/advance/date-picker.html">Date picker</a><a class="dropdown-link" href="../../../modules/forms/advance/editor.html">Editor</a><a class="dropdown-link" href="../../../modules/forms/advance/file-uploader.html">File uploader</a><a class="dropdown-link" href="../../../modules/forms/advance/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/advance/rating.html">Rating</a><a class="dropdown-link" href="../../../modules/forms/advance/emoji-button.html">Emoji button</a><a class="dropdown-link" href="../../../modules/forms/validation.html">Validation</a><a class="dropdown-link" href="../../../modules/forms/wizard.html">Wizard</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/forms/basic/form-control') }}">Form control</a><a class="dropdown-link" href="{{ url('modules/forms/basic/input-group') }}">Input group</a><a class="dropdown-link" href="{{ url('modules/forms/basic/select') }}">Select</a><a class="dropdown-link" href="{{ url('modules/forms/basic/checks') }}">Checks</a><a class="dropdown-link" href="{{ url('modules/forms/basic/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/basic/floating-labels') }}">Floating labels</a><a class="dropdown-link" href="{{ url('modules/forms/basic/layout') }}">Layout</a><a class="dropdown-link" href="{{ url('modules/forms/advance/advance-select') }}">Advance select</a><a class="dropdown-link" href="{{ url('modules/forms/advance/date-picker') }}">Date picker</a><a class="dropdown-link" href="{{ url('modules/forms/advance/editor') }}">Editor</a><a class="dropdown-link" href="{{ url('modules/forms/advance/file-uploader') }}">File uploader</a><a class="dropdown-link" href="{{ url('modules/forms/advance/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/advance/rating') }}">Rating</a><a class="dropdown-link" href="{{ url('modules/forms/advance/emoji-button') }}">Emoji button</a><a class="dropdown-link" href="{{ url('modules/forms/validation') }}">Validation</a><a class="dropdown-link" href="{{ url('modules/forms/wizard') }}">Wizard</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="grid" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Icons</h6>
-                        </div><a class="dropdown-link" href="../../../modules/icons/feather.html">Feather</a><a class="dropdown-link" href="../../../modules/icons/font-awesome.html">Font awesome</a><a class="dropdown-link" href="../../../modules/icons/unicons.html">Unicons</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/icons/feather') }}">Feather</a><a class="dropdown-link" href="{{ url('modules/icons/font-awesome') }}">Font awesome</a><a class="dropdown-link" href="{{ url('modules/icons/unicons') }}">Unicons</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="bar-chart-2" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">ECharts</h6>
-                        </div><a class="dropdown-link" href="../../../modules/echarts/line-charts.html">Line charts</a><a class="dropdown-link" href="../../../modules/echarts/bar-charts.html">Bar charts</a><a class="dropdown-link" href="../../../modules/echarts/candlestick-charts.html">Candlestick charts</a><a class="dropdown-link" href="../../../modules/echarts/geo-map.html">Geo map</a><a class="dropdown-link" href="../../../modules/echarts/scatter-charts.html">Scatter charts</a><a class="dropdown-link" href="../../../modules/echarts/pie-charts.html">Pie charts</a><a class="dropdown-link" href="../../../modules/echarts/gauge-chart.html">Gauge chart</a><a class="dropdown-link" href="../../../modules/echarts/radar-charts.html">Radar charts</a><a class="dropdown-link" href="../../../modules/echarts/heatmap-charts.html">Heatmap charts</a><a class="dropdown-link" href="../../../modules/echarts/how-to-use.html">How to use</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/echarts/line-charts') }}">Line charts</a><a class="dropdown-link" href="{{ url('modules/echarts/bar-charts') }}">Bar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/candlestick-charts') }}">Candlestick charts</a><a class="dropdown-link" href="{{ url('modules/echarts/geo-map') }}">Geo map</a><a class="dropdown-link" href="{{ url('modules/echarts/scatter-charts') }}">Scatter charts</a><a class="dropdown-link" href="{{ url('modules/echarts/pie-charts') }}">Pie charts</a><a class="dropdown-link" href="{{ url('modules/echarts/gauge-chart') }}">Gauge chart</a><a class="dropdown-link" href="{{ url('modules/echarts/radar-charts') }}">Radar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/heatmap-charts') }}">Heatmap charts</a><a class="dropdown-link" href="{{ url('modules/echarts/how-to-use') }}">How to use</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="package" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Components</h6>
-                        </div><a class="dropdown-link" href="../../../modules/components/accordion.html">Accordion</a><a class="dropdown-link" href="../../../modules/components/avatar.html">Avatar</a><a class="dropdown-link" href="../../../modules/components/alerts.html">Alerts</a><a class="dropdown-link" href="../../../modules/components/badge.html">Badge</a><a class="dropdown-link" href="../../../modules/components/breadcrumb.html">Breadcrumb</a><a class="dropdown-link" href="../../../modules/components/button.html">Buttons</a><a class="dropdown-link" href="../../../modules/components/calendar.html">Calendar</a><a class="dropdown-link" href="../../../modules/components/card.html">Card</a><a class="dropdown-link" href="../../../modules/components/carousel/bootstrap.html">Bootstrap</a><a class="dropdown-link" href="../../../modules/components/carousel/swiper.html">Swiper</a><a class="dropdown-link" href="../../../modules/components/collapse.html">Collapse</a><a class="dropdown-link" href="../../../modules/components/dropdown.html">Dropdown</a><a class="dropdown-link" href="../../../modules/components/dhtmlx-gantt.html">Dhtmlx gantt</a><a class="dropdown-link" href="../../../modules/components/list-group.html">List group</a><a class="dropdown-link" href="../../../modules/components/modal.html">Modals</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navs.html">Navs</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navbar.html">Navbar</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/tabs.html">Tabs</a><a class="dropdown-link" href="../../../modules/components/offcanvas.html">Offcanvas</a><a class="dropdown-link" href="../../../modules/components/progress-bar.html">Progress bar</a><a class="dropdown-link" href="../../../modules/components/placeholder.html">Placeholder</a><a class="dropdown-link" href="../../../modules/components/pagination.html">Pagination</a><a class="dropdown-link" href="../../../modules/components/popovers.html">Popovers</a><a class="dropdown-link" href="../../../modules/components/scrollspy.html">Scrollspy</a><a class="dropdown-link" href="../../../modules/components/sortable.html">Sortable</a><a class="dropdown-link" href="../../../modules/components/spinners.html">Spinners</a><a class="dropdown-link" href="../../../modules/components/toast.html">Toast</a><a class="dropdown-link" href="../../../modules/components/tooltips.html">Tooltips</a><a class="dropdown-link" href="../../../modules/components/typed-text.html">Typed text</a><a class="dropdown-link" href="../../../modules/components/chat-widget.html">Chat widget</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/components/accordion') }}">Accordion</a><a class="dropdown-link" href="{{ url('modules/components/avatar') }}">Avatar</a><a class="dropdown-link" href="{{ url('modules/components/alerts') }}">Alerts</a><a class="dropdown-link" href="{{ url('modules/components/badge') }}">Badge</a><a class="dropdown-link" href="{{ url('modules/components/breadcrumb') }}">Breadcrumb</a><a class="dropdown-link" href="{{ url('modules/components/button') }}">Buttons</a><a class="dropdown-link" href="{{ url('modules/components/calendar') }}">Calendar</a><a class="dropdown-link" href="{{ url('modules/components/card') }}">Card</a><a class="dropdown-link" href="{{ url('modules/components/carousel/bootstrap') }}">Bootstrap</a><a class="dropdown-link" href="{{ url('modules/components/carousel/swiper') }}">Swiper</a><a class="dropdown-link" href="{{ url('modules/components/collapse') }}">Collapse</a><a class="dropdown-link" href="{{ url('modules/components/dropdown') }}">Dropdown</a><a class="dropdown-link" href="{{ url('modules/components/dhtmlx-gantt') }}">Dhtmlx gantt</a><a class="dropdown-link" href="{{ url('modules/components/list-group') }}">List group</a><a class="dropdown-link" href="{{ url('modules/components/modal') }}">Modals</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">Navs</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">Navbar</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">Tabs</a><a class="dropdown-link" href="{{ url('modules/components/offcanvas') }}">Offcanvas</a><a class="dropdown-link" href="{{ url('modules/components/progress-bar') }}">Progress bar</a><a class="dropdown-link" href="{{ url('modules/components/placeholder') }}">Placeholder</a><a class="dropdown-link" href="{{ url('modules/components/pagination') }}">Pagination</a><a class="dropdown-link" href="{{ url('modules/components/popovers') }}">Popovers</a><a class="dropdown-link" href="{{ url('modules/components/scrollspy') }}">Scrollspy</a><a class="dropdown-link" href="{{ url('modules/components/sortable') }}">Sortable</a><a class="dropdown-link" href="{{ url('modules/components/spinners') }}">Spinners</a><a class="dropdown-link" href="{{ url('modules/components/toast') }}">Toast</a><a class="dropdown-link" href="{{ url('modules/components/tooltips') }}">Tooltips</a><a class="dropdown-link" href="{{ url('modules/components/typed-text') }}">Typed text</a><a class="dropdown-link" href="{{ url('modules/components/chat-widget') }}">Chat widget</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="columns" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Tables</h6>
-                        </div><a class="dropdown-link" href="../../../modules/tables/basic-tables.html">Basic tables</a><a class="dropdown-link" href="../../../modules/tables/advance-tables.html">Advance tables</a><a class="dropdown-link" href="../../../modules/tables/bulk-select.html">Bulk Select</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/tables/basic-tables') }}">Basic tables</a><a class="dropdown-link" href="{{ url('modules/tables/advance-tables') }}">Advance tables</a><a class="dropdown-link" href="{{ url('modules/tables/bulk-select') }}">Bulk Select</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="tool" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Utilities</h6>
-                        </div><a class="dropdown-link" href="../../../modules/utilities/background.html">Background</a><a class="dropdown-link" href="../../../modules/utilities/borders.html">Borders</a><a class="dropdown-link" href="../../../modules/utilities/colors.html">Colors</a><a class="dropdown-link" href="../../../modules/utilities/display.html">Display</a><a class="dropdown-link" href="../../../modules/utilities/flex.html">Flex</a><a class="dropdown-link" href="../../../modules/utilities/stacks.html">Stacks</a><a class="dropdown-link" href="../../../modules/utilities/float.html">Float</a><a class="dropdown-link" href="../../../modules/utilities/grid.html">Grid</a><a class="dropdown-link" href="../../../modules/utilities/interactions.html">Interactions</a><a class="dropdown-link" href="../../../modules/utilities/opacity.html">Opacity</a><a class="dropdown-link" href="../../../modules/utilities/overflow.html">Overflow</a><a class="dropdown-link" href="../../../modules/utilities/position.html">Position</a><a class="dropdown-link" href="../../../modules/utilities/shadows.html">Shadows</a><a class="dropdown-link" href="../../../modules/utilities/sizing.html">Sizing</a><a class="dropdown-link" href="../../../modules/utilities/spacing.html">Spacing</a><a class="dropdown-link" href="../../../modules/utilities/typography.html">Typography</a><a class="dropdown-link" href="../../../modules/utilities/vertical-align.html">Vertical align</a><a class="dropdown-link" href="../../../modules/utilities/visibility.html">Visibility</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/utilities/background') }}">Background</a><a class="dropdown-link" href="{{ url('modules/utilities/borders') }}">Borders</a><a class="dropdown-link" href="{{ url('modules/utilities/colors') }}">Colors</a><a class="dropdown-link" href="{{ url('modules/utilities/display') }}">Display</a><a class="dropdown-link" href="{{ url('modules/utilities/flex') }}">Flex</a><a class="dropdown-link" href="{{ url('modules/utilities/stacks') }}">Stacks</a><a class="dropdown-link" href="{{ url('modules/utilities/float') }}">Float</a><a class="dropdown-link" href="{{ url('modules/utilities/grid') }}">Grid</a><a class="dropdown-link" href="{{ url('modules/utilities/interactions') }}">Interactions</a><a class="dropdown-link" href="{{ url('modules/utilities/opacity') }}">Opacity</a><a class="dropdown-link" href="{{ url('modules/utilities/overflow') }}">Overflow</a><a class="dropdown-link" href="{{ url('modules/utilities/position') }}">Position</a><a class="dropdown-link" href="{{ url('modules/utilities/shadows') }}">Shadows</a><a class="dropdown-link" href="{{ url('modules/utilities/sizing') }}">Sizing</a><a class="dropdown-link" href="{{ url('modules/utilities/spacing') }}">Spacing</a><a class="dropdown-link" href="{{ url('modules/utilities/typography') }}">Typography</a><a class="dropdown-link" href="{{ url('modules/utilities/vertical-align') }}">Vertical align</a><a class="dropdown-link" href="{{ url('modules/utilities/visibility') }}">Visibility</a>
                       </div>
                     </div>
                   </div>
@@ -4367,26 +4367,26 @@
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-document-layout-right"></span>Documentation</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../documentation/getting-started.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/getting-started') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="life-buoy"></span>Getting started</div>
                   </a></li>
                 <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle" id="customization" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="settings"></span>Customization</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/customization/configuration.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/configuration') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Configuration</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/styling.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/styling') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/color.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/color') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Color</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/plugin.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/plugin') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin</div>
                       </a></li>
                   </ul>
@@ -4395,30 +4395,30 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="table"></span>Layouts doc</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/vertical-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/vertical-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/horizontal-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/combo-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/combo-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../documentation/gulp.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/gulp') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../documentation/design-file.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/design-file') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="figma"></span>Design file</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../changelog.html">
+                <li><a class="dropdown-item" href="{{ url('changelog') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="git-merge"></span>Changelog</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../showcase.html">
+                <li><a class="dropdown-item" href="{{ url('showcase') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="monitor"></span>Showcase</div>
                   </a></li>
               </ul>
@@ -4444,7 +4444,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -4476,7 +4476,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -4491,7 +4491,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -4506,7 +4506,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -4521,7 +4521,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -4536,7 +4536,7 @@
                   </div>
                 </div>
                 <div class="card-footer p-0 border-top border-translucent border-0">
-                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                 </div>
               </div>
             </div>
@@ -4557,46 +4557,46 @@
               <div class="card bg-body-emphasis position-relative border-0">
                 <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                   <div class="row text-center align-items-center gx-0 gy-0">
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                       </a></div>
                   </div>
@@ -4606,7 +4606,7 @@
           </li>
           <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
               <div class="avatar avatar-l ">
-                <img class="rounded-circle " src="../../../assets/img/team/40x40/57.webp" alt="">
+                <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/57.webp') }}" alt="">
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border" aria-labelledby="navbarDropdownUser">
@@ -4614,7 +4614,7 @@
                 <div class="card-body p-0">
                   <div class="text-center pt-4 pb-3">
                     <div class="avatar avatar-xl ">
-                      <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                      <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                     </div>
                     <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                   </div>
@@ -4646,28 +4646,28 @@
       <nav class="navbar navbar-top fixed-top navbar-slim justify-content-between navbar-expand-lg" id="navbarComboSlim" data-navbar-top="combo" data-move-target="#navbarVerticalNav" style="display:none;">
         <div class="navbar-logo">
           <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-          <a class="navbar-brand navbar-brand" href="../../../index.html">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
+          <a class="navbar-brand navbar-brand" href="{{ url('dashboard') }}">phoenix <span class="text-body-highlight d-none d-sm-inline">slim</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-top-collapse order-1 order-lg-0 justify-content-center" id="navbarTopCollapse">
           <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover">
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-chart-pie"></span>Home</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../index.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/project-management.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/project-management') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Project management</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/crm.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/crm') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="phone"></span>CRM</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/travel-agency.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/travel-agency') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../dashboard/stock.html">
+                <li><a class="dropdown-item" href="{{ url('dashboard/stock') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../social/feed.html">
+                <li><a class="dropdown-item" href="{{ url('social/feed') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="share-2"></span>Social feed</div>
                   </a></li>
               </ul>
@@ -4682,25 +4682,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="add-product.html">
+                        <li><a class="dropdown-item active" href="{{ url('add-product') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="products.html">
+                        <li><a class="dropdown-item" href="{{ url('products') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customers.html">
+                        <li><a class="dropdown-item" href="{{ url('customers') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="customer-details.html">
+                        <li><a class="dropdown-item" href="{{ url('customer-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="orders.html">
+                        <li><a class="dropdown-item" href="{{ url('orders') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="order-details.html">
+                        <li><a class="dropdown-item" href="{{ url('order-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="refund.html">
+                        <li><a class="dropdown-item" href="{{ url('refund') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
                           </a></li>
                       </ul>
@@ -4709,37 +4709,37 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../landing/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/product-details.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Product details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/products-filter.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/products-filter') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products filter</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/cart.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/cart') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Cart</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/shipping-info.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/shipping-info') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Shipping info</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/profile.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/profile') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/favourite-stores.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/favourite-stores') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Favourite stores</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/wishlist.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/wishlist') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Wishlist</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/order-tracking.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/order-tracking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order tracking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../landing/invoice.html">
+                        <li><a class="dropdown-item" href="{{ url('landing/invoice') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Invoice</div>
                           </a></li>
                       </ul>
@@ -4750,28 +4750,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="phone"></span>CRM</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../crm/analytics.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/analytics') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Analytics</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deals.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deals') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deals</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/deal-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/deal-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deal details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/leads.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/leads') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Leads</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/lead-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/lead-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lead details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/reports.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/reports') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reports</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/report-details.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/report-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Report details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../crm/add-contact.html">
+                    <li><a class="dropdown-item" href="{{ url('crm/add-contact') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add contact</div>
                       </a></li>
                   </ul>
@@ -4780,22 +4780,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="clipboard"></span>Project management</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../project-management/create-new.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/create-new') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create new</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project list view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-card-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-card-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project card view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-board-view.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-board-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project board view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/todo-list.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/todo-list') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Todo list</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../project-management/project-details.html">
+                    <li><a class="dropdown-item" href="{{ url('project-management/project-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project details</div>
                       </a></li>
                   </ul>
@@ -4804,7 +4804,7 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../travel-agency/landing.html">
+                    <li><a class="dropdown-item" href="{{ url('travel-agency/landing') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Landing</div>
                       </a></li>
                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="hotel" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -4815,16 +4815,16 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-property.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add property</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-room.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add room</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-listing.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Room listing</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-search.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Search room</div>
                               </a></li>
                           </ul>
@@ -4833,22 +4833,22 @@
                             <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/homepage.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-details.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel details</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel compare</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/checkout.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/payment.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                               </a></li>
-                            <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/gallery.html">
+                            <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                 <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery</div>
                               </a></li>
                           </ul>
@@ -4859,13 +4859,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Flight</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/booking.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/booking') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Booking</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/flight/payment.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/flight/payment') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                           </a></li>
                       </ul>
@@ -4874,13 +4874,13 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Trip</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/homepage.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/homepage') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/trip-details.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/trip-details') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Trip details</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../travel-agency/trip/checkout.html">
+                        <li><a class="dropdown-item" href="{{ url('travel-agency/trip/checkout') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                           </a></li>
                       </ul>
@@ -4891,31 +4891,31 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../stock/stock-details.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/stock-details') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Stock details</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/portfolio.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/portfolio') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Portfolio</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../stock/watchlist.html">
+                    <li><a class="dropdown-item" href="{{ url('stock/watchlist') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Watchlist</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../chat.html">
+                <li><a class="dropdown-item" href="{{ url('chat') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="message-square"></span>Chat</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="email" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="mail"></span>Email</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../email/inbox.html">
+                    <li><a class="dropdown-item" href="{{ url('email/inbox') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Inbox</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/email-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('email/email-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Email detail</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../email/compose.html">
+                    <li><a class="dropdown-item" href="{{ url('email/compose') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Compose</div>
                       </a></li>
                   </ul>
@@ -4924,10 +4924,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="bookmark"></span>Events</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../events/create-an-event.html">
+                    <li><a class="dropdown-item" href="{{ url('events/create-an-event') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create an event</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../events/event-detail.html">
+                    <li><a class="dropdown-item" href="{{ url('events/event-detail') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Event detail</div>
                       </a></li>
                   </ul>
@@ -4936,28 +4936,28 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="trello"></span>Kanban</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../kanban/kanban.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/kanban') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Kanban</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/boards.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/boards') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Boards</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../kanban/create-kanban-board.html">
+                    <li><a class="dropdown-item" href="{{ url('kanban/create-kanban-board') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create board</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../gantt-chart.html">
+                <li><a class="dropdown-item" href="{{ url('gantt-chart') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-solid fa-chart-gantt "></span>Gantt chart</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="social" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="share-2"></span>Social</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../social/profile.html">
+                    <li><a class="dropdown-item" href="{{ url('social/profile') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../social/settings.html">
+                    <li><a class="dropdown-item" href="{{ url('social/settings') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Settings</div>
                       </a></li>
                   </ul>
@@ -4966,22 +4966,22 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="image"></span>Gallery</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../gallery/album.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/album') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Album</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-column.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery grid</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/grid-with-title.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/grid-with-title') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid with title</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-masonry.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-masonry') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery masonry</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../gallery/gallery-slider.html">
+                    <li><a class="dropdown-item" href="{{ url('gallery/gallery-slider') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery slider</div>
                       </a></li>
                   </ul>
@@ -4990,32 +4990,32 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="folder"></span>File manager</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../file-manager/grid-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/grid-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid view</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../file-manager/list-view.html">
+                    <li><a class="dropdown-item" href="{{ url('file-manager/list-view') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>List view</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../calendar.html">
+                <li><a class="dropdown-item" href="{{ url('calendar') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="calendar"></span>Calendar</div>
                   </a></li>
               </ul>
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-files-landscapes-alt"></span>Pages</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../pages/starter.html">
+                <li><a class="dropdown-item" href="{{ url('pages/starter') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="compass"></span>Starter</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="faq" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="help-circle"></span>Faq</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-accordion.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-accordion') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq accordion</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/faq/faq-tab.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/faq/faq-tab') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq tab</div>
                       </a></li>
                   </ul>
@@ -5024,10 +5024,10 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="globe"></span>Landing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/landing/default.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/default') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Default</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/landing/alternate.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/landing/alternate') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Alternate</div>
                       </a></li>
                   </ul>
@@ -5036,34 +5036,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="tag"></span>Pricing</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-column.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-column') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing column</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/pricing/pricing-grid.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-grid') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing grid</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../pages/notifications.html">
+                <li><a class="dropdown-item" href="{{ url('pages/notifications') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bell"></span>Notifications</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/members.html">
+                <li><a class="dropdown-item" href="{{ url('pages/members') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="users"></span>Members</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../pages/timeline.html">
+                <li><a class="dropdown-item" href="{{ url('pages/timeline') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clock"></span>Timeline</div>
                   </a></li>
                 <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="errors" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="alert-triangle"></span>Errors</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../pages/errors/404.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/404') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>404</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/403.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/403') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>403</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../pages/errors/500.html">
+                    <li><a class="dropdown-item" href="{{ url('pages/errors/500') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>500</div>
                       </a></li>
                   </ul>
@@ -5076,25 +5076,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Simple</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/simple/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -5103,25 +5103,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Split</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/split/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/split/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -5130,25 +5130,25 @@
                         <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Card</span></div>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-in.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-in') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-up.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-up') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-out.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-out') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/forgot-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/forgot-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/reset-password.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/reset-password') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/lock-screen.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/lock-screen') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                           </a></li>
-                        <li><a class="dropdown-item" href="../../../pages/authentication/card/2FA.html">
+                        <li><a class="dropdown-item" href="{{ url('pages/authentication/card/2FA') }}">
                             <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                           </a></li>
                       </ul>
@@ -5159,34 +5159,34 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="layout"></span>Layouts</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../demo/vertical-sidenav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/vertical-sidenav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical sidenav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/sidenav-collapse.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/sidenav-collapse') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sidenav collapse</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/darknav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/darknav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Darknav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/topnav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/topnav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Topnav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/navbar-horizontal.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/navbar-horizontal') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Navbar horizontal</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/horizontal-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/horizontal-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/combo-nav-slim.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/combo-nav-slim') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav slim</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../demo/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('demo/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
@@ -5201,26 +5201,26 @@
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="file-text" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Forms</h6>
-                        </div><a class="dropdown-link" href="../../../modules/forms/basic/form-control.html">Form control</a><a class="dropdown-link" href="../../../modules/forms/basic/input-group.html">Input group</a><a class="dropdown-link" href="../../../modules/forms/basic/select.html">Select</a><a class="dropdown-link" href="../../../modules/forms/basic/checks.html">Checks</a><a class="dropdown-link" href="../../../modules/forms/basic/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/basic/floating-labels.html">Floating labels</a><a class="dropdown-link" href="../../../modules/forms/basic/layout.html">Layout</a><a class="dropdown-link" href="../../../modules/forms/advance/advance-select.html">Advance select</a><a class="dropdown-link" href="../../../modules/forms/advance/date-picker.html">Date picker</a><a class="dropdown-link" href="../../../modules/forms/advance/editor.html">Editor</a><a class="dropdown-link" href="../../../modules/forms/advance/file-uploader.html">File uploader</a><a class="dropdown-link" href="../../../modules/forms/advance/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/advance/rating.html">Rating</a><a class="dropdown-link" href="../../../modules/forms/advance/emoji-button.html">Emoji button</a><a class="dropdown-link" href="../../../modules/forms/validation.html">Validation</a><a class="dropdown-link" href="../../../modules/forms/wizard.html">Wizard</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/forms/basic/form-control') }}">Form control</a><a class="dropdown-link" href="{{ url('modules/forms/basic/input-group') }}">Input group</a><a class="dropdown-link" href="{{ url('modules/forms/basic/select') }}">Select</a><a class="dropdown-link" href="{{ url('modules/forms/basic/checks') }}">Checks</a><a class="dropdown-link" href="{{ url('modules/forms/basic/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/basic/floating-labels') }}">Floating labels</a><a class="dropdown-link" href="{{ url('modules/forms/basic/layout') }}">Layout</a><a class="dropdown-link" href="{{ url('modules/forms/advance/advance-select') }}">Advance select</a><a class="dropdown-link" href="{{ url('modules/forms/advance/date-picker') }}">Date picker</a><a class="dropdown-link" href="{{ url('modules/forms/advance/editor') }}">Editor</a><a class="dropdown-link" href="{{ url('modules/forms/advance/file-uploader') }}">File uploader</a><a class="dropdown-link" href="{{ url('modules/forms/advance/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/advance/rating') }}">Rating</a><a class="dropdown-link" href="{{ url('modules/forms/advance/emoji-button') }}">Emoji button</a><a class="dropdown-link" href="{{ url('modules/forms/validation') }}">Validation</a><a class="dropdown-link" href="{{ url('modules/forms/wizard') }}">Wizard</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="grid" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Icons</h6>
-                        </div><a class="dropdown-link" href="../../../modules/icons/feather.html">Feather</a><a class="dropdown-link" href="../../../modules/icons/font-awesome.html">Font awesome</a><a class="dropdown-link" href="../../../modules/icons/unicons.html">Unicons</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/icons/feather') }}">Feather</a><a class="dropdown-link" href="{{ url('modules/icons/font-awesome') }}">Font awesome</a><a class="dropdown-link" href="{{ url('modules/icons/unicons') }}">Unicons</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="bar-chart-2" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">ECharts</h6>
-                        </div><a class="dropdown-link" href="../../../modules/echarts/line-charts.html">Line charts</a><a class="dropdown-link" href="../../../modules/echarts/bar-charts.html">Bar charts</a><a class="dropdown-link" href="../../../modules/echarts/candlestick-charts.html">Candlestick charts</a><a class="dropdown-link" href="../../../modules/echarts/geo-map.html">Geo map</a><a class="dropdown-link" href="../../../modules/echarts/scatter-charts.html">Scatter charts</a><a class="dropdown-link" href="../../../modules/echarts/pie-charts.html">Pie charts</a><a class="dropdown-link" href="../../../modules/echarts/gauge-chart.html">Gauge chart</a><a class="dropdown-link" href="../../../modules/echarts/radar-charts.html">Radar charts</a><a class="dropdown-link" href="../../../modules/echarts/heatmap-charts.html">Heatmap charts</a><a class="dropdown-link" href="../../../modules/echarts/how-to-use.html">How to use</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/echarts/line-charts') }}">Line charts</a><a class="dropdown-link" href="{{ url('modules/echarts/bar-charts') }}">Bar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/candlestick-charts') }}">Candlestick charts</a><a class="dropdown-link" href="{{ url('modules/echarts/geo-map') }}">Geo map</a><a class="dropdown-link" href="{{ url('modules/echarts/scatter-charts') }}">Scatter charts</a><a class="dropdown-link" href="{{ url('modules/echarts/pie-charts') }}">Pie charts</a><a class="dropdown-link" href="{{ url('modules/echarts/gauge-chart') }}">Gauge chart</a><a class="dropdown-link" href="{{ url('modules/echarts/radar-charts') }}">Radar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/heatmap-charts') }}">Heatmap charts</a><a class="dropdown-link" href="{{ url('modules/echarts/how-to-use') }}">How to use</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="package" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Components</h6>
-                        </div><a class="dropdown-link" href="../../../modules/components/accordion.html">Accordion</a><a class="dropdown-link" href="../../../modules/components/avatar.html">Avatar</a><a class="dropdown-link" href="../../../modules/components/alerts.html">Alerts</a><a class="dropdown-link" href="../../../modules/components/badge.html">Badge</a><a class="dropdown-link" href="../../../modules/components/breadcrumb.html">Breadcrumb</a><a class="dropdown-link" href="../../../modules/components/button.html">Buttons</a><a class="dropdown-link" href="../../../modules/components/calendar.html">Calendar</a><a class="dropdown-link" href="../../../modules/components/card.html">Card</a><a class="dropdown-link" href="../../../modules/components/carousel/bootstrap.html">Bootstrap</a><a class="dropdown-link" href="../../../modules/components/carousel/swiper.html">Swiper</a><a class="dropdown-link" href="../../../modules/components/collapse.html">Collapse</a><a class="dropdown-link" href="../../../modules/components/dropdown.html">Dropdown</a><a class="dropdown-link" href="../../../modules/components/dhtmlx-gantt.html">Dhtmlx gantt</a><a class="dropdown-link" href="../../../modules/components/list-group.html">List group</a><a class="dropdown-link" href="../../../modules/components/modal.html">Modals</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navs.html">Navs</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navbar.html">Navbar</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/tabs.html">Tabs</a><a class="dropdown-link" href="../../../modules/components/offcanvas.html">Offcanvas</a><a class="dropdown-link" href="../../../modules/components/progress-bar.html">Progress bar</a><a class="dropdown-link" href="../../../modules/components/placeholder.html">Placeholder</a><a class="dropdown-link" href="../../../modules/components/pagination.html">Pagination</a><a class="dropdown-link" href="../../../modules/components/popovers.html">Popovers</a><a class="dropdown-link" href="../../../modules/components/scrollspy.html">Scrollspy</a><a class="dropdown-link" href="../../../modules/components/sortable.html">Sortable</a><a class="dropdown-link" href="../../../modules/components/spinners.html">Spinners</a><a class="dropdown-link" href="../../../modules/components/toast.html">Toast</a><a class="dropdown-link" href="../../../modules/components/tooltips.html">Tooltips</a><a class="dropdown-link" href="../../../modules/components/typed-text.html">Typed text</a><a class="dropdown-link" href="../../../modules/components/chat-widget.html">Chat widget</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/components/accordion') }}">Accordion</a><a class="dropdown-link" href="{{ url('modules/components/avatar') }}">Avatar</a><a class="dropdown-link" href="{{ url('modules/components/alerts') }}">Alerts</a><a class="dropdown-link" href="{{ url('modules/components/badge') }}">Badge</a><a class="dropdown-link" href="{{ url('modules/components/breadcrumb') }}">Breadcrumb</a><a class="dropdown-link" href="{{ url('modules/components/button') }}">Buttons</a><a class="dropdown-link" href="{{ url('modules/components/calendar') }}">Calendar</a><a class="dropdown-link" href="{{ url('modules/components/card') }}">Card</a><a class="dropdown-link" href="{{ url('modules/components/carousel/bootstrap') }}">Bootstrap</a><a class="dropdown-link" href="{{ url('modules/components/carousel/swiper') }}">Swiper</a><a class="dropdown-link" href="{{ url('modules/components/collapse') }}">Collapse</a><a class="dropdown-link" href="{{ url('modules/components/dropdown') }}">Dropdown</a><a class="dropdown-link" href="{{ url('modules/components/dhtmlx-gantt') }}">Dhtmlx gantt</a><a class="dropdown-link" href="{{ url('modules/components/list-group') }}">List group</a><a class="dropdown-link" href="{{ url('modules/components/modal') }}">Modals</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">Navs</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">Navbar</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">Tabs</a><a class="dropdown-link" href="{{ url('modules/components/offcanvas') }}">Offcanvas</a><a class="dropdown-link" href="{{ url('modules/components/progress-bar') }}">Progress bar</a><a class="dropdown-link" href="{{ url('modules/components/placeholder') }}">Placeholder</a><a class="dropdown-link" href="{{ url('modules/components/pagination') }}">Pagination</a><a class="dropdown-link" href="{{ url('modules/components/popovers') }}">Popovers</a><a class="dropdown-link" href="{{ url('modules/components/scrollspy') }}">Scrollspy</a><a class="dropdown-link" href="{{ url('modules/components/sortable') }}">Sortable</a><a class="dropdown-link" href="{{ url('modules/components/spinners') }}">Spinners</a><a class="dropdown-link" href="{{ url('modules/components/toast') }}">Toast</a><a class="dropdown-link" href="{{ url('modules/components/tooltips') }}">Tooltips</a><a class="dropdown-link" href="{{ url('modules/components/typed-text') }}">Typed text</a><a class="dropdown-link" href="{{ url('modules/components/chat-widget') }}">Chat widget</a>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <div class="dropdown-item-group"><span class="me-2" data-feather="columns" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Tables</h6>
-                        </div><a class="dropdown-link" href="../../../modules/tables/basic-tables.html">Basic tables</a><a class="dropdown-link" href="../../../modules/tables/advance-tables.html">Advance tables</a><a class="dropdown-link" href="../../../modules/tables/bulk-select.html">Bulk Select</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/tables/basic-tables') }}">Basic tables</a><a class="dropdown-link" href="{{ url('modules/tables/advance-tables') }}">Advance tables</a><a class="dropdown-link" href="{{ url('modules/tables/bulk-select') }}">Bulk Select</a>
                         <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="tool" style="stroke-width:2;"></span>
                           <h6 class="dropdown-item-title">Utilities</h6>
-                        </div><a class="dropdown-link" href="../../../modules/utilities/background.html">Background</a><a class="dropdown-link" href="../../../modules/utilities/borders.html">Borders</a><a class="dropdown-link" href="../../../modules/utilities/colors.html">Colors</a><a class="dropdown-link" href="../../../modules/utilities/display.html">Display</a><a class="dropdown-link" href="../../../modules/utilities/flex.html">Flex</a><a class="dropdown-link" href="../../../modules/utilities/stacks.html">Stacks</a><a class="dropdown-link" href="../../../modules/utilities/float.html">Float</a><a class="dropdown-link" href="../../../modules/utilities/grid.html">Grid</a><a class="dropdown-link" href="../../../modules/utilities/interactions.html">Interactions</a><a class="dropdown-link" href="../../../modules/utilities/opacity.html">Opacity</a><a class="dropdown-link" href="../../../modules/utilities/overflow.html">Overflow</a><a class="dropdown-link" href="../../../modules/utilities/position.html">Position</a><a class="dropdown-link" href="../../../modules/utilities/shadows.html">Shadows</a><a class="dropdown-link" href="../../../modules/utilities/sizing.html">Sizing</a><a class="dropdown-link" href="../../../modules/utilities/spacing.html">Spacing</a><a class="dropdown-link" href="../../../modules/utilities/typography.html">Typography</a><a class="dropdown-link" href="../../../modules/utilities/vertical-align.html">Vertical align</a><a class="dropdown-link" href="../../../modules/utilities/visibility.html">Visibility</a>
+                        </div><a class="dropdown-link" href="{{ url('modules/utilities/background') }}">Background</a><a class="dropdown-link" href="{{ url('modules/utilities/borders') }}">Borders</a><a class="dropdown-link" href="{{ url('modules/utilities/colors') }}">Colors</a><a class="dropdown-link" href="{{ url('modules/utilities/display') }}">Display</a><a class="dropdown-link" href="{{ url('modules/utilities/flex') }}">Flex</a><a class="dropdown-link" href="{{ url('modules/utilities/stacks') }}">Stacks</a><a class="dropdown-link" href="{{ url('modules/utilities/float') }}">Float</a><a class="dropdown-link" href="{{ url('modules/utilities/grid') }}">Grid</a><a class="dropdown-link" href="{{ url('modules/utilities/interactions') }}">Interactions</a><a class="dropdown-link" href="{{ url('modules/utilities/opacity') }}">Opacity</a><a class="dropdown-link" href="{{ url('modules/utilities/overflow') }}">Overflow</a><a class="dropdown-link" href="{{ url('modules/utilities/position') }}">Position</a><a class="dropdown-link" href="{{ url('modules/utilities/shadows') }}">Shadows</a><a class="dropdown-link" href="{{ url('modules/utilities/sizing') }}">Sizing</a><a class="dropdown-link" href="{{ url('modules/utilities/spacing') }}">Spacing</a><a class="dropdown-link" href="{{ url('modules/utilities/typography') }}">Typography</a><a class="dropdown-link" href="{{ url('modules/utilities/vertical-align') }}">Vertical align</a><a class="dropdown-link" href="{{ url('modules/utilities/visibility') }}">Visibility</a>
                       </div>
                     </div>
                   </div>
@@ -5229,26 +5229,26 @@
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-document-layout-right"></span>Documentation</a>
               <ul class="dropdown-menu navbar-dropdown-caret">
-                <li><a class="dropdown-item" href="../../../documentation/getting-started.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/getting-started') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="life-buoy"></span>Getting started</div>
                   </a></li>
                 <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle" id="customization" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="settings"></span>Customization</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/customization/configuration.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/configuration') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Configuration</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/styling.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/styling') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/color.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/color') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Color</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/dark-mode.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/dark-mode') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/customization/plugin.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/customization/plugin') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin</div>
                       </a></li>
                   </ul>
@@ -5257,30 +5257,30 @@
                     <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="table"></span>Layouts doc</span></div>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/vertical-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/vertical-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/horizontal-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/combo-navbar.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/combo-navbar') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo navbar</div>
                       </a></li>
-                    <li><a class="dropdown-item" href="../../../documentation/layouts/dual-nav.html">
+                    <li><a class="dropdown-item" href="{{ url('documentation/layouts/dual-nav') }}">
                         <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                       </a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="../../../documentation/gulp.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/gulp') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../documentation/design-file.html">
+                <li><a class="dropdown-item" href="{{ url('documentation/design-file') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="figma"></span>Design file</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../changelog.html">
+                <li><a class="dropdown-item" href="{{ url('changelog') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="git-merge"></span>Changelog</div>
                   </a></li>
-                <li><a class="dropdown-item" href="../../../showcase.html">
+                <li><a class="dropdown-item" href="{{ url('showcase') }}">
                     <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="monitor"></span>Showcase</div>
                   </a></li>
               </ul>
@@ -5306,7 +5306,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -5338,7 +5338,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -5353,7 +5353,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5368,7 +5368,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5383,7 +5383,7 @@
                     <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                       <div class="d-flex align-items-center justify-content-between position-relative">
                         <div class="d-flex">
-                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                          <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                           <div class="flex-1 me-sm-3">
                             <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                             <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5398,7 +5398,7 @@
                   </div>
                 </div>
                 <div class="card-footer p-0 border-top border-translucent border-0">
-                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                  <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                 </div>
               </div>
             </div>
@@ -5419,46 +5419,46 @@
               <div class="card bg-body-emphasis position-relative border-0">
                 <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                   <div class="row text-center align-items-center gx-0 gy-0">
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                       </a></div>
-                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                    <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                         <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                       </a></div>
                   </div>
@@ -5472,7 +5472,7 @@
                 <div class="card-body p-0">
                   <div class="text-center pt-4 pb-3">
                     <div class="avatar avatar-xl ">
-                      <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                      <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                     </div>
                     <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                   </div>
@@ -5506,9 +5506,9 @@
           <div class="d-flex flex-between-center dual-nav-first-layer">
             <div class="navbar-logo">
               <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-              <a class="navbar-brand me-1 me-sm-3" href="../../../index.html">
+              <a class="navbar-brand me-1 me-sm-3" href="{{ url('dashboard') }}">
                 <div class="d-flex align-items-center">
-                  <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+                  <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                     <h5 class="logo-text ms-2 d-none d-sm-block">phoenix</h5>
                   </div>
                 </div>
@@ -5525,12 +5525,12 @@
                     <h6 class="dropdown-header text-body-highlight fs-10 py-2">24 <span class="text-body-quaternary">results</span></h6>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Recently Searched </h6>
-                    <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                    <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> Store Macbook</div>
                         </div>
                       </a>
-                      <a class="dropdown-item" href="../landing/product-details.html">
+                      <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> MacBook Air - 13″</div>
                         </div>
@@ -5538,15 +5538,15 @@
                     </div>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Products</h6>
-                    <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                        <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                    <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                        <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                         <div class="flex-1">
                           <h6 class="mb-0 text-body-highlight title">MacBook Air - 13″</h6>
                           <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">8GB Memory - 1.6GHz - 128GB Storage</span></p>
                         </div>
                       </a>
-                      <a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                        <div class="file-thumbnail me-2"><img class="img-fluid" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                      <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                        <div class="file-thumbnail me-2"><img class="img-fluid" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                         <div class="flex-1">
                           <h6 class="mb-0 text-body-highlight title">MacBook Pro - 13″</h6>
                           <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">30 Sep at 12:30 PM</span></p>
@@ -5555,12 +5555,12 @@
                     </div>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Quick Links</h6>
-                    <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                    <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Support MacBook House</div>
                         </div>
                       </a>
-                      <a class="dropdown-item" href="../landing/product-details.html">
+                      <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                         </div>
@@ -5568,17 +5568,17 @@
                     </div>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Files</h6>
-                    <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                    <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-file-zipper text-body" data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
                         </div>
                       </a>
-                      <a class="dropdown-item" href="../landing/product-details.html">
+                      <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-file-lines text-body" data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
                         </div>
                       </a>
-                      <a class="dropdown-item" href="../landing/product-details.html">
+                      <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-image text-body" data-fa-transform="shrink-2"></span> MacBook Pro_13.jpg</div>
                         </div>
@@ -5586,18 +5586,18 @@
                     </div>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Members</h6>
-                    <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                    <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                         <div class="avatar avatar-l status-online  me-2 text-body">
-                          <img class="rounded-circle " src="../../../assets/img/team/40x40/10.webp" alt="">
+                          <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/10.webp') }}" alt="">
                         </div>
                         <div class="flex-1">
                           <h6 class="mb-0 text-body-highlight title">Carry Anna</h6>
                           <p class="fs-10 mb-0 d-flex text-body-tertiary">anna@technext.it</p>
                         </div>
                       </a>
-                      <a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                      <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                         <div class="avatar avatar-l  me-2 text-body">
-                          <img class="rounded-circle " src="../../../assets/img/team/40x40/12.webp" alt="">
+                          <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/12.webp') }}" alt="">
                         </div>
                         <div class="flex-1">
                           <h6 class="mb-0 text-body-highlight title">John Smith</h6>
@@ -5607,12 +5607,12 @@
                     </div>
                     <hr class="my-0">
                     <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Related Searches</h6>
-                    <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                    <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"><span class="fa-brands fa-firefox-browser text-body" data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
                         </div>
                       </a>
-                      <a class="dropdown-item" href="../landing/product-details.html">
+                      <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                         <div class="d-flex align-items-center">
                           <div class="fw-normal text-body-highlight title"> <span class="fa-brands fa-chrome text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                         </div>
@@ -5643,7 +5643,7 @@
                         <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                           <div class="d-flex align-items-center justify-content-between position-relative">
                             <div class="d-flex">
-                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                               <div class="flex-1 me-sm-3">
                                 <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                                 <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -5675,7 +5675,7 @@
                         <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                           <div class="d-flex align-items-center justify-content-between position-relative">
                             <div class="d-flex">
-                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                               <div class="flex-1 me-sm-3">
                                 <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                                 <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -5690,7 +5690,7 @@
                         <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                           <div class="d-flex align-items-center justify-content-between position-relative">
                             <div class="d-flex">
-                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                               <div class="flex-1 me-sm-3">
                                 <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                                 <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5705,7 +5705,7 @@
                         <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                           <div class="d-flex align-items-center justify-content-between position-relative">
                             <div class="d-flex">
-                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                               <div class="flex-1 me-sm-3">
                                 <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                                 <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5720,7 +5720,7 @@
                         <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                           <div class="d-flex align-items-center justify-content-between position-relative">
                             <div class="d-flex">
-                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                              <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                               <div class="flex-1 me-sm-3">
                                 <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                                 <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -5735,7 +5735,7 @@
                       </div>
                     </div>
                     <div class="card-footer p-0 border-top border-translucent border-0">
-                      <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                      <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                     </div>
                   </div>
                 </div>
@@ -5756,46 +5756,46 @@
                   <div class="card bg-body-emphasis position-relative border-0">
                     <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                       <div class="row text-center align-items-center gx-0 gy-0">
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/behance.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/behance.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Behance</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-cloud.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-cloud.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Cloud</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/slack.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/slack.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Slack</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/gitlab.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/gitlab.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Gitlab</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/bitbucket.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/bitbucket.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">BitBucket</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-drive.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-drive.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Drive</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/trello.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/trello.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Trello</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/figma.webp" alt="" width="20">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/figma.webp') }}" alt="" width="20">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Figma</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/twitter.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/twitter.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Twitter</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/pinterest.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/pinterest.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Pinterest</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/ln.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/ln.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Linkedin</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-maps.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-maps.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Maps</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/google-photos.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/google-photos.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Photos</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="../../../assets/img/nav-icons/spotify.webp" alt="" width="30">
+                        <div class="col-4"><a class="d-block bg-body-secondary-hover p-2 rounded-3 text-center text-decoration-none mb-3" href="#!"><img src="{{ asset('assets/img/nav-icons/spotify.webp') }}" alt="" width="30">
                             <p class="mb-0 text-body-emphasis text-truncate fs-10 mt-1 pt-1">Spotify</p>
                           </a></div>
                       </div>
@@ -5805,7 +5805,7 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                   <div class="avatar avatar-l ">
-                    <img class="rounded-circle " src="../../../assets/img/team/40x40/57.webp" alt="">
+                    <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/57.webp') }}" alt="">
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border" aria-labelledby="navbarDropdownUser">
@@ -5813,7 +5813,7 @@
                     <div class="card-body p-0">
                       <div class="text-center pt-4 pb-3">
                         <div class="avatar avatar-xl ">
-                          <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                          <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                         </div>
                         <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                       </div>
@@ -5846,22 +5846,22 @@
             <ul class="navbar-nav navbar-nav-top" data-dropdown-on-hover="data-dropdown-on-hover">
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-chart-pie"></span>Home</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="../../../index.html">
+                  <li><a class="dropdown-item" href="{{ url('dashboard') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../dashboard/project-management.html">
+                  <li><a class="dropdown-item" href="{{ url('dashboard/project-management') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clipboard"></span>Project management</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../dashboard/crm.html">
+                  <li><a class="dropdown-item" href="{{ url('dashboard/crm') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="phone"></span>CRM</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../dashboard/travel-agency.html">
+                  <li><a class="dropdown-item" href="{{ url('dashboard/travel-agency') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../dashboard/stock.html">
+                  <li><a class="dropdown-item" href="{{ url('dashboard/stock') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../social/feed.html">
+                  <li><a class="dropdown-item" href="{{ url('social/feed') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="share-2"></span>Social feed</div>
                     </a></li>
                 </ul>
@@ -5876,25 +5876,25 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item active" href="add-product.html">
+                          <li><a class="dropdown-item active" href="{{ url('add-product') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="products.html">
+                          <li><a class="dropdown-item" href="{{ url('products') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="customers.html">
+                          <li><a class="dropdown-item" href="{{ url('customers') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="customer-details.html">
+                          <li><a class="dropdown-item" href="{{ url('customer-details') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="orders.html">
+                          <li><a class="dropdown-item" href="{{ url('orders') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="order-details.html">
+                          <li><a class="dropdown-item" href="{{ url('order-details') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="refund.html">
+                          <li><a class="dropdown-item" href="{{ url('refund') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
                             </a></li>
                         </ul>
@@ -5903,37 +5903,37 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../landing/homepage.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/homepage') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/product-details.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Product details</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/products-filter.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/products-filter') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products filter</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/cart.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/cart') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Cart</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/checkout.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/checkout') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/shipping-info.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/shipping-info') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Shipping info</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/profile.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/profile') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/favourite-stores.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/favourite-stores') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Favourite stores</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/wishlist.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/wishlist') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Wishlist</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/order-tracking.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/order-tracking') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order tracking</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../landing/invoice.html">
+                          <li><a class="dropdown-item" href="{{ url('landing/invoice') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Invoice</div>
                             </a></li>
                         </ul>
@@ -5944,28 +5944,28 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="phone"></span>CRM</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../crm/analytics.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/analytics') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Analytics</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/deals.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/deals') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deals</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/deal-details.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/deal-details') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Deal details</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/leads.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/leads') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Leads</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/lead-details.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/lead-details') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lead details</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/reports.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/reports') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reports</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/report-details.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/report-details') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Report details</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../crm/add-contact.html">
+                      <li><a class="dropdown-item" href="{{ url('crm/add-contact') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add contact</div>
                         </a></li>
                     </ul>
@@ -5974,22 +5974,22 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="clipboard"></span>Project management</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../project-management/create-new.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/create-new') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create new</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../project-management/project-list-view.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/project-list-view') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project list view</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../project-management/project-card-view.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/project-card-view') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project card view</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../project-management/project-board-view.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/project-board-view') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project board view</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../project-management/todo-list.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/todo-list') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Todo list</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../project-management/project-details.html">
+                      <li><a class="dropdown-item" href="{{ url('project-management/project-details') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Project details</div>
                         </a></li>
                     </ul>
@@ -5998,7 +5998,7 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="briefcase"></span>Travel agency</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../travel-agency/landing.html">
+                      <li><a class="dropdown-item" href="{{ url('travel-agency/landing') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Landing</div>
                         </a></li>
                       <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="hotel" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -6009,16 +6009,16 @@
                               <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-property.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-property') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add property</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/add-room.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/add-room') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add room</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-listing.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-listing') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Room listing</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/admin/room-search.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/admin/room-search') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Search room</div>
                                 </a></li>
                             </ul>
@@ -6027,22 +6027,22 @@
                               <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/homepage.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/homepage') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-details.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-details') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel details</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/hotel-compare.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/hotel-compare') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Hotel compare</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/checkout.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/checkout') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/payment.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/payment') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                                 </a></li>
-                              <li><a class="dropdown-item" href="../../travel-agency/hotel/customer/gallery.html">
+                              <li><a class="dropdown-item" href="{{ url('travel-agency/hotel/customer/gallery') }}">
                                   <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery</div>
                                 </a></li>
                             </ul>
@@ -6053,13 +6053,13 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Flight</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../../travel-agency/flight/homepage.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/flight/homepage') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../travel-agency/flight/booking.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/flight/booking') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Booking</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../travel-agency/flight/payment.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/flight/payment') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Payment</div>
                             </a></li>
                         </ul>
@@ -6068,13 +6068,13 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Trip</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../../travel-agency/trip/homepage.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/trip/homepage') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Homepage</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../travel-agency/trip/trip-details.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/trip/trip-details') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Trip details</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../travel-agency/trip/checkout.html">
+                          <li><a class="dropdown-item" href="{{ url('travel-agency/trip/checkout') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Checkout</div>
                             </a></li>
                         </ul>
@@ -6085,31 +6085,31 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="dollar-sign"></span>Stock</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../stock/stock-details.html">
+                      <li><a class="dropdown-item" href="{{ url('stock/stock-details') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Stock details</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../stock/portfolio.html">
+                      <li><a class="dropdown-item" href="{{ url('stock/portfolio') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Portfolio</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../stock/watchlist.html">
+                      <li><a class="dropdown-item" href="{{ url('stock/watchlist') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Watchlist</div>
                         </a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../chat.html">
+                  <li><a class="dropdown-item" href="{{ url('chat') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="message-square"></span>Chat</div>
                     </a></li>
                   <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="email" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="mail"></span>Email</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../email/inbox.html">
+                      <li><a class="dropdown-item" href="{{ url('email/inbox') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Inbox</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../email/email-detail.html">
+                      <li><a class="dropdown-item" href="{{ url('email/email-detail') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Email detail</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../email/compose.html">
+                      <li><a class="dropdown-item" href="{{ url('email/compose') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Compose</div>
                         </a></li>
                     </ul>
@@ -6118,10 +6118,10 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="bookmark"></span>Events</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../events/create-an-event.html">
+                      <li><a class="dropdown-item" href="{{ url('events/create-an-event') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create an event</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../events/event-detail.html">
+                      <li><a class="dropdown-item" href="{{ url('events/event-detail') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Event detail</div>
                         </a></li>
                     </ul>
@@ -6130,28 +6130,28 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="trello"></span>Kanban</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../kanban/kanban.html">
+                      <li><a class="dropdown-item" href="{{ url('kanban/kanban') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Kanban</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../kanban/boards.html">
+                      <li><a class="dropdown-item" href="{{ url('kanban/boards') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Boards</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../kanban/create-kanban-board.html">
+                      <li><a class="dropdown-item" href="{{ url('kanban/create-kanban-board') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Create board</div>
                         </a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../gantt-chart.html">
+                  <li><a class="dropdown-item" href="{{ url('gantt-chart') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 fa-solid fa-chart-gantt "></span>Gantt chart</div>
                     </a></li>
                   <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="social" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="share-2"></span>Social</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../social/profile.html">
+                      <li><a class="dropdown-item" href="{{ url('social/profile') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Profile</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../social/settings.html">
+                      <li><a class="dropdown-item" href="{{ url('social/settings') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Settings</div>
                         </a></li>
                     </ul>
@@ -6160,22 +6160,22 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="image"></span>Gallery</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../gallery/album.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/album') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Album</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../gallery/gallery-column.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/gallery-column') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery column</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../gallery/gallery-grid.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/gallery-grid') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery grid</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../gallery/grid-with-title.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/grid-with-title') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid with title</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../gallery/gallery-masonry.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/gallery-masonry') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery masonry</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../gallery/gallery-slider.html">
+                      <li><a class="dropdown-item" href="{{ url('gallery/gallery-slider') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Gallery slider</div>
                         </a></li>
                     </ul>
@@ -6184,32 +6184,32 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="folder"></span>File manager</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../file-manager/grid-view.html">
+                      <li><a class="dropdown-item" href="{{ url('file-manager/grid-view') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Grid view</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../file-manager/list-view.html">
+                      <li><a class="dropdown-item" href="{{ url('file-manager/list-view') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>List view</div>
                         </a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../calendar.html">
+                  <li><a class="dropdown-item" href="{{ url('calendar') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="calendar"></span>Calendar</div>
                     </a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-files-landscapes-alt"></span>Pages</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="../../../pages/starter.html">
+                  <li><a class="dropdown-item" href="{{ url('pages/starter') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="compass"></span>Starter</div>
                     </a></li>
                   <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="faq" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="help-circle"></span>Faq</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../pages/faq/faq-accordion.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/faq/faq-accordion') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq accordion</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../pages/faq/faq-tab.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/faq/faq-tab') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Faq tab</div>
                         </a></li>
                     </ul>
@@ -6218,10 +6218,10 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="globe"></span>Landing</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../pages/landing/default.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/landing/default') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Default</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../pages/landing/alternate.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/landing/alternate') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Alternate</div>
                         </a></li>
                     </ul>
@@ -6230,34 +6230,34 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="tag"></span>Pricing</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../pages/pricing/pricing-column.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-column') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing column</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../pages/pricing/pricing-grid.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/pricing/pricing-grid') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Pricing grid</div>
                         </a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../../pages/notifications.html">
+                  <li><a class="dropdown-item" href="{{ url('pages/notifications') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="bell"></span>Notifications</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../pages/members.html">
+                  <li><a class="dropdown-item" href="{{ url('pages/members') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="users"></span>Members</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../pages/timeline.html">
+                  <li><a class="dropdown-item" href="{{ url('pages/timeline') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="clock"></span>Timeline</div>
                     </a></li>
                   <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="errors" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="alert-triangle"></span>Errors</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../pages/errors/404.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/errors/404') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>404</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../pages/errors/403.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/errors/403') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>403</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../pages/errors/500.html">
+                      <li><a class="dropdown-item" href="{{ url('pages/errors/500') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>500</div>
                         </a></li>
                     </ul>
@@ -6270,25 +6270,25 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Simple</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-in.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-in') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-up.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-up') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/sign-out.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/sign-out') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/forgot-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/forgot-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/reset-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/reset-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/lock-screen.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/lock-screen') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/simple/2FA.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/simple/2FA') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                             </a></li>
                         </ul>
@@ -6297,25 +6297,25 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Split</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-in.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-in') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-up.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-up') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/sign-out.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/sign-out') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/forgot-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/forgot-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/reset-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/reset-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/lock-screen.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/lock-screen') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/split/2FA.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/split/2FA') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                             </a></li>
                         </ul>
@@ -6324,25 +6324,25 @@
                           <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Card</span></div>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-in.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-in') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign in</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-up.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-up') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign up</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/sign-out.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/sign-out') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sign out</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/forgot-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/forgot-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Forgot password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/reset-password.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/reset-password') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Reset password</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/lock-screen.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/lock-screen') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Lock screen</div>
                             </a></li>
-                          <li><a class="dropdown-item" href="../../../pages/authentication/card/2FA.html">
+                          <li><a class="dropdown-item" href="{{ url('pages/authentication/card/2FA') }}">
                               <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>2FA</div>
                             </a></li>
                         </ul>
@@ -6353,34 +6353,34 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="layout"></span>Layouts</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../demo/vertical-sidenav.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/vertical-sidenav') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical sidenav</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/dark-mode.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/dark-mode') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/sidenav-collapse.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/sidenav-collapse') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Sidenav collapse</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/darknav.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/darknav') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Darknav</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/topnav-slim.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/topnav-slim') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Topnav slim</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/navbar-horizontal.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/navbar-horizontal') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Navbar horizontal</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/horizontal-slim.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/horizontal-slim') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal slim</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/combo-nav.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/combo-nav') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/combo-nav-slim.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/combo-nav-slim') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo nav slim</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../demo/dual-nav.html">
+                      <li><a class="dropdown-item" href="{{ url('demo/dual-nav') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                         </a></li>
                     </ul>
@@ -6395,26 +6395,26 @@
                         <div class="col-12 col-sm-6 col-md-4">
                           <div class="dropdown-item-group"><span class="me-2" data-feather="file-text" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">Forms</h6>
-                          </div><a class="dropdown-link" href="../../../modules/forms/basic/form-control.html">Form control</a><a class="dropdown-link" href="../../../modules/forms/basic/input-group.html">Input group</a><a class="dropdown-link" href="../../../modules/forms/basic/select.html">Select</a><a class="dropdown-link" href="../../../modules/forms/basic/checks.html">Checks</a><a class="dropdown-link" href="../../../modules/forms/basic/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/basic/floating-labels.html">Floating labels</a><a class="dropdown-link" href="../../../modules/forms/basic/layout.html">Layout</a><a class="dropdown-link" href="../../../modules/forms/advance/advance-select.html">Advance select</a><a class="dropdown-link" href="../../../modules/forms/advance/date-picker.html">Date picker</a><a class="dropdown-link" href="../../../modules/forms/advance/editor.html">Editor</a><a class="dropdown-link" href="../../../modules/forms/advance/file-uploader.html">File uploader</a><a class="dropdown-link" href="../../../modules/forms/advance/range.html">Range</a><a class="dropdown-link" href="../../../modules/forms/advance/rating.html">Rating</a><a class="dropdown-link" href="../../../modules/forms/advance/emoji-button.html">Emoji button</a><a class="dropdown-link" href="../../../modules/forms/validation.html">Validation</a><a class="dropdown-link" href="../../../modules/forms/wizard.html">Wizard</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/forms/basic/form-control') }}">Form control</a><a class="dropdown-link" href="{{ url('modules/forms/basic/input-group') }}">Input group</a><a class="dropdown-link" href="{{ url('modules/forms/basic/select') }}">Select</a><a class="dropdown-link" href="{{ url('modules/forms/basic/checks') }}">Checks</a><a class="dropdown-link" href="{{ url('modules/forms/basic/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/basic/floating-labels') }}">Floating labels</a><a class="dropdown-link" href="{{ url('modules/forms/basic/layout') }}">Layout</a><a class="dropdown-link" href="{{ url('modules/forms/advance/advance-select') }}">Advance select</a><a class="dropdown-link" href="{{ url('modules/forms/advance/date-picker') }}">Date picker</a><a class="dropdown-link" href="{{ url('modules/forms/advance/editor') }}">Editor</a><a class="dropdown-link" href="{{ url('modules/forms/advance/file-uploader') }}">File uploader</a><a class="dropdown-link" href="{{ url('modules/forms/advance/range') }}">Range</a><a class="dropdown-link" href="{{ url('modules/forms/advance/rating') }}">Rating</a><a class="dropdown-link" href="{{ url('modules/forms/advance/emoji-button') }}">Emoji button</a><a class="dropdown-link" href="{{ url('modules/forms/validation') }}">Validation</a><a class="dropdown-link" href="{{ url('modules/forms/wizard') }}">Wizard</a>
                           <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="grid" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">Icons</h6>
-                          </div><a class="dropdown-link" href="../../../modules/icons/feather.html">Feather</a><a class="dropdown-link" href="../../../modules/icons/font-awesome.html">Font awesome</a><a class="dropdown-link" href="../../../modules/icons/unicons.html">Unicons</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/icons/feather') }}">Feather</a><a class="dropdown-link" href="{{ url('modules/icons/font-awesome') }}">Font awesome</a><a class="dropdown-link" href="{{ url('modules/icons/unicons') }}">Unicons</a>
                           <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="bar-chart-2" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">ECharts</h6>
-                          </div><a class="dropdown-link" href="../../../modules/echarts/line-charts.html">Line charts</a><a class="dropdown-link" href="../../../modules/echarts/bar-charts.html">Bar charts</a><a class="dropdown-link" href="../../../modules/echarts/candlestick-charts.html">Candlestick charts</a><a class="dropdown-link" href="../../../modules/echarts/geo-map.html">Geo map</a><a class="dropdown-link" href="../../../modules/echarts/scatter-charts.html">Scatter charts</a><a class="dropdown-link" href="../../../modules/echarts/pie-charts.html">Pie charts</a><a class="dropdown-link" href="../../../modules/echarts/gauge-chart.html">Gauge chart</a><a class="dropdown-link" href="../../../modules/echarts/radar-charts.html">Radar charts</a><a class="dropdown-link" href="../../../modules/echarts/heatmap-charts.html">Heatmap charts</a><a class="dropdown-link" href="../../../modules/echarts/how-to-use.html">How to use</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/echarts/line-charts') }}">Line charts</a><a class="dropdown-link" href="{{ url('modules/echarts/bar-charts') }}">Bar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/candlestick-charts') }}">Candlestick charts</a><a class="dropdown-link" href="{{ url('modules/echarts/geo-map') }}">Geo map</a><a class="dropdown-link" href="{{ url('modules/echarts/scatter-charts') }}">Scatter charts</a><a class="dropdown-link" href="{{ url('modules/echarts/pie-charts') }}">Pie charts</a><a class="dropdown-link" href="{{ url('modules/echarts/gauge-chart') }}">Gauge chart</a><a class="dropdown-link" href="{{ url('modules/echarts/radar-charts') }}">Radar charts</a><a class="dropdown-link" href="{{ url('modules/echarts/heatmap-charts') }}">Heatmap charts</a><a class="dropdown-link" href="{{ url('modules/echarts/how-to-use') }}">How to use</a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
                           <div class="dropdown-item-group"><span class="me-2" data-feather="package" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">Components</h6>
-                          </div><a class="dropdown-link" href="../../../modules/components/accordion.html">Accordion</a><a class="dropdown-link" href="../../../modules/components/avatar.html">Avatar</a><a class="dropdown-link" href="../../../modules/components/alerts.html">Alerts</a><a class="dropdown-link" href="../../../modules/components/badge.html">Badge</a><a class="dropdown-link" href="../../../modules/components/breadcrumb.html">Breadcrumb</a><a class="dropdown-link" href="../../../modules/components/button.html">Buttons</a><a class="dropdown-link" href="../../../modules/components/calendar.html">Calendar</a><a class="dropdown-link" href="../../../modules/components/card.html">Card</a><a class="dropdown-link" href="../../../modules/components/carousel/bootstrap.html">Bootstrap</a><a class="dropdown-link" href="../../../modules/components/carousel/swiper.html">Swiper</a><a class="dropdown-link" href="../../../modules/components/collapse.html">Collapse</a><a class="dropdown-link" href="../../../modules/components/dropdown.html">Dropdown</a><a class="dropdown-link" href="../../../modules/components/dhtmlx-gantt.html">Dhtmlx gantt</a><a class="dropdown-link" href="../../../modules/components/list-group.html">List group</a><a class="dropdown-link" href="../../../modules/components/modal.html">Modals</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navs.html">Navs</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/navbar.html">Navbar</a><a class="dropdown-link" href="../../../modules/components/navs-and-tabs/tabs.html">Tabs</a><a class="dropdown-link" href="../../../modules/components/offcanvas.html">Offcanvas</a><a class="dropdown-link" href="../../../modules/components/progress-bar.html">Progress bar</a><a class="dropdown-link" href="../../../modules/components/placeholder.html">Placeholder</a><a class="dropdown-link" href="../../../modules/components/pagination.html">Pagination</a><a class="dropdown-link" href="../../../modules/components/popovers.html">Popovers</a><a class="dropdown-link" href="../../../modules/components/scrollspy.html">Scrollspy</a><a class="dropdown-link" href="../../../modules/components/sortable.html">Sortable</a><a class="dropdown-link" href="../../../modules/components/spinners.html">Spinners</a><a class="dropdown-link" href="../../../modules/components/toast.html">Toast</a><a class="dropdown-link" href="../../../modules/components/tooltips.html">Tooltips</a><a class="dropdown-link" href="../../../modules/components/typed-text.html">Typed text</a><a class="dropdown-link" href="../../../modules/components/chat-widget.html">Chat widget</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/components/accordion') }}">Accordion</a><a class="dropdown-link" href="{{ url('modules/components/avatar') }}">Avatar</a><a class="dropdown-link" href="{{ url('modules/components/alerts') }}">Alerts</a><a class="dropdown-link" href="{{ url('modules/components/badge') }}">Badge</a><a class="dropdown-link" href="{{ url('modules/components/breadcrumb') }}">Breadcrumb</a><a class="dropdown-link" href="{{ url('modules/components/button') }}">Buttons</a><a class="dropdown-link" href="{{ url('modules/components/calendar') }}">Calendar</a><a class="dropdown-link" href="{{ url('modules/components/card') }}">Card</a><a class="dropdown-link" href="{{ url('modules/components/carousel/bootstrap') }}">Bootstrap</a><a class="dropdown-link" href="{{ url('modules/components/carousel/swiper') }}">Swiper</a><a class="dropdown-link" href="{{ url('modules/components/collapse') }}">Collapse</a><a class="dropdown-link" href="{{ url('modules/components/dropdown') }}">Dropdown</a><a class="dropdown-link" href="{{ url('modules/components/dhtmlx-gantt') }}">Dhtmlx gantt</a><a class="dropdown-link" href="{{ url('modules/components/list-group') }}">List group</a><a class="dropdown-link" href="{{ url('modules/components/modal') }}">Modals</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navs') }}">Navs</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/navbar') }}">Navbar</a><a class="dropdown-link" href="{{ url('modules/components/navs-and-tabs/tabs') }}">Tabs</a><a class="dropdown-link" href="{{ url('modules/components/offcanvas') }}">Offcanvas</a><a class="dropdown-link" href="{{ url('modules/components/progress-bar') }}">Progress bar</a><a class="dropdown-link" href="{{ url('modules/components/placeholder') }}">Placeholder</a><a class="dropdown-link" href="{{ url('modules/components/pagination') }}">Pagination</a><a class="dropdown-link" href="{{ url('modules/components/popovers') }}">Popovers</a><a class="dropdown-link" href="{{ url('modules/components/scrollspy') }}">Scrollspy</a><a class="dropdown-link" href="{{ url('modules/components/sortable') }}">Sortable</a><a class="dropdown-link" href="{{ url('modules/components/spinners') }}">Spinners</a><a class="dropdown-link" href="{{ url('modules/components/toast') }}">Toast</a><a class="dropdown-link" href="{{ url('modules/components/tooltips') }}">Tooltips</a><a class="dropdown-link" href="{{ url('modules/components/typed-text') }}">Typed text</a><a class="dropdown-link" href="{{ url('modules/components/chat-widget') }}">Chat widget</a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
                           <div class="dropdown-item-group"><span class="me-2" data-feather="columns" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">Tables</h6>
-                          </div><a class="dropdown-link" href="../../../modules/tables/basic-tables.html">Basic tables</a><a class="dropdown-link" href="../../../modules/tables/advance-tables.html">Advance tables</a><a class="dropdown-link" href="../../../modules/tables/bulk-select.html">Bulk Select</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/tables/basic-tables') }}">Basic tables</a><a class="dropdown-link" href="{{ url('modules/tables/advance-tables') }}">Advance tables</a><a class="dropdown-link" href="{{ url('modules/tables/bulk-select') }}">Bulk Select</a>
                           <div class="dropdown-item-group mt-5"><span class="me-2" data-feather="tool" style="stroke-width:2;"></span>
                             <h6 class="dropdown-item-title">Utilities</h6>
-                          </div><a class="dropdown-link" href="../../../modules/utilities/background.html">Background</a><a class="dropdown-link" href="../../../modules/utilities/borders.html">Borders</a><a class="dropdown-link" href="../../../modules/utilities/colors.html">Colors</a><a class="dropdown-link" href="../../../modules/utilities/display.html">Display</a><a class="dropdown-link" href="../../../modules/utilities/flex.html">Flex</a><a class="dropdown-link" href="../../../modules/utilities/stacks.html">Stacks</a><a class="dropdown-link" href="../../../modules/utilities/float.html">Float</a><a class="dropdown-link" href="../../../modules/utilities/grid.html">Grid</a><a class="dropdown-link" href="../../../modules/utilities/interactions.html">Interactions</a><a class="dropdown-link" href="../../../modules/utilities/opacity.html">Opacity</a><a class="dropdown-link" href="../../../modules/utilities/overflow.html">Overflow</a><a class="dropdown-link" href="../../../modules/utilities/position.html">Position</a><a class="dropdown-link" href="../../../modules/utilities/shadows.html">Shadows</a><a class="dropdown-link" href="../../../modules/utilities/sizing.html">Sizing</a><a class="dropdown-link" href="../../../modules/utilities/spacing.html">Spacing</a><a class="dropdown-link" href="../../../modules/utilities/typography.html">Typography</a><a class="dropdown-link" href="../../../modules/utilities/vertical-align.html">Vertical align</a><a class="dropdown-link" href="../../../modules/utilities/visibility.html">Visibility</a>
+                          </div><a class="dropdown-link" href="{{ url('modules/utilities/background') }}">Background</a><a class="dropdown-link" href="{{ url('modules/utilities/borders') }}">Borders</a><a class="dropdown-link" href="{{ url('modules/utilities/colors') }}">Colors</a><a class="dropdown-link" href="{{ url('modules/utilities/display') }}">Display</a><a class="dropdown-link" href="{{ url('modules/utilities/flex') }}">Flex</a><a class="dropdown-link" href="{{ url('modules/utilities/stacks') }}">Stacks</a><a class="dropdown-link" href="{{ url('modules/utilities/float') }}">Float</a><a class="dropdown-link" href="{{ url('modules/utilities/grid') }}">Grid</a><a class="dropdown-link" href="{{ url('modules/utilities/interactions') }}">Interactions</a><a class="dropdown-link" href="{{ url('modules/utilities/opacity') }}">Opacity</a><a class="dropdown-link" href="{{ url('modules/utilities/overflow') }}">Overflow</a><a class="dropdown-link" href="{{ url('modules/utilities/position') }}">Position</a><a class="dropdown-link" href="{{ url('modules/utilities/shadows') }}">Shadows</a><a class="dropdown-link" href="{{ url('modules/utilities/sizing') }}">Sizing</a><a class="dropdown-link" href="{{ url('modules/utilities/spacing') }}">Spacing</a><a class="dropdown-link" href="{{ url('modules/utilities/typography') }}">Typography</a><a class="dropdown-link" href="{{ url('modules/utilities/vertical-align') }}">Vertical align</a><a class="dropdown-link" href="{{ url('modules/utilities/visibility') }}">Visibility</a>
                         </div>
                       </div>
                     </div>
@@ -6423,26 +6423,26 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle lh-1" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="uil fs-8 me-2 uil-document-layout-right"></span>Documentation</a>
                 <ul class="dropdown-menu navbar-dropdown-caret">
-                  <li><a class="dropdown-item" href="../../../documentation/getting-started.html">
+                  <li><a class="dropdown-item" href="{{ url('documentation/getting-started') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="life-buoy"></span>Getting started</div>
                     </a></li>
                   <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle" id="customization" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="settings"></span>Customization</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../documentation/customization/configuration.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/customization/configuration') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Configuration</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/customization/styling.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/customization/styling') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/customization/color.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/customization/color') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Color</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/customization/dark-mode.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/customization/dark-mode') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark mode</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/customization/plugin.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/customization/plugin') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin</div>
                         </a></li>
                     </ul>
@@ -6451,30 +6451,30 @@
                       <div class="dropdown-item-wrapper"><span class="uil fs-8 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="table"></span>Layouts doc</span></div>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../../documentation/layouts/vertical-navbar.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/layouts/vertical-navbar') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Vertical navbar</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/layouts/horizontal-navbar.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/layouts/horizontal-navbar') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Horizontal navbar</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/layouts/combo-navbar.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/layouts/combo-navbar') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo navbar</div>
                         </a></li>
-                      <li><a class="dropdown-item" href="../../../documentation/layouts/dual-nav.html">
+                      <li><a class="dropdown-item" href="{{ url('documentation/layouts/dual-nav') }}">
                           <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual nav</div>
                         </a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../../documentation/gulp.html">
+                  <li><a class="dropdown-item" href="{{ url('documentation/gulp') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../documentation/design-file.html">
+                  <li><a class="dropdown-item" href="{{ url('documentation/design-file') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="figma"></span>Design file</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../changelog.html">
+                  <li><a class="dropdown-item" href="{{ url('changelog') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="git-merge"></span>Changelog</div>
                     </a></li>
-                  <li><a class="dropdown-item" href="../../../showcase.html">
+                  <li><a class="dropdown-item" href="{{ url('showcase') }}">
                       <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="monitor"></span>Showcase</div>
                     </a></li>
                 </ul>
@@ -6611,9 +6611,9 @@
               <div class="dropzone dropzone-multiple p-0 mb-5" id="my-awesome-dropzone" data-dropzone="data-dropzone">
                 <div class="fallback"><input name="file" type="file" multiple="multiple"></div>
                 <div class="dz-preview d-flex flex-wrap">
-                  <div class="border border-translucent bg-body-emphasis rounded-3 d-flex flex-center position-relative me-2 mb-2" style="height:80px;width:80px;"><img class="dz-image" src="../../../assets/img/products/23.png" alt="..." data-dz-thumbnail="data-dz-thumbnail"><a class="dz-remove text-body-quaternary" href="#!" data-dz-remove="data-dz-remove"><span data-feather="x"></span></a></div>
+                  <div class="border border-translucent bg-body-emphasis rounded-3 d-flex flex-center position-relative me-2 mb-2" style="height:80px;width:80px;"><img class="dz-image" src="{{ asset('assets/img/products/23.png') }}" alt="..." data-dz-thumbnail="data-dz-thumbnail"><a class="dz-remove text-body-quaternary" href="#!" data-dz-remove="data-dz-remove"><span data-feather="x"></span></a></div>
                 </div>
-                <div class="dz-message text-body-tertiary text-opacity-85" data-dz-message="data-dz-message">Drag your photo here<span class="text-body-secondary px-1">or</span><button class="btn btn-link p-0" type="button">Browse from device</button><br><img class="mt-3 me-2" src="../../../assets/img/icons/image-icon.png" width="40" alt=""></div>
+                <div class="dz-message text-body-tertiary text-opacity-85" data-dz-message="data-dz-message">Drag your photo here<span class="text-body-secondary px-1">or</span><button class="btn btn-link p-0" type="button">Browse from device</button><br><img class="mt-3 me-2" src="{{ asset('assets/img/icons/image-icon.png') }}" width="40" alt=""></div>
               </div>
               <h4 class="mb-3">Inventory</h4>
               <div class="row g-0 border-top border-bottom">
@@ -6860,12 +6860,12 @@
                       <h6 class="dropdown-header text-body-highlight fs-10 py-2">24 <span class="text-body-quaternary">results</span></h6>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Recently Searched </h6>
-                      <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> Store Macbook</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> MacBook Air - 13″</div>
                           </div>
@@ -6873,15 +6873,15 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Products</h6>
-                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                          <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                          <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">MacBook Air - 13″</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">8GB Memory - 1.6GHz - 128GB Storage</span></p>
                           </div>
                         </a>
-                        <a class="dropdown-item py-2 d-flex align-items-center" href="../landing/product-details.html">
-                          <div class="file-thumbnail me-2"><img class="img-fluid" src="../../../assets/img/products/60x60/3.png" alt=""></div>
+                        <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('landing/product-details') }}">
+                          <div class="file-thumbnail me-2"><img class="img-fluid" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">MacBook Pro - 13″</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">30 Sep at 12:30 PM</span></p>
@@ -6890,12 +6890,12 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Quick Links</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Support MacBook House</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                           </div>
@@ -6903,17 +6903,17 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Files</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-file-zipper text-body" data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-file-lines text-body" data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-image text-body" data-fa-transform="shrink-2"></span> MacBook Pro_13.jpg</div>
                           </div>
@@ -6921,18 +6921,18 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Members</h6>
-                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                           <div class="avatar avatar-l status-online  me-2 text-body">
-                            <img class="rounded-circle " src="../../../assets/img/team/40x40/10.webp" alt="">
+                            <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/10.webp') }}" alt="">
                           </div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">Carry Anna</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary">anna@technext.it</p>
                           </div>
                         </a>
-                        <a class="dropdown-item py-2 d-flex align-items-center" href="../../../pages/members.html">
+                        <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('pages/members') }}">
                           <div class="avatar avatar-l  me-2 text-body">
-                            <img class="rounded-circle " src="../../../assets/img/team/40x40/12.webp" alt="">
+                            <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/12.webp') }}" alt="">
                           </div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">John Smith</h6>
@@ -6942,12 +6942,12 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Related Searches</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-brands fa-firefox-browser text-body" data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-brands fa-chrome text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                           </div>
@@ -6985,7 +6985,7 @@
                     <p class="mb-0 fw-semibold fs-9">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
                   </a></div>
                 <div class="text-center mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="../../../assets/img/team/30.webp" alt=""></div>
+                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="{{ asset('assets/img/team/30.webp') }}" alt=""></div>
                   <h5 class="mt-2 mb-3">Eric</h5>
                   <p class="text-center text-body-emphasis mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
                 </div>
@@ -7014,9 +7014,9 @@
         <div class="setting-panel-item mt-0">
           <h5 class="setting-panel-item-title">Color Scheme</h5>
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-light.png" alt=""></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/auto.png" alt=""></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/auto.png') }}" alt=""></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
@@ -7036,31 +7036,31 @@
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Navigation Type</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text">Vertical</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text"> Horizontal</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/nav-combo-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/nav-combo-dark.png" alt=""></span><span class="label-text"> Combo</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/dual-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/dual-dark.png" alt=""></span><span class="label-text"> Dual nav</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text">Vertical</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text"> Horizontal</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/nav-combo-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/nav-combo-dark.png') }}" alt=""></span><span class="label-text"> Combo</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/dual-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/dual-dark.png') }}" alt=""></span><span class="label-text"> Dual nav</span></label></div>
           </div>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Vertical Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/vertical-darker.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/vertical-lighter.png" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/vertical-darker.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/vertical-lighter.png') }}" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Shape</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-slim.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-slim-dark.png" alt=""></span><span class="label-text"> Slim</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-slim.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-slim-dark.png') }}" alt=""></span><span class="label-text"> Slim</span></label></div>
           </div>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-darker.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/navbar-top-style-light.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-lighter.png" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-darker.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/navbar-top-style-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-lighter.png') }}" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
         </div><a class="bun btn-primary d-grid mb-3 text-white mt-5 btn btn-primary" href="https://themewagon.com/themes/phoenix/" target="_blank">Purchase template</a>
       </div>
@@ -7075,20 +7075,20 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="../../../vendors/popper/popper.min.js"></script>
-    <script src="../../../vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="../../../vendors/anchorjs/anchor.min.js"></script>
-    <script src="../../../vendors/is/is.min.js"></script>
-    <script src="../../../vendors/fontawesome/all.min.js"></script>
-    <script src="../../../vendors/lodash/lodash.min.js"></script>
-    <script src="../../../vendors/list.js/list.min.js"></script>
-    <script src="../../../vendors/feather-icons/feather.min.js"></script>
-    <script src="../../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../../vendors/tinymce/tinymce.min.js"></script>
-    <script src="../../../vendors/dropzone/dropzone-min.js"></script>
-    <script src="../../../vendors/choices/choices.min.js"></script>
-    <script src="../../../vendors/flatpickr/flatpickr.min.js"></script>
-    <script src="../../../assets/js/phoenix.js"></script>
+    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+    <script src="{{ asset('vendors/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('vendors/dropzone/dropzone-min.js') }}"></script>
+    <script src="{{ asset('vendors/choices/choices.min.js') }}"></script>
+    <script src="{{ asset('vendors/flatpickr/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
   </body>
 
 </html>

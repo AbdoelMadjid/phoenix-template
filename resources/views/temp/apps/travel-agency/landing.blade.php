@@ -14,28 +14,28 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="../../assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="../../assets/img/favicons/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
     <meta name="theme-color" content="#ffffff">
-    <script src="../../vendors/simplebar/simplebar.min.js"></script>
-    <script src="../../assets/js/config.js"></script>
+    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="../../assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="../../vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/external/release/v4.0.8/css/line.css">
-    <link href="../../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
-    <link href="../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -51,7 +51,7 @@
         userLinkRTL.setAttribute('disabled', true);
       }
     </script>
-    <link href="../../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{ asset('vendors/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
   </head>
 
   <body class="bg-body-emphasis" style="--phoenix-scroll-margin-top: 1.2rem;">
@@ -60,7 +60,7 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <div class="bg-primary-subtle py-2">
-        <div class="container-medium d-flex align-items-center justify-content-between"><a class="btn btn-link p-0 text-body" href="../../pages/authentication/card/sign-in.html"><span class="fa-solid fa-arrow-right-to-bracket me-2" data-fa-transform="down-1"></span>Agent Login</a>
+        <div class="container-medium d-flex align-items-center justify-content-between"><a class="btn btn-link p-0 text-body" href="{{ url('pages/authentication/card/sign-in') }}"><span class="fa-solid fa-arrow-right-to-bracket me-2" data-fa-transform="down-1"></span>Agent Login</a>
           <div class="dropdown"><button class="btn btn-sm p-0 d-md-none fs-8" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
             <ul class="dropdown-menu dropdown-menu-end" style="z-index: 9999">
               <li><a class="dropdown-item" href="#!">Become a Host</a></li>
@@ -80,8 +80,8 @@
         </div>
       </div>
       <div class="bg-body-emphasis sticky-top" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
-        <nav class="navbar navbar-landing navbar-expand-lg container-medium"><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="../../index.html">
-            <div class="d-flex align-items-center"><img src="../../assets/img/icons/logo.png" alt="phoenix" width="27">
+        <nav class="navbar navbar-landing navbar-expand-lg container-medium"><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="{{ url('dashboard') }}">
+            <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
               <h5 class="logo-text ms-2">phoenix</h5>
             </div>
           </a>
@@ -90,10 +90,10 @@
           </div><button class="navbar-toggler fs-8 ps-1 ps-sm-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mt-3 mt-lg-0">
-              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="hotel/customer/homepage.html">Hotel</a></li>
-              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="flight/homepage.html">Flight</a></li>
-              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="trip/homepage.html">Trip</a></li>
-              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="../events/event-detail.html">Event</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="{{ url('hotel/customer/homepage') }}">Hotel</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="{{ url('flight/homepage') }}">Flight</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="{{ url('trip/homepage') }}">Trip</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="{{ url('events/event-detail') }}">Event</a></li>
               <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="#!">Package</a></li>
               <li class="nav-item"><a class="nav-link" href="#!">Trending</a></li>
             </ul>
@@ -101,8 +101,8 @@
         </nav>
       </div>
       <div class="booking-hero-header d-flex align-items-center">
-        <div class="bg-holder bg-holder overlay bg-opacity-50" style="background-image:url(../../assets/video/travel.png);"><video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
-            <source src="../../assets/video/travel.mp4" type="video/mp4">
+        <div class="bg-holder bg-holder overlay bg-opacity-50" style="background-image:url({{ asset('assets/video/travel.png') }});"><video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+            <source src="{{ asset('assets/video/travel.mp4') }}" type="video/mp4">
           </video></div>
         <!--/.bg-holder-->
         <div class="container-medium position-relative z-5">
@@ -121,9 +121,9 @@
       <!-- <section> begin ============================-->
       <section class="pt-6 pt-md-10 pb-10">
         <div class="container-medium">
-          <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-27.png);background-size:auto;background-position:left;"></div>
+          <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-27.png') }});background-size:auto;background-position:left;"></div>
           <!--/.bg-holder-->
-          <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-27.png);background-size:auto;background-position:right;"></div>
+          <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-right-27.png') }});background-size:auto;background-position:right;"></div>
           <!--/.bg-holder-->
           <div class="row g-3 position-relative">
             <div class="col-lg-6">
@@ -134,21 +134,21 @@
                   <p class="mb-3 mb-md-0 text-body-tertiary">This is the perfect season for tours and travels. At Phoenix, you can easily select the best travel option for your next vacation<span class="d-none d-lg-inline-block d-xl-none">... </span><span class="d-lg-none d-xl-inline">This will help you with the pricing that you’ll need, the accommodation facilities, food and beverages, and water rides.</span></p>
                 </div>
                 <div class="col-6 col-md-5">
-                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"><img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/35.png" alt=""></a>
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"><img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/35.png') }}" alt=""></a>
                     <div class="backdrop-faded"><a class="fw-bold fs-7 text-white stretched-link" href="#!">New Zealand</a>
                       <p class="mb-0 text-white fs-9">17 Hotels</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-6 col-md-5">
-                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/36.png" alt=""></a>
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/36.png') }}" alt=""></a>
                     <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!">London</a>
                       <p class="mb-0 text-white fs-9">17 Hotels</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-md-100 object-fit-cover" src="../../assets/img/gallery/37.png" alt="" height="220"></a>
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-md-100 object-fit-cover" src="{{ asset('assets/img/gallery/37.png') }}" alt="" height="220"></a>
                     <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!">Maui</a>
                       <p class="mb-0 text-white fs-9">14 Hotels</p>
                     </div>
@@ -158,7 +158,7 @@
             </div>
             <div class="col-lg-6">
               <div class="d-flex flex-column gap-3 h-100">
-                <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-lg-100 object-fit-cover" src="../../assets/img/gallery/38.png" alt="" height="220"></a>
+                <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-lg-100 object-fit-cover" src="{{ asset('assets/img/gallery/38.png') }}" alt="" height="220"></a>
                   <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!">Bali, Indonesia</a>
                     <p class="mb-0 text-white fs-9">51 Hotels</p>
                   </div>
@@ -171,9 +171,9 @@
       <!-- ============================================-->
 
       <section class="pb-10 pt-0">
-        <div class="bg-holder d-none d-md-block" style="background-image:url(../../assets/img/bg/bg-left-28.png);background-size:7%;background-position:left 27%;"></div>
+        <div class="bg-holder d-none d-md-block" style="background-image:url({{ asset('assets/img/bg/bg-left-28.png') }});background-size:7%;background-position:left 27%;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-md-block" style="background-image:url(../../assets/img/bg/bg-right-28.png);background-size:16%;background-position:right -25px;"></div>
+        <div class="bg-holder d-none d-md-block" style="background-image:url({{ asset('assets/img/bg/bg-right-28.png') }});background-size:16%;background-position:right -25px;"></div>
         <!--/.bg-holder-->
         <div class="container-medium text-center mb-11 position-relative">
           <h3 class="mb-2 text-body-emphasis">Travel more, spend less</h3>
@@ -187,7 +187,7 @@
             </div>
             <div class="swiper theme-slider" data-swiper='{"loop":true,"centeredSlides":true,"autoplay":true,"centeredSlidesBounds":true,"spaceBetween":16,"slidesPerView":1,"speed":1500,"breakpoints":{"576":{"slidesPerView":"auto"}}}'>
               <div class="swiper-wrapper">
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/39.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/39.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -197,12 +197,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">22 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/thailand.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/thailand.png') }}" alt="">
                         <h4 class="mb-0 text-white">Thailand</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/40.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/40.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -212,12 +212,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">24 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/switzerland.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/switzerland.png') }}" alt="">
                         <h4 class="mb-0 text-white">Switzerland</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/42.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/42.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -227,12 +227,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">123 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/turkey.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/turkey.png') }}" alt="">
                         <h4 class="mb-0 text-white">Turkey</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/41.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/41.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -242,12 +242,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">41 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/new-zealand.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/new-zealand.png') }}" alt="">
                         <h4 class="mb-0 text-white">New Zealand</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/43.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/43.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -257,12 +257,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">22 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/sweden.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/sweden.png') }}" alt="">
                         <h4 class="mb-0 text-white">Sweden</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/44.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/44.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -272,12 +272,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">123 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/turkey.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/turkey.png') }}" alt="">
                         <h4 class="mb-0 text-white">Turkey</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/58.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/58.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -287,12 +287,12 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">123 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/vietnam.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/vietnam.png') }}" alt="">
                         <h4 class="mb-0 text-white">Vietnam</h4>
                       </div>
                     </div>
                   </a></div>
-                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="../../assets/img/gallery/57.png" alt="" height="220">
+                <div class="swiper-slide w-sm-auto"><a class="position-relative rounded-3 overflow-hidden d-block" href="#!"><img class="w-100 w-sm-auto object-fit-cover" src="{{ asset('assets/img/gallery/57.png') }}" alt="" height="220">
                     <div class="img-backdrop-faded">
                       <div class="image-reveal-content mb-3">
                         <div class="d-flex align-items-center gap-2 mb-2"><span class="fa-solid fa-hotel text-secondary-lighter"></span>
@@ -302,7 +302,7 @@
                           <h6 class="mb-0 text-secondary-lighter fw-semibold">22 Tour Package</h6>
                         </div>
                       </div>
-                      <div class="d-flex align-items-center gap-2"><img src="../../assets/img/country/japan.png" alt="">
+                      <div class="d-flex align-items-center gap-2"><img src="{{ asset('assets/img/country/japan.png') }}" alt="">
                         <h4 class="mb-0 text-white">Japan</h4>
                       </div>
                     </div>
@@ -313,7 +313,7 @@
         </div>
       </section>
       <section class="py-0">
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-29.png);background-size:auto;background-position:-15%;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-29.png') }});background-size:auto;background-position:-15%;"></div>
         <!--/.bg-holder-->
         <div class="container-medium position-relative">
           <h3 class="mb-2 text-body-emphasis text-center text-xl-start">The best of our hotel</h3>
@@ -325,7 +325,7 @@
               <div class="row gy-5 gx-xl-7 justify-content-between pe-4">
                 <div class="col-xl-4">
                   <div class="card card-img-shift border-0 mx-auto">
-                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="../../assets/img/gallery/45.png" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{{ asset('assets/img/gallery/45.png') }}" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
                     <div class="card-body p-0">
                       <div class="card-content">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
@@ -339,7 +339,7 @@
                 </div>
                 <div class="col-xl-4">
                   <div class="card card-img-shift border-0 mx-auto">
-                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="../../assets/img/gallery/46.png" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{{ asset('assets/img/gallery/46.png') }}" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
                     <div class="card-body p-0">
                       <div class="card-content">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
@@ -353,7 +353,7 @@
                 </div>
                 <div class="col-xl-4">
                   <div class="card card-img-shift border-0 mx-auto">
-                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="../../assets/img/gallery/47.png" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                    <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{{ asset('assets/img/gallery/47.png') }}" alt="" height="250"><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
                     <div class="card-body p-0">
                       <div class="card-content">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
@@ -371,9 +371,9 @@
         </div>
       </section>
       <section class="py-10 overflow-hidden">
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-30.png);background-size:40%;background-position:left;z-index:1;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-30.png') }});background-size:40%;background-position:left;z-index:1;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-30.png);background-size:26%;background-position:right 25px;z-index:1;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-right-30.png') }});background-size:26%;background-position:right 25px;z-index:1;"></div>
         <!--/.bg-holder-->
         <div class="bg-booking-gallery"></div>
         <div class="container-medium position-relative z-2">
@@ -389,84 +389,84 @@
             <div class="col-md-9 col-lg-7 col-xl-5">
               <div class="row gx-0 gy-3" id="image_gallery" data-sl-isotope='{"layoutMode":"packery","filter":".tokyo"}'>
                 <div class="col-12 isotope-item w-100 tokyo">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/tokyo-1.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/tokyo-1.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">King Power Mahanakhon</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.8<span class="fs-10">/5 </span>(1.4k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 tokyo">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/tokyo-2.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/tokyo-2.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Meiji Jingu</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>5<span class="fs-10">/5 </span>(2.2k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 tokyo">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/tokyo-3.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/tokyo-3.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Imperial Palace</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.5<span class="fs-10">/5 </span>(1.2k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 bali">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/bali-1.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/bali-1.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Nusa Lembongan</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.7<span class="fs-10">/5 </span>(1.2k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 bali">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/bali-2.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/bali-2.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Waterbom Bali</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.5<span class="fs-10">/5 </span>(1.8k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 bali">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/bali-3.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/bali-3.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Kuta Beach</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>5<span class="fs-10">/5 </span>(4.1k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 sydney">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/sydney-1.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/sydney-1.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">The Rocks</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.8<span class="fs-10">/5 </span>(1.9k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 sydney">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/sydney-2.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/sydney-2.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Manly Beach</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.7<span class="fs-10">/5 </span>(1.1k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 sydney">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/sydney-3.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/sydney-3.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Darling Harbour</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>5<span class="fs-10">/5 </span>(3.2k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 paris">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/paris-1.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/paris-1.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Louvre Museum</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.4<span class="fs-10">/5 </span>(4.3k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 paris">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/paris-2.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/paris-2.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Montmartre</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>5<span class="fs-10">/5 </span>(5k review)</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 isotope-item w-100 paris">
-                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="../../assets/img/gallery/paris-3.png" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
+                  <div class="img-zoom-hover-lg rounded-2 overflow-hidden"><a href="#!"> <img class="w-100 object-fit-cover" src="{{ asset('assets/img/gallery/paris-3.png') }}" alt="" height="220"></a><button class="btn btn-wish position-absolute top-0 end-0 mt-4 me-4"><span class="far fa-heart"></span></button>
                     <div class="backdrop-faded"><a class="text-white fw-bolder fs-7 stretched-link" href="#!">Tuileries Garden</a>
                       <h5 class="text-light mb-0"><span class="fa-solid fa-star text-warning me-1" data-fa-transform="shrink-2"></span>4.1<span class="fs-10">/5 </span>(4.5k review)</h5>
                     </div>
@@ -484,9 +484,9 @@
         </div>
       </section>
       <section class="pb-7 pt-0 overflow-x-hidden">
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-31.png);background-size:22%;background-position:left;z-index:1;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-31.png') }});background-size:22%;background-position:left;z-index:1;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-31.png);background-size:15%;background-position:right bottom;z-index:1;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-right-31.png') }});background-size:15%;background-position:right bottom;z-index:1;"></div>
         <!--/.bg-holder-->
         <div class="bg-latest-posts"></div>
         <div class="container-medium text-center position-relative z-2">
@@ -497,7 +497,7 @@
           <div class="swiper-container theme-slider" data-swiper='{"loop":true,"slidesPerView":1.3,"spaceBetween":32,"speed":2000,"autoplay":true,"centeredSlides":true,"simulateTouch":false,"breakpoints":{"540":{"slidesPerView":1.5},"768":{"slidesPerView":1.8},"1200":{"slidesPerView":2},"1530":{"slidesPerView":2.8}}}'>
             <div class="swiper-wrapper">
               <div class="swiper-slide rounded-3 overflow-hidden">
-                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/48.png" alt="">
+                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/48.png') }}" alt="">
                   <div class="backdrop-faded p-4 p-md-6">
                     <div class="d-flex align-items-center mb-2"><span class="text-secondary-lighter me-2" data-feather="calendar"></span>
                       <h6 class="mb-0 fw-semibold text-secondary-lighter pe-3 me-3 border-end">Monday, Nov 07, 2022</h6><span class="fa-solid fa-star text-warning fs-9 me-2"></span>
@@ -507,7 +507,7 @@
                 </div>
               </div>
               <div class="swiper-slide rounded-3 overflow-hidden">
-                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/49.png" alt="">
+                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/49.png') }}" alt="">
                   <div class="backdrop-faded p-4 p-md-6">
                     <div class="d-flex align-items-center mb-2"><span class="text-secondary-lighter me-2" data-feather="calendar"></span>
                       <h6 class="mb-0 fw-semibold text-secondary-lighter pe-3 me-3 border-end">Monday, Nov 06, 2022</h6><span class="fa-solid fa-star text-warning fs-9 me-2"></span>
@@ -517,7 +517,7 @@
                 </div>
               </div>
               <div class="swiper-slide rounded-3 overflow-hidden">
-                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/50.png" alt="">
+                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/50.png') }}" alt="">
                   <div class="backdrop-faded p-4 p-md-6">
                     <div class="d-flex align-items-center mb-2"><span class="text-secondary-lighter me-2" data-feather="calendar"></span>
                       <h6 class="mb-0 fw-semibold text-secondary-lighter pe-3 me-3 border-end">Monday, Nov 05, 2022</h6><span class="fa-solid fa-star text-warning fs-9 me-2"></span>
@@ -527,7 +527,7 @@
                 </div>
               </div>
               <div class="swiper-slide rounded-3 overflow-hidden">
-                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="../../assets/img/gallery/64.png" alt="">
+                <div class="position-relative w-100 h-100"><img class="w-100 h-100 object-fit-cover" src="{{ asset('assets/img/gallery/64.png') }}" alt="">
                   <div class="backdrop-faded p-4 p-md-6">
                     <div class="d-flex align-items-center mb-2"><span class="text-secondary-lighter me-2" data-feather="calendar"></span>
                       <h6 class="mb-0 fw-semibold text-secondary-lighter pe-3 me-3 border-end">Monday, Nov 04, 2022</h6><span class="fa-solid fa-star text-warning fs-9 me-2"></span>
@@ -546,14 +546,14 @@
         <div class="text-center mt-12 position-relative z-2"><button class="btn btn-link p-0 fs-8">View all<span class="fa-solid fa-chevron-right ms-2" data-fa-transform="shrink-1"></span></button></div>
       </section>
       <section class="pb-10 pt-3">
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-32.png);background-size:26%;background-position:left 115px;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-32.png') }});background-size:26%;background-position:left 115px;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-32.png);background-size:28%;background-position:right -25px;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-right-32.png') }});background-size:28%;background-position:right -25px;"></div>
         <!--/.bg-holder-->
         <div class="container-medium position-relative">
           <div class="row g-0 justify-content-center">
             <div class="col-lg-10 col-xl-7">
-              <div class="d-md-flex align-items-center gap-7 text-center text-md-start"><img class="mb-4 mb-md-0 d-dark-none" src="../../assets/img/spot-illustrations/40.png" width="260" alt=""><img class="mb-4 mb-md-0 d-light-none" src="../../assets/img/spot-illustrations/dark_40.png" width="260" alt="">
+              <div class="d-md-flex align-items-center gap-7 text-center text-md-start"><img class="mb-4 mb-md-0 d-dark-none" src="{{ asset('assets/img/spot-illustrations/40.png') }}" width="260" alt=""><img class="mb-4 mb-md-0 d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_40.png') }}" width="260" alt="">
                 <div class="flex-1">
                   <h3 class="mb-0">Get Updates & More</h3>
                   <p class="mb-4 text-body-tertiary">Subscribe to our newsletter to stay updated.</p>
@@ -575,32 +575,32 @@
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/51.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/51.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Bali Indonesia</a></div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/52.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/52.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Barcelona</a></div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/53.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/53.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Bali Indonesia</a></div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/54.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/54.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Sydney</a></div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/55.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/55.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Great Barrier Reef</a></div>
               </div>
             </div>
             <div class="col-md-6 col-xl-4">
-              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="../../assets/img/gallery/56.png" alt=""></a>
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{{ asset('assets/img/gallery/56.png') }}" alt=""></a>
                 <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span>Grand Canyon</a></div>
               </div>
             </div>
@@ -610,19 +610,19 @@
       <!-- ============================================-->
 
       <section class="pt-9 pb-10">
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-33.png);background-size:auto;background-position:-8% 38px;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-left-33.png') }});background-size:auto;background-position:-8% 38px;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-33.png);background-size:18%;background-position:right;"></div>
+        <div class="bg-holder d-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-right-33.png') }});background-size:18%;background-position:right;"></div>
         <!--/.bg-holder-->
         <div class="bg-get-app"></div>
         <div class="container-medium position-relative">
           <div class="row g-0 justify-content-center">
             <div class="col-lg-10 col-xl-8 col-xxl-7">
-              <div class="d-md-flex align-items-center gap-5 text-center text-md-start"><img class="img-fluid d-dark-none" src="../../assets/img/spot-illustrations/i-phone.png" alt="" style="max-height: 540px"><img class="img-fluid d-light-none" src="../../assets/img/spot-illustrations/i-phone-dark.png" alt="" style="max-height: 540px">
+              <div class="d-md-flex align-items-center gap-5 text-center text-md-start"><img class="img-fluid d-dark-none" src="{{ asset('assets/img/spot-illustrations/i-phone.png') }}" alt="" style="max-height: 540px"><img class="img-fluid d-light-none" src="{{ asset('assets/img/spot-illustrations/i-phone-dark.png') }}" alt="" style="max-height: 540px">
                 <div class="mt-5 mt-md-0">
-                  <div class="d-none d-md-block"><img class="d-dark-none" src="../../assets/img/spot-illustrations/41.png" alt="" width="200"><img class="d-light-none" src="../../assets/img/spot-illustrations/dark_41.png" alt="" width="200"></div>
+                  <div class="d-none d-md-block"><img class="d-dark-none" src="{{ asset('assets/img/spot-illustrations/41.png') }}" alt="" width="200"><img class="d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_41.png') }}" alt="" width="200"></div>
                   <h3 class="fw-bolder mt-4">Get The App Now</h3>
-                  <p class="text-body-tertiary">Designed to provide the best user experience possible to all our customers with activities ranging from anything thinkable to the unthinkables.</p><a class="me-2" href="#!"><img src="../../assets/img/generic/play-store.png" alt="" height="32"></a><a href="#!"><img src="../../assets/img/generic/app-store.png" alt="" height="32"></a>
+                  <p class="text-body-tertiary">Designed to provide the best user experience possible to all our customers with activities ranging from anything thinkable to the unthinkables.</p><a class="me-2" href="#!"><img src="{{ asset('assets/img/generic/play-store.png') }}" alt="" height="32"></a><a href="#!"><img src="{{ asset('assets/img/generic/app-store.png') }}" alt="" height="32"></a>
                 </div>
               </div>
             </div>
@@ -635,7 +635,7 @@
       <section class="booking-footer pb-6 pb-md-11 pt-15">
         <div class="container-medium">
           <div class="row gy-3 justify-content-between align-items-center">
-            <div class="col-auto"><a href="#!"><img src="../../assets/img/icons/logo-1.png" alt=""></a></div>
+            <div class="col-auto"><a href="#!"><img src="{{ asset('assets/img/icons/logo-1.png') }}" alt=""></a></div>
             <div class="col-auto">
               <ul class="mb-0 list-unstyled d-flex flex-wrap">
                 <li class="me-3 me-sm-5"><a class="fs-8 fw-bold text-white" href="#!">Home</a></li>
@@ -674,9 +674,9 @@
         <div class="setting-panel-item mt-0">
           <h5 class="setting-panel-item-title">Color Scheme</h5>
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/default-light.png" alt=""></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/auto.png" alt=""></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/auto.png') }}" alt=""></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
@@ -696,34 +696,34 @@
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Navigation Type</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text">Vertical</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text"> Horizontal</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/nav-combo-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/nav-combo-dark.png" alt=""></span><span class="label-text"> Combo</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/dual-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/dual-dark.png" alt=""></span><span class="label-text"> Dual nav</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text">Vertical</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text"> Horizontal</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/nav-combo-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/nav-combo-dark.png') }}" alt=""></span><span class="label-text"> Combo</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/dual-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/dual-dark.png') }}" alt=""></span><span class="label-text"> Dual nav</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update navigation type in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Vertical Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/default-dark.png" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/vertical-darker.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/vertical-lighter.png" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/vertical-darker.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/vertical-lighter.png') }}" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update vertical navbar appearance in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Shape</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-slim.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-slim-dark.png" alt=""></span><span class="label-text"> Slim</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-slim.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-slim-dark.png') }}" alt=""></span><span class="label-text"> Slim</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar shape in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-style-darker.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/navbar-top-style-light.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-style-lighter.png" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-darker.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/navbar-top-style-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-lighter.png') }}" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar appearance in this page</p>
         </div><a class="bun btn-primary d-grid mb-3 text-white mt-5 btn btn-primary" href="https://themewagon.com/themes/phoenix/" target="_blank">Purchase template</a>
@@ -739,22 +739,22 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="../../vendors/popper/popper.min.js"></script>
-    <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="../../vendors/anchorjs/anchor.min.js"></script>
-    <script src="../../vendors/is/is.min.js"></script>
-    <script src="../../vendors/fontawesome/all.min.js"></script>
-    <script src="../../vendors/lodash/lodash.min.js"></script>
-    <script src="../../vendors/list.js/list.min.js"></script>
-    <script src="../../vendors/feather-icons/feather.min.js"></script>
-    <script src="../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../assets/js/phoenix.js"></script>
-    <script src="../../vendors/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="../../vendors/isotope-packery/packery-mode.pkgd.min.js"></script>
-    <script src="../../vendors/bigpicture/BigPicture.js"></script>
-    <script src="../../vendors/typed.js/typed.umd.js"></script>
-    <script src="../../vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
+    <script src="{{ asset('vendors/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/isotope-packery/packery-mode.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/bigpicture/BigPicture.js') }}"></script>
+    <script src="{{ asset('vendors/typed.js/typed.umd.js') }}"></script>
+    <script src="{{ asset('vendors/swiper/swiper-bundle.min.js') }}"></script>
   </body>
 
 </html>

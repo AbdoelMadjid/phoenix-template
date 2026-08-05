@@ -14,29 +14,29 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="../../assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="../../assets/img/favicons/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
     <meta name="theme-color" content="#ffffff">
-    <script src="../../vendors/simplebar/simplebar.min.js"></script>
-    <script src="../../assets/js/config.js"></script>
+    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="../../vendors/mapbox-gl/mapbox-gl.css" rel="stylesheet">
+    <link href="{{ asset('vendors/mapbox-gl/mapbox-gl.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="../../assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="../../vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/external/release/v4.0.8/css/line.css">
-    <link href="../../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
-    <link href="../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -60,8 +60,8 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <div class="bg-body-emphasis sticky-top" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
-        <nav class="navbar navbar-expand-lg container-small px-3 px-lg-7 px-xxl-3"><a class="navbar-brand flex-1 flex-lg-grow-0" href="../../index.html">
-            <div class="d-flex align-items-center"><img src="../../assets/img/icons/logo.png" alt="phoenix" width="27">
+        <nav class="navbar navbar-expand-lg container-small px-3 px-lg-7 px-xxl-3"><a class="navbar-brand flex-1 flex-lg-grow-0" href="{{ url('dashboard') }}">
+            <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
               <h5 class="logo-text ms-2">phoenix</h5>
             </div>
           </a>
@@ -85,7 +85,7 @@
             <div class="d-grid d-lg-flex align-items-center">
               <div class="nav-item d-flex align-items-center d-none d-lg-block pe-2">
                 <div class="theme-control-toggle feather-icon-wait px-2"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle"><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div>
-              </div><a class="text-body-quaternary text-body-tertiary-hover px-2 d-none d-lg-inline lh-sm" href="#" data-bs-toggle="modal" data-bs-target="#searchBoxModal"><span data-feather="search" style="height: 20px; width: 20px;"></span></a><a class="btn btn-link text-body order-1 order-lg-0 ps-4 me-lg-2" href="../authentication/simple/sign-in.html">Sign in</a><a class="btn btn-phoenix-primary order-0" href="../authentication/simple/sign-up.html"><span class="fw-bold">Sign up</span></a>
+              </div><a class="text-body-quaternary text-body-tertiary-hover px-2 d-none d-lg-inline lh-sm" href="#" data-bs-toggle="modal" data-bs-target="#searchBoxModal"><span data-feather="search" style="height: 20px; width: 20px;"></span></a><a class="btn btn-link text-body order-1 order-lg-0 ps-4 me-lg-2" href="{{ url('authentication/simple/sign-in') }}">Sign in</a><a class="btn btn-phoenix-primary order-0" href="{{ url('authentication/simple/sign-up') }}"><span class="fw-bold">Sign up</span></a>
             </div>
           </div>
         </nav>
@@ -105,12 +105,12 @@
                       <h6 class="dropdown-header text-body-highlight fs-10 py-2">24 <span class="text-body-quaternary">results</span></h6>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Recently Searched </h6>
-                      <div class="py-2"><a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> Store Macbook</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> MacBook Air - 13″</div>
                           </div>
@@ -118,15 +118,15 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Products</h6>
-                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../../apps/e-commerce/landing/product-details.html">
-                          <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="../../assets/img/products/60x60/3.png" alt=""></div>
+                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('apps/e-commerce/landing/product-details') }}">
+                          <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">MacBook Air - 13″</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">8GB Memory - 1.6GHz - 128GB Storage</span></p>
                           </div>
                         </a>
-                        <a class="dropdown-item py-2 d-flex align-items-center" href="../../apps/e-commerce/landing/product-details.html">
-                          <div class="file-thumbnail me-2"><img class="img-fluid" src="../../assets/img/products/60x60/3.png" alt=""></div>
+                        <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('apps/e-commerce/landing/product-details') }}">
+                          <div class="file-thumbnail me-2"><img class="img-fluid" src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">MacBook Pro - 13″</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary"><span class="fw-medium text-body-tertiary text-opactity-85">30 Sep at 12:30 PM</span></p>
@@ -135,12 +135,12 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Quick Links</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Support MacBook House</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                           </div>
@@ -148,17 +148,17 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Files</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-solid fa-file-zipper text-body" data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-file-lines text-body" data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-solid fa-image text-body" data-fa-transform="shrink-2"></span> MacBook Pro_13.jpg</div>
                           </div>
@@ -166,18 +166,18 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Members</h6>
-                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="../members.html">
+                      <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('members') }}">
                           <div class="avatar avatar-l status-online  me-2 text-body">
-                            <img class="rounded-circle " src="../../assets/img/team/40x40/10.webp" alt="">
+                            <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/10.webp') }}" alt="">
                           </div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">Carry Anna</h6>
                             <p class="fs-10 mb-0 d-flex text-body-tertiary">anna@technext.it</p>
                           </div>
                         </a>
-                        <a class="dropdown-item py-2 d-flex align-items-center" href="../members.html">
+                        <a class="dropdown-item py-2 d-flex align-items-center" href="{{ url('members') }}">
                           <div class="avatar avatar-l  me-2 text-body">
-                            <img class="rounded-circle " src="../../assets/img/team/40x40/12.webp" alt="">
+                            <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/12.webp') }}" alt="">
                           </div>
                           <div class="flex-1">
                             <h6 class="mb-0 text-body-highlight title">John Smith</h6>
@@ -187,12 +187,12 @@
                       </div>
                       <hr class="my-0">
                       <h6 class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">Related Searches</h6>
-                      <div class="py-2"><a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                      <div class="py-2"><a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"><span class="fa-brands fa-firefox-browser text-body" data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
                           </div>
                         </a>
-                        <a class="dropdown-item" href="../../apps/e-commerce/landing/product-details.html">
+                        <a class="dropdown-item" href="{{ url('apps/e-commerce/landing/product-details') }}">
                           <div class="d-flex align-items-center">
                             <div class="fw-normal text-body-highlight title"> <span class="fa-brands fa-chrome text-body" data-fa-transform="shrink-2"></span> Store MacBook″</div>
                           </div>
@@ -214,14 +214,14 @@
           <div class="row align-items-center">
             <div class="col-12 col-lg-auto order-0 order-md-1 text-end order-1">
               <div class="position-relative p-5 p-md-7 d-lg-none">
-                <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-23.png);background-size:contain;"></div>
+                <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-23.png') }});background-size:contain;"></div>
                 <!--/.bg-holder-->
-                <div class="position-relative"><img class="w-100 shadow-lg d-dark-none rounded-2" src="../../assets/img/bg/bg-31.png" alt="hero-header"><img class="w-100 shadow-lg d-light-none rounded-2" src="../../assets/img/bg/bg-30.png" alt="hero-header"></div>
+                <div class="position-relative"><img class="w-100 shadow-lg d-dark-none rounded-2" src="{{ asset('assets/img/bg/bg-31.png') }}" alt="hero-header"><img class="w-100 shadow-lg d-light-none rounded-2" src="{{ asset('assets/img/bg/bg-30.png') }}" alt="hero-header"></div>
               </div>
               <div class="hero-image-container position-absolute top-0 bottom-0 end-0 d-none d-lg-block">
                 <div class="position-relative h-100 w-100">
-                  <div class="position-absolute h-100 top-0 d-flex align-items-center end-0 hero-image-container-bg"><img class="pt-7 pt-md-0 w-100" src="../../assets/img/bg/bg-1-2.png" alt="hero-header"></div>
-                  <div class="position-absolute h-100 top-0 d-flex align-items-center end-0"><img class="pt-7 pt-md-0 w-100 shadow-lg d-dark-none rounded-2" src="../../assets/img/bg/bg-28.png" alt="hero-header"><img class="pt-7 pt-md-0 w-100 shadow-lg d-light-none rounded-2" src="../../assets/img/bg/bg-29.png" alt="hero-header"></div>
+                  <div class="position-absolute h-100 top-0 d-flex align-items-center end-0 hero-image-container-bg"><img class="pt-7 pt-md-0 w-100" src="{{ asset('assets/img/bg/bg-1-2.png') }}" alt="hero-header"></div>
+                  <div class="position-absolute h-100 top-0 d-flex align-items-center end-0"><img class="pt-7 pt-md-0 w-100 shadow-lg d-dark-none rounded-2" src="{{ asset('assets/img/bg/bg-28.png') }}" alt="hero-header"><img class="pt-7 pt-md-0 w-100 shadow-lg d-light-none rounded-2" src="{{ asset('assets/img/bg/bg-29.png') }}" alt="hero-header"></div>
                 </div>
               </div>
             </div>
@@ -239,28 +239,28 @@
         <div class="container-small px-lg-7 px-xxl-3">
           <div class="row g-0">
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end"><img class="w-100" src="../../assets/img/brand2/netflix-n.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end"><img class="w-100" src="{{ asset('assets/img/brand2/netflix-n.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end-md"><img class="w-100" src="../../assets/img/brand2/blender.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end-md"><img class="w-100" src="{{ asset('assets/img/brand2/blender.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end border-end-md"><img class="w-100" src="../../assets/img/brand2/upwork.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end border-end-md"><img class="w-100" src="{{ asset('assets/img/brand2/upwork.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end-lg-0"><img class="w-100" src="../../assets/img/brand2/facebook-f.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-bottom border-translucent border-end-lg-0"><img class="w-100" src="{{ asset('assets/img/brand2/facebook-f.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end border-bottom border-translucent border-bottom-md-0"><img class="w-100" src="../../assets/img/brand2/pocket.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end border-bottom border-translucent border-bottom-md-0"><img class="w-100" src="{{ asset('assets/img/brand2/pocket.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end-md border-bottom border-translucent border-bottom-md-0"><img class="w-100" src="../../assets/img/brand2/mail-bluster-1.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end-md border-bottom border-translucent border-bottom-md-0"><img class="w-100" src="{{ asset('assets/img/brand2/mail-bluster-1.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end border-translucent"><img class="w-100" src="../../assets/img/brand2/discord.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end border-translucent"><img class="w-100" src="{{ asset('assets/img/brand2/discord.png') }}" alt=""></div>
             </div>
             <div class="col-6 col-md-3">
-              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end-lg-0 border-translucent"><img class="w-100" src="../../assets/img/brand2/google-g.png" alt=""></div>
+              <div class="p-2 p-lg-5 d-flex flex-center h-100 border-1 border-dashed border-end-lg-0 border-translucent"><img class="w-100" src="{{ asset('assets/img/brand2/google-g.png') }}" alt=""></div>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -282,7 +282,7 @@
               </div>
               <div class="col-sm-6 col-lg-3 mt-7 text-center text-lg-start">
                 <div class="h-100 d-flex flex-column justify-content-between">
-                  <div class="border-start-lg border-translucent border-dashed ps-4"><img class="mb-4" src="../../assets/img/icons/illustrations/bolt.png" width="48" height="48" alt="">
+                  <div class="border-start-lg border-translucent border-dashed ps-4"><img class="mb-4" src="{{ asset('assets/img/icons/illustrations/bolt.png') }}" width="48" height="48" alt="">
                     <div>
                       <h5 class="fw-bolder mb-2">Lightning Speed</h5>
                       <p class="fw-semibold lh-sm">Present everything you need in one place within minutes! Grow with Phoenix!</p>
@@ -293,7 +293,7 @@
               </div>
               <div class="col-sm-6 col-lg-3 mt-7 text-center text-lg-start">
                 <div class="h-100 d-flex flex-column">
-                  <div class="border-start-lg border-translucent border-dashed ps-4"><img class="mb-4" src="../../assets/img/icons/illustrations/pie.png" width="48" height="48" alt="">
+                  <div class="border-start-lg border-translucent border-dashed ps-4"><img class="mb-4" src="{{ asset('assets/img/icons/illustrations/pie.png') }}" width="48" height="48" alt="">
                     <div>
                       <h5 class="fw-bolder mb-2">All-in-one solution</h5>
                       <p class="fw-semibold lh-sm">Show your production and growth graph in one place with Phoenix!</p>
@@ -304,7 +304,7 @@
               </div>
             </div>
             <div class="row mt-12 align-items-center justify-content-between text-center text-lg-start mb-6 mb-lg-0">
-              <div class="col-lg-5"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="../../assets/img/spot-illustrations/22_2.png" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="../../assets/img/spot-illustrations/dark_22.png" alt=""></div>
+              <div class="col-lg-5"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="{{ asset('assets/img/spot-illustrations/22_2.png') }}" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_22.png') }}" alt=""></div>
               <div class="col-lg-6">
                 <h6 class="text-primary mb-2 ls-2">SIGNAL</h6>
                 <h3 class="fw-bolder mb-3">Recieve the signals instantly</h3>
@@ -312,7 +312,7 @@
               </div>
             </div>
             <div class="row mt-2 align-items-center justify-content-between text-center text-lg-start mb-6 mb-lg-0">
-              <div class="col-lg-5 order-0 order-lg-1"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="../../assets/img/spot-illustrations/23_2.png" height="394" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="../../assets/img/spot-illustrations/dark_23.png" height="394" alt=""></div>
+              <div class="col-lg-5 order-0 order-lg-1"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="{{ asset('assets/img/spot-illustrations/23_2.png') }}" height="394" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_23.png') }}" height="394" alt=""></div>
               <div class="col-lg-6">
                 <h6 class="text-primary mb-2 ls-2">REVENUE</h6>
                 <h3 class="fw-bolder mb-3">See Your Revenue Grow</h3>
@@ -320,7 +320,7 @@
               </div>
             </div>
             <div class="row mt-2 align-items-center justify-content-between text-center text-lg-start mb-6 mb-lg-0">
-              <div class="col-lg-5"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="../../assets/img/spot-illustrations/24_2.png" height="394" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="../../assets/img/spot-illustrations/dark_24.png" height="394" alt=""></div>
+              <div class="col-lg-5"><img class="feature-image img-fluid mb-9 mb-lg-0 d-dark-none" src="{{ asset('assets/img/spot-illustrations/24_2.png') }}" height="394" alt=""><img class="feature-image img-fluid mb-9 mb-lg-0 d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_24.png') }}" height="394" alt=""></div>
               <div class="col-lg-6 text-center text-lg-start">
                 <h6 class="text-primary mb-2 ls-2">REPORTS</h6>
                 <h3 class="fw-bolder mb-3">Get Reports Ready</h3>
@@ -333,9 +333,9 @@
       <!-- ============================================-->
 
       <div class="position-relative">
-        <div class="bg-holder z-2 d-none d-md-block" style="background-image:url(../../assets/img/bg/13.png);background-size:auto;background-position:right;"></div>
+        <div class="bg-holder z-2 d-none d-md-block" style="background-image:url({{ asset('assets/img/bg/13.png') }});background-size:auto;background-position:right;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder z-2 d-none d-md-block d-lg-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-12.png);background-size:auto;background-position:left;"></div>
+        <div class="bg-holder z-2 d-none d-md-block d-lg-none d-xl-block" style="background-image:url({{ asset('assets/img/bg/bg-12.png') }});background-size:auto;background-position:left;"></div>
         <!--/.bg-holder-->
         <div class="bottom-0 start-0 end-0 bg-body-emphasis"><svg class="w-100" viewbox="0 0 1920 368" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-body-bg" d="M1920 0.44L0 367.74V0H1920V0.44Z"></path>
@@ -355,9 +355,9 @@
                       <div class="row g-1 g-lg-0 g-xl-1 pb-lg-3 pb-xl-0 ps-lg-1 ps-xl-0">
                         <div class="col-lg-6 col-xl-5 text-center">
                           <div class="testimonial-avatar-container d-inline-block position-relative">
-                            <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-2.png);background-size:contain;"></div>
+                            <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-2.png') }});background-size:contain;"></div>
                             <!--/.bg-holder-->
-                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="../../assets/img/team/61.webp" width="153" height="153" alt="">
+                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="{{ asset('assets/img/team/61.webp') }}" width="153" height="153" alt="">
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-7 text-center text-lg-start">
@@ -372,9 +372,9 @@
                       <div class="row g-1 g-lg-0 g-xl-1 pb-lg-3 pb-xl-0 ps-lg-1 ps-xl-0">
                         <div class="col-lg-6 col-xl-5 text-center">
                           <div class="testimonial-avatar-container d-inline-block position-relative">
-                            <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-2.png);background-size:contain;"></div>
+                            <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-2.png') }});background-size:contain;"></div>
                             <!--/.bg-holder-->
-                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="../../assets/img/team/8.webp" width="154" alt="">
+                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="{{ asset('assets/img/team/8.webp') }}" width="154" alt="">
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-7 text-center text-lg-start">
@@ -389,9 +389,9 @@
                       <div class="row g-1 g-lg-0 g-xl-1 pb-lg-3 pb-xl-0 ps-lg-1 ps-xl-0">
                         <div class="col-lg-6 col-xl-5 text-center">
                           <div class="testimonial-avatar-container d-inline-block position-relative">
-                            <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-2.png);background-size:contain;"></div>
+                            <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-2.png') }});background-size:contain;"></div>
                             <!--/.bg-holder-->
-                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="../../assets/img/team/35.webp" width="154" alt="">
+                            <img class="rounded-3 mb-lg-0 opacity-100 position-relative" src="{{ asset('assets/img/team/35.webp') }}" width="154" alt="">
                           </div>
                         </div>
                         <div class="col-lg-6 col-xl-7 text-center text-lg-start">
@@ -410,11 +410,11 @@
         </section>
       </div>
       <div class="position-relative">
-        <div class="bg-holder world-map-bg" style="background-image:url(../../assets/img/bg/bg-13.png);"></div>
+        <div class="bg-holder world-map-bg" style="background-image:url({{ asset('assets/img/bg/bg-13.png') }});"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder z-2 opacity-25 " style="background-image:url(../../assets/img/bg/bg-right-21.png);background-size:auto;background-position:right;"></div>
+        <div class="bg-holder z-2 opacity-25 " style="background-image:url({{ asset('assets/img/bg/bg-right-21.png') }});background-size:auto;background-position:right;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder z-2 mt-9 opacity-25" style="background-image:url(../../assets/img/bg/bg-left-21.png);background-size:auto;background-position:left;"></div>
+        <div class="bg-holder z-2 mt-9 opacity-25" style="background-image:url({{ asset('assets/img/bg/bg-left-21.png') }});background-size:auto;background-position:left;"></div>
         <!--/.bg-holder-->
         <svg class="w-100 position-relative" preserveaspectratio="none" viewbox="0 0 1920 368" xmlns="http://www.w3.org/2000/svg">
           <path class="fill-emphasis-bg" d="M1920 0.44L0 367.74V0H1920V0.44Z"></path>
@@ -448,7 +448,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 text-center text-md-start"><img class="img-fluid" src="../../assets/img/generic/capterra.png" alt=""></div>
+                <div class="col-xl-4 text-center text-md-start"><img class="img-fluid" src="{{ asset('assets/img/generic/capterra.png') }}" alt=""></div>
               </div>
             </div>
           </div>
@@ -457,13 +457,13 @@
         </svg>
       </div>
       <section class="bg-body-emphasis pb-lg-6 pb-xl-8">
-        <div class="bg-holder d-dark-none" style="background-image:url(../../assets/img/bg/bg-5.png);background-size:auto;"></div>
+        <div class="bg-holder d-dark-none" style="background-image:url({{ asset('assets/img/bg/bg-5.png') }});background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-light-none" style="background-image:url(../../assets/img/bg/bg-dark-5.png);background-size:auto;"></div>
+        <div class="bg-holder d-light-none" style="background-image:url({{ asset('assets/img/bg/bg-dark-5.png') }});background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-left-5.png);background-position:left;background-size:auto;"></div>
+        <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-left-5.png') }});background-position:left;background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-right-6.png);background-position:right;background-size:auto;"></div>
+        <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-right-6.png') }});background-position:right;background-size:auto;"></div>
         <!--/.bg-holder-->
         <div class="container-small position-relative px-lg-7 px-xxl-3">
           <div class="mb-8 text-center text-sm-start">
@@ -478,23 +478,23 @@
             <li class="nav-item"> <a class="isotope-nav cursor-pointer" data-filter=".fourth">Fourth</a></li>
           </ul>
           <div class="row g-3" id="image_gallery" style="min-height: 948px" data-sl-isotope='{"layoutMode":"packery"}'>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item fourth"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/1.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/1.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/2.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/2.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/3.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/3.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/5.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/5.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/4.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/4.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/6.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/6.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/7.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/7.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-6 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/9.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/9.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item fourth"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/8.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/8.png" alt=""></a></div>
-            <div class="col-6 col-md-4 col-lg-6 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/10.png"><img class="rounded img-fluid w-100" src="../../assets/img/gallery/10.png" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item fourth"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/1.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/1.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/2.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/2.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/3.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/3.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/5.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/5.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item third second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/4.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/4.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/6.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/6.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/7.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/7.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-6 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/9.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/9.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-3 px-2 isotope-item fourth"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/8.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/8.png') }}" alt=""></a></div>
+            <div class="col-6 col-md-4 col-lg-6 px-2 isotope-item second"><a href="#!" data-bigpicture='{"gallery":"#image_gallery"}' data-bp="../../assets/img/gallery/10.png"><img class="rounded img-fluid w-100" src="{{ asset('assets/img/gallery/10.png') }}" alt=""></a></div>
           </div>
         </div>
       </section>
       <section class="bg-body-emphasis pt-lg-0 pt-xl-8">
-        <div class="bg-holder d-none d-md-block" style="background-image:url(../../assets/img/bg/bg-left-15.png);background-position:left;background-size:auto;"></div>
+        <div class="bg-holder d-none d-md-block" style="background-image:url({{ asset('assets/img/bg/bg-left-15.png') }});background-position:left;background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder d-none d-md-block" style="background-image:url(../../assets/img/bg/bg-right-15.png);background-position:right;background-size:auto;"></div>
+        <div class="bg-holder d-none d-md-block" style="background-image:url({{ asset('assets/img/bg/bg-right-15.png') }});background-position:right;background-size:auto;"></div>
         <!--/.bg-holder-->
         <div class="container-small position-relative px-lg-7 px-xxl-3">
           <div class="mb-4 text-center text-sm-start">
@@ -507,7 +507,7 @@
               <div class="card h-100 rounded-end-xl-0 rounded-start">
                 <div class="card-body px-6">
                   <div class="px-5">
-                    <div class="text-center pt-5"><img src="../../assets/img/icons/illustrations/pie.png" width="48" height="48" alt="">
+                    <div class="text-center pt-5"><img src="{{ asset('assets/img/icons/illustrations/pie.png') }}" width="48" height="48" alt="">
                       <h3 class="fw-semibold my-4">Starter</h3>
                     </div>
                     <div class="text-center">
@@ -532,7 +532,7 @@
                 </div>
                 <div class="card-body px-6">
                   <div class="px-5">
-                    <div class="text-center pt-5"><img src="../../assets/img/icons/illustrations/bolt.png" width="48" height="48" alt="">
+                    <div class="text-center pt-5"><img src="{{ asset('assets/img/icons/illustrations/bolt.png') }}" width="48" height="48" alt="">
                       <h3 class="fw-semibold my-4">Team</h3>
                     </div>
                     <div class="text-center">
@@ -554,7 +554,7 @@
               <div class="card h-100 rounded-start rounded-start-xl-0 mt-5 mt-md-0">
                 <div class="card-body px-6">
                   <div class="px-5">
-                    <div class="text-center pt-5"><img src="../../assets/img/icons/illustrations/edit.png" width="48" height="48" alt="">
+                    <div class="text-center pt-5"><img src="{{ asset('assets/img/icons/illustrations/edit.png') }}" width="48" height="48" alt="">
                       <h3 class="fw-semibold my-4">Business</h3>
                     </div>
                     <div class="text-center">
@@ -578,7 +578,7 @@
                   <div class="card h-100 mt-5 mt-md-0">
                     <div class="card-body">
                       <div class="px-5">
-                        <div class="text-center pt-5"><img src="../../assets/img/icons/illustrations/shield.png" width="48" height="48" alt="">
+                        <div class="text-center pt-5"><img src="{{ asset('assets/img/icons/illustrations/shield.png') }}" width="48" height="48" alt="">
                           <h3 class="fw-semibold my-4">Enterprise</h3>
                         </div>
                         <div class="text-center">
@@ -616,7 +616,7 @@
           <p class="column-md-2">See the latest articles we published with this dashboard. Your customers will be happy to find all the latest posts in one place. This menu efficiently shows all related topics from search filters and provides the customers with what they need. Also you can just educate your customers about everything they need to know and follow to avail a service with you. This menu is the one to show them that.</p>
           <div class="row h-100 g-3 justify-content-center">
             <div class="col-sm-6 col-lg-3 mb-3 mb-md-0">
-              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="../../assets/img/blog/blog-1.png" alt="...">
+              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="{{ asset('assets/img/blog/blog-1.png') }}" alt="...">
                 <div class="card-body rounded-top">
                   <div class="d-flex align-items-cente mb-3">
                     <div class="d-flex align-items-center me-3"><a class="btn-link text-decoration-none d-flex align-items-center" href="#!"><span class="fa-solid fa-eye text-body-quaternary me-1"></span><span class="text-body fs-10 lh-1">2563</span></a></div>
@@ -628,7 +628,7 @@
               </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-3 mb-md-0">
-              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="../../assets/img/blog/blog-2.png" alt="...">
+              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="{{ asset('assets/img/blog/blog-2.png') }}" alt="...">
                 <div class="card-body rounded-top">
                   <div class="d-flex align-items-cente mb-3">
                     <div class="d-flex align-items-center me-3"><a class="btn-link text-decoration-none d-flex align-items-center" href="#!"><span class="fa-solid fa-eye text-body-quaternary me-1"></span><span class="text-body fs-10 lh-1">1256</span></a></div>
@@ -640,7 +640,7 @@
               </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-3 mb-md-0">
-              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="../../assets/img/blog/blog-3.png" alt="...">
+              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="{{ asset('assets/img/blog/blog-3.png') }}" alt="...">
                 <div class="card-body rounded-top">
                   <div class="d-flex align-items-cente mb-3">
                     <div class="d-flex align-items-center me-3"><a class="btn-link text-decoration-none d-flex align-items-center" href="#!"><span class="fa-solid fa-eye text-body-quaternary me-1"></span><span class="text-body fs-10 lh-1">142</span></a></div>
@@ -652,7 +652,7 @@
               </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-3 mb-md-0">
-              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="../../assets/img/blog/blog-4.png" alt="...">
+              <div class="card text-white dark__text-gray-1100 h-100"><img class="rounded-top h-100 object-fit-cover" src="{{ asset('assets/img/blog/blog-4.png') }}" alt="...">
                 <div class="card-body rounded-top">
                   <div class="d-flex align-items-cente mb-3">
                     <div class="d-flex align-items-center me-3"><a class="btn-link text-decoration-none d-flex align-items-center" href="#!"><span class="fa-solid fa-eye text-body-quaternary me-1"></span><span class="text-body fs-10 lh-1">2563</span></a></div>
@@ -724,9 +724,9 @@
       <!-- ============================================-->
 
       <section id="team">
-        <div class="bg-holder z-2" style="background-image:url(../../assets/img/bg/bg-left-17.png);background-size:auto;background-position:left center;"></div>
+        <div class="bg-holder z-2" style="background-image:url({{ asset('assets/img/bg/bg-left-17.png') }});background-size:auto;background-position:left center;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder z-2" style="background-image:url(../../assets/img/bg/bg-right-17.png);background-size:auto;background-position:right center;"></div>
+        <div class="bg-holder z-2" style="background-image:url({{ asset('assets/img/bg/bg-right-17.png') }});background-size:auto;background-position:right center;"></div>
         <!--/.bg-holder-->
         <div class="position-absolute top-0 end-0 start-0"><svg class="w-100 text-white" preserveaspectratio="none" viewbox="0 0 1920 368" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-emphasis-bg" d="M1920 0.44L0 367.74V0H1920V0.44Z"></path>
@@ -744,9 +744,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/62.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/62.webp') }}" alt="...">
                 </div>
                 <h4>John Smith</h4>
                 <h6 class="mb-3 fw-semibold">CEO, Global Cheat</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -755,9 +755,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/63.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/63.webp') }}" alt="...">
                 </div>
                 <h4>Marc Chiasson</h4>
                 <h6 class="mb-3 fw-semibold">Vice President</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -766,9 +766,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/64.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/64.webp') }}" alt="...">
                 </div>
                 <h4>Lilah Lola</h4>
                 <h6 class="mb-3 fw-semibold">Marketing Manager</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -777,9 +777,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/65.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/65.webp') }}" alt="...">
                 </div>
                 <h4>Thomas Doe</h4>
                 <h6 class="mb-3 fw-semibold">UX Designer</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -788,9 +788,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/66.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/66.webp') }}" alt="...">
                 </div>
                 <h4>Alan Casey</h4>
                 <h6 class="mb-3 fw-semibold">Front End Developer</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -799,9 +799,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/67.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/67.webp') }}" alt="...">
                 </div>
                 <h4>Narokin Hijita</h4>
                 <h6 class="mb-3 fw-semibold">CEO, Global Cheat</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -810,9 +810,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/68.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/68.webp') }}" alt="...">
                 </div>
                 <h4>Narokin Hijita</h4>
                 <h6 class="mb-3 fw-semibold">CEO, Global Cheat</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -821,9 +821,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="text-center mt-5 position-relative">
                 <div class="team-avatar-container d-inline-block position-relative">
-                  <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-21.png);background-size:contain;"></div>
+                  <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-21.png') }});background-size:contain;"></div>
                   <!--/.bg-holder-->
-                  <img class="img-fluid rounded mb-3 position-relative" src="../../assets/img/team/69.webp" alt="...">
+                  <img class="img-fluid rounded mb-3 position-relative" src="{{ asset('assets/img/team/69.webp') }}" alt="...">
                 </div>
                 <h4>Narokin Hijita</h4>
                 <h6 class="mb-3 fw-semibold">CEO, Global Cheat</h6><a href="#!"><span class="fa-brands fa-facebook text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-twitter text-primary me-3"></span></a><a href="#!"><span class="fa-brands fa-linkedin-in text-primary"></span></a>
@@ -840,9 +840,9 @@
           <div class="row justify-content-center">
             <div class="col-12 text-center">
               <div class="card py-md-9 px-md-13 border-0 z-1 shadow-lg cta-card">
-                <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-18.png);background-position:right;background-size:auto;"></div>
+                <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-18.png') }});background-position:right;background-size:auto;"></div>
                 <!--/.bg-holder-->
-                <div class="card-body position-relative"><img class="img-fluid mb-5 d-dark-none" src="../../assets/img/spot-illustrations/27.png" width="210" alt="..."><img class="img-fluid mb-5 d-light-none" src="../../assets/img/spot-illustrations/dark_27.png" width="210" alt="...">
+                <div class="card-body position-relative"><img class="img-fluid mb-5 d-dark-none" src="{{ asset('assets/img/spot-illustrations/27.png') }}" width="210" alt="..."><img class="img-fluid mb-5 d-light-none" src="{{ asset('assets/img/spot-illustrations/dark_27.png') }}" width="210" alt="...">
                   <div class="d-flex align-items-center fw-bold justify-content-center mb-3">
                     <p class="mb-0">2008 Premium Icons </p><span class="text-primary fa-solid fa-circle" data-fa-transform="shrink-12"></span>
                     <p class="mb-0">Included FREE with it</p>
@@ -861,11 +861,11 @@
       <!-- ============================================-->
 
       <div class="position-relative">
-        <div class="bg-holder footer-bg" style="background-image:url(../../assets/img/bg/bg-19.png);background-size:auto;"></div>
+        <div class="bg-holder footer-bg" style="background-image:url({{ asset('assets/img/bg/bg-19.png') }});background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-right-20.png);background-position:right;background-size:auto;"></div>
+        <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-right-20.png') }});background-position:right;background-size:auto;"></div>
         <!--/.bg-holder-->
-        <div class="bg-holder" style="background-image:url(../../assets/img/bg/bg-left-20.png);background-position:left;background-size:auto;"></div>
+        <div class="bg-holder" style="background-image:url({{ asset('assets/img/bg/bg-left-20.png') }});background-position:left;background-size:auto;"></div>
         <!--/.bg-holder-->
         <div class="position-relative"><svg class="w-100 text-white dark__text-gray-1100" preserveaspectratio="none" viewbox="0 0 1920 368" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1920 0.44L0 367.74V0H1920V0.44Z" fill="currentColor"></path>
@@ -876,7 +876,7 @@
           <section class="footer-default">
             <div class="container-small px-lg-7 px-xxl-3">
               <div class="row position-relative">
-                <div class="col-12 col-sm-12 col-lg-5 mb-4 order-0 order-sm-0"><a href="#"><img class="mb-3" src="../../assets/img/icons/logo-white.png" height="48" alt=""></a>
+                <div class="col-12 col-sm-12 col-lg-5 mb-4 order-0 order-sm-0"><a href="#"><img class="mb-3" src="{{ asset('assets/img/icons/logo-white.png') }}" height="48" alt=""></a>
                   <h3 class="text-white">phoenix</h3>
                   <p class="text-white opacity-50">All over the world. Alice in <br>wonderland and other places.</p>
                 </div>
@@ -956,7 +956,7 @@
                     <p class="mb-0 fw-semibold fs-9">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
                   </a></div>
                 <div class="text-center mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="../../assets/img/team/30.webp" alt=""></div>
+                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="{{ asset('assets/img/team/30.webp') }}" alt=""></div>
                   <h5 class="mt-2 mb-3">Eric</h5>
                   <p class="text-center text-body-emphasis mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
                 </div>
@@ -985,9 +985,9 @@
         <div class="setting-panel-item mt-0">
           <h5 class="setting-panel-item-title">Color Scheme</h5>
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/default-light.png" alt=""></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../assets/img/generic/auto.png" alt=""></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/auto.png') }}" alt=""></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
@@ -1007,34 +1007,34 @@
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Navigation Type</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text">Vertical</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text"> Horizontal</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/nav-combo-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/nav-combo-dark.png" alt=""></span><span class="label-text"> Combo</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/dual-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/dual-dark.png" alt=""></span><span class="label-text"> Dual nav</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text">Vertical</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text"> Horizontal</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/nav-combo-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/nav-combo-dark.png') }}" alt=""></span><span class="label-text"> Combo</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/dual-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/dual-dark.png') }}" alt=""></span><span class="label-text"> Dual nav</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update navigation type in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Vertical Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/default-dark.png" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="../../assets/img/generic/vertical-darker.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../assets/img/generic/vertical-lighter.png" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/vertical-darker.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/vertical-lighter.png') }}" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update vertical navbar appearance in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Shape</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-slim.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-slim-dark.png" alt=""></span><span class="label-text"> Slim</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-slim.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-slim-dark.png') }}" alt=""></span><span class="label-text"> Slim</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar shape in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-style-darker.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../assets/img/generic/navbar-top-style-light.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../assets/img/generic/top-style-lighter.png" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-darker.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/navbar-top-style-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-lighter.png') }}" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar appearance in this page</p>
         </div><a class="bun btn-primary d-grid mb-3 text-white mt-5 btn btn-primary" href="https://themewagon.com/themes/phoenix/" target="_blank">Purchase template</a>
@@ -1050,22 +1050,22 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="../../vendors/popper/popper.min.js"></script>
-    <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="../../vendors/anchorjs/anchor.min.js"></script>
-    <script src="../../vendors/is/is.min.js"></script>
-    <script src="../../vendors/fontawesome/all.min.js"></script>
-    <script src="../../vendors/lodash/lodash.min.js"></script>
-    <script src="../../vendors/list.js/list.min.js"></script>
-    <script src="../../vendors/feather-icons/feather.min.js"></script>
-    <script src="../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../vendors/mapbox-gl/mapbox-gl.js"></script>
-    <script src="../../assets/js/phoenix.js"></script>
-    <script src="../../vendors/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="../../vendors/isotope-packery/packery-mode.pkgd.min.js"></script>
-    <script src="../../vendors/bigpicture/BigPicture.js"></script>
-    <script src="../../vendors/countup/countUp.umd.js"></script>
+    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+    <script src="{{ asset('vendors/mapbox-gl/mapbox-gl.js') }}"></script>
+    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
+    <script src="{{ asset('vendors/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/isotope-packery/packery-mode.pkgd.min.js') }}"></script>
+    <script src="{{ asset('vendors/bigpicture/BigPicture.js') }}"></script>
+    <script src="{{ asset('vendors/countup/countUp.umd.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbaQGvhe7Af-uOMJz68NWHnO34UjjE7Lo&callback=initMap" async=""></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>

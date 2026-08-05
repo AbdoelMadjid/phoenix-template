@@ -14,28 +14,28 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="../../../assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="../../../assets/img/favicons/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
     <meta name="theme-color" content="#ffffff">
-    <script src="../../../vendors/simplebar/simplebar.min.js"></script>
-    <script src="../../../assets/js/config.js"></script>
+    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/config.js') }}"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="../../../assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="../../../vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/external/release/v4.0.8/css/line.css">
-    <link href="../../../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="../../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
-    <link href="../../../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="../../../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -66,8 +66,8 @@
           <div class="ecommerce-topbar">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
               <div class="row gx-0 gy-2 w-100 flex-between-center">
-                <div class="col-auto"><a class="text-decoration-none" href="../../../index.html">
-                    <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+                <div class="col-auto"><a class="text-decoration-none" href="{{ url('dashboard') }}">
+                    <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                       <h5 class="logo-text ms-2">phoenix</h5>
                     </div>
                   </a></div>
@@ -76,7 +76,7 @@
                     <li class="nav-item d-flex align-items-center">
                       <div class="theme-control-toggle feather-icon-wait px-2"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle"><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div>
                     </li>
-                    <li class="nav-item feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-primary" href="cart.html" role="button"><span class="text-body-tertiary" data-feather="shopping-cart" style="height:20px;width:20px;"></span><span class="icon-indicator-number">3</span></a></li>
+                    <li class="nav-item feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-primary" href="{{ url('cart') }}" role="button"><span class="text-body-tertiary" data-feather="shopping-cart" style="height:20px;width:20px;"></span><span class="icon-indicator-number">3</span></a></li>
                     <li class="nav-item dropdown feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-sm icon-indicator-danger" id="navbarTopDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="text-body-tertiary" data-feather="bell" style="height:20px;width:20px;"></span></a>
                       <div class="dropdown-menu dropdown-menu-end notification-dropdown-menu py-0 shadow border navbar-dropdown-caret mt-2" id="navbarDropdownNotfication" aria-labelledby="navbarDropdownNotfication">
                         <div class="card position-relative border-0">
@@ -90,7 +90,7 @@
                               <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
                                 <div class="d-flex align-items-center justify-content-between position-relative">
                                   <div class="d-flex">
-                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/30.webp" alt=""></div>
+                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/30.webp') }}" alt=""></div>
                                     <div class="flex-1 me-sm-3">
                                       <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                                       <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
@@ -122,7 +122,7 @@
                               <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                                 <div class="d-flex align-items-center justify-content-between position-relative">
                                   <div class="d-flex">
-                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../../../assets/img/team/40x40/avatar.webp" alt=""></div>
+                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="{{ asset('assets/img/team/40x40/avatar.webp') }}" alt=""></div>
                                     <div class="flex-1 me-sm-3">
                                       <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
                                       <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
@@ -137,7 +137,7 @@
                               <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                                 <div class="d-flex align-items-center justify-content-between position-relative">
                                   <div class="d-flex">
-                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/57.webp" alt=""></div>
+                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/57.webp') }}" alt=""></div>
                                     <div class="flex-1 me-sm-3">
                                       <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
                                       <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -152,7 +152,7 @@
                               <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
                                 <div class="d-flex align-items-center justify-content-between position-relative">
                                   <div class="d-flex">
-                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/59.webp" alt=""></div>
+                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/59.webp') }}" alt=""></div>
                                     <div class="flex-1 me-sm-3">
                                       <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
                                       <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -167,7 +167,7 @@
                               <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
                                 <div class="d-flex align-items-center justify-content-between position-relative">
                                   <div class="d-flex">
-                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../../../assets/img/team/40x40/58.webp" alt=""></div>
+                                    <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="{{ asset('assets/img/team/40x40/58.webp') }}" alt=""></div>
                                     <div class="flex-1 me-sm-3">
                                       <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
                                       <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
@@ -182,7 +182,7 @@
                             </div>
                           </div>
                           <div class="card-footer p-0 border-top border-translucent border-0">
-                            <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../../../pages/notifications.html">Notification history</a></div>
+                            <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="{{ url('pages/notifications') }}">Notification history</a></div>
                           </div>
                         </div>
                       </div>
@@ -193,7 +193,7 @@
                           <div class="card-body p-0">
                             <div class="text-center pt-4 pb-3">
                               <div class="avatar avatar-xl ">
-                                <img class="rounded-circle " src="../../../assets/img/team/72x72/57.webp" alt="">
+                                <img class="rounded-circle " src="{{ asset('assets/img/team/72x72/57.webp') }}" alt="">
                               </div>
                               <h6 class="mt-2 text-body-emphasis">Jerry Seinfield</h6>
                             </div>
@@ -304,14 +304,14 @@
             </div>
           </div>
           <ul class="navbar-nav justify-content-end align-items-center">
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link ps-0" href="homepage.html">Home</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="favourite-stores.html">My Favourite Stores</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="products-filter.html">Products</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="shipping-info.html">Shipping Info</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="../admin/add-product.html">Be a vendor</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="order-tracking.html">Track order</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link pe-0" href="checkout.html">Checkout</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link ps-0" href="{{ url('homepage') }}">Home</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('favourite-stores') }}">My Favourite Stores</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('products-filter') }}">Products</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('wishlist') }}">Wishlist</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('shipping-info') }}">Shipping Info</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('admin/add-product') }}">Be a vendor</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('order-tracking') }}">Track order</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link pe-0" href="{{ url('checkout') }}">Checkout</a></li>
             <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0" href="javascript: void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-boundary="window" data-bs-reference="parent"> More<span class="fas fa-angle-down ms-2"></span></a>
               <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown" data-category-list="data-category-list"></div>
             </li>
@@ -347,7 +347,7 @@
                 <div class="card-body">
                   <div class="border-bottom border-dashed pb-4">
                     <div class="row align-items-center g-3 g-sm-5 text-center text-sm-start">
-                      <div class="col-12 col-sm-auto"><input class="d-none" id="avatarFile" type="file"><label class="cursor-pointer avatar avatar-5xl" for="avatarFile"><img class="rounded-circle" src="../../../assets/img/team/15.webp" alt=""></label></div>
+                      <div class="col-12 col-sm-auto"><input class="d-none" id="avatarFile" type="file"><label class="cursor-pointer avatar avatar-5xl" for="avatarFile"><img class="rounded-circle" src="{{ asset('assets/img/team/15.webp') }}" alt=""></label></div>
                       <div class="col-12 col-sm-auto flex-1">
                         <h3>Ansolo Lazinatov</h3>
                         <p class="text-body-secondary">Joined 3 months ago</p>
@@ -587,7 +587,7 @@
                       </thead>
                       <tbody class="list" id="profile-review-table-body">
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management &amp; Skin Temperature Trends, Carbon/Graphite, One Size (S &amp; L Bands)</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management &amp; Skin Temperature Trends, Carbon/Graphite, One Size (S &amp; L Bands)</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">This Fitbit is fantastic! I was trying to be in better shape and needed some motivation, so I decided to treat myself to a new Fitbit.</p>
@@ -605,7 +605,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">iPhone 13 pro max-Pacific Blue-128GB storage</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">iPhone 13 pro max-Pacific Blue-128GB storage</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">The order was delivered ahead of schedule. To give us additional time, you should leave the packaging sealed with plastic.</p>
@@ -623,7 +623,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">Apple MacBook Pro 13 inch-M1-8/256GB-space</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">Apple MacBook Pro 13 inch-M1-8/256GB-space</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-alt star-icon text-warning"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">It's a Mac, after all. Once you've gone Mac, there's no going back. My first Mac lasted over nine years, and this is my second.</p>
@@ -641,7 +641,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">Apple iMac 24&quot; 4K Retina Display M1 8 Core CPU, 7 Core GPU, 256GB SSD, Green (MJV83ZP/A) 2021</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">Apple iMac 24&quot; 4K Retina Display M1 8 Core CPU, 7 Core GPU, 256GB SSD, Green (MJV83ZP/A) 2021</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">Personally, I like the minimalist style, but I wouldn't choose it if I were searching for a computer that I would use frequently. It's not horrible in terms of speed and power</p>
@@ -659,7 +659,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">Razer Kraken v3 x Wired 7.1 Surroung Sound Gaming headset</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">Razer Kraken v3 x Wired 7.1 Surroung Sound Gaming headset</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">It performs exactly as expected. There are three of these in the family.</p>
@@ -677,7 +677,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">PlayStation 5 DualSense Wireless Controller</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">PlayStation 5 DualSense Wireless Controller</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">The controller is quite comfy for me. Despite its increased size, the controller still fits well in my hands.</p>
@@ -695,7 +695,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="product-details.html">2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) - Space Gray</a></td>
+                          <td class="align-middle product pe-3"><a class="fw-semibold line-clamp-1" href="{{ url('product-details') }}">2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) - Space Gray</a></td>
                           <td class="align-middle rating white-space-nowrap fs-10"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="align-middle review pe-7">
                             <p class="fw-semibold text-body-highlight mb-0 line-clamp-2">The response time and service I received when contacted the designers were Phenomenal!</p>
@@ -741,8 +741,8 @@
                       </thead>
                       <tbody class="list" id="profile-wishlist-table-body">
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/1.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management &amp; Skin Temperature Trends, Carbon/Graphite, One Size (S &amp; L Bands)</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/1.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management &amp; Skin Temperature Trends, Carbon/Graphite, One Size (S &amp; L Bands)</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Pure matte black</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">42</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$57</td>
@@ -751,8 +751,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/7.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) - Space Gray</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/7.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) - Space Gray</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Black</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">Pro</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$1,499</td>
@@ -761,8 +761,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/6.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">PlayStation 5 DualSense Wireless Controller</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/6.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">PlayStation 5 DualSense Wireless Controller</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">White</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">Regular</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$299</td>
@@ -771,8 +771,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/3.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Apple MacBook Pro 13 inch-M1-8/256GB-space</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/3.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Apple MacBook Pro 13 inch-M1-8/256GB-space</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Space Gray</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">Pro</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$1,699</td>
@@ -781,8 +781,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/4.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Apple iMac 24&quot; 4K Retina Display M1 8 Core CPU, 7 Core GPU, 256GB SSD, Green (MJV83ZP/A) 2021</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/4.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Apple iMac 24&quot; 4K Retina Display M1 8 Core CPU, 7 Core GPU, 256GB SSD, Green (MJV83ZP/A) 2021</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Ocean Blue</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">21&quot;</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$65</td>
@@ -791,8 +791,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/10.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Apple Magic Mouse (Wireless, Rechargable) - Silver</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/10.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Apple Magic Mouse (Wireless, Rechargable) - Silver</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">White</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">Regular</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$30</td>
@@ -801,8 +801,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/8.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Amazon Basics Matte Black Wired Keyboard - US Layout (QWERTY)</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/8.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Amazon Basics Matte Black Wired Keyboard - US Layout (QWERTY)</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Black</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">MD</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$40</td>
@@ -811,8 +811,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/12.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">HORI Racing Wheel Apex for PlayStation 4_3, and PC</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/12.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">HORI Racing Wheel Apex for PlayStation 4_3, and PC</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Black</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">45</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$130</td>
@@ -821,8 +821,8 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="product-details.html"><img src="../../../assets/img/products/17.png" alt="" width="53"></a></td>
-                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="product-details.html">Xbox Series S</a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a class="border border-translucent rounded-2 d-inline-block" href="{{ url('product-details') }}"><img src="{{ asset('assets/img/products/17.png') }}" alt="" width="53"></a></td>
+                          <td class="products align-middle pe-11"><a class="fw-semibold mb-0 line-clamp-1" href="{{ url('product-details') }}">Xbox Series S</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body">Space Gray</td>
                           <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">sm</td>
                           <td class="price align-middle text-body fs-9 fw-semibold text-end">$99</td>
@@ -860,7 +860,7 @@
                       </thead>
                       <tbody class="list" id="profile-stores-table-body">
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="../../../assets/img/brand2/dell.png" alt="" width="53"></a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="{{ asset('assets/img/brand2/dell.png') }}" alt="" width="53"></a></td>
                           <td class="products align-middle"><a class="fw-semibold mb-0" href="#!">Dell Technologies</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
                           <td class="size align-middle white-space-nowrap text-primary fs-9 fw-bold text-end">3</td>
@@ -875,7 +875,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="../../../assets/img/brand2/honda.png" alt="" width="53"></a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="{{ asset('assets/img/brand2/honda.png') }}" alt="" width="53"></a></td>
                           <td class="products align-middle"><a class="fw-semibold mb-0" href="#!">Honda</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="size align-middle white-space-nowrap text-primary fs-9 fw-bold text-end">5</td>
@@ -890,7 +890,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="../../../assets/img/brand2/xiaomi.png" alt="" width="53"></a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="{{ asset('assets/img/brand2/xiaomi.png') }}" alt="" width="53"></a></td>
                           <td class="products align-middle"><a class="fw-semibold mb-0" href="#!">Xiaomi</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="size align-middle white-space-nowrap text-primary fs-9 fw-bold text-end">6</td>
@@ -905,7 +905,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="../../../assets/img/brand/huawei.png" alt="" width="53"></a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="{{ asset('assets/img/brand/huawei.png') }}" alt="" width="53"></a></td>
                           <td class="products align-middle"><a class="fw-semibold mb-0" href="#!">Huawei Shop BD</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="size align-middle white-space-nowrap text-primary fs-9 fw-bold text-end">1</td>
@@ -920,7 +920,7 @@
                           </td>
                         </tr>
                         <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="../../../assets/img/brand2/intel-2.png" alt="" width="53"></a></td>
+                          <td class="align-middle white-space-nowrap ps-0 py-0"><a href="#!"> <img src="{{ asset('assets/img/brand2/intel-2.png') }}" alt="" width="53"></a></td>
                           <td class="products align-middle"><a class="fw-semibold mb-0" href="#!">Intel</a></td>
                           <td class="color align-middle white-space-nowrap fs-9 text-body"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></td>
                           <td class="size align-middle white-space-nowrap text-primary fs-9 fw-bold text-end">2</td>
@@ -954,7 +954,7 @@
                 </div>
                 <div class="row gx-3 gy-5">
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/dell.png" alt="Dell Technologies"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/dell.png') }}" alt="Dell Technologies"></div>
                     <h5 class="mb-2">Dell Technologies</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(1263 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -967,7 +967,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/hp.png" alt="HP Global Store"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/hp.png') }}" alt="HP Global Store"></div>
                     <h5 class="mb-2">HP Global Store</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(365 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -980,7 +980,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/honda.png" alt="Honda"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/honda.png') }}" alt="Honda"></div>
                     <h5 class="mb-2">Honda</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(596 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -993,7 +993,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/asus-rog.png" alt="Asus ROG"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/asus-rog.png') }}" alt="Asus ROG"></div>
                     <h5 class="mb-2">Asus ROG</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(2365 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1006,7 +1006,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/yamaha.png" alt="Yamaha"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/yamaha.png') }}" alt="Yamaha"></div>
                     <h5 class="mb-2">Yamaha</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(1253 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1019,7 +1019,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/ibm.png" alt="IBM"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/ibm.png') }}" alt="IBM"></div>
                     <h5 class="mb-2">IBM</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(996 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1032,7 +1032,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/apple-2.png" alt="Apple Store"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/apple-2.png') }}" alt="Apple Store"></div>
                     <h5 class="mb-2">Apple Store</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(365 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1045,7 +1045,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/oppo.png" alt="Oppo"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/oppo.png') }}" alt="Oppo"></div>
                     <h5 class="mb-2">Oppo</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(576 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1058,7 +1058,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/redragon.png" alt="Redragon"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/redragon.png') }}" alt="Redragon"></div>
                     <h5 class="mb-2">Redragon</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(1125 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1071,7 +1071,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/xbox.png" alt="Microsoft XBOX"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/xbox.png') }}" alt="Microsoft XBOX"></div>
                     <h5 class="mb-2">Microsoft XBOX</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(830 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1084,7 +1084,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/lenovo.png" alt="Lenovo"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/lenovo.png') }}" alt="Lenovo"></div>
                     <h5 class="mb-2">Lenovo</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(1032 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1097,7 +1097,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-actions-trigger btn-reveal-trigger">
-                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="../../../assets/img/brand2/xiaomi.png" alt="Xiaomi"></div>
+                    <div class="border border-translucent d-flex flex-center rounded-3 mb-3 p-4" style="height:180px;"><img class="mw-100" src="{{ asset('assets/img/brand2/xiaomi.png') }}" alt="Xiaomi"></div>
                     <h5 class="mb-2">Xiaomi</h5>
                     <div class="mb-1 fs-9"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span><span class="fa-regular fa-star text-warning-light" data-bs-theme="light"></span></div>
                     <p class="text-body-quaternary fs-9 mb-2 fw-semibold">(965 people rated)</p><a class="btn btn-link p-0" href="#!">Visit Store<span class="fas fa-chevron-right ms-1 fs-10"></span></a>
@@ -1241,7 +1241,7 @@
                     <p class="mb-0 fw-semibold fs-9">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
                   </a></div>
                 <div class="text-center mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="../../../assets/img/team/30.webp" alt=""></div>
+                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="{{ asset('assets/img/team/30.webp') }}" alt=""></div>
                   <h5 class="mt-2 mb-3">Eric</h5>
                   <p class="text-center text-body-emphasis mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
                 </div>
@@ -1260,7 +1260,7 @@
         <div class="container-small">
           <div class="row justify-content-between gy-4">
             <div class="col-12 col-lg-4">
-              <div class="d-flex align-items-center mb-3"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27">
+              <div class="d-flex align-items-center mb-3"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                 <h5 class="logo-text ms-2">phoenix</h5>
               </div>
               <p class="text-body-tertiary mb-1 fw-semibold lh-sm fs-9">Phoenix is an admin dashboard template with fascinating features and amazing layout. The template is responsive to all major browsers and is compatible with all available devices and screen sizes.</p>
@@ -1313,9 +1313,9 @@
         <div class="setting-panel-item mt-0">
           <h5 class="setting-panel-item-title">Color Scheme</h5>
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-light.png" alt=""></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../assets/img/generic/auto.png" alt=""></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherLight"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherDark"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="phoenixTheme"><label class="btn d-inline-block btn-navbar-style fs-9" for="themeSwitcherAuto"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="{{ asset('assets/img/generic/auto.png') }}" alt=""></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
@@ -1335,34 +1335,34 @@
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Navigation Type</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""></span><span class="label-text">Vertical</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text"> Horizontal</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/nav-combo-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/nav-combo-dark.png" alt=""></span><span class="label-text"> Combo</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/dual-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/dual-dark.png" alt=""></span><span class="label-text"> Dual nav</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionVertical" name="navigation-type" type="radio" value="vertical" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionVertical"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""></span><span class="label-text">Vertical</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionHorizontal" name="navigation-type" type="radio" value="horizontal" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionHorizontal"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text"> Horizontal</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionCombo" name="navigation-type" type="radio" value="combo" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionCombo"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/nav-combo-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/nav-combo-dark.png') }}" alt=""></span><span class="label-text"> Combo</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarPositionTopDouble" name="navigation-type" type="radio" value="dual-nav" data-theme-control="phoenixNavbarPosition" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarPositionTopDouble"> <span class="rounded d-block"><img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/dual-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/dual-dark.png') }}" alt=""></span><span class="label-text"> Dual nav</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update navigation type in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Vertical Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/default-light.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/default-dark.png" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="../../../assets/img/generic/vertical-darker.png" alt=""><img class="img-fluid img-prototype d-light-none" src="../../../assets/img/generic/vertical-lighter.png" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-default" type="radio" name="config.name" value="default" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-default"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/default-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/default-dark.png') }}" alt=""><span class="label-text d-dark-none"> Default</span><span class="label-text d-light-none">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-dark" type="radio" name="config.name" value="darker" data-theme-control="phoenixNavbarVerticalStyle" disabled="disabled"><label class="btn d-block w-100 btn-navbar-style fs-9" for="navbar-style-dark"> <img class="img-fluid img-prototype d-dark-none" src="{{ asset('assets/img/generic/vertical-darker.png') }}" alt=""><img class="img-fluid img-prototype d-light-none" src="{{ asset('assets/img/generic/vertical-lighter.png') }}" alt=""><span class="label-text d-dark-none"> Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update vertical navbar appearance in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Shape</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-default-dark.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-slim.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-slim-dark.png" alt=""></span><span class="label-text"> Slim</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeDefault" name="navbar-shape" type="radio" value="default" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-default-dark.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarShapeSlim" name="navbar-shape" type="radio" value="slim" data-theme-control="phoenixNavbarTopShape" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarShapeSlim"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-slim.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-slim-dark.png') }}" alt=""></span><span class="label-text"> Slim</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar shape in this page</p>
         </div>
         <div class="setting-panel-item">
           <h5 class="setting-panel-item-title">Horizontal Navbar Appearance</h5>
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/top-default.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-darker.png" alt=""></span><span class="label-text">Default</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="../../../assets/img/generic/navbar-top-style-light.png" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="../../../assets/img/generic/top-style-lighter.png" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDefault" name="navbar-top-style" type="radio" value="default" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDefault"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/top-default.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-darker.png') }}" alt=""></span><span class="label-text">Default</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbarTopDarker" name="navbar-top-style" type="radio" value="darker" data-theme-control="phoenixNavbarTopStyle" disabled="disabled"><label class="btn d-inline-block btn-navbar-style fs-9" for="navbarTopDarker"> <span class="mb-2 rounded d-block"><img class="img-fluid img-prototype d-dark-none mb-0" src="{{ asset('assets/img/generic/navbar-top-style-light.png') }}" alt=""><img class="img-fluid img-prototype d-light-none mb-0" src="{{ asset('assets/img/generic/top-style-lighter.png') }}" alt=""></span><span class="label-text d-dark-none">Darker</span><span class="label-text d-light-none">Lighter</span></label></div>
           </div>
           <p class="text-warning-dark font-medium"> <span class="fa-solid fa-triangle-exclamation me-2 text-warning"></span>You can't update horizontal navbar appearance in this page</p>
         </div><a class="bun btn-primary d-grid mb-3 text-white mt-5 btn btn-primary" href="https://themewagon.com/themes/phoenix/" target="_blank">Purchase template</a>
@@ -1378,16 +1378,16 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="../../../vendors/popper/popper.min.js"></script>
-    <script src="../../../vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="../../../vendors/anchorjs/anchor.min.js"></script>
-    <script src="../../../vendors/is/is.min.js"></script>
-    <script src="../../../vendors/fontawesome/all.min.js"></script>
-    <script src="../../../vendors/lodash/lodash.min.js"></script>
-    <script src="../../../vendors/list.js/list.min.js"></script>
-    <script src="../../../vendors/feather-icons/feather.min.js"></script>
-    <script src="../../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../../assets/js/phoenix.js"></script>
+    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
   </body>
 
 </html>
