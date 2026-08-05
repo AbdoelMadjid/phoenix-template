@@ -1,6 +1,6 @@
 @extends('layouts.vertical')
 
-@section('title', 'Dashboard - Phoenix')
+@section('title', 'Dashboard')
 
 @section('content')
 <div class="pb-5">

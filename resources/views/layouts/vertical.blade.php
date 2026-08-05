@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>@yield('title', config('app.name', 'Phoenix'))</title>
+    <title>@yield('title', config('app.name', 'Phoenix')) - Phoenix</title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
