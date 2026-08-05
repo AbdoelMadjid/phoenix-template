@@ -15,19 +15,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    // Dynamic Route handler for all template pages in resources/views/temp
-    Route::get('/{path}', function ($path) {
-        $viewPath = 'temp.' . str_replace('/', '.', $path);
-        if (view()->exists($viewPath)) {
-            return view($viewPath);
-        }
-        if (view()->exists($viewPath . '.index')) {
-            return view($viewPath . '.index');
-        }
-        abort(404);
-    })->where('path', '.*')->name('page');
 });
 
 require __DIR__.'/auth.php';
-
+require __DIR__.'/temp.php';
