@@ -34,10 +34,10 @@
     <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
     <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
-    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
-    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="{{ asset('assets/css/theme-rtl.min.css') }}?v={{ time() }}" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('assets/css/theme.min.css') }}?v={{ time() }}" type="text/css" rel="stylesheet" id="style-default">
+    <link href="{{ asset('assets/css/user-rtl.min.css') }}?v={{ time() }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('assets/css/user.min.css') }}?v={{ time() }}" type="text/css" rel="stylesheet" id="user-style-default">
     <script>
       var phoenixIsRTL = window.config.config.phoenixIsRTL;
       if (phoenixIsRTL) {
@@ -67,16 +67,7 @@
       @include('layouts.partials.sidebar')
       @include('layouts.partials.navbar')
 
-      <script>
-        var navbarDefault = document.querySelector('#navbarDefault');
-        var navbarVertical = document.querySelector('.navbar-vertical');
-
-        if (navbarDefault) navbarDefault.removeAttribute('style');
-        if (navbarVertical) navbarVertical.removeAttribute('style');
-
-        document.documentElement.setAttribute('data-navigation-type', 'default');
-        document.documentElement.setAttribute('data-navbar-horizontal-shape', 'default');
-      </script>
+      @include('layouts.partials.script-style')
 
       <div class="content">
         @yield('content')

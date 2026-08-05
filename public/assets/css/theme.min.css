@@ -29307,13 +29307,13 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
   padding-left: 3.125rem;
 }
 .navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-  padding-left: 3.875rem;
+  padding-left: 3.625rem;
 }
 .navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
   padding-left: 4.625rem;
 }
 .navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-  padding-left: 5.25rem;
+  padding-left: 5.625rem;
 }
 .navbar-vertical .navbar-vertical-content .nav-link-icon {
   margin-right: 0.625rem;
@@ -29479,23 +29479,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     background-color: var(--phoenix-navbar-vertical-link-hover-bg);
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav-link {
-    padding-left: 3.3125rem;
+    padding-left: 3.125rem;
     scroll-margin-top: 200px;
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
     padding-left: 3px;
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-    padding-left: 4.375rem;
+    padding-left: 3.625rem;
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-    padding-left: 5.125rem;
+    padding-left: 4.625rem;
   }
   .navbar-vertical.navbar-expand-xxl .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-    padding-left: 5.875rem;
+    padding-left: 5.625rem;
   }
   .navbar-vertical.navbar-expand-xxl ~ .navbar-top {
     padding-right: 2.5rem;
@@ -29563,23 +29563,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     background-color: var(--phoenix-navbar-vertical-link-hover-bg);
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav-link {
-    padding-left: 3.3125rem;
+    padding-left: 3.125rem;
     scroll-margin-top: 200px;
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
     padding-left: 3px;
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-    padding-left: 4.375rem;
+    padding-left: 3.625rem;
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-    padding-left: 5.125rem;
+    padding-left: 4.625rem;
   }
   .navbar-vertical.navbar-expand-xl .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-    padding-left: 5.875rem;
+    padding-left: 5.625rem;
   }
   .navbar-vertical.navbar-expand-xl ~ .navbar-top {
     padding-right: 2.5rem;
@@ -29647,23 +29647,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     background-color: var(--phoenix-navbar-vertical-link-hover-bg);
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav-link {
-    padding-left: 3.3125rem;
+    padding-left: 3.125rem;
     scroll-margin-top: 200px;
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
     padding-left: 3px;
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-    padding-left: 4.375rem;
+    padding-left: 3.625rem;
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-    padding-left: 5.125rem;
+    padding-left: 4.625rem;
   }
   .navbar-vertical.navbar-expand-lg .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-    padding-left: 5.875rem;
+    padding-left: 5.625rem;
   }
   .navbar-vertical.navbar-expand-lg ~ .navbar-top {
     padding-right: 2.5rem;
@@ -29731,23 +29731,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     background-color: var(--phoenix-navbar-vertical-link-hover-bg);
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav-link {
-    padding-left: 3.3125rem;
+    padding-left: 3.125rem;
     scroll-margin-top: 200px;
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
     padding-left: 3px;
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-    padding-left: 4.375rem;
+    padding-left: 3.625rem;
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-    padding-left: 5.125rem;
+    padding-left: 4.625rem;
   }
   .navbar-vertical.navbar-expand-md .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-    padding-left: 5.875rem;
+    padding-left: 5.625rem;
   }
   .navbar-vertical.navbar-expand-md ~ .navbar-top {
     padding-right: 2.5rem;
@@ -29815,23 +29815,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
     background-color: var(--phoenix-navbar-vertical-link-hover-bg);
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav-link {
-    padding-left: 3.3125rem;
+    padding-left: 3.125rem;
     scroll-margin-top: 200px;
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-    padding-left: 15px;
+    padding-left: 0px;
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
     padding-left: 3px;
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-    padding-left: 4.375rem;
+    padding-left: 3.625rem;
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-    padding-left: 5.125rem;
+    padding-left: 4.625rem;
   }
   .navbar-vertical.navbar-expand-sm .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-    padding-left: 5.875rem;
+    padding-left: 5.625rem;
   }
   .navbar-vertical.navbar-expand-sm ~ .navbar-top {
     padding-right: 2.5rem;
@@ -29898,23 +29898,23 @@ html:not(.navbar-vertical-collapsed) .navbar-vertical.navbar-expand-xs .navbar-v
   background-color: var(--phoenix-navbar-vertical-link-hover-bg);
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav-link {
-  padding-left: 3.3125rem;
+  padding-left: 3.125rem;
   scroll-margin-top: 200px;
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav-link .nav-link-text {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav-link .dropdown-indicator-icon-wrapper + .nav-link-text {
   padding-left: 3px;
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav .nav-link {
-  padding-left: 4.375rem;
+  padding-left: 3.625rem;
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav .nav .nav-link {
-  padding-left: 5.125rem;
+  padding-left: 4.625rem;
 }
 .navbar-vertical.navbar-expand-xs .navbar-vertical-content .navbar-nav .nav .nav .nav .nav .nav-link {
-  padding-left: 5.875rem;
+  padding-left: 5.625rem;
 }
 .navbar-vertical.navbar-expand-xs ~ .navbar-top {
   padding-right: 2.5rem;
@@ -39146,4 +39146,36 @@ a[href].bg-body-secondary:hover, a[href].bg-body-secondary:focus {
 .eps-next-year-chart {
   width: 3rem;
   height: 3rem;
+}
+
+
+
+/* Phoenix Sidebar Sub-menu Bullet Indicator */
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav-link:not(.dropdown-indicator) .d-flex {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav-link:not(.dropdown-indicator) .d-flex::before {
+  content: '' !important;
+  order: -1 !important;
+  display: inline-block !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin-right: 0.5rem !important;
+  border-radius: 50% !important;
+  border: 1.5px solid var(--phoenix-gray-500, #8a99ad) !important;
+  background-color: transparent !important;
+  flex-shrink: 0 !important;
+}
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav-link:not(.dropdown-indicator):hover .d-flex::before {
+  border-color: var(--phoenix-primary, #3874ff) !important;
+  background-color: var(--phoenix-primary-bg-subtle, rgba(56, 116, 255, 0.2)) !important;
+}
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav .nav-link:not(.dropdown-indicator).active .d-flex::before {
+  width: 7px !important;
+  height: 7px !important;
+  border: none !important;
+  background-color: var(--phoenix-primary, #3874ff) !important;
+  box-shadow: 0 0 0 2.5px rgba(56, 116, 255, 0.25) !important;
 }
