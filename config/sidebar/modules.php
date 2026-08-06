@@ -417,7 +417,7 @@ return [
             "name" => "Widgets",
             "icon" => "server",
             "icon_type" => "feather",
-            "url" => "widgets"
+            "url" => "modules/widgets"
         ],
         [
             "name" => "Multi level",

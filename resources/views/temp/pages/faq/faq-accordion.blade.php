@@ -6630,16 +6630,7 @@
           <h3 class="text-body-emphasis">Still can’t find your answer?</h3>
           <p class="text-body">We are happy to help</p><button class="btn btn-sm btn-outline-primary btn-support-chat"><span class="fas fa-comment me-2"></span>Chat with us</button>
         </div>
-        <footer class="footer position-absolute">
-          <div class="row g-0 justify-content-between align-items-center h-100">
-            <div class="col-12 col-sm-auto text-center">
-              <p class="mb-0 mt-2 mt-sm-0 text-body">Thank you for creating with Phoenix<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none">2025 &copy;<a class="mx-1" href="https://themewagon.com">Themewagon</a></p>
-            </div>
-            <div class="col-12 col-sm-auto text-center">
-              <p class="mb-0 text-body-tertiary text-opacity-85">v1.24.0</p>
-            </div>
-          </div>
-        </footer>
+        
       </div>
       <div class="modal fade" id="searchBoxModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="true" data-phoenix-modal="data-phoenix-modal" style="--phoenix-backdrop-opacity: 1;">
         <div class="modal-dialog">
