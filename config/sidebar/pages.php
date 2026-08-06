@@ -89,15 +89,18 @@ return [
             "children" => [
                 [
                     "name" => "404",
-                    "url" => "pages/errors/404"
+                    "url" => "pages/errors/404",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "403",
-                    "url" => "pages/errors/403"
+                    "url" => "pages/errors/403",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "500",
-                    "url" => "pages/errors/500"
+                    "url" => "pages/errors/500",
+                    "target" => "_blank"
                 ]
             ]
         ],
@@ -115,31 +118,38 @@ return [
                     "children" => [
                         [
                             "name" => "Sign in",
-                            "url" => "pages/authentication/simple/sign-in"
+                            "url" => "pages/authentication/simple/sign-in",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign up",
-                            "url" => "pages/authentication/simple/sign-up"
+                            "url" => "pages/authentication/simple/sign-up",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign out",
-                            "url" => "pages/authentication/simple/sign-out"
+                            "url" => "pages/authentication/simple/sign-out",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Forgot password",
-                            "url" => "pages/authentication/simple/forgot-password"
+                            "url" => "pages/authentication/simple/forgot-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Reset password",
-                            "url" => "pages/authentication/simple/reset-password"
+                            "url" => "pages/authentication/simple/reset-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Lock screen",
-                            "url" => "pages/authentication/simple/lock-screen"
+                            "url" => "pages/authentication/simple/lock-screen",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "2FA",
-                            "url" => "pages/authentication/simple/2FA"
+                            "url" => "pages/authentication/simple/2FA",
+                            "target" => "_blank"
                         ]
                     ]
                 ],
@@ -150,31 +160,38 @@ return [
                     "children" => [
                         [
                             "name" => "Sign in",
-                            "url" => "pages/authentication/split/sign-in"
+                            "url" => "pages/authentication/split/sign-in",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign up",
-                            "url" => "pages/authentication/split/sign-up"
+                            "url" => "pages/authentication/split/sign-up",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign out",
-                            "url" => "pages/authentication/split/sign-out"
+                            "url" => "pages/authentication/split/sign-out",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Forgot password",
-                            "url" => "pages/authentication/split/forgot-password"
+                            "url" => "pages/authentication/split/forgot-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Reset password",
-                            "url" => "pages/authentication/split/reset-password"
+                            "url" => "pages/authentication/split/reset-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Lock screen",
-                            "url" => "pages/authentication/split/lock-screen"
+                            "url" => "pages/authentication/split/lock-screen",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "2FA",
-                            "url" => "pages/authentication/split/2FA"
+                            "url" => "pages/authentication/split/2FA",
+                            "target" => "_blank"
                         ]
                     ]
                 ],
@@ -185,31 +202,38 @@ return [
                     "children" => [
                         [
                             "name" => "Sign in",
-                            "url" => "pages/authentication/card/sign-in"
+                            "url" => "pages/authentication/card/sign-in",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign up",
-                            "url" => "pages/authentication/card/sign-up"
+                            "url" => "pages/authentication/card/sign-up",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Sign out",
-                            "url" => "pages/authentication/card/sign-out"
+                            "url" => "pages/authentication/card/sign-out",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Forgot password",
-                            "url" => "pages/authentication/card/forgot-password"
+                            "url" => "pages/authentication/card/forgot-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Reset password",
-                            "url" => "pages/authentication/card/reset-password"
+                            "url" => "pages/authentication/card/reset-password",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Lock screen",
-                            "url" => "pages/authentication/card/lock-screen"
+                            "url" => "pages/authentication/card/lock-screen",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "2FA",
-                            "url" => "pages/authentication/card/2FA"
+                            "url" => "pages/authentication/card/2FA",
+                            "target" => "_blank"
                         ]
                     ]
                 ]
