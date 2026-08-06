@@ -40,6 +40,8 @@
       <!-- Horizontal Top Navbar -->
       @include('layouts.partials.navbar')
 
+      @include('layouts.partials.script-style')
+
       <!-- Page Content -->
       <div class="content">
         @yield('content')

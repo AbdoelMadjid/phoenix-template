@@ -248,43 +248,53 @@ return [
             "children" => [
                 [
                     "name" => "Vertical sidenav",
-                    "url" => "demo/vertical-sidenav"
+                    "url" => "demo/vertical-sidenav",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Dark mode",
-                    "url" => "demo/dark-mode"
+                    "url" => "demo/dark-mode",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Sidenav collapse",
-                    "url" => "demo/sidenav-collapse"
+                    "url" => "demo/sidenav-collapse",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Darknav",
-                    "url" => "demo/darknav"
+                    "url" => "demo/darknav",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Topnav slim",
-                    "url" => "demo/topnav-slim"
+                    "url" => "demo/topnav-slim",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Navbar horizontal",
-                    "url" => "demo/navbar-horizontal"
+                    "url" => "demo/navbar-horizontal",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Horizontal slim",
-                    "url" => "demo/horizontal-slim"
+                    "url" => "demo/horizontal-slim",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Combo nav",
-                    "url" => "demo/combo-nav"
+                    "url" => "demo/combo-nav",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Combo nav slim",
-                    "url" => "demo/combo-nav-slim"
+                    "url" => "demo/combo-nav-slim",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Dual nav",
-                    "url" => "demo/dual-nav"
+                    "url" => "demo/dual-nav",
+                    "target" => "_blank"
                 ]
             ]
         ]
