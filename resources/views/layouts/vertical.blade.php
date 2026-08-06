@@ -73,6 +73,8 @@
         @yield('content')
         @include('layouts.partials.footer')
       </div>
+      @include('layouts.partials.support-chat')
+      @include('layouts.partials.settings-offcanvas')
     </main>
 
     <!-- ===============================================-->
