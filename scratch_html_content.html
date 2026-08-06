@@ -1,9 +1,4 @@
-@extends('layouts.vertical')
-
-@section('title', 'Create Kanban Board')
-
-@section('content')
-<div class="d-flex align-items-center"><img class="me-3" src="{{ asset('assets/img/kanban/board.png') }}" alt="">
+<div class="d-flex align-items-center"><img class="me-3" src="../../assets/img/kanban/board.png" alt="">
           <h1 class="mb-0 text-body-emphasis fw-semibold">Phoenix Kanban</h1>
         </div>
         <p class="mt-3">Create a Kanban board by following <br class="d-md-none">the steps below</p>
@@ -73,20 +68,20 @@
                           </div>
                           <div class="tab-pane fade" id="tab-bg" role="tabpanel" aria-labelledby="bg-tab">
                             <div class="row g-3 mb-4">
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg1.jpg" checked="checked" name="board-img" id="img0"><label class="kanban-radio-bg-image w-100" for="img0"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg1.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg2.jpg" name="board-img" id="img1"><label class="kanban-radio-bg-image w-100" for="img1"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg2.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg3.jpg" name="board-img" id="img2"><label class="kanban-radio-bg-image w-100" for="img2"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg3.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg4.jpg" name="board-img" id="img3"><label class="kanban-radio-bg-image w-100" for="img3"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg4.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg5.jpg" name="board-img" id="img4"><label class="kanban-radio-bg-image w-100" for="img4"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg5.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg6.jpg" name="board-img" id="img5"><label class="kanban-radio-bg-image w-100" for="img5"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg6.jpg') }}" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg1.jpg" checked="checked" name="board-img" id="img0"><label class="kanban-radio-bg-image w-100" for="img0"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg1.jpg" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg2.jpg" name="board-img" id="img1"><label class="kanban-radio-bg-image w-100" for="img1"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg2.jpg" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg3.jpg" name="board-img" id="img2"><label class="kanban-radio-bg-image w-100" for="img2"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg3.jpg" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg4.jpg" name="board-img" id="img3"><label class="kanban-radio-bg-image w-100" for="img3"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg4.jpg" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg5.jpg" name="board-img" id="img4"><label class="kanban-radio-bg-image w-100" for="img4"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg5.jpg" alt="" style="height: 100px"></label></div>
+                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg6.jpg" name="board-img" id="img5"><label class="kanban-radio-bg-image w-100" for="img5"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="../../assets/img/kanban/bg6.jpg" alt="" style="height: 100px"></label></div>
                               <div class="col-12"><input class="btn-check kanban-swatch-radio" type="radio" name="board-custom-image" id="boardCustomImage">
                                 <div class="dropzone dropzone-single p-0 w-100" id="dropzone" data-dropzone="data-dropzone" data-options='{"url":"valid/url","maxFiles":1,"maxFilesize":5,"acceptedFiles":"image/*","dictDefaultMessage":"Choose or Drop a file here"}'>
                                   <div class="fallback"><input type="file" name="file"></div>
                                   <div class="dz-message text-body-tertiary text-opacity-85 text-center py-0" data-dz-message="data-dz-message">
-                                    <div class="dz-message-text py-3">or, Add a custom background<br><img class="mt-3" src="{{ asset('assets/img/icons/image-icon.png') }}" width="30" alt=""></div><button class="btn dz-upload-btn border-0 position-absolute z-5 bg-black bg-opacity-50 text-white mt-3 ms-3 px-3" data-dz-message="data-dz-message">Change Picture<span class="fa-solid fa-camera fs-10 ms-1"></span></button>
+                                    <div class="dz-message-text py-3">or, Add a custom background<br><img class="mt-3" src="../../assets/img/icons/image-icon.png" width="30" alt=""></div><button class="btn dz-upload-btn border-0 position-absolute z-5 bg-black bg-opacity-50 text-white mt-3 ms-3 px-3" data-dz-message="data-dz-message">Change Picture<span class="fa-solid fa-camera fs-10 ms-1"></span></button>
                                   </div>
                                   <div class="dz-preview m-0">
-                                    <div class="rounded-2 position-relative" style="height: 144px"><input class="btn-check kanban-swatch-radio kanban-custom-bg-radio" type="radio" value="kanban-custom-bg" name="board-img" id="kanban-custom-bg"><label class="kanban-radio-bg-image w-100 h-100" for="kanban-custom-bg"><img class="rounded-2 w-100 h-100 object-fit-cover" src="{{ asset('assets/img/icons/file-bg.png') }}" alt="..." data-dz-thumbnail="data-dz-thumbnail"></label><button class="btn border-0 position-absolute top-0 end-0 z-5 bg-black bg-opacity-50 text-white mt-3 me-3 px-3 cursor-pointer" data-dz-remove="data-dz-remove"><span class="fa-solid fa-xmark cursor-pointer"></span></button></div>
+                                    <div class="rounded-2 position-relative" style="height: 144px"><input class="btn-check kanban-swatch-radio kanban-custom-bg-radio" type="radio" value="kanban-custom-bg" name="board-img" id="kanban-custom-bg"><label class="kanban-radio-bg-image w-100 h-100" for="kanban-custom-bg"><img class="rounded-2 w-100 h-100 object-fit-cover" src="../../assets/img/icons/file-bg.png" alt="..." data-dz-thumbnail="data-dz-thumbnail"></label><button class="btn border-0 position-absolute top-0 end-0 z-5 bg-black bg-opacity-50 text-white mt-3 me-3 px-3 cursor-pointer" data-dz-remove="data-dz-remove"><span class="fa-solid fa-xmark cursor-pointer"></span></button></div>
                                   </div>
                                 </div>
                               </div>
@@ -176,12 +171,5 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-7 col-xl-6 col-12 text-center kanban-board-bg"><img class="d-dark-none mt-5 position-sticky" src="{{ asset('assets/img/kanban/board-ligth.png') }}" alt="" style="top: 200px"><img class="d-light-none position-sticky" src="{{ asset('assets/img/kanban/board-dark.png') }}" alt="" style="top: 200px"></div>
+          <div class="col-xxl-7 col-xl-6 col-12 text-center kanban-board-bg"><img class="d-dark-none mt-5 position-sticky" src="../../assets/img/kanban/board-ligth.png" alt="" style="top: 200px"><img class="d-light-none position-sticky" src="../../assets/img/kanban/board-dark.png" alt="" style="top: 200px"></div>
         </div>
-@endsection
-
-@push('scripts')
-<script src="{{ asset('vendors/sortablejs/Sortable.min.js') }}"></script>
-<script src="{{ asset('vendors/dropzone/dropzone-min.js') }}"></script>
-<script src="{{ asset('assets/js/pages/kanban.js') }}"></script>
-@endpush
