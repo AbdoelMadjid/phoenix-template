@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" data-navigation-type="default" data-navbar-horizontal-shape="default">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="@yield('html_class')" data-navigation-type="@yield('navigation_type', 'default')" data-navbar-horizontal-shape="@yield('navbar_horizontal_shape', 'default')" @yield('html_attributes')>
 
   <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
     <meta name="theme-color" content="#ffffff">
     <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/js/config.js') }}"></script>
-    <script>localStorage.setItem('phoenixNavbarPosition', 'vertical');</script>
+    @stack('head_scripts')
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -59,7 +59,7 @@
     <link href="{{ asset('vendors/leaflet.markercluster/MarkerCluster.Default.css') }}" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="@yield('body_class')" @yield('body_attributes')>
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->

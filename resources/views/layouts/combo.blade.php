@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" data-navigation-type="combo" data-navbar-horizontal-shape="default">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="@yield('html_class')" data-navigation-type="@yield('navigation_type', 'combo')" data-navbar-horizontal-shape="@yield('navbar_horizontal_shape', 'default')" @yield('html_attributes')>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 
     <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/js/config.js') }}"></script>
+    @stack('head_scripts')
 
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
     @stack('styles')
   </head>
 
-  <body>
+  <body class="@yield('body_class')" @yield('body_attributes')>
     <main class="main" id="top">
       <!-- Sidebar Partial -->
       @include('layouts.partials.sidebar')
