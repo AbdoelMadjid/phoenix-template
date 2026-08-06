@@ -1,10 +1,11 @@
 @extends('layouts.vertical')
 
 @section('title', 'Email Detail')
+@section('content_class', 'pt-0')
 
 @section('content')
-<div class="email-container pt-0" style="padding-top: 0 !important;">
-          <div class="row gx-lg-6 gx-3 py-3 pt-0 z-2 position-sticky bg-body email-header" style="top: 0 !important;">
+<div class="email-container">
+          <div class="row gx-lg-6 gx-3 py-4 z-2 position-sticky bg-body email-header">
             <div class="col-auto"><a class="btn btn-primary email-sidebar-width d-none d-lg-block" href="{{ url('compose') }}">Compose</a><button class="btn px-3 btn-phoenix-secondary text-body-tertiary d-lg-none" data-phoenix-toggle="offcanvas" data-phoenix-target="#emailSidebarColumn"><span class="fa-solid fa-bars"></span></button></div>
             <div class="col-auto d-lg-none"><a class="btn btn-primary px-3 px-sm-4" href="{{ url('compose') }}"> <span class="d-none d-sm-inline-block">Compose</span><span class="d-sm-none fas fa-plus"></span></a></div>
             <div class="col-auto flex-1">

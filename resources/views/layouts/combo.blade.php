@@ -46,7 +46,7 @@
       @include('layouts.partials.script-style')
 
       <!-- Page Content -->
-      <div class="content">
+      <div class="content @yield('content_class')">
         @yield('content')
 
         <!-- Footer -->

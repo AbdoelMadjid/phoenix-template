@@ -1,6 +1,7 @@
 @extends('layouts.vertical')
 
 @section('title', 'Project Details')
+@section('content_class', 'px-0 pt-navbar')
 
 @push('styles')
 <link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet">

@@ -69,7 +69,7 @@
 
       @include('layouts.partials.script-style')
 
-      <div class="content">
+      <div class="content @yield('content_class')">
         @yield('content')
         @include('layouts.partials.footer')
       </div>
