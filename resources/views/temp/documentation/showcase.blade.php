@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
   <head>
@@ -84,7 +84,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Vertical Sidenav (Default)</h5>
                 </div>
-              </div><a class="stretched-link" href="index-1.html?theme-control=true&amp;navigation-type=vertical" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-1') }}?theme-control=true&amp;navigation-type=vertical" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-start">
@@ -94,7 +94,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Dark Mode</h5>
                 </div>
-              </div><a class="stretched-link" href="index-2.html?theme-control=true&amp;color-scheme=dark" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-2') }}?theme-control=true&amp;color-scheme=dark" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-end">
@@ -104,7 +104,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Darknav</h5>
                 </div>
-              </div><a class="stretched-link" href="index-3.html?theme-control=true&amp;vertical-navbar-appearance=darker&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-3') }}?theme-control=true&amp;vertical-navbar-appearance=darker&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-start">
@@ -114,7 +114,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Topnav Slim</h5>
                 </div>
-              </div><a class="stretched-link" href="index-4.html?theme-control=true&amp;horizontal-navbar-shape=slim&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-4') }}?theme-control=true&amp;horizontal-navbar-shape=slim&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-end">
@@ -124,7 +124,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Navbar Horizontal</h5>
                 </div>
-              </div><a class="stretched-link" href="index-5.html?theme-control=true&amp;navigation-type=horizontal" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-5') }}?theme-control=true&amp;navigation-type=horizontal" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-start">
@@ -134,7 +134,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Horizontal Slim</h5>
                 </div>
-              </div><a class="stretched-link" href="dashboard/project-management-1.html?theme-control=true&amp;navigation-type=horizontal&amp;horizontal-navbar-shape=slim&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-4') }}?theme-control=true&amp;navigation-type=horizontal&amp;horizontal-navbar-shape=slim&amp;horizontal-navbar-appearance=darker" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-end">
@@ -144,7 +144,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Combo Nav</h5>
                 </div>
-              </div><a class="stretched-link" href="index-6.html?theme-control=true&amp;navigation-type=combo" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-6') }}?theme-control=true&amp;navigation-type=combo" target="_blank"></a>
             </div>
             <div class="col-lg-6 position-relative variant-container">
               <div class="d-flex px-4 pt-6 justify-content-center justify-content-lg-start">
@@ -154,7 +154,7 @@
                   </div>
                   <h5 class="py-4 text-body-highlight">Dual Nav</h5>
                 </div>
-              </div><a class="stretched-link" href="index-7.html?theme-control=true&amp;navigation-type=dual-nav" target="_blank"></a>
+              </div><a class="stretched-link" href="{{ url('index-7') }}?theme-control=true&amp;navigation-type=dual-nav" target="_blank"></a>
             </div>
           </div>
         </div><!-- end of .container-->

@@ -79,13 +79,13 @@ return [
             "name" => "Changelog",
             "icon" => "git-merge",
             "icon_type" => "feather",
-            "url" => "changelog"
+            "url" => "documentation/changelog"
         ],
         [
             "name" => "Showcase",
             "icon" => "monitor",
             "icon_type" => "feather",
-            "url" => "showcase"
+            "url" => "documentation/showcase"
         ]
     ]
 ];
