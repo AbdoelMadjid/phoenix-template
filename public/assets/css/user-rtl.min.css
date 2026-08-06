@@ -1,1 +1,24 @@
 /* Custom user RTL styles */
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav-link.active {
+  background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+  color: var(--phoenix-navbar-vertical-link-hover-color);
+  border-radius: 0.5rem;
+}
+
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav-link.active .nav-link-icon,
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav-link.active .nav-link-text,
+.navbar-vertical .navbar-vertical-content .navbar-nav .nav-link.active .dropdown-indicator-icon {
+  color: var(--phoenix-navbar-vertical-link-hover-color);
+}
+
+.navbar-vertical-collapsed .navbar-vertical .nav-item-wrapper:has(.active) .dropdown-indicator.label-1,
+.navbar-vertical-collapsed .navbar-vertical .nav-item-wrapper .nav-link.active {
+  background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+  border-radius: 0.5rem;
+  color: var(--phoenix-navbar-vertical-link-hover-color);
+}
+
+.navbar-vertical-collapsed .navbar-vertical .nav-item-wrapper:has(.active) .dropdown-indicator.label-1 .nav-link-icon,
+.navbar-vertical-collapsed .navbar-vertical .nav-item-wrapper .nav-link.active .nav-link-icon {
+  color: var(--phoenix-navbar-vertical-link-hover-color);
+}
