@@ -35,11 +35,13 @@ return [
             "children" => [
                 [
                     "name" => "Default",
-                    "url" => "pages/landing/default"
+                    "url" => "pages/landing/default",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Alternate",
-                    "url" => "pages/landing/alternate"
+                    "url" => "pages/landing/alternate",
+                    "target" => "_blank"
                 ]
             ]
         ],

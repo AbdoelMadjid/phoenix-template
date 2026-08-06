@@ -76,6 +76,7 @@
         @else
             <a class="nav-link label-1 {{ $isActive ? 'active' : '' }}" 
                href="{{ url($item['url']) }}" 
+               @if (isset($item['target'])) target="{{ $item['target'] }}" @endif
                role="button" 
                data-bs-toggle="" 
                aria-expanded="false">
@@ -139,7 +140,8 @@
             </div>
         @else
             <a class="nav-link {{ $isActive ? 'active' : '' }}" 
-               href="{{ url($item['url']) }}">
+               href="{{ url($item['url']) }}"
+               @if (isset($item['target'])) target="{{ $item['target'] }}" @endif>
                 <div class="d-flex align-items-center">
                     <span class="nav-link-text">{{ $item['name'] }}</span>
                     @if (isset($item['indicator']))

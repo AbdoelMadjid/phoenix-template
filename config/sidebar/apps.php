@@ -89,7 +89,8 @@ return [
                     "children" => [
                         [
                             "name" => "Homepage",
-                            "url" => "apps/e-commerce/landing/homepage"
+                            "url" => "apps/e-commerce/landing/homepage",
+                            "target" => "_blank"
                         ],
                         [
                             "name" => "Product details",
@@ -218,7 +219,8 @@ return [
             "children" => [
                 [
                     "name" => "Landing",
-                    "url" => "apps/travel-agency/landing"
+                    "url" => "apps/travel-agency/landing",
+                    "target" => "_blank"
                 ],
                 [
                     "name" => "Hotel",
