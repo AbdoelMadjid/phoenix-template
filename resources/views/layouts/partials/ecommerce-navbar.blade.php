@@ -3,7 +3,7 @@
           <div class="ecommerce-topbar">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
               <div class="row gx-0 gy-2 w-100 flex-between-center">
-                <div class="col-auto"><a class="text-decoration-none" href="{{ url('dashboard') }}">
+                <div class="col-auto"><a class="text-decoration-none" href="{{ url('apps/e-commerce/landing/homepage') }}">
                     <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
                       <h5 class="logo-text ms-2">phoenix</h5>
                     </div>
@@ -13,7 +13,7 @@
                     <li class="nav-item d-flex align-items-center">
                       <div class="theme-control-toggle feather-icon-wait px-2"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle"><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div>
                     </li>
-                    <li class="nav-item feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-primary" href="{{ url('cart') }}" role="button"><span class="text-body-tertiary" data-feather="shopping-cart" style="height:20px;width:20px;"></span><span class="icon-indicator-number">3</span></a></li>
+                    <li class="nav-item feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-primary" href="{{ url('apps/e-commerce/landing/cart') }}" role="button"><span class="text-body-tertiary" data-feather="shopping-cart" style="height:20px;width:20px;"></span><span class="icon-indicator-number">3</span></a></li>
                     <li class="nav-item dropdown feather-icon-wait" style="height: 40px;"><a class="nav-link px-2 icon-indicator icon-indicator-sm icon-indicator-danger" id="navbarTopDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="text-body-tertiary" data-feather="bell" style="height:20px;width:20px;"></span></a>
                       <div class="dropdown-menu dropdown-menu-end notification-dropdown-menu py-0 shadow border navbar-dropdown-caret mt-2" id="navbarDropdownNotfication" aria-labelledby="navbarDropdownNotfication">
                         <div class="card position-relative border-0">
@@ -138,8 +138,8 @@
                           </div>
                           <div class="overflow-auto scrollbar" style="height: 10rem;">
                             <ul class="nav d-flex flex-column mb-2 pb-1">
-                              <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="user"></span><span>Profile</span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"><span class="me-2 text-body align-bottom" data-feather="pie-chart"></span>Dashboard</a></li>
+                              <li class="nav-item"><a class="nav-link px-3 d-block" href="{{ url('apps/e-commerce/landing/profile') }}"> <span class="me-2 text-body align-bottom" data-feather="user"></span><span>Profile</span></a></li>
+                              <li class="nav-item"><a class="nav-link px-3 d-block" href="{{ url('apps/home/e-commerce') }}"><span class="me-2 text-body align-bottom" data-feather="pie-chart"></span>Dashboard</a></li>
                               <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="lock"></span>Posts &amp; Activity</a></li>
                               <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="settings"></span>Settings &amp; Privacy </a></li>
                               <li class="nav-item"><a class="nav-link px-3 d-block" href="#!"> <span class="me-2 text-body align-bottom" data-feather="help-circle"></span>Help Center</a></li>
@@ -241,14 +241,14 @@
             </div>
           </div>
           <ul class="navbar-nav justify-content-end align-items-center">
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link ps-0 active" href="{{ url('homepage') }}">Home</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('favourite-stores') }}">My Favourite Stores</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('products-filter') }}">Products</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('wishlist') }}">Wishlist</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('shipping-info') }}">Shipping Info</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('admin/add-product') }}">Be a vendor</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link" href="{{ url('order-tracking') }}">Track order</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link pe-0" href="{{ url('checkout') }}">Checkout</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link ps-0 {{ request()->is('apps/e-commerce/landing/homepage*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/homepage') }}">Home</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/landing/favourite-stores*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/favourite-stores') }}">My Favourite Stores</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/landing/products-filter*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/products-filter') }}">Products</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/landing/wishlist*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/wishlist') }}">Wishlist</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/landing/shipping-info*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/shipping-info') }}">Shipping Info</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/admin/add-product*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/admin/add-product') }}">Be a vendor</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link {{ request()->is('apps/e-commerce/landing/order-tracking*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/order-tracking') }}">Track order</a></li>
+            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link pe-0 {{ request()->is('apps/e-commerce/landing/checkout*') ? 'active' : '' }}" href="{{ url('apps/e-commerce/landing/checkout') }}">Checkout</a></li>
             <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0" href="javascript: void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-boundary="window" data-bs-reference="parent"> More<span class="fas fa-angle-down ms-2"></span></a>
               <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown" data-category-list="data-category-list"></div>
             </li>
