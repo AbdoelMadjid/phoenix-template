@@ -2,6 +2,10 @@
 
 @section('title', 'Travel Agency')
 
+@section('navbar')
+@include('layouts.partials.travel-landing-navbar')
+@endsection
+
 @push('styles')
 <link href="{{ asset('vendors/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 @endpush
@@ -553,5 +557,5 @@
 <script src="{{ asset('vendors/isotope-packery/packery-mode.pkgd.min.js') }}"></script>
 <script src="{{ asset('vendors/bigpicture/BigPicture.js') }}"></script>
 <script src="{{ asset('vendors/typed.js/typed.umd.js') }}"></script>
-<script src="{{ asset('vendors/swiper/swiper-bundle.min.css') }}"></script>
+<script src="{{ asset('vendors/swiper/swiper-bundle.min.js') }}"></script>
 @endpush

@@ -53,11 +53,19 @@
   <body class="bg-body-emphasis" style="--phoenix-scroll-margin-top: 1.2rem;">
     <!-- Main Content -->
     <main class="main" id="top">
-      @include('layouts.partials.travel-navbar')
+      @hasSection('navbar')
+        @yield('navbar')
+      @else
+        @include('layouts.partials.travel-navbar')
+      @endif
 
       @yield('content')
 
-      @include('layouts.partials.travel-footer')
+      @hasSection('footer')
+        @yield('footer')
+      @else
+        @include('layouts.partials.travel-footer')
+      @endif
     </main>
 
     <!-- Core Scripts -->
