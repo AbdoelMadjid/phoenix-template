@@ -120,7 +120,133 @@
 
   const treeviewInit=()=>{const e="change",t="show.bs.collapse",r="hide.bs.collapse",s=".treeview > li > .treeview-row,.treeview-list.collapse-show > li > .treeview-row",o=".treeview",a=".treeview-list",l="input",i=".treeview-list-item",c=":scope > li > .collapse.collapse-show",n="treeview",d="treeview-list",w="treeview-border",p="treeview-border-transparent",v="collapse-show",m="collapse-hidden",h="treeview-row",f="treeview-row-odd",u="treeview-row-even",E=document.querySelectorAll(o),L=e=>{Array.from(e.querySelectorAll(s)).filter((e=>{let t=!0;for(;e.parentElement;){if(e.parentElement.classList.contains(m)){t=!1;break}e=e.parentElement;}return t})).forEach(((e,t)=>{t%2==0?(e.classList.add(u),e.classList.remove(f)):(e.classList.add(f),e.classList.remove(u));}));};E.length&&E.forEach((s=>{const o=getData(s,"options"),f=o?.striped,u=o?.select;f&&L(s);const E=Array.from(s.querySelectorAll(a));Array.from(s.querySelectorAll(i)).forEach((e=>{const t=document.createElement("div");t.setAttribute("class",h),e.prepend(t);})),E.forEach((o=>{const a=o.id;if(f||o.classList.add(w),o.addEventListener(t,(e=>{e.target.classList.remove(m),e.target.classList.add(v),f&&L(s);})),o.addEventListener(r,(e=>{if(e.target.classList.add(m),e.target.classList.remove(v),f)L(s);else {const t=e.composedPath()[2].querySelectorAll(c);e.composedPath()[2].classList.contains(n)||0!==t.length||e.composedPath()[2].classList.remove(p);}})),"true"===o.dataset.show){const e=[o];for(;o.parentElement;)o.parentElement.classList.contains(d)&&e.unshift(o.parentElement),o=o.parentElement;e.forEach((e=>{new window.bootstrap.Collapse(e,{show:!0});}));}if(u){s.querySelector(`input[data-target='#${a}']`).addEventListener(e,(e=>{Array.from(s.querySelector(`#${a}`).querySelectorAll(l)).forEach((t=>{t.checked=e.target.checked;}));}));}}));}));};
 
-  window.initMap=initMap,docReady(detectorInit),docReady(simplebarInit),docReady(toastInit),docReady(tooltipInit),docReady(featherIconsInit),docReady(basicEchartsInit),docReady(bulkSelectInit),docReady(listInit),docReady(anchorJSInit),docReady(popoverInit),docReady(formValidationInit),docReady(docComponentInit),docReady(swiperInit),docReady(productDetailsInit),docReady(ratingInit),docReady(quantityInit),docReady(dropzoneInit),docReady(choicesInit),docReady(tinymceInit),docReady(responsiveNavItemsInit),docReady(flatpickrInit),docReady(iconCopiedInit),docReady(isotopeInit),docReady(bigPictureInit),docReady(countupInit),docReady(phoenixOffcanvasInit),docReady(todoOffcanvasInit),docReady(wizardInit),docReady(glightboxInit),docReady(themeControl),docReady(searchInit),docReady(handleNavbarVerticalCollapsed),docReady(navbarInit),docReady(navbarComboInit),docReady(fullCalendarInit),docReady(picmoInit),docReady(modalInit),docReady(lottieInit),docReady(navbarShadowOnScrollInit),docReady(dropdownOnHover),docReady(supportChatInit),docReady(sortableInit),docReady(copyLink),docReady(randomColorInit),docReady(faqTabInit),docReady(twoFAVerificarionInit),docReady(mapboxInit),docReady(typedTextInit),docReady(priceTierFormInit),docReady(nouisliderInit),docReady(collapseAllInit),docReady(playOnHoverInit),docReady(passwordToggleInit),docReady(treeviewInit),docReady((()=>{const t=document.querySelector("[data-selected-rows]"),o=document.getElementById("selectedRows");if(t){const e=document.getElementById("bulk-select-example"),i=window.phoenix.BulkSelect.getInstance(e);t.addEventListener("click",(()=>{o.innerHTML=JSON.stringify(i.getSelectedRows(),void 0,2);}));}}));var phoenix = {utils:utils,BulkSelect:BulkSelect};
+  const sidebarSearchInit = () => {
+    const searchInput = document.getElementById('sidebarMenuSearch');
+    const clearBtn = document.getElementById('sidebarMenuSearchClear');
+    const noResults = document.getElementById('sidebarNoResults');
+    const navContainer = document.getElementById('navbarVerticalNav');
+
+    if (!searchInput || !navContainer) return;
+
+    const collapses = navContainer.querySelectorAll('.collapse');
+
+    collapses.forEach(collapse => {
+      if (collapse.dataset.originallyShow === undefined) {
+        collapse.dataset.originallyShow = collapse.classList.contains('show') ? 'true' : 'false';
+      }
+    });
+
+    const performSearch = (query) => {
+      const term = query.trim().toLowerCase();
+
+      if (clearBtn) {
+        if (term.length > 0) {
+          clearBtn.classList.remove('d-none');
+        } else {
+          clearBtn.classList.add('d-none');
+        }
+      }
+
+      if (!term) {
+        if (noResults) noResults.classList.add('d-none');
+
+        const allItems = navContainer.querySelectorAll('.nav-item, .nav-item-wrapper, .navbar-vertical-label, .navbar-vertical-line');
+        allItems.forEach(item => { item.style.display = ''; });
+
+        const allLinks = navContainer.querySelectorAll('.nav-link');
+        allLinks.forEach(link => { link.style.display = ''; });
+
+        collapses.forEach(collapse => {
+          if (collapse.dataset.originallyShow === 'true') {
+            collapse.classList.add('show');
+          } else {
+            collapse.classList.remove('show');
+          }
+        });
+        return;
+      }
+
+      let hasMatches = false;
+
+      const navItems = navContainer.querySelectorAll('.nav-item, .nav-item-wrapper');
+      navItems.forEach(item => { item.style.display = 'none'; });
+
+      const navLinks = navContainer.querySelectorAll('.nav-link');
+      navLinks.forEach(link => { link.style.display = 'none'; });
+
+      const labels = navContainer.querySelectorAll('.navbar-vertical-label, .navbar-vertical-line');
+      labels.forEach(label => { label.style.display = 'none'; });
+
+      navLinks.forEach(link => {
+        const textEl = link.querySelector('.nav-link-text');
+        const text = textEl ? textEl.textContent.trim().toLowerCase() : link.textContent.trim().toLowerCase();
+
+        if (text.includes(term)) {
+          hasMatches = true;
+
+          link.style.display = '';
+
+          let parent = link.parentElement;
+          while (parent && parent !== navContainer) {
+            if (parent.classList.contains('nav-item') || parent.classList.contains('nav-item-wrapper')) {
+              parent.style.display = '';
+            }
+
+            if (parent.classList.contains('collapse')) {
+              parent.classList.add('show');
+              parent.style.display = '';
+              const collapseId = parent.id;
+              if (collapseId) {
+                const triggerLink = navContainer.querySelector(`[href="#${collapseId}"], [aria-controls="${collapseId}"]`);
+                if (triggerLink) {
+                  triggerLink.style.display = '';
+                  if (triggerLink.parentElement) {
+                    triggerLink.parentElement.style.display = '';
+                  }
+                }
+              }
+            }
+
+            if (parent.parentElement && parent.parentElement.classList.contains('nav-item')) {
+              const sectionLi = parent.parentElement;
+              const sectionLabel = sectionLi.querySelector('.navbar-vertical-label');
+              const sectionHr = sectionLi.querySelector('.navbar-vertical-line');
+              if (sectionLabel) sectionLabel.style.display = '';
+              if (sectionHr) sectionHr.style.display = '';
+            }
+
+            parent = parent.parentElement;
+          }
+        }
+      });
+
+      if (noResults) {
+        if (hasMatches) {
+          noResults.classList.add('d-none');
+        } else {
+          noResults.classList.remove('d-none');
+        }
+      }
+    };
+
+    searchInput.addEventListener('input', (e) => {
+      performSearch(e.target.value);
+    });
+
+    searchInput.addEventListener('search', (e) => {
+      performSearch(e.target.value);
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        performSearch('');
+        searchInput.focus();
+      });
+    }
+  };
+
+  window.initMap=initMap,docReady(detectorInit),docReady(simplebarInit),docReady(toastInit),docReady(tooltipInit),docReady(featherIconsInit),docReady(basicEchartsInit),docReady(bulkSelectInit),docReady(listInit),docReady(anchorJSInit),docReady(popoverInit),docReady(formValidationInit),docReady(docComponentInit),docReady(swiperInit),docReady(productDetailsInit),docReady(ratingInit),docReady(quantityInit),docReady(dropzoneInit),docReady(choicesInit),docReady(tinymceInit),docReady(responsiveNavItemsInit),docReady(flatpickrInit),docReady(iconCopiedInit),docReady(isotopeInit),docReady(bigPictureInit),docReady(countupInit),docReady(phoenixOffcanvasInit),docReady(todoOffcanvasInit),docReady(wizardInit),docReady(glightboxInit),docReady(themeControl),docReady(searchInit),docReady(sidebarSearchInit),docReady(handleNavbarVerticalCollapsed),docReady(navbarInit),docReady(navbarComboInit),docReady(fullCalendarInit),docReady(picmoInit),docReady(modalInit),docReady(lottieInit),docReady(navbarShadowOnScrollInit),docReady(dropdownOnHover),docReady(supportChatInit),docReady(sortableInit),docReady(copyLink),docReady(randomColorInit),docReady(faqTabInit),docReady(twoFAVerificarionInit),docReady(mapboxInit),docReady(typedTextInit),docReady(priceTierFormInit),docReady(nouisliderInit),docReady(collapseAllInit),docReady(playOnHoverInit),docReady(passwordToggleInit),docReady(treeviewInit),docReady((()=>{const t=document.querySelector("[data-selected-rows]"),o=document.getElementById("selectedRows");if(t){const e=document.getElementById("bulk-select-example"),i=window.phoenix.BulkSelect.getInstance(e);t.addEventListener("click",(()=>{o.innerHTML=JSON.stringify(i.getSelectedRows(),void 0,2);}));}}));var phoenix = {utils:utils,BulkSelect:BulkSelect};
 
   return phoenix;
 
