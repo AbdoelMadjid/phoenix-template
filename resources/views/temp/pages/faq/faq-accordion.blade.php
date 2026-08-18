@@ -9,12 +9,7 @@
 
 @section('content')
 
-    <nav class="mb-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-            <li class="breadcrumb-item active">Faq</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb')
     <h2 class="mb-5">FAQ</h2>
     <h5 class="mb-3">How can we help?</h5>
     <p class="text-body-tertiary">Search for the topic you need help with or <a href="#!">contact our support</a></p>

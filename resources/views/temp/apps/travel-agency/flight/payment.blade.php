@@ -28,13 +28,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-6 pb-9">
         <div class="container-small">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <h2 class="mb-5">Payment</h2>
             <div class="row g-3 align-items-sm-center justify-content-between mb-5">
                 <div class="col-sm">

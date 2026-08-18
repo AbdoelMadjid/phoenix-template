@@ -7,13 +7,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-5 pb-9">
         <div class="container-small">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <div class="row align-items-center justify-content-between g-3 mb-4">
                 <div class="col-auto">
                     <h2 class="mb-0">Profile</h2>

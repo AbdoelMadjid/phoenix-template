@@ -4,6 +4,12 @@ return [
     "label" => "Documentation",
     "items" => [
         [
+            "name" => "Developer Guide",
+            "icon" => "book-open",
+            "icon_type" => "feather",
+            "url" => "documentation/developer-guide"
+        ],
+        [
             "name" => "Getting started",
             "icon" => "life-buoy",
             "icon_type" => "feather",

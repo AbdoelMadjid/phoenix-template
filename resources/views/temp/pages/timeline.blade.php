@@ -9,12 +9,7 @@
 
 @section('content')
 
-    <nav class="mb-3 breadcrumb-sticky-top" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-            <li class="breadcrumb-item active">Timeline</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb', ['class' => 'mb-3 breadcrumb-sticky-top'])
     <h2 class="text-bold mb-5 page-title-sticky-top">Timeline</h2>
     <div class="row gx-xl-8 gx-xxl-11">
         <div class="col-xl-5 p-xxl-7">

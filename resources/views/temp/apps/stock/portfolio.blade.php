@@ -7,13 +7,7 @@
 @endpush
 
 @section('content')
-    <nav class="mb-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-            <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-            <li class="breadcrumb-item active">Default</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb')
     <div class="row flex-between-center g-3 g-lg-5 mb-3">
         <div class="col-auto">
             <h2 class="mb-0">My Portfolio</h2>

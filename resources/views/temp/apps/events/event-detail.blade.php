@@ -8,13 +8,7 @@
 @endpush
 
 @section('content')
-    <nav class="mb-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-            <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-            <li class="breadcrumb-item active">Default</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb')
     <div class="pb-9">
         <h2 class="mb-4 mb-lg-6">Event details</h2><img class="rounded w-100 object-fit-cover mb-5 mb-md-6 mb-xl-8"
             src="{{ asset('assets/img/generic/34.png') }}" alt="" style="min-height: 250px;">

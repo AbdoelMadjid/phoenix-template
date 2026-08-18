@@ -17,13 +17,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-6 pb-9">
         <div class="container-medium">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <h2 class="mb-4">Hotel Compare</h2>
             <div class="container-medium-md px-0">
                 <div>

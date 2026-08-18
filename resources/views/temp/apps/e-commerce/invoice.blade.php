@@ -7,13 +7,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-5 pb-9 bg-body-emphasis dark__bg-gray-1200 border-top">
         <div class="container-small">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <div class="d-flex justify-content-between align-items-end mb-4">
                 <h2 class="mb-0">Invoice</h2>
                 <div><button class="btn btn-phoenix-secondary me-2"><span class="fa-solid fa-download me-sm-2"></span><span

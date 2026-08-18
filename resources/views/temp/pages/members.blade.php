@@ -9,12 +9,7 @@
 
 @section('content')
 
-    <nav class="mb-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-            <li class="breadcrumb-item active">Members</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb')
     <h2 class="text-bold text-body-emphasis mb-5">Members</h2>
     <div id="members"
         data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>

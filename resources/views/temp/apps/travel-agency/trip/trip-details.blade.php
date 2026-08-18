@@ -35,13 +35,7 @@
     <!-- <section> begin ============================-->
     <section class="py-5">
         <div class="container-medium">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <h2 class="mb-5">Trip Details</h2>
             <h1 class="fw-bold">Walk where the king walked once in Wakanda <span class="align-middle text-nowrap fs-8"><span
                         class="text-body-quaternary">by </span><span class="text-body-tertiary">Panther Travels

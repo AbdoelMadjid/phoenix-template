@@ -7,13 +7,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-5 pb-9">
         <div class="container-small cart">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
                 <div>
                     <h2>Order #234 Status</h2>

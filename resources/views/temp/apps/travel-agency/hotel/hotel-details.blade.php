@@ -15,15 +15,11 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="pt-4 pb-9">
+    <section class="pt-6 pb-9">
         <div class="container-medium">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+
+            @include('layouts.partials.breadcrumb')
+
             <h2 class="mb-4">Hotel Details</h2>
             <div class="row g-4 flex-between-end mb-5">
                 <div class="col-md-8 col-lg-9">
@@ -78,8 +74,7 @@
                             <div class="position-relative rounded-2 overflow-hidden"><a
                                     href="{{ asset('assets/img/hotels/32.png') }}" data-gallery="hotel-details-gallery">
                                     <img class="w-100 h-md-100 object-fit-cover"
-                                        src="{{ asset('assets/img/hotels/32_2.png') }}" alt=""
-                                        height="43"></a>
+                                        src="{{ asset('assets/img/hotels/32_2.png') }}" alt="" height="43"></a>
                                 <div
                                     class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-center bg-black bg-opacity-50">
                                     <a class="text-white stretched-link" href="{{ url('gallery') }}">Show all</a>

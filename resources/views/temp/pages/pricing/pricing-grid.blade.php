@@ -9,12 +9,7 @@
 
 @section('content')
 
-    <nav class="mb-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Pages</a></li>
-            <li class="breadcrumb-item active">Pricing-grid</li>
-        </ol>
-    </nav>
+    @include('layouts.partials.breadcrumb')
     <div class="pb-9">
         <h2 class="mb-7">Pricing</h2>
         <div class="row">

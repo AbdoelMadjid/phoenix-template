@@ -7,13 +7,7 @@
     <!-- <section> begin ============================-->
     <section class="pt-5 pb-9">
         <div class="container-small cart">
-            <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-            </nav>
+            @include('layouts.partials.breadcrumb')
             <h2 class="mb-5">Wishlist<span class="text-body-tertiary fw-normal ms-2">(43)</span></h2>
             <div class="border-y border-translucent" id="productWishlistTable"
                 data-list='{"valueNames":["products","color","size","price","quantity","total"],"page":5,"pagination":true}'>

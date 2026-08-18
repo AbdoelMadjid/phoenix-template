@@ -15,14 +15,7 @@
         <!-- <section> begin ============================-->
         <section class="py-0">
             <div class="container-small">
-                <nav class="mb-3" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="#">Fashion</a></li>
-                        <li class="breadcrumb-item"><a href="#">Womens fashion</a></li>
-                        <li class="breadcrumb-item"><a href="#">Footwear</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Hills</li>
-                    </ol>
-                </nav>
+                @include('layouts.partials.breadcrumb')
                 <div class="row g-5 mb-5 mb-lg-8" data-product-details="data-product-details">
                     <div class="col-12 col-lg-6">
                         <div class="row g-3 mb-3">

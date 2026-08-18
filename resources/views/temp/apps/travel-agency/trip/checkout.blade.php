@@ -34,13 +34,7 @@
         <div class="container-medium">
             <div class="row justify-content-between gy-5 gx-lg-0">
                 <div class="col-lg-6">
-                    <nav class="mb-3" aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                            <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Default</li>
-                        </ol>
-                    </nav>
+                    @include('layouts.partials.breadcrumb')
                     <h2 class="mb-0">Check out</h2>
                     <hr class="mt-5 mb-7">
                     <h3 class="mb-5">Contact details</h3>
