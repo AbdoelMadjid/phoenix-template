@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        <!-- Document Title -->
         <title>@yield('title', config('app.name', 'Phoenix'))</title>
 
         <!-- Favicons -->
@@ -37,12 +38,31 @@
         <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
         <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
         <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
+        <script>
+            var phoenixIsRTL = window.config.config.phoenixIsRTL;
+            if (phoenixIsRTL) {
+                var linkDefault = document.getElementById('style-default');
+                var userLinkDefault = document.getElementById('user-style-default');
+                linkDefault.setAttribute('disabled', true);
+                userLinkDefault.setAttribute('disabled', true);
+                document.querySelector('html').setAttribute('dir', 'rtl');
+            } else {
+                var linkRTL = document.getElementById('style-rtl');
+                var userLinkRTL = document.getElementById('user-style-rtl');
+                linkRTL.setAttribute('disabled', true);
+                userLinkRTL.setAttribute('disabled', true);
+            }
+        </script>
     </head>
 
     <body>
+        <!-- Main Content -->
         <main class="main" id="top">
             @yield('content')
         </main>
+
+        {{-- @include('layouts.partials.support-chat')
+        @include('layouts.partials.settings-offcanvas') --}}
 
         <!-- JavaScripts -->
         <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
