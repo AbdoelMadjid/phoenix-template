@@ -142,7 +142,7 @@ phoneix-template/
 │   ├── views/
 │   │   ├── layouts/          # Layout master (vertical.blade.php)
 │   │   │   └── partials/     # Header, Sidebar, Footer, Search Box
-│   │   └── pages/            # Halaman-halaman konten aplikasi
+│   │   └── temp/             # Halaman-halaman konten aplikasi temp/demo
 └── routes/
     └── web.php               # Routing utama web
 ```
