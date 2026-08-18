@@ -61,6 +61,6 @@
 
 @push('scripts')
     <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
-    <script src="{{ asset('vendors/tinymce/tinymce.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="{{ asset('vendors/prism/prism.js') }}"></script>
 @endpush
