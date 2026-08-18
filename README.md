@@ -1,58 +1,154 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Phoenix Template - Laravel Admin Dashboard
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Template admin web berbasis **Laravel** dan **Phoenix Admin Template** yang dilengkapi dengan komponen UI modern, sistem navigasi sidebar rekursif dinamis, serta fitur pencarian menu *real-time*.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Deskripsi Proyek
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Phoenix Template Laravel** adalah starter kit dashboard admin yang dirancang untuk mempercepat pengembangan aplikasi web berskala kecil hingga besar. Template ini menggabungkan fleksibilitas kerangka kerja Laravel dengan desain estetis dan kaya fitur dari Phoenix Admin.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### ✨ Fitur Utama
+- **Dashboard UI Modern**: Tampilan antarmuka yang bersih, responsif, serta mendukung mode Gelap/Terang (*Dark/Light Mode*).
+- **Sidebar Navigasi Rekursif**: Menu navigasi yang disusun secara terstruktur melalui konfigurasi PHP (`config/sidebar/`).
+- **Pencarian Menu Real-Time**: Pencarian menu di atas sidebar secara langsung (*live search*) tanpa me-refresh halaman.
+- **Layout Modular Blade**: Struktur Blade view yang rapi dan terpisah (`layouts.vertical`, `layouts.partials`).
+- **Vite & Modern Asset Bundling**: Kompilasi stylesheet dan script yang cepat dan efisien.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 💻 Prasyarat Sistem
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Sebelum memulai proses instalasi, pastikan sistem Anda memenuhi kebutuhan berikut:
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **PHP** `>= 8.2` (Direkomendasikan PHP 8.3)
+- **Composer** `>= 2.x`
+- **Node.js** `>= 18.x` & **NPM**
+- **Database**: MySQL / MariaDB / PostgreSQL / SQLite
+- **Web Server**: Laragon / XAMPP / Nginx / Apache / PHP Built-in Server
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🚀 Langkah-Langkah Clone & Instalasi
 
+Ikuti panduan di bawah ini untuk menginstal proyek di lingkungan lokal Anda:
+
+### 1. Clone Repository
+Buka terminal/command prompt, lalu jalankan perintah clone git:
 ```bash
-composer require laravel/boost --dev
+git clone https://github.com/username/phoneix-template.git
+```
+> *Ganti URL di atas dengan lokasi repository Git Anda.*
 
-php artisan boost:install
+### 2. Masuk ke Direktori Proyek
+```bash
+cd phoneix-template
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 3. Install Dependensi PHP (Composer)
+Jalankan Composer untuk mengunduh seluruh dependensi framework Laravel:
+```bash
+composer install
+```
 
-## Contributing
+### 4. Install Dependensi Frontend (NPM)
+Jalankan NPM untuk mengunduh dependensi JavaScript dan CSS:
+```bash
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 5. Konfigurasi Environment File (`.env`)
+Salin file konfigurasi sampel `.env.example` menjadi `.env`:
 
-## Code of Conduct
+**Linux / macOS / Git Bash:**
+```bash
+cp .env.example .env
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**Windows PowerShell:**
+```powershell
+copy .env.example .env
+```
 
-## Security Vulnerabilities
+Buka file `.env` lalu sesuaikan konfigurasi database Anda:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=phoneix_template
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 6. Generate Application Key
+Buat kunci enkripsi aplikasi Laravel:
+```bash
+php artisan key:generate
+```
 
-## License
+### 7. Jalankan Migrasi & Database Seeder
+Pastikan database sudah dibuat di server MySQL/Laragon Anda, kemudian jalankan migrasi:
+```bash
+php artisan migrate
+```
+*(Opsional) Jika ada seeder:*
+```bash
+php artisan migrate --seed
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 8. Build & Compile Asset Frontend
+Jalankan server pengembangan Vite untuk mengompilasi asset secara *real-time*:
+```bash
+npm run dev
+```
+
+### 9. Jalankan Server Aplikasi Laravel
+Buka terminal baru di direktori proyek dan jalankan Artisan Server:
+```bash
+php artisan serve
+```
+
+Aplikasi dapat diakses melalui browser di alamat:
+👉 **`http://127.0.0.1:8000`** *(atau via URL Laragon seperti `http://phoneix-template.test`)*
+
+---
+
+## 🛠️ Perintah-Perintah Penting
+
+Berikut adalah beberapa perintah bermanfaat yang sering digunakan saat pengembangan:
+
+| Perintah | Deskripsi |
+| :--- | :--- |
+| `npm run dev` | Menjalankan Vite dev server dengan HMR (*Hot Module Replacement*) |
+| `npm run build` | Mengompilasi asset untuk kebutuhan produksi (*production build*) |
+| `php artisan serve` | Menjalankan server lokal bawaan Laravel |
+| `php artisan route:list` | Melihat daftar seluruh route yang terdaftar |
+| `php artisan config:clear` | Membersihkan cache konfigurasi aplikasi |
+| `php artisan cache:clear` | Membersihkan cache aplikasi |
+| `php artisan view:clear` | Membersihkan cache tampilan Blade |
+
+---
+
+## 📂 Struktur Folder Penting
+
+```text
+phoneix-template/
+├── app/                      # Logika aplikasi (Controllers, Models, Middleware)
+├── config/
+│   └── sidebar/              # Konfigurasi data menu sidebar (apps, modules, pages)
+├── public/
+│   └── assets/               # File CSS, JS kustom (phoenix.js, user.min.css)
+├── resources/
+│   ├── views/
+│   │   ├── layouts/          # Layout master (vertical.blade.php)
+│   │   │   └── partials/     # Header, Sidebar, Footer, Search Box
+│   │   └── pages/            # Halaman-halaman konten aplikasi
+└── routes/
+    └── web.php               # Routing utama web
+```
+
+---
+
+## 📄 Lisensi
+
+Proyek ini menggunakan lisensi [MIT License](LICENSE).
