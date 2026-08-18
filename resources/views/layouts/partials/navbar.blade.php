@@ -33,14 +33,14 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Recently Searched </h6>
                         <div class="py-2"><a class="dropdown-item"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"><span
                                             class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span>
                                         Store Macbook</div>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+                            <a class="dropdown-item" href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"> <span
                                             class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span>
@@ -53,7 +53,7 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Products</h6>
                         <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="file-thumbnail me-2"><img class="h-100 w-100 object-fit-cover rounded-3"
                                         src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                                 <div class="flex-1">
@@ -64,7 +64,7 @@
                                 </div>
                             </a>
                             <a class="dropdown-item py-2 d-flex align-items-center"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="file-thumbnail me-2"><img class="img-fluid"
                                         src="{{ asset('assets/img/products/60x60/3.png') }}" alt=""></div>
                                 <div class="flex-1">
@@ -80,14 +80,14 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Quick Links</h6>
                         <div class="py-2"><a class="dropdown-item"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"><span
                                             class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span>
                                         Support MacBook House</div>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+                            <a class="dropdown-item" href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"> <span
                                             class="fa-solid fa-link text-body" data-fa-transform="shrink-2"></span>
@@ -100,21 +100,21 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Files</h6>
                         <div class="py-2"><a class="dropdown-item"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"><span
                                             class="fa-solid fa-file-zipper text-body"
                                             data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+                            <a class="dropdown-item" href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"> <span
                                             class="fa-solid fa-file-lines text-body"
                                             data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+                            <a class="dropdown-item" href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"> <span
                                             class="fa-solid fa-image text-body" data-fa-transform="shrink-2"></span>
@@ -127,7 +127,7 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Members</h6>
                         <div class="py-2"><a class="dropdown-item py-2 d-flex align-items-center"
-                                href="pages/members.html">
+                                href="#!">
                                 <div class="avatar avatar-l status-online  me-2 text-body">
                                     <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/10.webp') }}"
                                         alt="">
@@ -137,7 +137,7 @@
                                     <p class="fs-10 mb-0 d-flex text-body-tertiary">anna@technext.it</p>
                                 </div>
                             </a>
-                            <a class="dropdown-item py-2 d-flex align-items-center" href="pages/members.html">
+                            <a class="dropdown-item py-2 d-flex align-items-center" href="#!">
                                 <div class="avatar avatar-l  me-2 text-body">
                                     <img class="rounded-circle " src="{{ asset('assets/img/team/40x40/12.webp') }}"
                                         alt="">
@@ -153,14 +153,14 @@
                             class="dropdown-header text-body-highlight fs-9 border-bottom border-translucent py-2 lh-sm">
                             Related Searches</h6>
                         <div class="py-2"><a class="dropdown-item"
-                                href="apps/e-commerce/landing/product-details.html">
+                                href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"><span
                                             class="fa-brands fa-firefox-browser text-body"
                                             data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+                            <a class="dropdown-item" href="#!">
                                 <div class="d-flex align-items-center">
                                     <div class="fw-normal text-body-highlight title"> <span
                                             class="fa-brands fa-chrome text-body" data-fa-transform="shrink-2"></span>
@@ -389,7 +389,7 @@
                         </div>
                         <div class="card-footer p-0 border-top border-translucent border-0">
                             <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a
-                                    class="fw-bolder" href="pages/notifications.html">Notification history</a></div>
+                                    class="fw-bolder" href="#!">Notification history</a></div>
                         </div>
                     </div>
                 </div>
