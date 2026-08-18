@@ -3,29 +3,40 @@
 @section('title', 'Scrollspy')
 
 @push('styles')
-<link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
-<h2 class="mb-2 lh-sm">Scrollspy</h2>
-        <p class="text-body-tertiary lead mb-2">Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p><a class="btn btn-link p-0" href="https://getbootstrap.com/docs/5.3/components/scrollspy/" target="_blank">Scrollspy on Bootstrap<span class="ms-1" data-feather="chevron-right"></span></a>
-        <div class="mt-4">
-          <div class="row g-4">
+    <h2 class="mb-2 lh-sm">Scrollspy</h2>
+    <p class="text-body-tertiary lead mb-2">Automatically update Bootstrap navigation or list group components based on
+        scroll position to indicate which link is currently active in the viewport.</p><a class="btn btn-link p-0"
+        href="https://getbootstrap.com/docs/5.3/components/scrollspy/" target="_blank">Scrollspy on Bootstrap<span
+            class="ms-1" data-feather="chevron-right"></span></a>
+    <div class="mt-4">
+        <div class="row g-4">
             <div class="col-12 col-xl-10 order-1 order-xl-0">
-              <div class="mb-9">
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Basic Example</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#basic-example-code" role="button" aria-controls="basic-example-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="basic-example-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+                <div class="mb-9">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Basic Example</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#basic-example-code" role="button" aria-controls="basic-example-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="basic-example-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-sm-auto&quot;&gt;
     &lt;div class=&quot;sticky-top&quot; style=&quot;margin-top:-72px;padding-top:72px&quot;&gt;
       &lt;div class=&quot;nav flex-column nav-pills&quot; id=&quot;v-pills&quot;&gt;
@@ -47,48 +58,244 @@
     &lt;p class=&quot;mb-6&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis? Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum maiores odio perferendis quibusdam tempore velit? Accusantium aliquid consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae consequatur corporis, dignissimos dolore dolores dolorum earum error eum eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus. Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut error eveniet, id inventore laudantium molestias mollitia natus neque nulla officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit? Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae distinctio et illum laboriosam necessitatibus obcaecati porro sed vero. Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum laboriosam minus molestiae officia placeat quas tenetur.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="row">
-                        <div class="col-sm-auto">
-                          <div class="sticky-top" style="margin-top:-72px;padding-top:72px">
-                            <div class="nav flex-column nav-pills" id="v-pills">
-                              <a class="nav-link ps-0 ps-sm-3" href="#v-pills-home">Home</a>
-                              <a class="nav-link ps-0 ps-sm-3" href="#v-pills-profile">Profile</a>
-                              <a class="nav-link ps-0 ps-sm-3" href="#v-pills-messages">Messages</a>
-                              <a class="nav-link ps-0 ps-sm-3" href="#v-pills-settings">Settings</a>
                             </div>
-                          </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="row">
+                                    <div class="col-sm-auto">
+                                        <div class="sticky-top" style="margin-top:-72px;padding-top:72px">
+                                            <div class="nav flex-column nav-pills" id="v-pills">
+                                                <a class="nav-link ps-0 ps-sm-3" href="#v-pills-home">Home</a>
+                                                <a class="nav-link ps-0 ps-sm-3" href="#v-pills-profile">Profile</a>
+                                                <a class="nav-link ps-0 ps-sm-3" href="#v-pills-messages">Messages</a>
+                                                <a class="nav-link ps-0 ps-sm-3" href="#v-pills-settings">Settings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3 id="v-pills-home">Home</h3>
+                                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                            accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error
+                                            excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis?
+                                            Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit
+                                            harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium
+                                            aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At
+                                            cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum
+                                            doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum
+                                            maiores odio perferendis quibusdam tempore velit? Accusantium aliquid
+                                            consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati
+                                            officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam
+                                            velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti
+                                            dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam
+                                            optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus
+                                            esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi
+                                            nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam
+                                            quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum
+                                            eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam
+                                            asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem
+                                            doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae
+                                            consequatur corporis, dignissimos dolore dolores dolorum earum error eum
+                                            eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi
+                                            qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus.
+                                            Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor
+                                            dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum
+                                            laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio
+                                            officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut
+                                            velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque
+                                            aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem
+                                            expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae
+                                            nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam
+                                            quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut
+                                            error eveniet, id inventore laudantium molestias mollitia natus neque nulla
+                                            officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut
+                                            voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt
+                                            distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores
+                                            modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis
+                                            sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed
+                                            voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit?
+                                            Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis
+                                            placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore
+                                            eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias
+                                            natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis
+                                            pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae
+                                            distinctio et illum laboriosam necessitatibus obcaecati porro sed vero.
+                                            Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius
+                                            eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi
+                                            mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe
+                                            sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum
+                                            laboriosam minus molestiae officia placeat quas tenetur.</p>
+                                        <h3 id="v-pills-profile">Profile</h3>
+                                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                            accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error
+                                            excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis?
+                                            Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit
+                                            harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium
+                                            aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At
+                                            cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum
+                                            doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum
+                                            maiores odio perferendis quibusdam tempore velit? Accusantium aliquid
+                                            consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati
+                                            officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam
+                                            velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti
+                                            dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam
+                                            optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus
+                                            esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi
+                                            nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam
+                                            quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum
+                                            eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam
+                                            asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem
+                                            doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae
+                                            consequatur corporis, dignissimos dolore dolores dolorum earum error eum
+                                            eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi
+                                            qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus.
+                                            Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor
+                                            dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum
+                                            laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio
+                                            officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut
+                                            velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque
+                                            aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem
+                                            expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae
+                                            nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam
+                                            quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut
+                                            error eveniet, id inventore laudantium molestias mollitia natus neque nulla
+                                            officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut
+                                            voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt
+                                            distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores
+                                            modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis
+                                            sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed
+                                            voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit?
+                                            Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis
+                                            placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore
+                                            eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias
+                                            natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis
+                                            pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae
+                                            distinctio et illum laboriosam necessitatibus obcaecati porro sed vero.
+                                            Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius
+                                            eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi
+                                            mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe
+                                            sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum
+                                            laboriosam minus molestiae officia placeat quas tenetur.</p>
+                                        <h3 id="v-pills-messages">Messages</h3>
+                                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                            accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error
+                                            excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis?
+                                            Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit
+                                            harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium
+                                            aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At
+                                            cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum
+                                            doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum
+                                            maiores odio perferendis quibusdam tempore velit? Accusantium aliquid
+                                            consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati
+                                            officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam
+                                            velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti
+                                            dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam
+                                            optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus
+                                            esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi
+                                            nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam
+                                            quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum
+                                            eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam
+                                            asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem
+                                            doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae
+                                            consequatur corporis, dignissimos dolore dolores dolorum earum error eum
+                                            eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi
+                                            qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus.
+                                            Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor
+                                            dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum
+                                            laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio
+                                            officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut
+                                            velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque
+                                            aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem
+                                            expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae
+                                            nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam
+                                            quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut
+                                            error eveniet, id inventore laudantium molestias mollitia natus neque nulla
+                                            officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut
+                                            voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt
+                                            distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores
+                                            modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis
+                                            sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed
+                                            voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit?
+                                            Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis
+                                            placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore
+                                            eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias
+                                            natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis
+                                            pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae
+                                            distinctio et illum laboriosam necessitatibus obcaecati porro sed vero.
+                                            Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius
+                                            eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi
+                                            mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe
+                                            sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum
+                                            laboriosam minus molestiae officia placeat quas tenetur.</p>
+                                        <h3 id="v-pills-settings">Settings</h3>
+                                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                            accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error
+                                            excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis?
+                                            Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit
+                                            harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium
+                                            aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At
+                                            cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum
+                                            doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum
+                                            maiores odio perferendis quibusdam tempore velit? Accusantium aliquid
+                                            consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati
+                                            officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam
+                                            velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti
+                                            dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam
+                                            optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus
+                                            esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi
+                                            nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam
+                                            quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum
+                                            eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam
+                                            asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem
+                                            doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae
+                                            consequatur corporis, dignissimos dolore dolores dolorum earum error eum
+                                            eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi
+                                            qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus.
+                                            Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor
+                                            dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum
+                                            laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio
+                                            officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut
+                                            velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque
+                                            aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem
+                                            expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae
+                                            nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam
+                                            quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut
+                                            error eveniet, id inventore laudantium molestias mollitia natus neque nulla
+                                            officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut
+                                            voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt
+                                            distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores
+                                            modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis
+                                            sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed
+                                            voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit?
+                                            Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis
+                                            placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore
+                                            eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias
+                                            natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis
+                                            pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae
+                                            distinctio et illum laboriosam necessitatibus obcaecati porro sed vero.
+                                            Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius
+                                            eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi
+                                            mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe
+                                            sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum
+                                            laboriosam minus molestiae officia placeat quas tenetur.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm">
-                          <h3 id="v-pills-home">Home</h3>
-                          <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis? Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum maiores odio perferendis quibusdam tempore velit? Accusantium aliquid consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae consequatur corporis, dignissimos dolore dolores dolorum earum error eum eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus. Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut error eveniet, id inventore laudantium molestias mollitia natus neque nulla officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit? Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae distinctio et illum laboriosam necessitatibus obcaecati porro sed vero. Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum laboriosam minus molestiae officia placeat quas tenetur.</p>
-                          <h3 id="v-pills-profile">Profile</h3>
-                          <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis? Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum maiores odio perferendis quibusdam tempore velit? Accusantium aliquid consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae consequatur corporis, dignissimos dolore dolores dolorum earum error eum eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus. Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut error eveniet, id inventore laudantium molestias mollitia natus neque nulla officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit? Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae distinctio et illum laboriosam necessitatibus obcaecati porro sed vero. Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum laboriosam minus molestiae officia placeat quas tenetur.</p>
-                          <h3 id="v-pills-messages">Messages</h3>
-                          <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis? Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum maiores odio perferendis quibusdam tempore velit? Accusantium aliquid consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae consequatur corporis, dignissimos dolore dolores dolorum earum error eum eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus. Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut error eveniet, id inventore laudantium molestias mollitia natus neque nulla officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit? Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae distinctio et illum laboriosam necessitatibus obcaecati porro sed vero. Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum laboriosam minus molestiae officia placeat quas tenetur.</p>
-                          <h3 id="v-pills-settings">Settings</h3>
-                          <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, alias autem beatae blanditiis corporis debitis eligendi, enim error excepturi exercitationem odit porro quasi reiciendis saepe sapiente veritatis? Aliquam assumenda beatae, cumque delectus dolorem enim, eveniet facere fugit harum illum iure magnam nemo neque nisi omnis, pariatur tenetur vel? Accusantium aut cum deleniti dolor doloribus eum, molestiae nulla officiis quasi. At cupiditate dolor explicabo id nesciunt placeat unde voluptates. Asperiores cum doloremque esse fugit labore quia reprehenderit similique. Architecto est ipsum maiores odio perferendis quibusdam tempore velit? Accusantium aliquid consequatur corporis dignissimos distinctio eos eum fugiat impedit nam obcaecati officiis, porro, quia quibusdam repellendus sapiente suscipit temporibus ullam velit vitae voluptates? Aliquam consectetur consequatur consequuntur deleniti dicta dolores ducimus, excepturi ipsam iure molestias necessitatibus numquam optio quaerat quasi quo repudiandae sed. Ad aliquam animi beatae culpa delectus esse excepturi in incidunt ipsam iusto labore laboriosam minima, nam, nemo nisi nobis, nulla praesentium provident quae quaerat qui quia quibusdam quis quisquam quos repellendus sint suscipit tempora vero vitae! Animi assumenda dolorum eaque, explicabo laborum officia praesentium quia repudiandae. Aliquam asperiores cupiditate deserunt nobis nostrum reprehenderit voluptates? Dolorem doloremque ducimus magni, maxime sint tenetur totam. Accusamus atque beatae consequatur corporis, dignissimos dolore dolores dolorum earum error eum eveniet, facere impedit incidunt minima molestias nemo non nostrum placeat quasi qui ratione repudiandae suscipit tenetur ullam vel velit voluptatibus. Accusantium alias assumenda blanditiis consectetur cupiditate delectus dolor dolores dolorum, ducimus eaque enim, error esse eum fugiat fugit id ipsam ipsum laboriosam laudantium minus modi molestias mollitia necessitatibus nihil odio officia praesentium quaerat quis quisquam quos reiciendis tempora tempore ut velit vitae voluptas voluptatem! Accusantium adipisci architecto assumenda atque aut consectetur consequuntur cum, deserunt doloribus ea excepturi exercitationem expedita explicabo facere fuga fugit impedit iste iusto laboriosam molestiae nihil officiis perferendis porro possimus provident quae quaerat qui quibusdam quos reiciendis repellendus vel vero, voluptatem! Ab amet aperiam assumenda aut error eveniet, id inventore laudantium molestias mollitia natus neque nulla officiis, porro quam quas quisquam repellendus repudiandae saepe sapiente ut voluptas, voluptate. Ab ad alias, aliquam atque consequatur culpa deserunt distinctio eius, enim est ex exercitationem facere facilis itaque magni maiores modi nemo neque perferendis placeat quam quas quia quis quod quos reiciendis sequi sunt tempore vero vitae! Earum explicabo nam quaerat quam quos sed voluptatem. Asperiores debitis dolorum, eaque eligendi optio ullam velit? Aperiam beatae cumque earum et explicabo maxime modi molestias odit, omnis placeat quasi quibusdam, ratione sapiente vel voluptas? A, aliquid beatae dolore eaque eos excepturi expedita facere facilis fugit ipsam iure molestiae molestias natus necessitatibus, nesciunt nulla, numquam obcaecati officia officiis pariatur quaerat quas quisquam rerum sapiente veniam. A aperiam beatae distinctio et illum laboriosam necessitatibus obcaecati porro sed vero. Accusantium at aut consequatur corporis culpa cupiditate delectus dolores eius eligendi, enim error esse est, et excepturi fugit id ipsam ipsum itaque modi mollitia necessitatibus neque non nulla obcaecati officia placeat qui quia saepe sit temporibus totam ut voluptas voluptatibus? Ad consectetur eos est illum laboriosam minus molestiae officia placeat quas tenetur.</p>
-                        </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
             <div class="col-12 col-xl-2">
-              <div class="position-sticky mt-xl-4" style="top: 80px;">
-                <h5 class="lh-1">On this page </h5>
-                <hr>
-                <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
-                  <li class="nav-item"> <a class="nav-link" href="#basic-example">Basic Example</a></li>
-                </ul>
-              </div>
+                <div class="position-sticky mt-xl-4" style="top: 80px;">
+                    <h5 class="lh-1">On this page </h5>
+                    <hr>
+                    <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
+                        <li class="nav-item"> <a class="nav-link" href="#basic-example">Basic Example</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 @endsection
 
 @push('scripts')
-<script src="{{ asset('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('vendors/prism/prism.js') }}"></script>
 @endpush

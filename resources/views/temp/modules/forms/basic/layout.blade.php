@@ -3,29 +3,40 @@
 @section('title', 'Layout')
 
 @push('styles')
-<link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
-<h2 class="mb-2 lh-sm">Layout</h2>
-        <p class="text-body-tertiary lead mb-2">Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p><a class="btn btn-link p-0" href="https://getbootstrap.com/docs/5.3/forms/layout/" target="_blank">Forms Layout on Bootstrap<span class="ms-1" data-feather="chevron-right"></span></a>
-        <div class="mt-4">
-          <div class="row g-4">
+    <h2 class="mb-2 lh-sm">Layout</h2>
+    <p class="text-body-tertiary lead mb-2">Give your forms some structure—from inline to horizontal to custom grid
+        implementations—with our form layout options.</p><a class="btn btn-link p-0"
+        href="https://getbootstrap.com/docs/5.3/forms/layout/" target="_blank">Forms Layout on Bootstrap<span class="ms-1"
+            data-feather="chevron-right"></span></a>
+    <div class="mt-4">
+        <div class="row g-4">
             <div class="col-12 col-xl-10 order-1 order-xl-0">
-              <div class="mb-9">
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Basic form</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#basic-form-code" role="button" aria-controls="basic-form-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="basic-form-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form&gt;
+                <div class="mb-9">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Basic form</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#basic-form-code" role="button" aria-controls="basic-form-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="basic-form-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form&gt;
   &lt;div class=&quot;mb-3&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;basic-form-name&quot;&gt;Name&lt;/label&gt;
     &lt;input class=&quot;form-control&quot; id=&quot;basic-form-name&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
@@ -75,74 +86,90 @@
   &lt;/div&gt;
   &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-name">Name</label>
+                                        <input class="form-control" id="basic-form-name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-email">Email address</label>
+                                        <input class="form-control" id="basic-form-email" type="email"
+                                            placeholder="name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-password">Password</label>
+                                        <input class="form-control" id="basic-form-password" type="password"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-dob">Date of Birth</label>
+                                        <input class="form-control" id="basic-form-dob" type="date">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-gender">Gender</label>
+                                        <select class="form-select" id="basic-form-gender"
+                                            aria-label="Default select example">
+                                            <option selected="selected">Select your gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="flexRadioDefault1" type="radio"
+                                                name="flexRadioDefault">
+                                            <label class="form-check-label mb-0" for="flexRadioDefault1">Personal
+                                                Account</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="flexRadioDefault2" type="radio"
+                                                name="flexRadioDefault" checked="checked">
+                                            <label class="form-check-label mb-0" for="flexRadioDefault2">Business
+                                                Account</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Upload Image</label>
+                                        <input class="form-control" type="file">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="basic-form-textarea">Description</label>
+                                        <textarea class="form-control" id="basic-form-textarea" rows="3" placeholder="Description"></textarea>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input class="form-check-input" id="basic-form-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="basic-form-checkbox">Remember me</label>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <form>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-name">Name</label>
-                          <input class="form-control" id="basic-form-name" type="text" placeholder="Name">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Horizontal form</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#horizontal-form-code" role="button"
+                                            aria-controls="horizontal-form-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-email">Email address</label>
-                          <input class="form-control" id="basic-form-email" type="email" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-password">Password</label>
-                          <input class="form-control" id="basic-form-password" type="password" placeholder="Password">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-dob">Date of Birth</label>
-                          <input class="form-control" id="basic-form-dob" type="date">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-gender">Gender</label>
-                          <select class="form-select" id="basic-form-gender" aria-label="Default select example">
-                            <option selected="selected">Select your gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                          </select>
-                        </div>
-                        <div class="mb-3">
-                          <div class="form-check">
-                            <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                            <label class="form-check-label mb-0" for="flexRadioDefault1">Personal Account</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked="checked">
-                            <label class="form-check-label mb-0" for="flexRadioDefault2">Business Account</label>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Upload Image</label>
-                          <input class="form-control" type="file">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-form-textarea">Description</label>
-                          <textarea class="form-control" id="basic-form-textarea" rows="3" placeholder="Description"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input class="form-check-input" id="basic-form-checkbox" type="checkbox">
-                          <label class="form-check-label" for="basic-form-checkbox">Remember me</label>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Submit</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Horizontal form</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#horizontal-form-code" role="button" aria-controls="horizontal-form-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="horizontal-form-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="horizontal-form-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form&gt;
   &lt;div class=&quot;row mb-3&quot;&gt;
     &lt;label class=&quot;col-sm-2 col-form-label&quot; for=&quot;inputEmail3&quot;&gt;Email&lt;/label&gt;
     &lt;div class=&quot;col-sm-10&quot;&gt;
@@ -185,67 +212,80 @@
   &lt;/div&gt;
   &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
 &lt;/form&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <form>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
-                          <div class="col-sm-10">
-                            <input class="form-control" id="inputEmail3" type="email">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
-                          <div class="col-sm-10">
-                            <input class="form-control" id="inputPassword3" type="password">
-                          </div>
-                        </div>
-                        <fieldset>
-                          <div class="row mb-3">
-                            <label class="col-form-label col-sm-2 pt-0">Radios</label>
-                            <div class="col-sm-10">
-                              <div class="form-check">
-                                <input class="form-check-input" id="gridRadios1" type="radio" name="gridRadios" value="option1" checked="">
-                                <label class="form-check-label" for="gridRadios1">First radio</label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" id="gridRadios2" type="radio" name="gridRadios" value="option2">
-                                <label class="form-check-label" for="gridRadios2">Second radio</label>
-                              </div>
-                              <div class="form-check disabled">
-                                <input class="form-check-input" id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled="">
-                                <label class="form-check-label" for="gridRadios3">Third disabled radio</label>
-                              </div>
                             </div>
-                          </div>
-                        </fieldset>
-                        <div class="row mb-3">
-                          <div class="col-form-label col-sm-2 pt-0">Checkbox</div>
-                          <div class="col-sm-10">
-                            <div class="form-check">
-                              <input class="form-check-input" id="gridCheck1" type="checkbox">
-                              <label class="form-check-label" for="gridCheck1">Example checkbox</label>
+                            <div class="p-4 code-to-copy">
+                                <form>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" id="inputEmail3" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" id="inputPassword3" type="password">
+                                        </div>
+                                    </div>
+                                    <fieldset>
+                                        <div class="row mb-3">
+                                            <label class="col-form-label col-sm-2 pt-0">Radios</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="gridRadios1" type="radio"
+                                                        name="gridRadios" value="option1" checked="">
+                                                    <label class="form-check-label" for="gridRadios1">First radio</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="gridRadios2" type="radio"
+                                                        name="gridRadios" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">Second radio</label>
+                                                </div>
+                                                <div class="form-check disabled">
+                                                    <input class="form-check-input" id="gridRadios3" type="radio"
+                                                        name="gridRadios" value="option3" disabled="">
+                                                    <label class="form-check-label" for="gridRadios3">Third disabled
+                                                        radio</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row mb-3">
+                                        <div class="col-form-label col-sm-2 pt-0">Checkbox</div>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="gridCheck1" type="checkbox">
+                                                <label class="form-check-label" for="gridCheck1">Example checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Sign in</button>
+                                </form>
                             </div>
-                          </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Sign in</button>
-                      </form>
                     </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Horizontal form label sizing</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#horizontal-form-label-sizing-code" role="button" aria-controls="horizontal-form-label-sizing-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="horizontal-form-label-sizing-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row mb-3&quot;&gt;
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Horizontal form label sizing</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#horizontal-form-label-sizing-code" role="button"
+                                            aria-controls="horizontal-form-label-sizing-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="horizontal-form-label-sizing-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row mb-3&quot;&gt;
   &lt;label class=&quot;col-sm-2 col-form-label col-form-label-sm&quot; for=&quot;colFormLabelSm&quot;&gt;Email&lt;/label&gt;
   &lt;div class=&quot;col-sm-10&quot;&gt;
     &lt;input class=&quot;form-control form-control-sm&quot; id=&quot;colFormLabelSm&quot; type=&quot;email&quot; placeholder=&quot;col-form-label-sm&quot; /&gt;
@@ -263,42 +303,55 @@
     &lt;input class=&quot;form-control form-control-lg&quot; id=&quot;colFormLabelLg&quot; type=&quot;email&quot; placeholder=&quot;col-form-label-lg&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label col-form-label-sm" for="colFormLabelSm">Email</label>
-                        <div class="col-sm-10">
-                          <input class="form-control form-control-sm" id="colFormLabelSm" type="email" placeholder="col-form-label-sm">
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label col-form-label-sm"
+                                        for="colFormLabelSm">Email</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control form-control-sm" id="colFormLabelSm" type="email"
+                                            placeholder="col-form-label-sm">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="colFormLabel">Email</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" id="colFormLabel" type="email"
+                                            placeholder="col-form-label">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-2 col-form-label col-form-label-lg"
+                                        for="colFormLabelLg">Email</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control form-control-lg" id="colFormLabelLg" type="email"
+                                            placeholder="col-form-label-lg">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label" for="colFormLabel">Email</label>
-                        <div class="col-sm-10">
-                          <input class="form-control" id="colFormLabel" type="email" placeholder="col-form-label">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <label class="col-sm-2 col-form-label col-form-label-lg" for="colFormLabelLg">Email</label>
-                        <div class="col-sm-10">
-                          <input class="form-control form-control-lg" id="colFormLabelLg" type="email" placeholder="col-form-label-lg">
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Form grid</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#form-grid-code" role="button" aria-controls="form-grid-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="form-grid-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Form grid</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#form-grid-code" role="button" aria-controls="form-grid-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="form-grid-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col&quot;&gt;
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;First name&quot; aria-label=&quot;First name&quot; /&gt;
   &lt;/div&gt;
@@ -306,32 +359,43 @@
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Last name&quot; aria-label=&quot;Last name&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="row">
-                        <div class="col">
-                          <input class="form-control" type="text" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control" type="text" placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input class="form-control" type="text" placeholder="Last name"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                          <input class="form-control" type="text" placeholder="Last name" aria-label="Last name">
+                    </div>
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Form Grid Layout</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#form-grid-layout-code" role="button"
+                                            aria-controls="form-grid-layout-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Form Grid Layout</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#form-grid-layout-code" role="button" aria-controls="form-grid-layout-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="form-grid-layout-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row g-3&quot;&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="form-grid-layout-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row g-3&quot;&gt;
   &lt;div class=&quot;col-md-6&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;inputEmail4&quot;&gt;Email&lt;/label&gt;
     &lt;input class=&quot;form-control&quot; id=&quot;inputEmail4&quot; type=&quot;email&quot; /&gt;
@@ -373,66 +437,77 @@
     &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputEmail4">Email</label>
+                                        <input class="form-control" id="inputEmail4" type="email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputPassword4">Password</label>
+                                        <input class="form-control" id="inputPassword4" type="password">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="inputAddress">Address</label>
+                                        <input class="form-control" id="inputAddress" type="text"
+                                            placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="inputAddress2">Address 2</label>
+                                        <input class="form-control" id="inputAddress2" type="text"
+                                            placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputCity">City</label>
+                                        <input class="form-control" id="inputCity" type="text">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="inputState">State</label>
+                                        <select class="form-select" id="inputState">
+                                            <option selected="selected">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label" for="inputZip">Zip</label>
+                                        <input class="form-control" id="inputZip" type="text">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="gridCheck" type="checkbox">
+                                            <label class="form-check-label" for="gridCheck">Check me out</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Sign in</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <form class="row g-3">
-                        <div class="col-md-6">
-                          <label class="form-label" for="inputEmail4">Email</label>
-                          <input class="form-control" id="inputEmail4" type="email">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Grid - Column Sizing</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#grid---column-sizing-code" role="button"
+                                            aria-controls="grid---column-sizing-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                          <label class="form-label" for="inputPassword4">Password</label>
-                          <input class="form-control" id="inputPassword4" type="password">
-                        </div>
-                        <div class="col-12">
-                          <label class="form-label" for="inputAddress">Address</label>
-                          <input class="form-control" id="inputAddress" type="text" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                          <label class="form-label" for="inputAddress2">Address 2</label>
-                          <input class="form-control" id="inputAddress2" type="text" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                          <label class="form-label" for="inputCity">City</label>
-                          <input class="form-control" id="inputCity" type="text">
-                        </div>
-                        <div class="col-md-4">
-                          <label class="form-label" for="inputState">State</label>
-                          <select class="form-select" id="inputState">
-                            <option selected="selected">Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <label class="form-label" for="inputZip">Zip</label>
-                          <input class="form-control" id="inputZip" type="text">
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" id="gridCheck" type="checkbox">
-                            <label class="form-check-label" for="gridCheck">Check me out</label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Sign in</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Grid - Column Sizing</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#grid---column-sizing-code" role="button" aria-controls="grid---column-sizing-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="grid---column-sizing-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row g-3&quot;&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="grid---column-sizing-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row g-3&quot;&gt;
   &lt;div class=&quot;col-sm-7&quot;&gt;
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;City&quot; aria-label=&quot;City&quot; /&gt;
   &lt;/div&gt;
@@ -443,35 +518,45 @@
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Zip&quot; aria-label=&quot;Zip&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="row g-3">
-                        <div class="col-sm-7">
-                          <input class="form-control" type="text" placeholder="City" aria-label="City">
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="row g-3">
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="text" placeholder="City" aria-label="City">
+                                    </div>
+                                    <div class="col-sm">
+                                        <input class="form-control" type="text" placeholder="State"
+                                            aria-label="State">
+                                    </div>
+                                    <div class="col-sm">
+                                        <input class="form-control" type="text" placeholder="Zip" aria-label="Zip">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm">
-                          <input class="form-control" type="text" placeholder="State" aria-label="State">
-                        </div>
-                        <div class="col-sm">
-                          <input class="form-control" type="text" placeholder="Zip" aria-label="Zip">
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Grid - Auto Sizing</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#grid---auto-sizing-code" role="button" aria-controls="grid---auto-sizing-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="grid---auto-sizing-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row gy-2 gx-3 align-items-center&quot;&gt;
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Grid - Auto Sizing</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#grid---auto-sizing-code" role="button"
+                                            aria-controls="grid---auto-sizing-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="grid---auto-sizing-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row gy-2 gx-3 align-items-center&quot;&gt;
   &lt;div class=&quot;col-auto&quot;&gt;
     &lt;label class=&quot;visually-hidden&quot; for=&quot;autoSizingInput&quot;&gt;Name&lt;/label&gt;
     &lt;input class=&quot;form-control&quot; id=&quot;autoSizingInput&quot; type=&quot;text&quot; placeholder=&quot;Jane Doe&quot; /&gt;
@@ -502,55 +587,65 @@
     &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <form class="row gy-2 gx-3 align-items-center">
+                                    <div class="col-auto">
+                                        <label class="visually-hidden" for="autoSizingInput">Name</label>
+                                        <input class="form-control" id="autoSizingInput" type="text"
+                                            placeholder="Jane Doe">
+                                    </div>
+                                    <div class="col-auto">
+                                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input class="form-control" id="autoSizingInputGroup" type="text"
+                                                placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                        <select class="form-select" id="autoSizingSelect">
+                                            <option selected="selected">Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" id="autoSizingCheck" type="checkbox">
+                                            <label class="form-check-label mb-0" for="autoSizingCheck">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <form class="row gy-2 gx-3 align-items-center">
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingInput">Name</label>
-                          <input class="form-control" id="autoSizingInput" type="text" placeholder="Jane Doe">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Gutters</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#gutters-code" role="button" aria-controls="gutters-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                          <div class="input-group">
-                            <div class="input-group-text">@</div>
-                            <input class="form-control" id="autoSizingInputGroup" type="text" placeholder="Username">
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                          <select class="form-select" id="autoSizingSelect">
-                            <option selected="selected">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="col-auto">
-                          <div class="form-check mb-0">
-                            <input class="form-check-input" id="autoSizingCheck" type="checkbox">
-                            <label class="form-check-label mb-0" for="autoSizingCheck">Remember me</label>
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <button class="btn btn-primary" type="submit">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Gutters</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#gutters-code" role="button" aria-controls="gutters-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="gutters-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row g-3&quot;&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="gutters-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row g-3&quot;&gt;
   &lt;div class=&quot;col&quot;&gt;
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;First name&quot; aria-label=&quot;First name&quot; /&gt;
   &lt;/div&gt;
@@ -558,32 +653,42 @@
     &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Last name&quot; aria-label=&quot;Last name&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="row g-3">
-                        <div class="col">
-                          <input class="form-control" type="text" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="row g-3">
+                                    <div class="col">
+                                        <input class="form-control" type="text" placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input class="form-control" type="text" placeholder="Last name"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                          <input class="form-control" type="text" placeholder="Last name" aria-label="Last name">
+                    </div>
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Inline forms</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#inline-forms-code" role="button" aria-controls="inline-forms-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Inline forms</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#inline-forms-code" role="button" aria-controls="inline-forms-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="inline-forms-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row row-cols-lg-5 g-3 align-items-center&quot;&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="inline-forms-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row row-cols-lg-5 g-3 align-items-center&quot;&gt;
   &lt;div class=&quot;col-12&quot;&gt;
     &lt;label class=&quot;sr-only&quot; for=&quot;inlineFormInputName&quot;&gt;Name&lt;/label&gt;
     &lt;input class=&quot;form-control&quot; id=&quot;inlineFormInputName&quot; type=&quot;text&quot; placeholder=&quot;Jane Doe&quot; /&gt;
@@ -614,55 +719,65 @@
     &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <form class="row row-cols-lg-5 g-3 align-items-center">
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputName">Name</label>
+                                        <input class="form-control" id="inlineFormInputName" type="text"
+                                            placeholder="Jane Doe">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input class="form-control" id="inlineFormInputGroupUsername" type="text"
+                                                placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="sr-only" for="inlineFormSelectPref">Preference</label>
+                                        <select class="form-select" id="inlineFormSelectPref">
+                                            <option selected="">Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input" id="inlineFormCheck" type="checkbox">
+                                            <label class="mb-0 form-check-label" for="inlineFormCheck">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <form class="row row-cols-lg-5 g-3 align-items-center">
-                        <div class="col-12">
-                          <label class="sr-only" for="inlineFormInputName">Name</label>
-                          <input class="form-control" id="inlineFormInputName" type="text" placeholder="Jane Doe">
+                    <div class="card shadow-none border my-4" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-center">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Utilities</h4>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#utilities-code" role="button" aria-controls="utilities-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12">
-                          <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                          <div class="input-group">
-                            <div class="input-group-text">@</div>
-                            <input class="form-control" id="inlineFormInputGroupUsername" type="text" placeholder="Username">
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <label class="sr-only" for="inlineFormSelectPref">Preference</label>
-                          <select class="form-select" id="inlineFormSelectPref">
-                            <option selected="">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check mb-0">
-                            <input class="form-check-input" id="inlineFormCheck" type="checkbox">
-                            <label class="mb-0 form-check-label" for="inlineFormCheck">Remember me</label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-4" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-center">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Utilities</h4>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#utilities-code" role="button" aria-controls="utilities-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="utilities-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;mb-3&quot;&gt;
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="utilities-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;mb-3&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;formGroupExampleInput&quot;&gt;Example label&lt;/label&gt;
   &lt;input class=&quot;form-control&quot; id=&quot;formGroupExampleInput&quot; type=&quot;text&quot; placeholder=&quot;Example input placeholder&quot; /&gt;
 &lt;/div&gt;
@@ -670,42 +785,46 @@
   &lt;label class=&quot;form-label&quot; for=&quot;formGroupExampleInput2&quot;&gt;Another label&lt;/label&gt;
   &lt;input class=&quot;form-control&quot; id=&quot;formGroupExampleInput2&quot; type=&quot;text&quot; placeholder=&quot;Another input placeholder&quot; /&gt;
 &lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="mb-3">
+                                    <label class="form-label" for="formGroupExampleInput">Example label</label>
+                                    <input class="form-control" id="formGroupExampleInput" type="text"
+                                        placeholder="Example input placeholder">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formGroupExampleInput2">Another label</label>
+                                    <input class="form-control" id="formGroupExampleInput2" type="text"
+                                        placeholder="Another input placeholder">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="mb-3">
-                        <label class="form-label" for="formGroupExampleInput">Example label</label>
-                        <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Example input placeholder">
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label" for="formGroupExampleInput2">Another label</label>
-                        <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Another input placeholder">
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
             <div class="col-12 col-xl-2">
-              <div class="position-sticky mt-xl-4" style="top: 80px;">
-                <h5 class="lh-1">On this page </h5>
-                <hr>
-                <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
-                  <li class="nav-item"> <a class="nav-link" href="#basic-form">Basic form</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#horizontal-form">Horizontal form</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#horizontal-form-label-sizing">Horizontal form label sizing</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#form-grid">Form grid</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#form-grid-layout">Form Grid Layout</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#grid-column-sizing">Grid - Column Sizing</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#grid-auto-sizing">Grid - Auto Sizing</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#gutters">Gutters</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#utilities">Utilities</a></li>
-                </ul>
-              </div>
+                <div class="position-sticky mt-xl-4" style="top: 80px;">
+                    <h5 class="lh-1">On this page </h5>
+                    <hr>
+                    <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
+                        <li class="nav-item"> <a class="nav-link" href="#basic-form">Basic form</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#horizontal-form">Horizontal form</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#horizontal-form-label-sizing">Horizontal form
+                                label sizing</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#form-grid">Form grid</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#form-grid-layout">Form Grid Layout</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#grid-column-sizing">Grid - Column Sizing</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#grid-auto-sizing">Grid - Auto Sizing</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#gutters">Gutters</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#utilities">Utilities</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 @endsection
 
 @push('scripts')
-<script src="{{ asset('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('vendors/prism/prism.js') }}"></script>
 @endpush

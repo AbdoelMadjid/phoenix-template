@@ -3,30 +3,46 @@
 @section('title', 'Basic Tables')
 
 @push('styles')
-<link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/prism/prism-okaidia.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
-<h2 class="mb-2 lh-sm">Tables</h2>
-        <p class="text-body-tertiary lead mb-2">Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p><a class="btn btn-link p-0" href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank">Tables on Bootstrap<span class="ms-1" data-feather="chevron-right"></span></a>
-        <div class="mt-4">
-          <div class="row g-4">
+    <h2 class="mb-2 lh-sm">Tables</h2>
+    <p class="text-body-tertiary lead mb-2">Documentation and examples for opt-in styling of tables (given their prevalent
+        use in JavaScript plugins) with Bootstrap.</p><a class="btn btn-link p-0"
+        href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank">Tables on Bootstrap<span class="ms-1"
+            data-feather="chevron-right"></span></a>
+    <div class="mt-4">
+        <div class="row g-4">
             <div class="col-12 col-xl-10 order-1 order-xl-0">
-              <div class="mb-9">
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Overview</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Due to the widespread use of <code>&lt;table&gt;</code> elements across third-party widgets like calendars and date pickers, Bootstrap’s tables are <strong>opt-in</strong>. Add the base class <code>.table</code> to any <code>&lt;table&gt;</code>, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#overview-code" role="button" aria-controls="overview-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="overview-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+                <div class="mb-9">
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Overview</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Due to the widespread use of
+                                        <code>&lt;table&gt;</code> elements across third-party widgets like calendars and
+                                        date pickers, Bootstrap’s tables are <strong>opt-in</strong>. Add the base class
+                                        <code>.table</code> to any <code>&lt;table&gt;</code>, then extend with our optional
+                                        modifier classes or custom styles. All table styles are not inherited in Bootstrap,
+                                        meaning any nested tables can be styled independent from the parent.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#overview-code" role="button" aria-controls="overview-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="overview-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -59,58 +75,70 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <div class="progress" style="height:15px">
+                                                    <div class="progress-bar" role="progressbar" style="width: 70%"
+                                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-title="Tooltip on top"></div>
+                                                </div>
+                                            </td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>
-                              <div class="progress" style="height:15px">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"></div>
-                              </div>
-                            </td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Variants</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Use contextual classes to color tables, table rows or individual cells.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#variants-code" role="button" aria-controls="variants-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="variants-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Variants</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Use contextual classes to color tables, table
+                                        rows or individual cells.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#variants-code" role="button" aria-controls="variants-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="variants-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;Class&lt;/th&gt;
@@ -166,82 +194,92 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Class</th>
+                                            <th scope="col">Heading</th>
+                                            <th scope="col">Heading</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Default</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <th scope="row">Primary</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-secondary">
+                                            <th scope="row">Secondary</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <th scope="row">Success</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-danger">
+                                            <th scope="row">Danger</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <th scope="row">Warning</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <th scope="row">Info</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <th scope="row">Light</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                        <tr class="table-dark">
+                                            <th scope="row">Dark</th>
+                                            <td>Cell</td>
+                                            <td>Cell</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Class</th>
-                            <th scope="col">Heading</th>
-                            <th scope="col">Heading</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Default</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-primary">
-                            <th scope="row">Primary</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-secondary">
-                            <th scope="row">Secondary</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-success">
-                            <th scope="row">Success</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-danger">
-                            <th scope="row">Danger</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-warning">
-                            <th scope="row">Warning</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-info">
-                            <th scope="row">Info</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-light">
-                            <th scope="row">Light</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                          <tr class="table-dark">
-                            <th scope="row">Dark</th>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <h2 class="mt-6" data-anchor="data-anchor">Accented tables</h2>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Striped rows</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>. <code>.table-striped</code> also works in table variants</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#striped-rows-code" role="button" aria-controls="striped-rows-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="striped-rows-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-striped&quot;&gt;
+                    <h2 class="mt-6" data-anchor="data-anchor">Accented tables</h2>
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Striped rows</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Use <code>.table-striped</code> to add
+                                        zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.
+                                        <code>.table-striped</code> also works in table variants</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#striped-rows-code" role="button" aria-controls="striped-rows-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="striped-rows-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-striped&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -330,114 +368,126 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Table Success</h4>
+                                <table class="table table-striped table-success">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
-                      <table class="table table-striped table-dark">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Table Success</h4>
-                      <table class="table table-striped table-success">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Hoverable rows</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. These hoverable rows can also be worked with <code>.table-dark</code> and combined with the striped variant.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#hoverable-rows-code" role="button" aria-controls="hoverable-rows-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="hoverable-rows-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-hover&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Hoverable rows</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-hover</code> to enable a
+                                        hover state on table rows within a <code>&lt;tbody&gt;</code>. These hoverable rows
+                                        can also be worked with <code>.table-dark</code> and combined with the striped
+                                        variant.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#hoverable-rows-code" role="button"
+                                            aria-controls="hoverable-rows-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="hoverable-rows-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-hover&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -526,114 +576,123 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
+                                <table class="table table-hover table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Table striped</h4>
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
-                      <table class="table table-hover table-dark">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Table striped</h4>
-                      <table class="table table-hover table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Active tables</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#active-tables-code" role="button" aria-controls="active-tables-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="active-tables-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Active tables</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Highlight a table row or cell by adding a
+                                        <code>.table-active</code> class.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#active-tables-code" role="button" aria-controls="active-tables-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="active-tables-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -662,55 +721,67 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td class="table-active" colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="table-active">
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td class="table-active" colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <h2 class="mt-6" data-anchor="data-anchor">Table Borders</h2>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Bordered tables</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-bordered</code> for borders on all sides of the table and cells. <a href="/modules/utilities/borders.html#border-color">Border color utilities</a> can be added to change colors.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#bordered-tables-code" role="button" aria-controls="bordered-tables-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="bordered-tables-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-bordered&quot;&gt;
+                    <h2 class="mt-6" data-anchor="data-anchor">Table Borders</h2>
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Bordered tables</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-bordered</code> for borders
+                                        on all sides of the table and cells. <a
+                                            href="/modules/utilities/borders.html#border-color">Border color utilities</a>
+                                        can be added to change colors.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#bordered-tables-code" role="button"
+                                            aria-controls="bordered-tables-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="bordered-tables-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-bordered&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -769,84 +840,94 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Border utility class</h4>
+                                <table class="table table-bordered border-primary">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Border utility class</h4>
-                      <table class="table table-bordered border-primary">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Table without borders</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-borderless</code> for a table without borders.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#table-without-borders-code" role="button" aria-controls="table-without-borders-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="table-without-borders-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-borderless&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Table without borders</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-borderless</code> for a table
+                                        without borders.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#table-without-borders-code" role="button"
+                                            aria-controls="table-without-borders-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="table-without-borders-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-borderless&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -905,84 +986,94 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
+                                <table class="table table table-dark table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table table-borderless">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h4 class="mt-4 mb-3 text-body-secondary">Table Dark</h4>
-                      <table class="table table table-dark table-borderless">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Small Tables</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#small-tables-code" role="button" aria-controls="small-tables-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="small-tables-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Small Tables</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Add <code>.table-sm</code> to make any
+                                        <code>.table</code> more compact by cutting all cell <code>padding</code> in half.
+                                    </p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#small-tables-code" role="button" aria-controls="small-tables-code"
+                                            aria-expanded="false"> <span class="me-2" data-feather="code"></span>View
+                                            code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span
+                                                class="me-2" data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="small-tables-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
@@ -1011,56 +1102,69 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <table class="table table-sm">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <h2 data-anchor="data-anchor">Responsive Tables </h2>
-                <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Always responsive</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#always-responsive-code" role="button" aria-controls="always-responsive-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="always-responsive-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;table-responsive scrollbar&quot;&gt;
+                    <h2 data-anchor="data-anchor">Responsive Tables </h2>
+                    <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive
+                        across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick
+                        a maximum breakpoint with which to have a responsive table up to by using
+                        <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Always responsive</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Across every breakpoint, use
+                                        <code>.table-responsive</code> for horizontally scrolling tables.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#always-responsive-code" role="button"
+                                            aria-controls="always-responsive-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="always-responsive-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;table-responsive scrollbar&quot;&gt;
   &lt;table class=&quot;table&quot;&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1091,56 +1195,68 @@
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="table-responsive scrollbar">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="table-responsive scrollbar">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Handle</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td colspan="2">Larry the Bird</td>
-                              <td>@twitter</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow-none border my-5" data-component-card="data-component-card">
-                  <div class="card-header p-4 border-bottom bg-body">
-                    <div class="row g-3 justify-content-between align-items-end">
-                      <div class="col-12 col-md">
-                        <h4 class="text-body mb-0" data-anchor="data-anchor">Breakpoint specific</h4>
-                        <p class="mb-0 mt-2 text-body-secondary">Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
-                      </div>
-                      <div class="col col-md-auto">
-                        <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist"><button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span class="fas fa-copy me-1"></span>Copy Code</button><a class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse" href="#breakpoint-specific-code" role="button" aria-controls="breakpoint-specific-code" aria-expanded="false"> <span class="me-2" data-feather="code"></span>View code</a><a class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2" data-feather="eye"></span>Hide code</a></nav>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="collapse code-collapse" id="breakpoint-specific-code"><pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;table-responsive table-reponsive-sm scrollbar&quot;&gt;
+                    <div class="card shadow-none border my-5" data-component-card="data-component-card">
+                        <div class="card-header p-4 border-bottom bg-body">
+                            <div class="row g-3 justify-content-between align-items-end">
+                                <div class="col-12 col-md">
+                                    <h4 class="text-body mb-0" data-anchor="data-anchor">Breakpoint specific</h4>
+                                    <p class="mb-0 mt-2 text-body-secondary">Use
+                                        <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive
+                                        tables up to a particular breakpoint. From that breakpoint and up, the table will
+                                        behave normally and not scroll horizontally.</p>
+                                </div>
+                                <div class="col col-md-auto">
+                                    <nav class="nav justify-content-end doc-tab-nav align-items-center" role="tablist">
+                                        <button class="btn btn-link px-2 text-body copy-code-btn" type="button"><span
+                                                class="fas fa-copy me-1"></span>Copy Code</button><a
+                                            class="btn btn-sm btn-phoenix-primary code-btn ms-2" data-bs-toggle="collapse"
+                                            href="#breakpoint-specific-code" role="button"
+                                            aria-controls="breakpoint-specific-code" aria-expanded="false"> <span
+                                                class="me-2" data-feather="code"></span>View code</a><a
+                                            class="btn btn-sm btn-phoenix-primary preview-btn ms-2"><span class="me-2"
+                                                data-feather="eye"></span>Hide code</a></nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="collapse code-collapse" id="breakpoint-specific-code">
+                                <pre class="scrollbar" style="max-height:420px"><code class="language-html">&lt;div class=&quot;table-responsive table-reponsive-sm scrollbar&quot;&gt;
   &lt;table class=&quot;table&quot;&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1171,78 +1287,82 @@
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="p-4 code-to-copy">
+                                <div class="table-responsive table-reponsive-sm scrollbar">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 code-to-copy">
-                      <div class="table-responsive table-reponsive-sm scrollbar">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Handle</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td colspan="2">Larry the Bird</td>
-                              <td>@twitter</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
             <div class="col-12 col-xl-2">
-              <div class="position-sticky mt-xl-4" style="top: 80px;">
-                <h5 class="lh-1">On this page </h5>
-                <hr>
-                <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
-                  <li class="nav-item"> <a class="nav-link" href="#overview">Overview</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#variants">Variants</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#accented-tables">Accented tables</a>
-                    <ul class="nav flex-column">
-                      <li class="nav-item"> <a class="nav-link" href="#striped-rows">Striped rows</a></li>
-                      <li class="nav-item"> <a class="nav-link" href="#hoverable-rows">Hoverable rows</a></li>
-                      <li class="nav-item"> <a class="nav-link" href="#active-tables">Active tables</a></li>
+                <div class="position-sticky mt-xl-4" style="top: 80px;">
+                    <h5 class="lh-1">On this page </h5>
+                    <hr>
+                    <ul class="nav nav-vertical flex-column doc-nav" data-doc-nav="data-doc-nav">
+                        <li class="nav-item"> <a class="nav-link" href="#overview">Overview</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#variants">Variants</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#accented-tables">Accented tables</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"> <a class="nav-link" href="#striped-rows">Striped rows</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#hoverable-rows">Hoverable rows</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#active-tables">Active tables</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#table-borders">Table Borders</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"> <a class="nav-link" href="#bordered-tables">Bordered tables</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#table-without-borders">Table without
+                                        borders</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#small-tables">Small Tables</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#responsive-tables">Responsive Tables</a>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"> <a class="nav-link" href="#always-responsive">Always responsive</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#breakpoint-specific">Breakpoint
+                                        specific</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item"> <a class="nav-link" href="#table-borders">Table Borders</a>
-                    <ul class="nav flex-column">
-                      <li class="nav-item"> <a class="nav-link" href="#bordered-tables">Bordered tables</a></li>
-                      <li class="nav-item"> <a class="nav-link" href="#table-without-borders">Table without borders</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"> <a class="nav-link" href="#small-tables">Small Tables</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#responsive-tables">Responsive Tables</a>
-                    <ul class="nav flex-column">
-                      <li class="nav-item"> <a class="nav-link" href="#always-responsive">Always responsive</a></li>
-                      <li class="nav-item"> <a class="nav-link" href="#breakpoint-specific">Breakpoint specific</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 @endsection
 
 @push('scripts')
-<script src="{{ asset('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('vendors/prism/prism.js') }}"></script>
 @endpush

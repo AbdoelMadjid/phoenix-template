@@ -1,71 +1,78 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="@yield('html_class')" data-navigation-type="@yield('navigation_type', 'combo')" data-navbar-horizontal-shape="@yield('navbar_horizontal_shape', 'default')" @yield('html_attributes')>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="@yield('html_class')"
+    data-navigation-type="@yield('navigation_type', 'combo')" data-navbar-horizontal-shape="@yield('navbar_horizontal_shape', 'default')" @yield('html_attributes')>
 
-    <title>@yield('title', config('app.name', 'Phoenix'))</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
-    <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
-    <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
-    <meta name="theme-color" content="#ffffff">
+        <title>@yield('title', config('app.name', 'Phoenix'))</title>
 
-    <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/config.js') }}"></script>
-    @stack('head_scripts')
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}">
+        <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+        <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}">
+        <meta name="theme-color" content="#ffffff">
 
-    <!-- Stylesheets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}" rel="stylesheet">
-    <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
-    <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
-    <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
-    <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
-    <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
+        <script src="{{ asset('vendors/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('assets/js/config.js') }}"></script>
+        @stack('head_scripts')
 
-    @stack('styles')
-  </head>
+        <!-- Stylesheets -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link
+            href="{{ asset('assets/external/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap') }}"
+            rel="stylesheet">
+        <link href="{{ asset('vendors/simplebar/simplebar.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('assets/external/release/v4.0.8/css/line.css') }}">
+        <link href="{{ asset('assets/css/theme-rtl.min.css') }}" type="text/css" rel="stylesheet" id="style-rtl">
+        <link href="{{ asset('assets/css/theme.min.css') }}" type="text/css" rel="stylesheet" id="style-default">
+        <link href="{{ asset('assets/css/user-rtl.min.css') }}" type="text/css" rel="stylesheet" id="user-style-rtl">
+        <link href="{{ asset('assets/css/user.min.css') }}" type="text/css" rel="stylesheet" id="user-style-default">
 
-  <body class="@yield('body_class')" @yield('body_attributes')>
-    <main class="main" id="top">
-      <!-- Sidebar Partial -->
-      @include('layouts.partials.sidebar')
+        @stack('styles')
+    </head>
 
-      <!-- Navbar Partial -->
-      @include('layouts.partials.navbar')
+    <body class="@yield('body_class')" @yield('body_attributes')>
+        <main class="main" id="top">
+            <!-- Sidebar Partial -->
+            @include('layouts.partials.sidebar')
 
-      @include('layouts.partials.script-style')
+            <!-- Navbar Partial -->
+            @include('layouts.partials.navbar')
 
-      <!-- Page Content -->
-      <div class="content @yield('content_class')">
-        @yield('content')
+            @include('layouts.partials.script-style')
 
-        <!-- Footer -->
-        @include('layouts.partials.footer')
-      </div>
-    </main>
+            <!-- Page Content -->
+            <div class="content @yield('content_class')">
+                @yield('content')
 
-    <!-- JavaScripts -->
-    <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
-    <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
-    <script src="{{ asset('vendors/is/is.min.js') }}"></script>
-    <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
-    <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
-    <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
-    <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
-    <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
-    <script src="{{ asset('assets/js/phoenix.js') }}"></script>
+                <!-- Footer -->
+                @include('layouts.partials.footer')
+            </div>
+        </main>
 
-    @stack('scripts')
-  </body>
+        <!-- JavaScripts -->
+        <script src="{{ asset('vendors/popper/popper.min.js') }}"></script>
+        <script src="{{ asset('vendors/bootstrap/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('vendors/anchorjs/anchor.min.js') }}"></script>
+        <script src="{{ asset('vendors/is/is.min.js') }}"></script>
+        <script src="{{ asset('vendors/fontawesome/all.min.js') }}"></script>
+        <script src="{{ asset('vendors/lodash/lodash.min.js') }}"></script>
+        <script src="{{ asset('vendors/list.js/list.min.js') }}"></script>
+        <script src="{{ asset('vendors/feather-icons/feather.min.js') }}"></script>
+        <script src="{{ asset('vendors/dayjs/dayjs.min.js') }}"></script>
+        <script src="{{ asset('assets/js/phoenix.js') }}"></script>
+
+        @stack('scripts')
+    </body>
+
 </html>

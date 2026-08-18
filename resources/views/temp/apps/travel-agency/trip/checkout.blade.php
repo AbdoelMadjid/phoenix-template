@@ -3,289 +3,350 @@
 @section('title', 'Trip Checkout')
 
 @push('styles')
-<link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
-<div class="navbar-responsive-navitems navbar-expand border-y bg-body-emphasis border-translucent py-2">
+    <div class="navbar-responsive-navitems navbar-expand border-y bg-body-emphasis border-translucent py-2">
         <div class="container-medium d-flex flex-between-center" data-navbar="data-navbar">
-          <ul class="navbar-nav justify-content-end align-items-center">
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3 ps-0 " href="{{ url('apps/travel-agency/flight/homepage') }}">Homepage</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  " href="{{ url('trip-details') }}">Trip Details</a></li>
-            <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  text-primary" href="{{ url('checkout') }}">Checkout</a></li>
-            <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0 ps-3" href="javascript: void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-boundary="window" data-bs-reference="parent"> More<span class="fas fa-angle-down ms-2"></span></a>
-              <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown" data-category-list="data-category-list"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="pt-5 pb-9">
-        <div class="container-medium">
-          <div class="row justify-content-between gy-5 gx-lg-0">
-            <div class="col-lg-6">
-              <nav class="mb-3" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item"><a href="#">Page 1</a></li>
-                  <li class="breadcrumb-item"><a href="#">Page 2</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Default</li>
-                </ol>
-              </nav>
-              <h2 class="mb-0">Check out</h2>
-              <hr class="mt-5 mb-7">
-              <h3 class="mb-5">Contact details</h3>
-              <div class="row g-3 mb-3">
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="email">Email</label><input class="form-control" type="text" id="email" placeholder="Enter email address"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="phone-number">Phone number</label><input class="form-control" type="text" id="phone-number" placeholder="Enter phone number"></div>
-              </div>
-              <div class="form-check"><input class="form-check-input" id="recieveUpdate" type="checkbox"><label class="form-check-label fw-normal fs-8 text-body" for="recieveUpdate">Get booking updates via SMS.</label><a class="text-nowrap" href="#!"> Terms apply</a></div>
-              <hr class="my-7">
-              <h3 class="mb-3">Traveler details</h3>
-              <div class="form-check mb-5"><input class="form-check-input" id="anotherCountry" type="checkbox"><label class="form-check-label fw-normal fs-8 text-body" for="anotherCountry">I am travelling from another country</label></div>
-              <div class="row gx-3 gy-4">
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="first-name">First name</label><input class="form-control" type="text" id="first-name" placeholder="Enter first name"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="last-name">Last name</label><input class="form-control" type="text" id="last-name" placeholder="Enter last name"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="date-of-birth">Date of birth</label>
-                  <div class="form-icon-container flatpickr-input-container"><input class="form-control form-icon-input datetimepicker" type="text" id="date-of-birth" placeholder="DD/MM/YYYY" data-options='{"disableMobile":true}'><span class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon" data-fa-transform="up-1"></span></div>
-                </div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="passport-number">Passport number</label><input class="form-control" type="text" id="passport-number" placeholder="Enter passport number"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="country">Country</label><input class="form-control" type="text" id="country" placeholder="Enter country name"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="expiration-date">Expiration date</label>
-                  <div class="form-icon-container flatpickr-input-container"><input class="form-control form-icon-input datetimepicker" type="text" id="expiration-date" placeholder="DD/MM/YYYY" data-options='{"disableMobile":true}'><span class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon" data-fa-transform="up-1"></span></div>
-                </div>
-              </div>
-              <hr class="my-7">
-              <h3 class="mb-5">Tour specifics</h3>
-              <div class="row gx-3 gy-4">
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="arrival-airline">Arrival airline</label><input class="form-control" type="text" id="arrival-airline" placeholder="Enter arrival airline"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="arrival-flight-no">Arrival flight no</label><input class="form-control" type="text" id="arrival-flight-no" placeholder="Enter flight no."></div>
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1" for="arrival-time">Arrival time</label><input class="form-control datetimepicker" type="text" id="arrival-time" placeholder="Hour : Minute" data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1" for="cruise-time">Cruise time</label><input class="form-control datetimepicker" type="text" id="cruise-time" placeholder="Hour : Minute" data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'></div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1" for="disemberkation-time">Disemberkation time</label><input class="form-control datetimepicker" type="text" id="disemberkation-time" placeholder="Hour : Minute" data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'></div>
-                </div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="departure-flight-no">Departure flight no</label><input class="form-control" type="text" id="departure-flight-no" placeholder="Enter flight no."></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="departure-date">Departure date</label>
-                  <div class="form-icon-container flatpickr-input-container"><input class="form-control form-icon-input datetimepicker" type="text" id="departure-date" placeholder="DD/MM/YYYY"><span class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon" data-fa-transform="up-1"></span></div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1" for="departure-time">Departure time</label><input class="form-control datetimepicker" type="text" id="departure-time" placeholder="Hour : Minute" data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'></div>
-                </div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="departure-airline">Departure airline</label><input class="form-control" type="text" id="departure-airline" placeholder="Enter name"></div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="pick-up-location">Pick up location</label>
-                  <div class="position-relative"><input class="form-control pe-6" type="text" id="pick-up-location" placeholder="Enter location"><span class="fa-solid fa-location position-absolute top-0 end-0 mt-2 me-3 text-body-quaternary" data-fa-transform="down-3"></span></div>
-                </div>
-                <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="drop-off-location">Drop off location</label>
-                  <div class="position-relative"><input class="form-control pe-6" type="text" id="drop-off-location" placeholder="Enter location"><span class="fa-solid fa-location position-absolute top-0 end-0 mt-2 me-3 text-body-quaternary" data-fa-transform="down-3"></span></div>
-                </div>
-              </div>
-              <hr class="my-7">
-              <h5 class="mb-2">Special requests</h5>
-              <p class="text-body-tertiary fs-9">Special requests cannot be guaranteed-but the property will do its best to meet your needs. You can always make a special request after your booking is complete!</p><textarea class="form-control" id="request" placeholder="Type your request" rows="5"></textarea>
-              <h3 class="mt-7 mb-5">Payment Method</h3>
-              <div class="row gx-xxl-6 mb-5">
-                <div class="col-md-auto">
-                  <div class="form-check"><input class="form-check-input" id="creditCard" type="radio" name="paymentMethod" checked=""><label class="form-check-label fs-8 text-body text-nowrap d-flex gap-2" for="creditCard">Credit card<img class="h-100" src="{{ asset('assets/img/logos/visa.png') }}" alt=""><img class="h-100" src="{{ asset('assets/img/logos/discover.png') }}" alt=""><img class="h-100" src="{{ asset('assets/img/logos/mastercard.png') }}" alt=""><img class="h-100" src="{{ asset('assets/img/logos/american_express.png') }}" alt=""></label></div>
-                </div>
-                <div class="col-md-auto">
-                  <div class="form-check"><input class="form-check-input" id="paypal" type="radio" name="paymentMethod"><label class="form-check-label fs-8 text-body" for="paypal">Paypal</label></div>
-                </div>
-                <div class="col-md-auto">
-                  <div class="form-check"><input class="form-check-input" id="coupon" type="radio" name="paymentMethod"><label class="form-check-label fs-8 text-body" for="coupon">Coupon</label></div>
-                </div>
-              </div>
-              <div class="row gx-3 gy-4">
-                <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1" for="selectCard">Select card</label><select class="form-select text-body-emphasis" id="selectCard">
-                    <option selected="selected">Select a card</option>
-                    <option value="visa">Visa</option>
-                    <option value="discover">Discover</option>
-                    <option value="mastercard">Mastercard</option>
-                    <option value="american-express">American Express</option>
-                  </select></div>
-                <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1" for="inputCardNumber">Card number</label><input class="form-control" id="inputCardNumber" type="number" placeholder="Enter card number" aria-label="Card number"></div>
-                <div class="col-12"><label class="fw-bold text-body-highlight mb-1" for="inputName">Full name</label><input class="form-control" id="inputName" type="text" placeholder="Ansolo Lazinatov" aria-label="Full name"></div>
-                <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1">Expires on</label>
-                  <div class="d-flex"><select class="form-select text-body-emphasis me-3">
-                      <option selected="selected">Month</option>
-                      <option>January</option>
-                      <option>February</option>
-                      <option>March</option>
-                    </select><select class="form-select text-body-emphasis">
-                      <option selected="selected">Year</option>
-                      <option value="1990">1990</option>
-                      <option value="1991">1991</option>
-                      <option value="1992">1992</option>
-                      <option value="1993">1993</option>
-                      <option value="1994">1994</option>
-                      <option value="1995">1995</option>
-                      <option value="1996">1996</option>
-                      <option value="1997">1997</option>
-                      <option value="1998">1998</option>
-                      <option value="1999">1999</option>
-                      <option value="2000">2000</option>
-                      <option value="2001">2001</option>
-                      <option value="2002">2002</option>
-                      <option value="2003">2003</option>
-                      <option value="2004">2004</option>
-                      <option value="2005">2005</option>
-                      <option value="2006">2006</option>
-                      <option value="2007">2007</option>
-                      <option value="2008">2008</option>
-                      <option value="2009">2009</option>
-                      <option value="2010">2010</option>
-                      <option value="2011">2011</option>
-                      <option value="2012">2012</option>
-                      <option value="2013">2013</option>
-                      <option value="2014">2014</option>
-                      <option value="2015">2015</option>
-                      <option value="2016">2016</option>
-                      <option value="2017">2017</option>
-                      <option value="2018">2018</option>
-                      <option value="2019">2019</option>
-                      <option value="2020">2020</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                    </select></div>
-                </div>
-                <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1" for="inputCardCVC">CVC</label><input class="form-control" id="inputCardCVC" type="number" placeholder="Enter a valid CVC" aria-label="CVC"></div>
-                <div class="col-12">
-                  <div class="form-check"><input class="form-check-input" id="gridCheck" type="checkbox"><label class="form-check-label text-body-emphasis fs-8" for="gridCheck">Save Card Details</label></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-xl-4">
-              <div class="card">
-                <div class="card-body"><img class="w-100 object-fit-cover rounded-2" src="{{ asset('assets/img/trip/10.png') }}" alt="" height="220">
-                  <h3 class="mb-4 mt-5">Walk where the king walked once in Wakanda</h3>
-                  <h5 class="fw-normal mb-3"><span class="fa-solid fa-calendar text-body-quaternary me-2"></span>March 9, 2023</h5>
-                  <h5 class="fw-normal mb-3"><span class="fa-solid fa-user text-body-quaternary me-2"></span>1 adult</h5>
-                  <h5 class="fw-normal mb-3"><span class="fa-solid fa-clock text-body-quaternary me-2"></span>Pickup time: <span class="ms-3">10:00 am</span></h5>
-                  <h5 class="fw-normal mb-5"><span class="fa-solid fa-clock text-body-quaternary me-2"></span>Drop off time: <span class="ms-2">10:00 am</span></h5>
-                  <div class="p-3 rounded-2 bg-body-highlight">
-                    <div class="d-flex flex-between-center mb-2">
-                      <h5 class="mb-0 fw-normal">Booking Fee</h5>
-                      <h5 class="mb-0 fw-normal">USD 0.00</h5>
-                    </div>
-                    <div class="d-flex flex-between-center mb-3">
-                      <h5 class="mb-0 fw-normal">Subtotal</h5>
-                      <h5 class="mb-0 fw-normal">USD 300.00</h5>
-                    </div>
-                    <div class="d-flex flex-between-center">
-                      <h4 class="mb-0">Total</h4>
-                      <h4 class="mb-0">USD 300.00</h4>
-                    </div>
-                  </div>
-                </div>
-              </div><button class="btn btn-primary w-100 mt-3">Book now</button>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-6">
-        <div class="container-medium">
-          <div class="bg-holder overlay bg-opacity-75" style="background-image:url({{ asset('assets/img/bg/47.png') }});background-position: center; background-size: cover;"></div>
-          <!--/.bg-holder-->
-          <div class="row position-relative align-items-center gy-3">
-            <div class="col-xxl-4 order-1 order-xxl-0">
-              <ul class="list-unstyled d-flex gap-3 gap-xxl-4 flex-wrap mb-0 justify-content-center justify-content-xxl-start">
-                <li><a class="text-secondary-lighter" href="#!">Home</a></li>
-                <li><a class="text-secondary-lighter" href="#!">Terms</a></li>
-                <li><a class="text-secondary-lighter" href="#!">Talent &amp; culture</a></li>
-                <li><a class="text-secondary-lighter" href="#!">Destination</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-8 col-md-7 col-lg-5 col-xl-4 mx-auto mb-3 mb-xxl-0">
-              <h2 class="mb-4 fw-semibold text-white text-center lh-sm">Subscribe to get notified about the latest news</h2>
-              <div class="d-flex gap-2">
-                <div class="form-icon-container flex-1"><input class="form-control form-icon-input" type="text" placeholder="Your email address"><span class="fa-solid fa-envelope form-icon text-body fs-9"></span></div><button class="btn btn-primary rounded">Sign up</button>
-              </div>
-            </div>
-            <div class="col-xxl-4 order-2 order-xxl-0">
-              <ul class="list-unstyled d-flex gap-3 gap-xxl-4 flex-wrap mb-0 justify-content-center justify-content-xxl-end">
-                <li><a class="text-secondary-lighter" href="#!">Refund policy</a></li>
-                <li><a class="text-secondary-lighter" href="#!">Sitemap</a></li>
-                <li><a class="text-secondary-lighter" href="#!">EMI Policy</a></li>
-                <li><a class="text-secondary-lighter" href="#!">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-      <div class="container-medium">
-        <div class="row flex-center justify-content-md-between align-items-md-center gy-2 mt-4 mb-3">
-          <div class="col-auto"><a class="navbar-brand" href="{{ url('dashboard') }}">
-              <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27">
-                <h5 class="logo-text ms-2">phoenix</h5>
-              </div>
-            </a></div>
-          <div class="col-auto">
-            <ul class="d-flex flex-center flex-wrap gap-x-5 gap-y-1 list-unstyled mb-0">
-              <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Become a Host</a></li>
-              <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Blog</a></li>
-              <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Career</a></li>
-              <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="mailto:example@gmail.com"> <span class="fa-regular fa-envelope me-2" data-fa-transform="down-1"></span>Support</a></li>
-              <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="tel:+01123581321"> <span class="fa-brands fa-whatsapp me-2"></span>+01 123 581321</a></li>
+            <ul class="navbar-nav justify-content-end align-items-center">
+                <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3 ps-0 "
+                        href="{{ url('apps/travel-agency/trip/homepage') }}">Homepage</a></li>
+                <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  "
+                        href="{{ url('apps/travel-agency/trip/trip-details') }}">Trip Details</a></li>
+                <li class="nav-item invisible" data-nav-item="data-nav-item"><a class="nav-link px-3  text-primary"
+                        href="{{ url('apps/travel-agency/trip/checkout') }}">Checkout</a></li>
+                <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a
+                        class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0 ps-3" href="javascript: void(0)"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-boundary="window" data-bs-reference="parent"> More<span
+                            class="fas fa-angle-down ms-2"></span></a>
+                    <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown"
+                        data-category-list="data-category-list"></div>
+                </li>
             </ul>
-          </div>
         </div>
-        
-      </div>
-      <div class="support-chat-container">
-        <div class="container-fluid support-chat">
-          <div class="card bg-body-emphasis">
-            <div class="card-header d-flex flex-between-center px-4 py-3 border-bottom border-translucent">
-              <h5 class="mb-0 d-flex align-items-center gap-2">Demo widget<span class="fa-solid fa-circle text-success fs-11"></span></h5>
-              <div class="btn-reveal-trigger"><button class="btn btn-link p-0 dropdown-toggle dropdown-caret-none transition-none d-flex" type="button" id="support-chat-dropdown" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h text-body"></span></button>
-                <div class="dropdown-menu dropdown-menu-end py-2" aria-labelledby="support-chat-dropdown"><a class="dropdown-item" href="#!">Request a callback</a><a class="dropdown-item" href="#!">Search in chat</a><a class="dropdown-item" href="#!">Show history</a><a class="dropdown-item" href="#!">Report to Admin</a><a class="dropdown-item btn-support-chat" href="#!">Close Support</a></div>
-              </div>
-            </div>
-            <div class="card-body chat p-0">
-              <div class="d-flex flex-column-reverse scrollbar h-100 p-3">
-                <div class="text-end mt-6"><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-body-emphasis bg-body-hover rounded-pill border border-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semibold fs-9">I need help with something</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
-                  </a><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-body-emphasis bg-body-hover rounded-pill border border-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semibold fs-9">I can’t reorder a product I previously ordered</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
-                  </a><a class="mb-2 d-inline-flex align-items-center text-decoration-none text-body-emphasis bg-body-hover rounded-pill border border-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semibold fs-9">How do I place an order?</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
-                  </a><a class="false d-inline-flex align-items-center text-decoration-none text-body-emphasis bg-body-hover rounded-pill border border-primary py-2 ps-4 pe-3" href="#!">
-                    <p class="mb-0 fw-semibold fs-9">My payment method not working</p><span class="fa-solid fa-paper-plane text-primary fs-9 ms-3"></span>
-                  </a></div>
-                <div class="text-center mt-auto">
-                  <div class="avatar avatar-3xl status-online"><img class="rounded-circle border border-3 border-light-subtle" src="{{ asset('assets/img/team/30.webp') }}" alt=""></div>
-                  <h5 class="mt-2 mb-3">Eric</h5>
-                  <p class="text-center text-body-emphasis mb-0">Ask us anything – we’ll get back to you here or by email within 24 hours.</p>
+    </div>
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-5 pb-9">
+        <div class="container-medium">
+            <div class="row justify-content-between gy-5 gx-lg-0">
+                <div class="col-lg-6">
+                    <nav class="mb-3" aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Page 1</a></li>
+                            <li class="breadcrumb-item"><a href="#">Page 2</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Default</li>
+                        </ol>
+                    </nav>
+                    <h2 class="mb-0">Check out</h2>
+                    <hr class="mt-5 mb-7">
+                    <h3 class="mb-5">Contact details</h3>
+                    <div class="row g-3 mb-3">
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="email">Email</label><input class="form-control" type="text" id="email"
+                                placeholder="Enter email address"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="phone-number">Phone
+                                number</label><input class="form-control" type="text" id="phone-number"
+                                placeholder="Enter phone number"></div>
+                    </div>
+                    <div class="form-check"><input class="form-check-input" id="recieveUpdate" type="checkbox"><label
+                            class="form-check-label fw-normal fs-8 text-body" for="recieveUpdate">Get booking updates via
+                            SMS.</label><a class="text-nowrap" href="#!"> Terms apply</a></div>
+                    <hr class="my-7">
+                    <h3 class="mb-3">Traveler details</h3>
+                    <div class="form-check mb-5"><input class="form-check-input" id="anotherCountry" type="checkbox"><label
+                            class="form-check-label fw-normal fs-8 text-body" for="anotherCountry">I am travelling from
+                            another country</label></div>
+                    <div class="row gx-3 gy-4">
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="first-name">First
+                                name</label><input class="form-control" type="text" id="first-name"
+                                placeholder="Enter first name"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="last-name">Last
+                                name</label><input class="form-control" type="text" id="last-name"
+                                placeholder="Enter last name"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="date-of-birth">Date of
+                                birth</label>
+                            <div class="form-icon-container flatpickr-input-container"><input
+                                    class="form-control form-icon-input datetimepicker" type="text" id="date-of-birth"
+                                    placeholder="DD/MM/YYYY" data-options='{"disableMobile":true}'><span
+                                    class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon"
+                                    data-fa-transform="up-1"></span></div>
+                        </div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="passport-number">Passport number</label><input class="form-control" type="text"
+                                id="passport-number" placeholder="Enter passport number"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="country">Country</label><input class="form-control" type="text" id="country"
+                                placeholder="Enter country name"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="expiration-date">Expiration date</label>
+                            <div class="form-icon-container flatpickr-input-container"><input
+                                    class="form-control form-icon-input datetimepicker" type="text"
+                                    id="expiration-date" placeholder="DD/MM/YYYY"
+                                    data-options='{"disableMobile":true}'><span
+                                    class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon"
+                                    data-fa-transform="up-1"></span></div>
+                        </div>
+                    </div>
+                    <hr class="my-7">
+                    <h3 class="mb-5">Tour specifics</h3>
+                    <div class="row gx-3 gy-4">
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="arrival-airline">Arrival airline</label><input class="form-control" type="text"
+                                id="arrival-airline" placeholder="Enter arrival airline"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="arrival-flight-no">Arrival flight no</label><input class="form-control"
+                                type="text" id="arrival-flight-no" placeholder="Enter flight no."></div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1"
+                                            for="arrival-time">Arrival time</label><input
+                                            class="form-control datetimepicker" type="text" id="arrival-time"
+                                            placeholder="Hour : Minute"
+                                            data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1"
+                                    for="cruise-time">Cruise time</label><input class="form-control datetimepicker"
+                                    type="text" id="cruise-time" placeholder="Hour : Minute"
+                                    data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1"
+                                    for="disemberkation-time">Disemberkation time</label><input
+                                    class="form-control datetimepicker" type="text" id="disemberkation-time"
+                                    placeholder="Hour : Minute"
+                                    data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="departure-flight-no">Departure flight no</label><input class="form-control"
+                                type="text" id="departure-flight-no" placeholder="Enter flight no."></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="departure-date">Departure date</label>
+                            <div class="form-icon-container flatpickr-input-container"><input
+                                    class="form-control form-icon-input datetimepicker" type="text"
+                                    id="departure-date" placeholder="DD/MM/YYYY"><span
+                                    class="fa-solid fa-calendar-alt text-body-quaternary fs-9 form-icon"
+                                    data-fa-transform="up-1"></span></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="flatpickr-input-container"><label class="fw-bold text-body-highlight mb-1"
+                                    for="departure-time">Departure time</label><input class="form-control datetimepicker"
+                                    type="text" id="departure-time" placeholder="Hour : Minute"
+                                    data-options='{"enableTime":true,"noCalendar":true,"dateFormat":"H:i","disableMobile":true}'>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="departure-airline">Departure airline</label><input class="form-control"
+                                type="text" id="departure-airline" placeholder="Enter name"></div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1" for="pick-up-location">Pick
+                                up location</label>
+                            <div class="position-relative"><input class="form-control pe-6" type="text"
+                                    id="pick-up-location" placeholder="Enter location"><span
+                                    class="fa-solid fa-location position-absolute top-0 end-0 mt-2 me-3 text-body-quaternary"
+                                    data-fa-transform="down-3"></span></div>
+                        </div>
+                        <div class="col-sm-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="drop-off-location">Drop off location</label>
+                            <div class="position-relative"><input class="form-control pe-6" type="text"
+                                    id="drop-off-location" placeholder="Enter location"><span
+                                    class="fa-solid fa-location position-absolute top-0 end-0 mt-2 me-3 text-body-quaternary"
+                                    data-fa-transform="down-3"></span></div>
+                        </div>
+                    </div>
+                    <hr class="my-7">
+                    <h5 class="mb-2">Special requests</h5>
+                    <p class="text-body-tertiary fs-9">Special requests cannot be guaranteed-but the property will do its
+                        best to meet your needs. You can always make a special request after your booking is complete!</p>
+                    <textarea class="form-control" id="request" placeholder="Type your request" rows="5"></textarea>
+                    <h3 class="mt-7 mb-5">Payment Method</h3>
+                    <div class="row gx-xxl-6 mb-5">
+                        <div class="col-md-auto">
+                            <div class="form-check"><input class="form-check-input" id="creditCard" type="radio"
+                                    name="paymentMethod" checked=""><label
+                                    class="form-check-label fs-8 text-body text-nowrap d-flex gap-2"
+                                    for="creditCard">Credit card<img class="h-100"
+                                        src="{{ asset('assets/img/logos/visa.png') }}" alt=""><img class="h-100"
+                                        src="{{ asset('assets/img/logos/discover.png') }}" alt=""><img
+                                        class="h-100" src="{{ asset('assets/img/logos/mastercard.png') }}"
+                                        alt=""><img class="h-100"
+                                        src="{{ asset('assets/img/logos/american_express.png') }}" alt=""></label>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check"><input class="form-check-input" id="paypal" type="radio"
+                                    name="paymentMethod"><label class="form-check-label fs-8 text-body"
+                                    for="paypal">Paypal</label></div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check"><input class="form-check-input" id="coupon" type="radio"
+                                    name="paymentMethod"><label class="form-check-label fs-8 text-body"
+                                    for="coupon">Coupon</label></div>
+                        </div>
+                    </div>
+                    <div class="row gx-3 gy-4">
+                        <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1" for="selectCard">Select
+                                card</label><select class="form-select text-body-emphasis" id="selectCard">
+                                <option selected="selected">Select a card</option>
+                                <option value="visa">Visa</option>
+                                <option value="discover">Discover</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="american-express">American Express</option>
+                            </select></div>
+                        <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1" for="inputCardNumber">Card
+                                number</label><input class="form-control" id="inputCardNumber" type="number"
+                                placeholder="Enter card number" aria-label="Card number"></div>
+                        <div class="col-12"><label class="fw-bold text-body-highlight mb-1" for="inputName">Full
+                                name</label><input class="form-control" id="inputName" type="text"
+                                placeholder="Ansolo Lazinatov" aria-label="Full name"></div>
+                        <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1">Expires on</label>
+                            <div class="d-flex"><select class="form-select text-body-emphasis me-3">
+                                    <option selected="selected">Month</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                </select><select class="form-select text-body-emphasis">
+                                    <option selected="selected">Year</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                </select></div>
+                        </div>
+                        <div class="col-md-6"><label class="fw-bold text-body-highlight mb-1"
+                                for="inputCardCVC">CVC</label><input class="form-control" id="inputCardCVC"
+                                type="number" placeholder="Enter a valid CVC" aria-label="CVC"></div>
+                        <div class="col-12">
+                            <div class="form-check"><input class="form-check-input" id="gridCheck"
+                                    type="checkbox"><label class="form-check-label text-body-emphasis fs-8"
+                                    for="gridCheck">Save Card Details</label></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-5 col-xl-4">
+                    <div class="card">
+                        <div class="card-body"><img class="w-100 object-fit-cover rounded-2"
+                                src="{{ asset('assets/img/trip/10.png') }}" alt="" height="220">
+                            <h3 class="mb-4 mt-5">Walk where the king walked once in Wakanda</h3>
+                            <h5 class="fw-normal mb-3"><span
+                                    class="fa-solid fa-calendar text-body-quaternary me-2"></span>March 9, 2023</h5>
+                            <h5 class="fw-normal mb-3"><span class="fa-solid fa-user text-body-quaternary me-2"></span>1
+                                adult</h5>
+                            <h5 class="fw-normal mb-3"><span
+                                    class="fa-solid fa-clock text-body-quaternary me-2"></span>Pickup time: <span
+                                    class="ms-3">10:00 am</span></h5>
+                            <h5 class="fw-normal mb-5"><span
+                                    class="fa-solid fa-clock text-body-quaternary me-2"></span>Drop off time: <span
+                                    class="ms-2">10:00 am</span></h5>
+                            <div class="p-3 rounded-2 bg-body-highlight">
+                                <div class="d-flex flex-between-center mb-2">
+                                    <h5 class="mb-0 fw-normal">Booking Fee</h5>
+                                    <h5 class="mb-0 fw-normal">USD 0.00</h5>
+                                </div>
+                                <div class="d-flex flex-between-center mb-3">
+                                    <h5 class="mb-0 fw-normal">Subtotal</h5>
+                                    <h5 class="mb-0 fw-normal">USD 300.00</h5>
+                                </div>
+                                <div class="d-flex flex-between-center">
+                                    <h4 class="mb-0">Total</h4>
+                                    <h4 class="mb-0">USD 300.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><button class="btn btn-primary w-100 mt-3">Book now</button>
+                </div>
             </div>
-            <div class="card-footer d-flex align-items-center gap-2 border-top border-translucent ps-3 pe-4 py-3">
-              <div class="d-flex align-items-center flex-1 gap-3 border border-translucent rounded-pill px-4"><input class="form-control outline-none border-0 flex-1 fs-9 px-0" type="text" placeholder="Write message"><label class="btn btn-link d-flex p-0 text-body-quaternary fs-9 border-0" for="supportChatPhotos"><span class="fa-solid fa-image"></span></label><input class="d-none" type="file" accept="image/*" id="supportChatPhotos"><label class="btn btn-link d-flex p-0 text-body-quaternary fs-9 border-0" for="supportChatAttachment"> <span class="fa-solid fa-paperclip"></span></label><input class="d-none" type="file" id="supportChatAttachment"></div><button class="btn p-0 border-0 send-btn"><span class="fa-solid fa-paper-plane fs-9"></span></button>
+        </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-6">
+        <div class="container-medium">
+            <div class="bg-holder overlay bg-opacity-75"
+                style="background-image:url({{ asset('assets/img/bg/47.png') }});background-position: center; background-size: cover;">
             </div>
-          </div>
-        </div><button class="btn btn-support-chat p-0 border border-translucent"><span class="fs-8 btn-text text-primary text-nowrap">Chat demo</span><span class="ping-icon-wrapper mt-n4 ms-n6 mt-sm-0 ms-sm-2 position-absolute position-sm-relative"><span class="ping-icon-bg"></span><span class="fa-solid fa-circle ping-icon"></span></span><span class="fa-solid fa-headset text-primary fs-8 d-sm-none"></span><span class="fa-solid fa-chevron-down text-primary fs-7"></span></button>
-      </div>
+            <!--/.bg-holder-->
+            <div class="row position-relative align-items-center gy-3">
+                <div class="col-xxl-4 order-1 order-xxl-0">
+                    <ul
+                        class="list-unstyled d-flex gap-3 gap-xxl-4 flex-wrap mb-0 justify-content-center justify-content-xxl-start">
+                        <li><a class="text-secondary-lighter" href="#!">Home</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">Terms</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">Talent &amp; culture</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">Destination</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-8 col-md-7 col-lg-5 col-xl-4 mx-auto mb-3 mb-xxl-0">
+                    <h2 class="mb-4 fw-semibold text-white text-center lh-sm">Subscribe to get notified about the latest
+                        news</h2>
+                    <div class="d-flex gap-2">
+                        <div class="form-icon-container flex-1"><input class="form-control form-icon-input"
+                                type="text" placeholder="Your email address"><span
+                                class="fa-solid fa-envelope form-icon text-body fs-9"></span></div><button
+                            class="btn btn-primary rounded">Sign up</button>
+                    </div>
+                </div>
+                <div class="col-xxl-4 order-2 order-xxl-0">
+                    <ul
+                        class="list-unstyled d-flex gap-3 gap-xxl-4 flex-wrap mb-0 justify-content-center justify-content-xxl-end">
+                        <li><a class="text-secondary-lighter" href="#!">Refund policy</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">Sitemap</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">EMI Policy</a></li>
+                        <li><a class="text-secondary-lighter" href="#!">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
+
     <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 @endsection
 
 @push('scripts')
-<script src="{{ asset('vendors/flatpickr/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('vendors/flatpickr/flatpickr.min.js') }}"></script>
 @endpush

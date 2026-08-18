@@ -3,185 +3,504 @@
 @section('title', 'Create Kanban Board')
 
 @section('content')
-<div class="d-flex align-items-center"><img class="me-3" src="{{ asset('assets/img/kanban/board.png') }}" alt="">
-          <h1 class="mb-0 text-body-emphasis fw-semibold">Phoenix Kanban</h1>
-        </div>
-        <p class="mt-3">Create a Kanban board by following <br class="d-md-none">the steps below</p>
-        <div class="kanban-create-board row">
-          <div class="col-xxl-5 col-xl-6 col-12 pb-8 order-1 order-xl-0">
-            <div class="theme-wizard theme-wizard-progress" data-theme-wizard="data-theme-wizard" data-create-board="data-create-board" data-wizard-modal-disabled="data-wizard-modal-disabled">
-              <div class="mt-6 border-bottom-0">
-                <p class="mb-0 text-body-secondary">Step: <span data-kanban-step="data-kanban-step">1</span></p>
-                <ul class="nav justify-content-between nav-wizard nav-wizard-progress">
-                  <li class="nav-item"><a class="nav-link active fw-semibold" href="#create-board-tab1" data-bs-toggle="tab" data-wizard-step="1"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab2" data-bs-toggle="tab" data-wizard-step="2"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab3" data-bs-toggle="tab" data-wizard-step="3"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab4" data-bs-toggle="tab" data-wizard-step="4"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab5" data-bs-toggle="tab" data-wizard-step="5"></a></li>
-                </ul>
-              </div>
-              <div class="mt-6">
-                <div class="pt-4 pb-0">
-                  <div class="tab-content">
-                    <div class="tab-pane active" role="tabpanel" aria-labelledby="create-board-tab1" id="create-board-tab1">
-                      <p class="mb-4">This will be the <b>Name</b> and description of your Kanban board. You and other admins can edit the name in future. The name can contain letters, numbers & punctuation. </p>
-                      <form id="createBoardForm1" novalidate="novalidate" data-wizard-form="1">
-                        <div class="form-floating"><input class="form-control" type="text" name="create-board-name" id="create-boardwizard-name" placeholder="Event title" value="New Kanban Board"><label for="create-boardwizard-name">BOARD NAME</label></div>
-                        <div class="form-floating mt-4"><select class="form-select" name="create-board-type" id="create-boardwizard-type">
-                            <option selected="selected" disabled="disabled" value="">Select event type</option>
-                            <option value="1">technical</option>
-                            <option value="2">external</option>
-                            <option value="3">organizational</option>
-                          </select><label for="create-boardwizard-type">BOARD TYPE</label></div>
-                        <div class="form-floating mt-4"><textarea class="form-control" placeholder="Leave a comment here" name="create-board-message" id="create-board-wizard-des" style="height: 128px"></textarea><label for="create-board-wizard-des">DESCRIPTION (OPTIONAL)</label></div>
-                      </form>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab2" id="create-board-tab2">
-                      <p class="mb-4">These will be the <b>Columns</b> of your Kanban board. They represent discrete stages in work process. Columns can be Edited, Removed, Rearranged or Added in future.</p>
-                      <form id="createBoardForm2" novalidate="novalidate" data-wizard-form="2">
-                        <div class="kanban-column-item">
-                          <div class="kanban-column-input-container flex-grow-1">
-                            <div class="form-floating position-relative"><input class="form-control" type="text" name="column1" placeholder="column1" value="Unassaigned" id="create-board-wizard-column1"><span class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label class="ps-6" for="create-board-wizard-column1">COLUMN 1</label><span class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span></div>
-                          </div>
-                          <div class="ms-3"> <input class="kanban-color-picker" type="color" name="column1Color" value="#6E7891" id="create-board-wizard-color-column1"></div>
-                        </div>
-                        <div class="kanban-column-item">
-                          <div class="kanban-column-input-container flex-grow-1">
-                            <div class="form-floating position-relative"><input class="form-control" type="text" name="column2" placeholder="column2" value="To Do" id="create-board-wizard-column2"><span class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label class="ps-6" for="create-board-wizard-column2">COLUMN 2</label><span class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span></div>
-                          </div>
-                          <div class="ms-3"><input class="kanban-color-picker" type="color" name="column2color" value="#25B003" id="create-board-wizard-color-column2"></div>
-                        </div>
-                        <div class="kanban-column-item">
-                          <div class="kanban-column-input-container flex-grow-1">
-                            <div class="form-floating position-relative"><input class="form-control" type="text" name="column3" placeholder="column3" value="Doing" id="create-board-wizard-column3"><span class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label class="ps-6" for="create-board-wizard-column3">COLUMN 3</label><span class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span></div>
-                          </div>
-                          <div class="ms-3"><input class="kanban-color-picker" type="color" name="column3Color" value="#EC1F00" id="create-board-wizard-color-column3"></div>
-                        </div>
-                      </form>
-                      <div class="d-grid"> <button class="btn btn-lg btn-phoenix-secondary fs-9 bg-body-highlight"><span class="fas fa-plus me-2" data-fa-transform="shrink-3"></span>Add New Column</button></div>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab3" id="create-board-tab3">
-                      <p class="mb-4">Select a <b>Background</b> Colour or Image. This will also be thumbnail for your Kanban board. </p>
-                      <form id="createBoardForm3" novalidate="novalidate" data-wizard-form="3">
-                        <ul class="nav nav-underline fs-9 border-bottom" id="myTab" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" id="color-tab" data-bs-toggle="tab" href="#tab-color" role="tab" aria-controls="tab-color" aria-selected="true"> <span class="fas fa-palette me-2"></span>Solid color</a></li>
-                          <li class="nav-item"><a class="nav-link" id="bg-tab" data-bs-toggle="tab" href="#tab-bg" role="tab" aria-controls="tab-bg" aria-selected="false"> <span class="fas fa-envelope me-2"></span>Image</a></li>
-                        </ul>
-                        <div class="tab-content mt-10" id="myTabContent">
-                          <div class="tab-pane fade show active" id="tab-color" role="tabpanel" aria-labelledby="color-tab">
-                            <div class="d-flex flex-wrap gap-3"><input class="btn-check kanban-swatch-radio" type="radio" value="#ffffff" checked="checked" name="board-bg" id="color0"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color0" style="background-color: #ffffff"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#F5F8FF" name="board-bg" id="color1"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color1" style="background-color: #F5F8FF"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#EFF2F6" name="board-bg" id="color2"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color2" style="background-color: #EFF2F6"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#E3E6ED" name="board-bg" id="color3"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color3" style="background-color: #E3E6ED"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#CBD0DD" name="board-bg" id="color4"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color4" style="background-color: #CBD0DD"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#85A9FF" name="board-bg" id="color5"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color5" style="background-color: #85A9FF"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#60C6FF" name="board-bg" id="color6"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color6" style="background-color: #60C6FF"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#90D67F" name="board-bg" id="color7"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color7" style="background-color: #90D67F"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#F48270" name="board-bg" id="color8"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color8" style="background-color: #F48270"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#FFCC85" name="board-bg" id="color9"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color9" style="background-color: #FFCC85"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#3874FF" name="board-bg" id="color10"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color10" style="background-color: #3874FF"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#0097EB" name="board-bg" id="color11"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color11" style="background-color: #0097EB"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#25B003" name="board-bg" id="color12"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color12" style="background-color: #25B003"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#EC1F00" name="board-bg" id="color13"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color13" style="background-color: #EC1F00"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#E5780B" name="board-bg" id="color14"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color14" style="background-color: #E5780B"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#004DFF" name="board-bg" id="color15"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color15" style="background-color: #004DFF"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#0080C7" name="board-bg" id="color16"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color16" style="background-color: #0080C7"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#23890B" name="board-bg" id="color17"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color17" style="background-color: #23890B"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#CC1B00" name="board-bg" id="color18"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color18" style="background-color: #CC1B00"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#D6700A" name="board-bg" id="color19"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color19" style="background-color: #D6700A"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#000000" name="board-bg" id="color20"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color20" style="background-color: #000000"></label><input class="btn-check kanban-swatch-radio" type="radio" value="#222834" name="board-bg" id="color21"><label class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow" for="color21" style="background-color: #222834"></label><input class="btn-check" data-custom-color-radio="data-custom-color-radio" style="display:none" type="radio" value="#eeeeee" name="board-bg"><input class="btn-check" data-custom-color-input="data-custom-color-input" type="color" id="customColorInput"><label class="btn btn-outline-secondary align-self-start rounded-pill kanban-swatch-btn-shadow" for="customColorInput"><span class="fas fa-plus me-2" data-fa-transform="shrink-3"> </span>CUSTOM COLOR</label><input class="btn-check kanban-swatch-radio" type="radio" data-random-color="data-random-color" name="board-bg" value="" id="Randomcolor"><label class="btn btn-outline-danger align-self-start rounded-pill kanban-swatch-btn-shadow" for="Randomcolor"><span class="fa-solid fa-shuffle me-2" data-fa-transform="shrink-3"> </span>RANDOM</label></div>
-                          </div>
-                          <div class="tab-pane fade" id="tab-bg" role="tabpanel" aria-labelledby="bg-tab">
-                            <div class="row g-3 mb-4">
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg1.jpg" checked="checked" name="board-img" id="img0"><label class="kanban-radio-bg-image w-100" for="img0"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg1.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg2.jpg" name="board-img" id="img1"><label class="kanban-radio-bg-image w-100" for="img1"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg2.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg3.jpg" name="board-img" id="img2"><label class="kanban-radio-bg-image w-100" for="img2"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg3.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg4.jpg" name="board-img" id="img3"><label class="kanban-radio-bg-image w-100" for="img3"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg4.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg5.jpg" name="board-img" id="img4"><label class="kanban-radio-bg-image w-100" for="img4"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg5.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-6"><input class="btn-check kanban-swatch-radio" type="radio" value="assets/img/kanban/bg6.jpg" name="board-img" id="img5"><label class="kanban-radio-bg-image w-100" for="img5"><img class="me-2 cursor-pointer rounded-3 object-fit-cover w-100" src="{{ asset('assets/img/kanban/bg6.jpg') }}" alt="" style="height: 100px"></label></div>
-                              <div class="col-12"><input class="btn-check kanban-swatch-radio" type="radio" name="board-custom-image" id="boardCustomImage">
-                                <div class="dropzone dropzone-single p-0 w-100" id="dropzone" data-dropzone="data-dropzone" data-options='{"url":"valid/url","maxFiles":1,"maxFilesize":5,"acceptedFiles":"image/*","dictDefaultMessage":"Choose or Drop a file here"}'>
-                                  <div class="fallback"><input type="file" name="file"></div>
-                                  <div class="dz-message text-body-tertiary text-opacity-85 text-center py-0" data-dz-message="data-dz-message">
-                                    <div class="dz-message-text py-3">or, Add a custom background<br><img class="mt-3" src="{{ asset('assets/img/icons/image-icon.png') }}" width="30" alt=""></div><button class="btn dz-upload-btn border-0 position-absolute z-5 bg-black bg-opacity-50 text-white mt-3 ms-3 px-3" data-dz-message="data-dz-message">Change Picture<span class="fa-solid fa-camera fs-10 ms-1"></span></button>
-                                  </div>
-                                  <div class="dz-preview m-0">
-                                    <div class="rounded-2 position-relative" style="height: 144px"><input class="btn-check kanban-swatch-radio kanban-custom-bg-radio" type="radio" value="kanban-custom-bg" name="board-img" id="kanban-custom-bg"><label class="kanban-radio-bg-image w-100 h-100" for="kanban-custom-bg"><img class="rounded-2 w-100 h-100 object-fit-cover" src="{{ asset('assets/img/icons/file-bg.png') }}" alt="..." data-dz-thumbnail="data-dz-thumbnail"></label><button class="btn border-0 position-absolute top-0 end-0 z-5 bg-black bg-opacity-50 text-white mt-3 me-3 px-3 cursor-pointer" data-dz-remove="data-dz-remove"><span class="fa-solid fa-xmark cursor-pointer"></span></button></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab4" id="create-board-tab4">
-                      <p class="mb-4">These will be the <b>Tags</b> for your tasks/cards of your Kanban board. Tags are labels to allow easy & simpler classification of tasks.</p>
-                      <form id="createBoardForm4" novalidate="novalidate" data-wizard-form="4"><input class="d-none" name="tag1" value="{&quot;icon&quot;:&quot;package&quot;,&quot;color&quot;:&quot;primary&quot;,&quot;text&quot;:&quot;Feature&quot;}">
-                        <div class="position-relative kanban-tag"><span class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-primary"><span class="badge-label text-capitalize lh-base">Feature</span><span class="ms-1" data-feather="package" style="height:15.8px;width:12.8px;"></span></span>
-                          <div class="position-absolute top-0 end-0 d-flex"><button class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1" type="button"><span class="fas fa-pencil" data-fa-transform="shrink-5"></span></button>
-                            <button class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons" type="button"><span class="fas fa-trash" data-fa-transform="shrink-5"></span></button>
-                          </div>
-                        </div><input class="d-none" name="tag2" value="{&quot;icon&quot;:&quot;check&quot;,&quot;color&quot;:&quot;success&quot;,&quot;text&quot;:&quot;Completed&quot;}">
-                        <div class="position-relative kanban-tag"><span class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-success"><span class="badge-label text-capitalize lh-base">Completed</span><span class="ms-1" data-feather="check" style="height:15.8px;width:12.8px;"></span></span>
-                          <div class="position-absolute top-0 end-0 d-flex"><button class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1" type="button"><span class="fas fa-pencil" data-fa-transform="shrink-5"></span></button>
-                            <button class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons" type="button"><span class="fas fa-trash" data-fa-transform="shrink-5"></span></button>
-                          </div>
-                        </div><input class="d-none" name="tag3" value="{&quot;icon&quot;:&quot;alert-triangle&quot;,&quot;color&quot;:&quot;warning&quot;,&quot;text&quot;:&quot;issue&quot;}">
-                        <div class="position-relative kanban-tag"><span class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-warning"><span class="badge-label text-capitalize lh-base">issue</span><span class="ms-1" data-feather="alert-triangle" style="height:15.8px;width:12.8px;"></span></span>
-                          <div class="position-absolute top-0 end-0 d-flex"><button class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1" type="button"><span class="fas fa-pencil" data-fa-transform="shrink-5"></span></button>
-                            <button class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons" type="button"><span class="fas fa-trash" data-fa-transform="shrink-5"></span></button>
-                          </div>
-                        </div><input class="d-none" name="tag4" value="{&quot;icon&quot;:&quot;alert-octagon&quot;,&quot;color&quot;:&quot;danger&quot;,&quot;text&quot;:&quot;bug&quot;}">
-                        <div class="position-relative kanban-tag"><span class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-danger"><span class="badge-label text-capitalize lh-base">bug</span><span class="ms-1" data-feather="alert-octagon" style="height:15.8px;width:12.8px;"></span></span>
-                          <div class="position-absolute top-0 end-0 d-flex"><button class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1" type="button"><span class="fas fa-pencil" data-fa-transform="shrink-5"></span></button>
-                            <button class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons" type="button"><span class="fas fa-trash" data-fa-transform="shrink-5"></span></button>
-                          </div>
-                        </div>
-                      </form>
-                      <div class="d-grid"> <button class="btn btn-phoenix-secondary fs-9 bg-body-highlight py-2 lh-base"><span class="fas fa-plus me-2" data-fa-transform="shrink-3"></span>Create Custom Tag</button></div>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab5" id="create-board-tab5">
-                      <p class="mb-4">Add <b>Members</b> or <b>Guests</b> to your Kanban board. They can add, edit, or move tasks in your board. Tasks can also be assigned to them.<br><a class="mb-4" href="#!">Learn more</a></p>
-                      <form class="kanban-radio-collapse" id="createBoardForm5" novalidate="novalidate" data-wizard-form="5">
-                        <div class="mb-4 form-check"><input class="form-check-input" type="radio" checked="checked" name="accessType" value="type1" id="accessType1" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne"><label class="form-check-label" for="accessType1">Anyone with shareable link can access</label>
-                          <div class="collapse accordion-collapse show" id="collapseOne" role="tabpanel" aria-labelledby="accessType1" data-bs-parent="#createBoardForm5" aria-expanded="true">
-                            <div class="row g-3 mt-2">
-                              <div class="col-md-9">
-                                <div class="form-floating position-relative"><input class="form-control" id="invite-link" type="text" name="shareableLink" value="https://themewagon.com/phoenix" placeholder="Shareable link"><label for="invite-link">SHAREABLE LINK</label><button class="btn btn-link position-absolute top-50 end-0 translate-middle-y text-body-quaternary text-opacity-75" id="dataCopy" type="button" data-copy="#invite-link" data-bs-placement="top" title="click to copy"><span class="fa-regular fa-paste fa-lg"></span></button></div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="form-floating"><select class="form-select" id="guestSelect" name="role">
-                                    <option value="guest" selected="selected">Guest</option>
-                                    <option value="member">Member</option>
-                                  </select><label for="guestSelect">ADD AS</label></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mb-4 form-check"><input class="form-check-input" type="radio" value="type2" name="accessType" id="accessType2" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"><label class="form-check-label" for="accessType2">Only invited people can access</label>
-                          <div class="collapse accordion-collapse" id="collapseTwo" role="tabpanel" aria-labelledby="accessType2" data-bs-parent="#createBoardForm5">
-                            <div class="row g-3 mt-2">
-                              <div class="col-md-9">
-                                <div class="form-floating"><input class="form-control" id="floatingEventInput" type="text" name="user" placeholder="Event title"><label for="floatingEventInput">ADD PEOPLE (ID OR EMAIL)</label></div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="form-floating"><select class="form-select" id="memberSelect">
-                                    <option value="member" selected="selected">Member</option>
-                                    <option value="admin">Admin</option>
-                                    <option value="developer">Developer</option>
-                                  </select><label for="memberSelect">ADD AS</label></div>
-                              </div>
-                              <div class="col-md-12">
-                                <div class="form-floating"><textarea class="form-control" placeholder="Leave a ME here" name="message" id="create-board-wizard-message" style="height: 128px"></textarea><label for="create-board-wizard-message">ADD A MESSAGE (OPTIONAL)</label></div>
-                                <div class="d-grid mt-3"><button class="btn btn-outline-primary">Invite<span class="fa-solid fa-envelope ms-2" data-fa-transform="shrink-3"></span></button></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="border-top-0 mt-1">
-                          <div class="d-flex pager wizard list-inline mb-0"><button class="btn btn-link ps-0" type="button" data-board-prev-btn="data-board-prev-btn"><span class="fas fa-chevron-left me-1" data-fa-transform="shrink-3"></span>Previous</button>
-                            <div class="flex-1 text-end"><button class="btn btn-primary px-6 px-sm-6" type="submit">Submit<span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-3"> </span></button></div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+    <div class="d-flex align-items-center"><img class="me-3" src="{{ asset('assets/img/kanban/board.png') }}" alt="">
+        <h1 class="mb-0 text-body-emphasis fw-semibold">Phoenix Kanban</h1>
+    </div>
+    <p class="mt-3">Create a Kanban board by following <br class="d-md-none">the steps below</p>
+    <div class="kanban-create-board row">
+        <div class="col-xxl-5 col-xl-6 col-12 pb-8 order-1 order-xl-0">
+            <div class="theme-wizard theme-wizard-progress" data-theme-wizard="data-theme-wizard"
+                data-create-board="data-create-board" data-wizard-modal-disabled="data-wizard-modal-disabled">
+                <div class="mt-6 border-bottom-0">
+                    <p class="mb-0 text-body-secondary">Step: <span data-kanban-step="data-kanban-step">1</span></p>
+                    <ul class="nav justify-content-between nav-wizard nav-wizard-progress">
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="#create-board-tab1"
+                                data-bs-toggle="tab" data-wizard-step="1"></a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab2" data-bs-toggle="tab"
+                                data-wizard-step="2"></a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab3" data-bs-toggle="tab"
+                                data-wizard-step="3"></a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab4" data-bs-toggle="tab"
+                                data-wizard-step="4"></a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#create-board-tab5" data-bs-toggle="tab"
+                                data-wizard-step="5"></a></li>
+                    </ul>
                 </div>
-              </div>
-              <div class="border-top-0 mt-10" data-wizard-footer="data-wizard-footer">
-                <div class="d-flex pager wizard list-inline mb-0"><button class="d-none btn btn-link ps-0" type="button" data-wizard-prev-btn="data-wizard-prev-btn"><span class="fas fa-chevron-left me-1" data-fa-transform="shrink-3"></span>Previous</button>
-                  <div class="flex-1 text-end"><button class="btn btn-primary px-6 px-sm-6" type="submit" data-wizard-next-btn="data-wizard-next-btn">Next<span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-3"> </span></button></div>
+                <div class="mt-6">
+                    <div class="pt-4 pb-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" aria-labelledby="create-board-tab1"
+                                id="create-board-tab1">
+                                <p class="mb-4">This will be the <b>Name</b> and description of your Kanban board. You and
+                                    other admins can edit the name in future. The name can contain letters, numbers &
+                                    punctuation. </p>
+                                <form id="createBoardForm1" novalidate="novalidate" data-wizard-form="1">
+                                    <div class="form-floating"><input class="form-control" type="text"
+                                            name="create-board-name" id="create-boardwizard-name" placeholder="Event title"
+                                            value="New Kanban Board"><label for="create-boardwizard-name">BOARD NAME</label>
+                                    </div>
+                                    <div class="form-floating mt-4"><select class="form-select" name="create-board-type"
+                                            id="create-boardwizard-type">
+                                            <option selected="selected" disabled="disabled" value="">Select event type
+                                            </option>
+                                            <option value="1">technical</option>
+                                            <option value="2">external</option>
+                                            <option value="3">organizational</option>
+                                        </select><label for="create-boardwizard-type">BOARD TYPE</label></div>
+                                    <div class="form-floating mt-4">
+                                        <textarea class="form-control" placeholder="Leave a comment here" name="create-board-message"
+                                            id="create-board-wizard-des" style="height: 128px"></textarea><label for="create-board-wizard-des">DESCRIPTION
+                                            (OPTIONAL)</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab2"
+                                id="create-board-tab2">
+                                <p class="mb-4">These will be the <b>Columns</b> of your Kanban board. They represent
+                                    discrete stages in work process. Columns can be Edited, Removed, Rearranged or Added in
+                                    future.</p>
+                                <form id="createBoardForm2" novalidate="novalidate" data-wizard-form="2">
+                                    <div class="kanban-column-item">
+                                        <div class="kanban-column-input-container flex-grow-1">
+                                            <div class="form-floating position-relative"><input class="form-control"
+                                                    type="text" name="column1" placeholder="column1" value="Unassaigned"
+                                                    id="create-board-wizard-column1"><span
+                                                    class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label
+                                                    class="ps-6" for="create-board-wizard-column1">COLUMN 1</label><span
+                                                    class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3"> <input class="kanban-color-picker" type="color"
+                                                name="column1Color" value="#6E7891"
+                                                id="create-board-wizard-color-column1"></div>
+                                    </div>
+                                    <div class="kanban-column-item">
+                                        <div class="kanban-column-input-container flex-grow-1">
+                                            <div class="form-floating position-relative"><input class="form-control"
+                                                    type="text" name="column2" placeholder="column2" value="To Do"
+                                                    id="create-board-wizard-column2"><span
+                                                    class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label
+                                                    class="ps-6" for="create-board-wizard-column2">COLUMN 2</label><span
+                                                    class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3"><input class="kanban-color-picker" type="color"
+                                                name="column2color" value="#25B003"
+                                                id="create-board-wizard-color-column2"></div>
+                                    </div>
+                                    <div class="kanban-column-item">
+                                        <div class="kanban-column-input-container flex-grow-1">
+                                            <div class="form-floating position-relative"><input class="form-control"
+                                                    type="text" name="column3" placeholder="column3" value="Doing"
+                                                    id="create-board-wizard-column3"><span
+                                                    class="fa-solid fa-bars kanban-column-icon text-body-tertiary fs-9"></span><label
+                                                    class="ps-6" for="create-board-wizard-column3">COLUMN 3</label><span
+                                                    class="fa-solid fa-circle-xmark text-body-tertiary text-opacity-50 position-absolute top-50 end-0 translate-middle-y me-2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3"><input class="kanban-color-picker" type="color"
+                                                name="column3Color" value="#EC1F00"
+                                                id="create-board-wizard-color-column3"></div>
+                                    </div>
+                                </form>
+                                <div class="d-grid"> <button
+                                        class="btn btn-lg btn-phoenix-secondary fs-9 bg-body-highlight"><span
+                                            class="fas fa-plus me-2" data-fa-transform="shrink-3"></span>Add New
+                                        Column</button></div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab3"
+                                id="create-board-tab3">
+                                <p class="mb-4">Select a <b>Background</b> Colour or Image. This will also be thumbnail
+                                    for your Kanban board. </p>
+                                <form id="createBoardForm3" novalidate="novalidate" data-wizard-form="3">
+                                    <ul class="nav nav-underline fs-9 border-bottom" id="myTab" role="tablist">
+                                        <li class="nav-item"><a class="nav-link active" id="color-tab"
+                                                data-bs-toggle="tab" href="#tab-color" role="tab"
+                                                aria-controls="tab-color" aria-selected="true"> <span
+                                                    class="fas fa-palette me-2"></span>Solid color</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="bg-tab" data-bs-toggle="tab"
+                                                href="#tab-bg" role="tab" aria-controls="tab-bg"
+                                                aria-selected="false"> <span class="fas fa-envelope me-2"></span>Image</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-10" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="tab-color" role="tabpanel"
+                                            aria-labelledby="color-tab">
+                                            <div class="d-flex flex-wrap gap-3"><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#ffffff"
+                                                    checked="checked" name="board-bg" id="color0"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color0" style="background-color: #ffffff"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#F5F8FF"
+                                                    name="board-bg" id="color1"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color1" style="background-color: #F5F8FF"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#EFF2F6"
+                                                    name="board-bg" id="color2"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color2" style="background-color: #EFF2F6"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#E3E6ED"
+                                                    name="board-bg" id="color3"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color3" style="background-color: #E3E6ED"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#CBD0DD"
+                                                    name="board-bg" id="color4"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color4" style="background-color: #CBD0DD"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#85A9FF"
+                                                    name="board-bg" id="color5"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color5" style="background-color: #85A9FF"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#60C6FF"
+                                                    name="board-bg" id="color6"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color6" style="background-color: #60C6FF"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#90D67F"
+                                                    name="board-bg" id="color7"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color7" style="background-color: #90D67F"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#F48270"
+                                                    name="board-bg" id="color8"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color8" style="background-color: #F48270"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#FFCC85"
+                                                    name="board-bg" id="color9"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color9" style="background-color: #FFCC85"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#3874FF"
+                                                    name="board-bg" id="color10"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color10" style="background-color: #3874FF"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#0097EB"
+                                                    name="board-bg" id="color11"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color11" style="background-color: #0097EB"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#25B003"
+                                                    name="board-bg" id="color12"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color12" style="background-color: #25B003"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#EC1F00"
+                                                    name="board-bg" id="color13"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color13" style="background-color: #EC1F00"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#E5780B"
+                                                    name="board-bg" id="color14"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color14" style="background-color: #E5780B"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#004DFF"
+                                                    name="board-bg" id="color15"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color15" style="background-color: #004DFF"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#0080C7"
+                                                    name="board-bg" id="color16"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color16" style="background-color: #0080C7"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#23890B"
+                                                    name="board-bg" id="color17"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color17" style="background-color: #23890B"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#CC1B00"
+                                                    name="board-bg" id="color18"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color18" style="background-color: #CC1B00"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#D6700A"
+                                                    name="board-bg" id="color19"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color19" style="background-color: #D6700A"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#000000"
+                                                    name="board-bg" id="color20"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color20" style="background-color: #000000"></label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio" value="#222834"
+                                                    name="board-bg" id="color21"><label
+                                                    class="btn btn-primary kanban-swatch-label kanban-swatch-btn-shadow"
+                                                    for="color21" style="background-color: #222834"></label><input
+                                                    class="btn-check" data-custom-color-radio="data-custom-color-radio"
+                                                    style="display:none" type="radio" value="#eeeeee"
+                                                    name="board-bg"><input class="btn-check"
+                                                    data-custom-color-input="data-custom-color-input" type="color"
+                                                    id="customColorInput"><label
+                                                    class="btn btn-outline-secondary align-self-start rounded-pill kanban-swatch-btn-shadow"
+                                                    for="customColorInput"><span class="fas fa-plus me-2"
+                                                        data-fa-transform="shrink-3"> </span>CUSTOM COLOR</label><input
+                                                    class="btn-check kanban-swatch-radio" type="radio"
+                                                    data-random-color="data-random-color" name="board-bg" value=""
+                                                    id="Randomcolor"><label
+                                                    class="btn btn-outline-danger align-self-start rounded-pill kanban-swatch-btn-shadow"
+                                                    for="Randomcolor"><span class="fa-solid fa-shuffle me-2"
+                                                        data-fa-transform="shrink-3"> </span>RANDOM</label></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-bg" role="tabpanel"
+                                            aria-labelledby="bg-tab">
+                                            <div class="row g-3 mb-4">
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg1.jpg"
+                                                        checked="checked" name="board-img" id="img0"><label
+                                                        class="kanban-radio-bg-image w-100" for="img0"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg1.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg2.jpg" name="board-img"
+                                                        id="img1"><label class="kanban-radio-bg-image w-100"
+                                                        for="img1"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg2.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg3.jpg" name="board-img"
+                                                        id="img2"><label class="kanban-radio-bg-image w-100"
+                                                        for="img2"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg3.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg4.jpg" name="board-img"
+                                                        id="img3"><label class="kanban-radio-bg-image w-100"
+                                                        for="img3"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg4.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg5.jpg" name="board-img"
+                                                        id="img4"><label class="kanban-radio-bg-image w-100"
+                                                        for="img4"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg5.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-6"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" value="assets/img/kanban/bg6.jpg" name="board-img"
+                                                        id="img5"><label class="kanban-radio-bg-image w-100"
+                                                        for="img5"><img
+                                                            class="me-2 cursor-pointer rounded-3 object-fit-cover w-100"
+                                                            src="{{ asset('assets/img/kanban/bg6.jpg') }}" alt=""
+                                                            style="height: 100px"></label></div>
+                                                <div class="col-12"><input class="btn-check kanban-swatch-radio"
+                                                        type="radio" name="board-custom-image" id="boardCustomImage">
+                                                    <div class="dropzone dropzone-single p-0 w-100" id="dropzone"
+                                                        data-dropzone="data-dropzone"
+                                                        data-options='{"url":"valid/url","maxFiles":1,"maxFilesize":5,"acceptedFiles":"image/*","dictDefaultMessage":"Choose or Drop a file here"}'>
+                                                        <div class="fallback"><input type="file" name="file"></div>
+                                                        <div class="dz-message text-body-tertiary text-opacity-85 text-center py-0"
+                                                            data-dz-message="data-dz-message">
+                                                            <div class="dz-message-text py-3">or, Add a custom
+                                                                background<br><img class="mt-3"
+                                                                    src="{{ asset('assets/img/icons/image-icon.png') }}"
+                                                                    width="30" alt=""></div><button
+                                                                class="btn dz-upload-btn border-0 position-absolute z-5 bg-black bg-opacity-50 text-white mt-3 ms-3 px-3"
+                                                                data-dz-message="data-dz-message">Change Picture<span
+                                                                    class="fa-solid fa-camera fs-10 ms-1"></span></button>
+                                                        </div>
+                                                        <div class="dz-preview m-0">
+                                                            <div class="rounded-2 position-relative"
+                                                                style="height: 144px"><input
+                                                                    class="btn-check kanban-swatch-radio kanban-custom-bg-radio"
+                                                                    type="radio" value="kanban-custom-bg"
+                                                                    name="board-img" id="kanban-custom-bg"><label
+                                                                    class="kanban-radio-bg-image w-100 h-100"
+                                                                    for="kanban-custom-bg"><img
+                                                                        class="rounded-2 w-100 h-100 object-fit-cover"
+                                                                        src="{{ asset('assets/img/icons/file-bg.png') }}"
+                                                                        alt="..."
+                                                                        data-dz-thumbnail="data-dz-thumbnail"></label><button
+                                                                    class="btn border-0 position-absolute top-0 end-0 z-5 bg-black bg-opacity-50 text-white mt-3 me-3 px-3 cursor-pointer"
+                                                                    data-dz-remove="data-dz-remove"><span
+                                                                        class="fa-solid fa-xmark cursor-pointer"></span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab4"
+                                id="create-board-tab4">
+                                <p class="mb-4">These will be the <b>Tags</b> for your tasks/cards of your Kanban board.
+                                    Tags are labels to allow easy & simpler classification of tasks.</p>
+                                <form id="createBoardForm4" novalidate="novalidate" data-wizard-form="4"><input
+                                        class="d-none" name="tag1"
+                                        value="{&quot;icon&quot;:&quot;package&quot;,&quot;color&quot;:&quot;primary&quot;,&quot;text&quot;:&quot;Feature&quot;}">
+                                    <div class="position-relative kanban-tag"><span
+                                            class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-primary"><span
+                                                class="badge-label text-capitalize lh-base">Feature</span><span
+                                                class="ms-1" data-feather="package"
+                                                style="height:15.8px;width:12.8px;"></span></span>
+                                        <div class="position-absolute top-0 end-0 d-flex"><button
+                                                class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1"
+                                                type="button"><span class="fas fa-pencil"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                            <button
+                                                class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons"
+                                                type="button"><span class="fas fa-trash"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                        </div>
+                                    </div><input class="d-none" name="tag2"
+                                        value="{&quot;icon&quot;:&quot;check&quot;,&quot;color&quot;:&quot;success&quot;,&quot;text&quot;:&quot;Completed&quot;}">
+                                    <div class="position-relative kanban-tag"><span
+                                            class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-success"><span
+                                                class="badge-label text-capitalize lh-base">Completed</span><span
+                                                class="ms-1" data-feather="check"
+                                                style="height:15.8px;width:12.8px;"></span></span>
+                                        <div class="position-absolute top-0 end-0 d-flex"><button
+                                                class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1"
+                                                type="button"><span class="fas fa-pencil"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                            <button
+                                                class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons"
+                                                type="button"><span class="fas fa-trash"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                        </div>
+                                    </div><input class="d-none" name="tag3"
+                                        value="{&quot;icon&quot;:&quot;alert-triangle&quot;,&quot;color&quot;:&quot;warning&quot;,&quot;text&quot;:&quot;issue&quot;}">
+                                    <div class="position-relative kanban-tag"><span
+                                            class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-warning"><span
+                                                class="badge-label text-capitalize lh-base">issue</span><span
+                                                class="ms-1" data-feather="alert-triangle"
+                                                style="height:15.8px;width:12.8px;"></span></span>
+                                        <div class="position-absolute top-0 end-0 d-flex"><button
+                                                class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1"
+                                                type="button"><span class="fas fa-pencil"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                            <button
+                                                class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons"
+                                                type="button"><span class="fas fa-trash"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                        </div>
+                                    </div><input class="d-none" name="tag4"
+                                        value="{&quot;icon&quot;:&quot;alert-octagon&quot;,&quot;color&quot;:&quot;danger&quot;,&quot;text&quot;:&quot;bug&quot;}">
+                                    <div class="position-relative kanban-tag"><span
+                                            class="badge badge-phoenix d-flex flex-between-center mb-5 fs-9 px-4 py-2 kanban-tag-badge badge-phoenix-danger"><span
+                                                class="badge-label text-capitalize lh-base">bug</span><span class="ms-1"
+                                                data-feather="alert-octagon"
+                                                style="height:15.8px;width:12.8px;"></span></span>
+                                        <div class="position-absolute top-0 end-0 d-flex"><button
+                                                class="btn btn-phoenix-secondary fs-9 bg-transparent lh-1 kanban-tag-action-icons me-1"
+                                                type="button"><span class="fas fa-pencil"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                            <button
+                                                class="btn btn-phoenix-danger fs-9 bg-transparent lh-1 kanban-tag-action-icons"
+                                                type="button"><span class="fas fa-trash"
+                                                    data-fa-transform="shrink-5"></span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-grid"> <button
+                                        class="btn btn-phoenix-secondary fs-9 bg-body-highlight py-2 lh-base"><span
+                                            class="fas fa-plus me-2" data-fa-transform="shrink-3"></span>Create Custom
+                                        Tag</button></div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" aria-labelledby="create-board-tab5"
+                                id="create-board-tab5">
+                                <p class="mb-4">Add <b>Members</b> or <b>Guests</b> to your Kanban board. They can add,
+                                    edit, or move tasks in your board. Tasks can also be assigned to them.<br><a
+                                        class="mb-4" href="#!">Learn more</a></p>
+                                <form class="kanban-radio-collapse" id="createBoardForm5" novalidate="novalidate"
+                                    data-wizard-form="5">
+                                    <div class="mb-4 form-check"><input class="form-check-input" type="radio"
+                                            checked="checked" name="accessType" value="type1" id="accessType1"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-controls="collapseOne"><label class="form-check-label"
+                                            for="accessType1">Anyone with shareable link can access</label>
+                                        <div class="collapse accordion-collapse show" id="collapseOne" role="tabpanel"
+                                            aria-labelledby="accessType1" data-bs-parent="#createBoardForm5"
+                                            aria-expanded="true">
+                                            <div class="row g-3 mt-2">
+                                                <div class="col-md-9">
+                                                    <div class="form-floating position-relative"><input
+                                                            class="form-control" id="invite-link" type="text"
+                                                            name="shareableLink" value="https://themewagon.com/phoenix"
+                                                            placeholder="Shareable link"><label
+                                                            for="invite-link">SHAREABLE LINK</label><button
+                                                            class="btn btn-link position-absolute top-50 end-0 translate-middle-y text-body-quaternary text-opacity-75"
+                                                            id="dataCopy" type="button" data-copy="#invite-link"
+                                                            data-bs-placement="top" title="click to copy"><span
+                                                                class="fa-regular fa-paste fa-lg"></span></button></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-floating"><select class="form-select"
+                                                            id="guestSelect" name="role">
+                                                            <option value="guest" selected="selected">Guest</option>
+                                                            <option value="member">Member</option>
+                                                        </select><label for="guestSelect">ADD AS</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 form-check"><input class="form-check-input" type="radio"
+                                            value="type2" name="accessType" id="accessType2" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-controls="collapseTwo"><label
+                                            class="form-check-label" for="accessType2">Only invited people can
+                                            access</label>
+                                        <div class="collapse accordion-collapse" id="collapseTwo" role="tabpanel"
+                                            aria-labelledby="accessType2" data-bs-parent="#createBoardForm5">
+                                            <div class="row g-3 mt-2">
+                                                <div class="col-md-9">
+                                                    <div class="form-floating"><input class="form-control"
+                                                            id="floatingEventInput" type="text" name="user"
+                                                            placeholder="Event title"><label for="floatingEventInput">ADD
+                                                            PEOPLE (ID OR EMAIL)</label></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-floating"><select class="form-select"
+                                                            id="memberSelect">
+                                                            <option value="member" selected="selected">Member</option>
+                                                            <option value="admin">Admin</option>
+                                                            <option value="developer">Developer</option>
+                                                        </select><label for="memberSelect">ADD AS</label></div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" placeholder="Leave a ME here" name="message" id="create-board-wizard-message"
+                                                            style="height: 128px"></textarea><label
+                                                            for="create-board-wizard-message">ADD A MESSAGE
+                                                            (OPTIONAL)</label>
+                                                    </div>
+                                                    <div class="d-grid mt-3"><button
+                                                            class="btn btn-outline-primary">Invite<span
+                                                                class="fa-solid fa-envelope ms-2"
+                                                                data-fa-transform="shrink-3"></span></button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-top-0 mt-1">
+                                        <div class="d-flex pager wizard list-inline mb-0"><button
+                                                class="btn btn-link ps-0" type="button"
+                                                data-board-prev-btn="data-board-prev-btn"><span
+                                                    class="fas fa-chevron-left me-1"
+                                                    data-fa-transform="shrink-3"></span>Previous</button>
+                                            <div class="flex-1 text-end"><button class="btn btn-primary px-6 px-sm-6"
+                                                    type="submit">Submit<span class="fas fa-chevron-right ms-1"
+                                                        data-fa-transform="shrink-3"> </span></button></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="border-top-0 mt-10" data-wizard-footer="data-wizard-footer">
+                    <div class="d-flex pager wizard list-inline mb-0"><button class="d-none btn btn-link ps-0"
+                            type="button" data-wizard-prev-btn="data-wizard-prev-btn"><span
+                                class="fas fa-chevron-left me-1" data-fa-transform="shrink-3"></span>Previous</button>
+                        <div class="flex-1 text-end"><button class="btn btn-primary px-6 px-sm-6" type="submit"
+                                data-wizard-next-btn="data-wizard-next-btn">Next<span class="fas fa-chevron-right ms-1"
+                                    data-fa-transform="shrink-3"> </span></button></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xxl-7 col-xl-6 col-12 text-center kanban-board-bg"><img class="d-dark-none mt-5 position-sticky" src="{{ asset('assets/img/kanban/board-ligth.png') }}" alt="" style="top: 200px"><img class="d-light-none position-sticky" src="{{ asset('assets/img/kanban/board-dark.png') }}" alt="" style="top: 200px"></div>
         </div>
+        <div class="col-xxl-7 col-xl-6 col-12 text-center kanban-board-bg"><img class="d-dark-none mt-5 position-sticky"
+                src="{{ asset('assets/img/kanban/board-ligth.png') }}" alt="" style="top: 200px"><img
+                class="d-light-none position-sticky" src="{{ asset('assets/img/kanban/board-dark.png') }}"
+                alt="" style="top: 200px"></div>
+    </div>
 @endsection
 
 @push('scripts')
-<script src="{{ asset('vendors/sortablejs/Sortable.min.js') }}"></script>
-<script src="{{ asset('vendors/dropzone/dropzone-min.js') }}"></script>
-<script src="{{ asset('assets/js/pages/kanban.js') }}"></script>
+    <script src="{{ asset('vendors/sortablejs/Sortable.min.js') }}"></script>
+    <script src="{{ asset('vendors/dropzone/dropzone-min.js') }}"></script>
+    <script src="{{ asset('assets/js/pages/kanban.js') }}"></script>
 @endpush

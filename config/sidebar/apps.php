@@ -83,57 +83,10 @@ return [
                     ]
                 ],
                 [
-                    "name" => "Customer",
-                    "id" => "nv-customer",
-                    "path" => "apps/e-commerce/landing*",
-                    "children" => [
-                        [
-                            "name" => "Homepage",
-                            "url" => "apps/e-commerce/landing/homepage",
-                            "target" => "_blank"
-                        ],
-                        [
-                            "name" => "Product details",
-                            "url" => "apps/e-commerce/landing/product-details"
-                        ],
-                        [
-                            "name" => "Products filter",
-                            "url" => "apps/e-commerce/landing/products-filter"
-                        ],
-                        [
-                            "name" => "Cart",
-                            "url" => "apps/e-commerce/landing/cart"
-                        ],
-                        [
-                            "name" => "Checkout",
-                            "url" => "apps/e-commerce/landing/checkout"
-                        ],
-                        [
-                            "name" => "Shipping info",
-                            "url" => "apps/e-commerce/landing/shipping-info"
-                        ],
-                        [
-                            "name" => "Profile",
-                            "url" => "apps/e-commerce/landing/profile"
-                        ],
-                        [
-                            "name" => "Favourite stores",
-                            "url" => "apps/e-commerce/landing/favourite-stores"
-                        ],
-                        [
-                            "name" => "Wishlist",
-                            "url" => "apps/e-commerce/landing/wishlist"
-                        ],
-                        [
-                            "name" => "Order tracking",
-                            "url" => "apps/e-commerce/landing/order-tracking"
-                        ],
-                        [
-                            "name" => "Invoice",
-                            "url" => "apps/e-commerce/landing/invoice"
-                        ]
-                    ]
-                ]
+                    "name" => "Homepage",
+                    "url" => "apps/e-commerce/homepage",
+                    "target" => "_blank"
+                ],
             ]
         ],
         [
@@ -223,104 +176,28 @@ return [
                     "target" => "_blank"
                 ],
                 [
-                    "name" => "Hotel",
-                    "id" => "nv-hotel",
-                    "path" => "apps/travel-agency/hotel*",
+                    "name" => "Admin",
+                    "id" => "nv-hotel-admin",
+                    "path" => "apps/travel-agency/admin*",
                     "children" => [
                         [
-                            "name" => "Admin",
-                            "id" => "nv-hotel-admin",
-                            "path" => "apps/travel-agency/hotel/admin*",
-                            "children" => [
-                                [
-                                    "name" => "Add property",
-                                    "url" => "apps/travel-agency/hotel/admin/add-property"
-                                ],
-                                [
-                                    "name" => "Add room",
-                                    "url" => "apps/travel-agency/hotel/admin/add-room"
-                                ],
-                                [
-                                    "name" => "Room listing",
-                                    "url" => "apps/travel-agency/hotel/admin/room-listing"
-                                ],
-                                [
-                                    "name" => "Search room",
-                                    "url" => "apps/travel-agency/hotel/admin/room-search"
-                                ]
-                            ]
+                            "name" => "Add property",
+                            "url" => "apps/travel-agency/admin/add-property"
                         ],
                         [
-                            "name" => "Customer",
-                            "id" => "nv-hotel-customer",
-                            "path" => "apps/travel-agency/hotel/customer*",
-                            "children" => [
-                                [
-                                    "name" => "Homepage",
-                                    "url" => "apps/travel-agency/hotel/customer/homepage"
-                                ],
-                                [
-                                    "name" => "Hotel details",
-                                    "url" => "apps/travel-agency/hotel/customer/hotel-details"
-                                ],
-                                [
-                                    "name" => "Hotel compare",
-                                    "url" => "apps/travel-agency/hotel/customer/hotel-compare"
-                                ],
-                                [
-                                    "name" => "Checkout",
-                                    "url" => "apps/travel-agency/hotel/customer/checkout"
-                                ],
-                                [
-                                    "name" => "Payment",
-                                    "url" => "apps/travel-agency/hotel/customer/payment"
-                                ],
-                                [
-                                    "name" => "Gallery",
-                                    "url" => "apps/travel-agency/hotel/customer/gallery"
-                                ]
-                            ]
+                            "name" => "Add room",
+                            "url" => "apps/travel-agency/admin/add-room"
+                        ],
+                        [
+                            "name" => "Room listing",
+                            "url" => "apps/travel-agency/admin/room-listing"
+                        ],
+                        [
+                            "name" => "Search room",
+                            "url" => "apps/travel-agency/admin/room-search"
                         ]
                     ]
                 ],
-                [
-                    "name" => "Flight",
-                    "id" => "nv-flight",
-                    "path" => "apps/travel-agency/flight*",
-                    "children" => [
-                        [
-                            "name" => "Homepage",
-                            "url" => "apps/travel-agency/flight/homepage"
-                        ],
-                        [
-                            "name" => "Booking",
-                            "url" => "apps/travel-agency/flight/booking"
-                        ],
-                        [
-                            "name" => "Payment",
-                            "url" => "apps/travel-agency/flight/payment"
-                        ]
-                    ]
-                ],
-                [
-                    "name" => "Trip",
-                    "id" => "nv-trip",
-                    "path" => "apps/travel-agency/trip*",
-                    "children" => [
-                        [
-                            "name" => "Homepage",
-                            "url" => "apps/travel-agency/trip/homepage"
-                        ],
-                        [
-                            "name" => "Trip details",
-                            "url" => "apps/travel-agency/trip/trip-details"
-                        ],
-                        [
-                            "name" => "Checkout",
-                            "url" => "apps/travel-agency/trip/checkout"
-                        ]
-                    ]
-                ]
             ]
         ],
         [
